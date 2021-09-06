@@ -4,7 +4,7 @@ Jouw online drukkerij!
 
 **[Code Institute](https://codeinstitute.net/)  Milestone Project 4: Full Stack Frameworks with Django**
 
-<img src="static/readme_images/logo.png" alt="Logo" width="75%" height="75%">
+<img src="readme/general/logo.png" alt="Logo" width="75%" height="75%">
 
 POSTFLY is a site where you can order all your necessary printed matter online.
 [POSTFLY](http://www.postfly.nl/) already has an existing site, but it desperately needs a major update.
@@ -71,15 +71,15 @@ This is meant to be a B2B site which targets visitors who are in need of printed
 
 ##### User Goals
 
-- As a user I want like to see a clear overview of the possibilities, what can I order. (Product page)
+- As a user I want to see a clear overview of the possibilities, what can I order. (Product page)
 - As a user I want to see in advance what the costs will be and when it can be delivered. (Product page)
 - As a user I want to be able to ask questions if something is not clear. (Contact form)
-- As a user I want to be able to ask for a quotation if a product is not on the site, but maybe in their collection. (Quatation form)
+- As a user I want to be able to ask for a quotation if a product is not on the site, but maybe in the collection. (Quatation form)
 - As a user I want to be able to see the different kinds of paper. (Sample kit form)
 - As a user I want to be able to go through the ordering process in a simple way.
 - As a user I want to be able to upload my own artwork. (Checkout form)
-- As a user I want to have easy acces to my cart, and to be able to make changes to the cart, as long as the order isn't put through yet. (cart)
-- As a user I want to receive a clear order confirmation after ordering for what I have ordered. (Confirmation email)
+- As a user I want to have easy acces to my cart, and to be able to make changes to the cart, as long as the order isn't put through yet. (Shopping cart)
+- As a user I want to receive a clear order confirmation with a description of what I ordered. (Confirmation email)
 - As a user I want to be able to see a secured overview of my order history. (Dashboard)
 - As a user I want to have my details filled out in advance, but also be able to change them if needed. (Profile)
 - As a user I want to be able to choose the language. (Dutch or English)
@@ -106,7 +106,7 @@ The site will be structured as clear as possible, with a logic workflow and it s
 
 ### Skeleton
 
-<!-- The skeleton section is a bit more extensive, for that reason please view this separate [file](skeleton/README.md). -->
+The skeleton section is a bit more extensive, for that reason please view this separate [file](readme/skeleton/README.md).
 
 ### Fonts and icons
 
