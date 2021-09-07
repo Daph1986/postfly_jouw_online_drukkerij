@@ -2,11 +2,9 @@
 
 Desktop wireframe overview <br>
 <img src="../skeleton//preview_desktop.png" alt="Desktop" width="50%" height="50%"><br>
-The desktop wireframes are split underneath per section.<br>
-
-<details>
-<summary>Home</summary><br>
-![Home](https://github.com/Daph1986/postfly_jouw_online_drukkerij/blob/main/readme/skeleton/desktop_wireframes/homepage.png)
+The desktop wireframes are split underneath per section.
+**<details><summary>Home</summary>**
+<img src="../skeleton/desktop_wireframes/homepage.png" alt="Mobile" width="50%" height="50%">
 </details>
 
 <div align="right"><a href="#top">🔝</a></div>
