@@ -200,26 +200,27 @@ For more details about testing and bugs please view this [file](testing/README.m
 ### Content
 
 
-### Code:
+### Code
 
 
 <div align="right"><a href="#top">🔝</a></div>
 
-### Media: 
+### Media
 
-#### Images:
+#### Images
 
 1. [POSTFLY](http://www.postfly.nl/) the POSTFLY logo provided by my colleague Filip Matthys.
-
 2. [Flaticon](https://www.flaticon.com/free-icon/paper-plane_164627?term=paper%20plane&page=3&position=52&page=3&position=52&related_id=164627&origin=search) to get and adjust the paper plane of the logo.
-
 3. [favicon.io](https://favicon.io/favicon-converter/) was used to get the favicon of the logo.
-
-<!-- 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used. -->
+4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
+5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for the images of the foil samples, the headoffice and the presses, thanks for my colleague Bart Lauwaert for providing the original photos to me.
 
 ### Other
 
 1. [FFonts](https://www.ffonts.net/Syntha-Regular.font.download) to get a font for the subtext of the logo that resembles the existing logo font.
+2. [Luchidchart](https://www.lucidchart.com/pages/) to create the Django diagram model.
+3. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
+
 <!-- 3. [cdnjs](https://cdnjs.com/) to get the fontawesome cdn from.
 5. [Am I Responsive?](http://ami.responsivedesign.is/) to check the responsiveness and make the mockups.
 6. [WebAIM](https://webaim.org/resources/contrastchecker/) used for checking contrasts on the site. -->
