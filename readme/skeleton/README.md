@@ -1,5 +1,13 @@
 ### Skeleton
 
+On the original site, there are approximately 33 product categories, each of which has multiple paper or material options and then multiple finishes and quantity options.
+This project started with 9 different product categories each with up to 10 different paper types, 11 sizes, multiple options for printing methods and finishes and 18 different quantities. After the first mentor meeting, this was thought through again and it was concluded that even this is a bit much for an educational project. Therefore, it was decided to limit it to the following products:
+- 4 flyer paper types with each 3 sizes, 3 quantities and 2 delivery time options
+- 2 poster paper types with each 3 sizes, 3 quantities and 2 delivery time options
+- 2 business card paper types with each 3 sizes, 3 quantities and 2 delivery time options
+<br>
+<br>
+
 The desktop wireframes are listed below per section.<br>
 **<details><summary>Home</summary>**
 <img src="../skeleton/desktop_wireframes/homepage.png" alt="Home" width="50%" height="50%">
@@ -7,8 +15,9 @@ The desktop wireframes are listed below per section.<br>
 </details>
 
 **<details><summary>Products</summary>**
-<img src="../skeleton/desktop_wireframes/producten.png" alt="Producten" width="50%" height="50%"><br>
-<img src="../skeleton/desktop_wireframes/flyers.png" alt="Flyers" width="50%" height="50%">
+<img src="../skeleton/desktop_wireframes/alle_producten.png" alt="Alle producten" width="50%" height="50%"><br>
+<img src="../skeleton/desktop_wireframes/flyers_300gr_mat.png" alt="Flyers 300gr Mat" width="50%" height="50%"><br>
+<img src="../skeleton/desktop_wireframes/flyers_300gr_mat_a5.png" alt="Flyers 300gr Mat A5" width="50%" height="50%">
 <div align="right"><a href="#top">🔝</a></div>
 </details>
 
@@ -29,6 +38,12 @@ The desktop wireframes are listed below per section.<br>
 <div align="right"><a href="#top">🔝</a></div>
 </details>
 
+**<details><summary>Admin Dashboard</summary>**
+<img src="../skeleton/desktop_wireframes/admin_dashboard.png" alt="Admin dashboard" width="50%" height="50%"><br>
+<img src="../skeleton/desktop_wireframes/admin_bewerken_order.png" alt="Admin details" width="50%" height="50%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
 **<details><summary>Profile</summary>**
 <img src="../skeleton/desktop_wireframes/profiel.png" alt="Profiel" width="50%" height="50%">
 <div align="right"><a href="#top">🔝</a></div>
@@ -44,8 +59,6 @@ The desktop wireframes are listed below per section.<br>
 <img src="../skeleton/desktop_wireframes/kleur.png" alt="Kleur" width="50%" height="50%"><br>
 <img src="../skeleton/desktop_wireframes/lettercontouren.png" alt="Lettercontouren" width="50%" height="50%"><br>
 <img src="../skeleton/desktop_wireframes/opmaak_folie.png" alt="Opmaak folie" width="50%" height="50%"><br>
-<img src="../skeleton/desktop_wireframes/opmaak_preeg.png" alt="Opmaak preeg" width="50%" height="50%"><br>
-<img src="../skeleton/desktop_wireframes/opmaak_spotuv.png" alt="opmaak spot-uv" width="50%" height="50%"><br>
 <img src="../skeleton/desktop_wireframes/overprint.png" alt="Overprint" width="50%" height="50%"><br>
 <img src="../skeleton/desktop_wireframes/resolutie.png" alt="Resolutie" width="50%" height="50%"><br>
 <img src="../skeleton/desktop_wireframes/templates.png" alt="Templates" width="50%" height="50%"><br>
@@ -88,6 +101,8 @@ The desktop wireframes are listed below per section.<br>
 
 Desktop wireframe overview <br>
 <img src="../skeleton//preview_desktop.png" alt="Desktop" width="50%" height="50%"><br>
+<div align="right"><a href="#top">🔝</a></div>
+<br>
 
 The tablet wireframes are listed below per section.<br>
 **<details><summary>Home</summary>**
@@ -96,8 +111,9 @@ The tablet wireframes are listed below per section.<br>
 </details>
 
 **<details><summary>Products</summary>**
-<img src="../skeleton/tablet_wireframes/products.png" alt="Products" width="50%" height="50%"><br>
-<img src="../skeleton/tablet_wireframes/flyers.png" alt="Flyers" width="50%" height="50%">
+<img src="../skeleton/tablet_wireframes/all_products.png" alt="All products" width="50%" height="50%"><br>
+<img src="../skeleton/tablet_wireframes/flyers_300gr_mat.png" alt="Flyers 300gr Mat" width="50%" height="50%"><br>
+<img src="../skeleton/tablet_wireframes/flyers_300gr_mat_a5.png" alt="Flyers 300gr Mat A5" width="50%" height="50%">
 <div align="right"><a href="#top">🔝</a></div>
 </details>
 
@@ -118,6 +134,12 @@ The tablet wireframes are listed below per section.<br>
 <div align="right"><a href="#top">🔝</a></div>
 </details>
 
+**<details><summary>Admin Dashboard</summary>**
+<img src="../skeleton/tablet_wireframes/admin_dashboard.png" alt="Admin dashboard" width="50%" height="50%"><br>
+<img src="../skeleton/tablet_wireframes/admin_order_details.png" alt="Admin order details" width="50%" height="50%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
 **<details><summary>Profile</summary>**
 <img src="../skeleton/tablet_wireframes/profile.png" alt="Profile" width="50%" height="50%">
 <div align="right"><a href="#top">🔝</a></div>
@@ -133,8 +155,6 @@ The tablet wireframes are listed below per section.<br>
 <img src="../skeleton/tablet_wireframes/color.png" alt="color" width="50%" height="50%"><br>
 <img src="../skeleton/tablet_wireframes/outlines.png" alt="Outlines" width="50%" height="50%"><br>
 <img src="../skeleton/tablet_wireframes/foil.png" alt="Foil" width="50%" height="50%"><br>
-<img src="../skeleton/tablet_wireframes/embossing.png" alt="Embossing" width="50%" height="50%"><br>
-<img src="../skeleton/tablet_wireframes/spotuv.png" alt="Spot UV" width="50%" height="50%"><br>
 <img src="../skeleton/tablet_wireframes/overprint.png" alt="Overprint" width="50%" height="50%"><br>
 <img src="../skeleton/tablet_wireframes/resolution.png" alt="Resolution" width="50%" height="50%"><br>
 <img src="../skeleton/tablet_wireframes/templates.png" alt="Templates" width="50%" height="50%"><br>
@@ -178,6 +198,7 @@ The tablet wireframes are listed below per section.<br>
 Tablet wireframe overview <br>
 <img src="../skeleton//preview_tablet.png" alt="Tablet" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
+<br>
 
 The mobile wireframes are listed below per section.<br>
 **<details><summary>Home</summary>**
@@ -186,8 +207,9 @@ The mobile wireframes are listed below per section.<br>
 </details>
 
 **<details><summary>Products</summary>**
-<img src="../skeleton/mobile_wireframes/products.png" alt="Products" width="50%" height="50%"><br>
-<img src="../skeleton/mobile_wireframes/flyers.png" alt="Flyers" width="50%" height="50%">
+<img src="../skeleton/mobile_wireframes/all_products.png" alt="All products" width="50%" height="50%"><br>
+<img src="../skeleton/mobile_wireframes/flyers_300gr_mat.png" alt="Flyers 300gr Mat" width="50%" height="50%"><br>
+<img src="../skeleton/mobile_wireframes/flyers_300gr_mat_a5.png" alt="Flyers 300gr Mat A5" width="50%" height="50%">
 <div align="right"><a href="#top">🔝</a></div>
 </details>
 
@@ -208,6 +230,12 @@ The mobile wireframes are listed below per section.<br>
 <div align="right"><a href="#top">🔝</a></div>
 </details>
 
+**<details><summary>Admin Dashboard</summary>**
+<img src="../skeleton/mobile_wireframes/admin_dashboard.png" alt="Admin dashboard" width="50%" height="50%"><br>
+<img src="../skeleton/mobile_wireframes/admin_order_details.png" alt="Admin order details" width="50%" height="50%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
 **<details><summary>Profile</summary>**
 <img src="../skeleton/mobile_wireframes/profile.png" alt="Profile" width="50%" height="50%">
 <div align="right"><a href="#top">🔝</a></div>
@@ -223,8 +251,6 @@ The mobile wireframes are listed below per section.<br>
 <img src="../skeleton/mobile_wireframes/color.png" alt="color" width="50%" height="50%"><br>
 <img src="../skeleton/mobile_wireframes/outlines.png" alt="Outlines" width="50%" height="50%"><br>
 <img src="../skeleton/mobile_wireframes/foil.png" alt="Foil" width="50%" height="50%"><br>
-<img src="../skeleton/mobile_wireframes/embossing.png" alt="Embossing" width="50%" height="50%"><br>
-<img src="../skeleton/mobile_wireframes/spotuv.png" alt="Spot UV" width="50%" height="50%"><br>
 <img src="../skeleton/mobile_wireframes/overprint.png" alt="Overprint" width="50%" height="50%"><br>
 <img src="../skeleton/mobile_wireframes/resolution.png" alt="Resolution" width="50%" height="50%"><br>
 <img src="../skeleton/mobile_wireframes/templates.png" alt="Templates" width="50%" height="50%"><br>
@@ -268,8 +294,14 @@ The mobile wireframes are listed below per section.<br>
 Mobile wireframes <br>
 <img src="../skeleton/preview_mobile.png" alt="Mobile" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
+<br>
 
 Django diagram model<br>
+The ERD diagram explains the intent for the django backend.
+When you have a user profile you can save your data there and the next time you order it will be preloaded, the customer is connected to the user. 
+You can also choose to override the default delivery address by changing it in the checkout process and for example, to deliver it to an office address.
+In a future update, it should be an option to store multiple delivery and billing addresses for one user.
+The order is connected to the order item, so that the price for a product is changed by the admin, the prices of the already placed orders will not change.
 <img src="../skeleton//postfly_django_diagram_model.png" alt="Data Model" width="65%" height="65%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -277,5 +309,5 @@ Django diagram model<br>
 
 The following main colors have been used:<br>
 <img src="../skeleton//red.png" alt="Red" width="25%" height="25%"><img src="../skeleton//dark_grey.png" alt="Dark Grey"  width="25%" height="25%"><img src="../skeleton//off_white.png" alt="Off White"  width="25%" height="25%"><br>
-These colors have been chosen because they are part of the corporate identity.
+These colors have been chosen because they are part of the corporate identity. These colors suit the company, so it was decided to continue to use this, but to abandon the other colors of the current site.
 <div align="right"><a href="#top">🔝</a></div>
