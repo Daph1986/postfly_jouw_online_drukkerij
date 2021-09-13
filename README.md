@@ -70,27 +70,8 @@ This is meant to be a B2B site which targets visitors who are in need of printed
 
 ### User stories
 
-##### User Goals
-
-- As a user I want to see a clear overview of the possibilities, what can I order. (All products page / Menu -> products)
-- As a user I want to see in advance what the costs will be and when it can be delivered. (Product page)
-- As a user I want to be able to ask questions if something is not clear. (Contact form)
-- As a user I want to be able to ask for a quotation if a product is not on the site, but maybe in the collection. (Quatation form)
-- As a user I want to be able to see the different kinds of paper. (Sample kit form)
-- As a user I want to be able to go through the ordering process in a simple way. (Shopping bag / Checkout)
-- As a user I want to be able to upload my own artwork. (Checkout)
-- As a user I want to have easy acces to my cart, and to be able to delete products that are in the cart, as long as the order isn't put through yet. (Shopping cart)
-- As a user I want to receive a clear order confirmation with a description of what I ordered. (Confirmation email)
-- As a user I want to be able to see a secured overview of my order history. (Dashboard)
-- As a user I want to have my details filled out in advance, but also be able to change them if needed. (Profile)
-- As a user I want to be able to choose the language. (Dutch or English)
-
-##### Site Owners Goals
-
-- As an employee I want to be able to see a clear overview of the order placed by the customer. (Admin dashboard / Admin order details)
-- As an employee I want to be able to change the status of an order (Admin order details)
-- As an employee I want to be able to updated or delete products of the site. (Admin)
-- As an employee I want to be able to download the artwork that was uploaded. (Admin order details)
+<img src="readme/general/user_stories.png" alt="User stories" width="85%" height="85%"><br>
+<div align="right"><a href="#top">🔝</a></div>
 
 ### Strategy
 
