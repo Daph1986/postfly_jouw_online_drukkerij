@@ -70,7 +70,7 @@ This is meant to be a B2B site which targets visitors who are in need of printed
 
 ### User stories
 
-<img src="readme/general/user_stories.png" alt="User stories" width="85%" height="85%"><br>
+<img src="readme/general/user_stories.png" alt="User stories" width="100%" height="100%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Strategy
