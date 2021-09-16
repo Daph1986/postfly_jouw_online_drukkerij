@@ -1,0 +1,25 @@
+/* ------------------ Styling for gerneral use ------------------- */
+body {
+  color: #000;
+  font-family: 'Poppins';
+}
+
+/* --------------------------- Navbar ---------------------------- */
+.bg-grey {
+  background-color: #EFEFEF;
+}
+
+.btn-white {
+  background: #FFF;
+  color: #000;
+}
+
+.dropdown-item {
+  padding: .25rem 2rem;
+}
+
+.dropdown-menu:focus, .dropdown-menu:hover,
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1e2125;
+  background-color: #e72f4b93;
+}

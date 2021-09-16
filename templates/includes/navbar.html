@@ -1,0 +1,135 @@
+{% load static %}
+
+<!-- Navbar -->
+<nav class="navbar navbar-light navbar-expand-xl bg-grey">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-3" href="{% url 'home' %}">
+      <img src="{% static 'img/paper_plane_logo.png' %}" alt="Paper Plane Logo" width="35" height="35">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"       aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header bg-grey">
+        <img src="{% static 'img/paper_plane_logo.png' %}" alt="Paper Plane Logo" width="35" height="35">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body bg-grey">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'home' %}">
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown"">
+              <li><a href="#" class="dropdown-item">Flyers 300 gr Mat</a></li>
+              <li><a href="#" class="dropdown-item">Flyers 300 gr ECO</a></li>
+              <li><a href="#" class="dropdown-item ">Flyers 170 gr ECO</a></li>
+              <li><a href="#" class="dropdown-item">Flyers 135 gr Gloss</a></li>
+              <li><a href="#" class="dropdown-item">Poster 135 gr Gloss</a></li>
+              <li><a href="#" class="dropdown-item">Poster 115 gr Blueback</a></li>
+              <li><a href="#" class="dropdown-item">Business cards 400 gr Mat</a></li>
+              <li><a href="#" class="dropdown-item">Business cards Cold Foil</a></li>
+              <li><a href="#" class="dropdown-item">All products</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Files
+            </a>
+            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a href="#" class="dropdown-item">Specifications</a></li>
+              <li><a href="#" class="dropdown-item">Bleed</a></li>
+              <li><a href="#" class="dropdown-item">File type</a></li>
+              <li><a href="#" class="dropdown-item">Deep black</a></li>
+              <li><a href="#" class="dropdown-item">Ink coverage</a></li>
+              <li><a href="#" class="dropdown-item">Jop obtions</a></li>
+              <li><a href="#" class="dropdown-item">Color</a></li>
+              <li><a href="#" class="dropdown-item">Outlines</a></li>
+              <li><a href="#" class="dropdown-item">Foil</a></li>
+              <li><a href="#" class="dropdown-item">Overprint</a></li>
+              <li><a href="#" class="dropdown-item">Resolution</a></li>
+              <li><a href="#" class="dropdown-item">Templates</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="#">
+              FAQ
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About us
+            </a>
+              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown"down">
+                <li><a href="#" class="dropdown-item">Team</a></li>
+                <li><a href="#" class="dropdown-item">Printing in-house</a></li>
+                <li><a href="#" class="dropdown-item">Our concept</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contact
+            </a>
+              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">  
+                <li><a href="#" class="dropdown-item">Contact us</a></li>
+                <li><a href="#" class="dropdown-item">Free sample kit</a></li>
+                <li><a href="#" class="dropdown-item">Quotation request</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="#">
+                  <i class="fas fa-user"></i> Register
+            </a>
+          </li>
+          {% if request.user.is_authenticated %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user-lock"></i> Account
+              </a>
+              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
+                <li><a href="#" class="dropdown-item">Dashboard</a></li>
+                <li><a href="#" class="dropdown-item">Profile</a></li>
+                <li><a href="#" class="dropdown-item">Log out</a></li>
+              </ul>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link text-black ms-lg-2 ms-xl-4" href="#">
+                <i class="fas fa-user-lock"></i> Log in
+              </a>
+            </li>
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link text-black ms-lg-5" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+        </ul>
+        <div class=" my-auto py-1 py-lg-0">
+          <form method="GET" action="">
+            <div class="input-group w-100">
+              <input class="form-control border-black rounded-0" type="search" name="q" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="form-control btn btn-white border border-black rounded-0" type="submit">
+                    <span class="icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </button>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+
+
+  
+  
