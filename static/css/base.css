@@ -5,6 +5,11 @@ body {
 }
 
 /* --------------------------- Navbar ---------------------------- */
+.pp-logo {
+  width: 35px; 
+  height: 35px;
+}
+
 .bg-grey {
   background-color: #EFEFEF;
 }
@@ -18,7 +23,6 @@ body {
   padding: .25rem 2rem;
 }
 
-.dropdown-menu:focus, .dropdown-menu:hover,
 .dropdown-item:focus, .dropdown-item:hover {
   color: #1e2125;
   background-color: #e72f4b93;
