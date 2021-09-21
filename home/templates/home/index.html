@@ -4,11 +4,31 @@
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
-            <div class="col"></div>
+            <div class="col">
+                <img src="{% static 'img/logo.png' %}" class="img-fluid mx-auto d-block" alt="POSTFLY logo">
+            </div>
+        </div>
+    </div>
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col my-auto">
+                <img src="{% static 'img/foil.png' %}" class="img-fluid mx-auto d-block" alt="POSTFLY Placeholder">
+            </div>
+        </div>
+        <div class="row mt-5 mb-10">
+            <div class="col-md-4 col-sm-12 text-center">
+                <a href="#" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Free sample kit</a>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <a href="#" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Shop now</a>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <a href="#" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Request Quottion</a>
+            </div>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
-  <h1 class="display-4 text-success">It works!</h1>
+
 {% endblock %}
