@@ -4,6 +4,10 @@ body {
   font-family: 'Poppins';
 }
 
+.mb-10 {
+  margin-bottom: 150px;
+}
+
 /* --------------------------- Navbar ---------------------------- */
 .pp-logo {
   width: 35px; 
@@ -26,4 +30,43 @@ body {
 .dropdown-item:focus, .dropdown-item:hover {
   color: #1e2125;
   background-color: #e72f4b93;
+}
+
+/* --------------------------- Buttons --------------------------- */
+
+.postfly-general-btn {
+  background-color: #E72F4C;
+  color: #FFF;
+  width: 200px;
+  border-radius: 25px;
+}
+
+/* --------------------------- Footer ---------------------------- */
+footer {
+  padding: 0.8rem;
+  background-color: #EFEFEF;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.pp-footer-logo {
+  width: 200px; 
+}
+
+.footer_icons {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.footer-copyright {
+  font-size: 10px;
+}
+
+/* ----------------------- Media queries ------------------------- */
+@media (max-width: 767.98px) {
+  .mb-10 {
+    margin-bottom: 200px;
+  }
 }
