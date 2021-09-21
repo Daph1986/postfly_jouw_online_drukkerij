@@ -82,7 +82,7 @@
               </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="#">
+            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
                   <i class="fas fa-user"></i> Register
             </a>
           </li>
@@ -94,19 +94,26 @@
               <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
                 <li><a href="#" class="dropdown-item">Dashboard</a></li>
                 <li><a href="#" class="dropdown-item">Profile</a></li>
-                <li><a href="#" class="dropdown-item">Log out</a></li>
+                <li><a href="{% url 'account_logout' %}" class="dropdown-item">Log out</a></li>
               </ul>
             </li>
           {% else %}
             <li class="nav-item">
-              <a class="nav-link text-black ms-lg-2 ms-xl-4" href="#">
+              <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_login' %}">
                 <i class="fas fa-user-lock"></i> Log in
               </a>
             </li>
           {% endif %}
           <li class="nav-item">
-            <a class="nav-link text-black ms-lg-2 ms-xl-5" href="#">
-              <i class="fas fa-shopping-cart"></i>
+            <a class="{% if grand_total %}font-weight-bold{% else %}{% endif %} nav-link text-black ms-lg-2 ms-xl-5" href="#">
+              <div>
+                <i class="fas fa-shopping-cart"></i>
+                  {% if grand_total %}
+                    €{{ grand_total|floatformat:2 }}
+                  {% else %}
+                    €0.00
+                  {% endif %}
+              </div>
             </a>
           </li>
         </ul>
