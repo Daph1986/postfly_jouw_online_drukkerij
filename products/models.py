@@ -50,7 +50,7 @@ class Size(models.Model):
     )
 
     name = models.CharField(max_length=50)
-    method = models.CharField(
+    size = models.CharField(
         choices=SIZE, max_length=50)
 
     def __str__(self):
@@ -61,16 +61,16 @@ class ProductTag(models.Model):
     """
     A model for product tags with selectable Bootstrap colors.
     """
-    PRODUCT_TAG = (
+    TAG_COLORS = (
         ('danger', 'Red'),
-        ('succes', 'Green'),
+        ('success', 'Green'),
         ('primary', 'Blue'),
         ('warning', 'Yellow')
     )
 
     name = models.CharField(max_length=50)
-    method = models.CharField(
-        choices=PRODUCT_TAG, max_length=50)
+    color = models.CharField(
+        choices=TAG_COLORS, max_length=50)
 
     def __str__(self):
         return self.name

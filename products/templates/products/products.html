@@ -5,17 +5,31 @@
     <div class="container header-container">
         <div class="row">
             <div class="col">
+              <h2 class="text-center mt-5">All products</h2>
             </div>
         </div>
     </div>
 {% endblock %}
 
 {% block content %}
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        {{ products }}
-      </div>
+  <div class="container-fluid col-10 offset-1">
+    <div class="row mt-5 mb-2"></div>
+    <div class="row mb-10">
+      {% for product in products %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
+          <div class="card custom-card text-center border-1 h-100">
+            <div class="card-body">
+              <h5 class="card-title mt-3 mb-3">{{ product.name }}</h5>
+              <span class="badge rounded-pill bg-{{ product.product_tag.color }} card-badge mb-3">{{ product.product_tag }}</span>
+              <p class="card-text stand-out">Delivery time {{ product.delivery_time }} business days</p>
+              <p class="card-text">{{ product.method }}</p>
+              <p class="card-text">{{ product.quantity }} pieces</p>
+              <p class="card-text stand-out">€{{ product.price }}</p>
+              <a href="#" class="btn postfly-general-btn mb-3">Add to shopping cart</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
     </div>
   </div>
 {% endblock %}
