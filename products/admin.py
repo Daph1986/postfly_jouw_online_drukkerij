@@ -7,14 +7,23 @@ class ProductAdmin(admin.ModelAdmin):
         'sku',
         'name',
 		'category',
-        'price'
+        'price',
     )
 
     ordering = ('sku',)
 
 
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
+
+    ordering = ('friendly_name',)
+
+
 admin.site.register(Product, ProductAdmin)
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)
 admin.site.register(PrintingMethod)
 admin.site.register(Size)
 admin.site.register(ProductTag)
