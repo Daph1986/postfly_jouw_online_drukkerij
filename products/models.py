@@ -52,6 +52,7 @@ class Size(models.Model):
     name = models.CharField(max_length=50)
     size = models.CharField(
         choices=SIZE, max_length=50)
+    image = models.ImageField(upload_to='images', null=True, blank=True)
 
     def __str__(self):
         return self.name
