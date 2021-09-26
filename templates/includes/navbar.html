@@ -34,7 +34,7 @@
               <li><a href="#" class="dropdown-item">Poster 115 gr Blueback</a></li>
               <li><a href="#" class="dropdown-item">Business cards 400 gr Mat</a></li>
               <li><a href="#" class="dropdown-item">Business cards Cold Foil</a></li>
-              <li><a href="#" class="dropdown-item">All products</a></li>
+              <li><a href="{% url 'products' %}" class="dropdown-item">All products</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -118,7 +118,7 @@
           </li>
         </ul>
         <div class=" my-auto py-1 py-lg-0">
-          <form method="GET" action="">
+          <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
               <input class="form-control border-black rounded-0" type="search" name="q" placeholder="Search" aria-label="Search">
                 <div class="input-group-append">
