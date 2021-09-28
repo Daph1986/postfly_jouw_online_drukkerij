@@ -35,21 +35,23 @@ body {
 .dropdown-menu li {
   position: relative;
 }
+
 .dropdown-menu .dropdown-submenu {
   display: none;
   position: absolute;
-  left: 60%;
+  left: 100%;
   top: -7px;
   background-color: #fd9696;
+  min-width: 1rem;
+  border-radius: 0px;
 }
 .dropdown-menu .dropdown-submenu-left {
-  right: 100%;
+  right: 50%;
   left: auto;
 }
 .dropdown-menu > li:hover > .dropdown-submenu {
   display: block;
 }
-
 
 /* --------------------------- Buttons --------------------------- */
 
@@ -112,5 +114,11 @@ footer a {
 @media (max-width: 767.98px) {
   .mb-10 {
     margin-bottom: 200px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .dropdown-menu .dropdown-submenu {
+    left: 76%;
   }
 }
