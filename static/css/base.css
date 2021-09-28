@@ -8,6 +8,15 @@ body {
   margin-bottom: 150px;
 }
 
+.bg-category {
+  background-color: #E72F4C;
+}
+
+.custom-sort-selector {
+  width: 225px;
+  border-color: #707070;
+}
+
 /* --------------------------- Navbar ---------------------------- */
 .pp-logo {
   width: 35px; 
