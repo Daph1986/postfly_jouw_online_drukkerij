@@ -33,6 +33,13 @@
           </li>
         </ul>
       </div>
+      <button type="button" onclick="goToTop()" class="btn gtt-btn rounded-5" id="goToTopBtn">
+        <i class="fas fa-arrow-up text-white mx-auto my-auto"></i>
+      </button>
     </div>
   </div>
 </footer>
+
+{% block postloadjs %}
+  <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}

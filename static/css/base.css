@@ -71,6 +71,23 @@ body {
   border-radius: 25px;
 }
 
+.gtt-btn {
+  display: none;
+  z-index: 99;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  bottom: 25px;
+  right: 50px;
+  border-radius: 100%;
+  background-color: #E72F4C;
+  cursor: pointer;
+}
+
+.gtt-btn:hover {
+  background-color: #af2439;
+}
+
 /* ---------------------------- Cards ---------------------------- */
 
 .stand-out {
