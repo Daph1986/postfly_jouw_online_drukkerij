@@ -2,13 +2,16 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
+    <div class="container">
         <div class="row">
             <div class="col">
                 <img src="{% static 'img/logo.png' %}" class="img-fluid mx-auto d-block" alt="POSTFLY logo">
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block content %}
     <div class="container h-100">
         <div class="row h-100">
             <div class="col my-auto">
@@ -27,8 +30,4 @@
             </div>
         </div>
     </div>
-{% endblock %}
-
-{% block content %}
-
 {% endblock %}
