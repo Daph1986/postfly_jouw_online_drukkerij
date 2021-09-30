@@ -21,10 +21,12 @@
 
     <div class="row ms-5 mb-10">
       <div class="col">
-        {% if bag_items %}
-          <div class="table-responsive rounded"></div>
+        {% if cart_items %}
+          <div class="table-responsive rounded">
+            {{ cart_items }}
+          </div>
         {% else %}
-          <p class="lead mb-5">Your bag is empty.</p>
+          <p class="lead mb-5">Your cart is empty.</p>
           <a href="{% url 'products' %}" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Continue shopping</a>
         {% endif %}
       </div>
