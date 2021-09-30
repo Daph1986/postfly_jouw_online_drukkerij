@@ -209,7 +209,7 @@
             </li>
           {% endif %}
           <li class="nav-item">
-            <a class="{% if grand_total %}font-weight-bold{% else %}{% endif %} nav-link text-black ms-lg-2 ms-xl-5" href="{% url 'view_cart' %}">
+            <a class="{% if grand_total %}fw-bold text-danger{% else %}{% endif %} nav-link ms-lg-2 ms-xl-5" href="{% url 'view_cart' %}">
               <div>
                 <i class="fas fa-shopping-cart"></i>
                   {% if grand_total %}
