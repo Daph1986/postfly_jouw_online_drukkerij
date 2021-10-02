@@ -23,7 +23,52 @@
       <div class="col">
         {% if cart_items %}
           <div class="table-responsive rounded">
-            {{ cart_items }}
+            <table class="table table-sm table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Delivery time</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Subtotal</th>
+                </tr>
+              </thead>
+
+              {% for item in cart_items %}
+                <tr>
+                  <td class="py-3">
+                    <p class="my-0"><strong>{{ item.product.name }} {{ item.product.size }}</strong></p>
+                  </td>
+                  <td class="py-3">
+                    <p class="my-0">{{ item.product.delivery_time }} business days</p>
+                  </td>
+                  <td class="py-3 w-15">
+                    <p class="my-0">{{ item.product.quantity }} pieces</p>
+                  </td>
+                  <td class="py-3">
+                    <p class="my-0">€{{ item.product.price }}</p>
+                  </td>
+                  <td class="py-3">
+                    <p class="my-0">€{{ item.product.price }}</p>
+                  </td>
+                </tr>
+              {% endfor %}
+              <tr>
+                <td colspan="5" class="pt-5 text-end">
+                  <h5 class="me-3 mb-3">Price overview</h5>
+                  <h6 class="me-3">Cart total: €{{total|floatformat:2 }}</h6>
+                  <h6 class="me-3">VAT: €{{ tax|floatformat:2 }}</h6>
+                  <hr class="me-3 float-end">
+                  <h4 class="mt-5 me-3"><strong>Grand total: €{{grand_total|floatformat:2 }}</strong></h4>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" class="pt-5 text-center">
+                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3">Keep shopping</a>
+                  <a href="" class="btn postfly-general-btn mb-3 ms-5">Secure checkout</a>
+                </td>
+              </tr>
+            </table>
           </div>
         {% else %}
           <p class="lead mb-5">Your cart is empty.</p>
