@@ -27,17 +27,20 @@
               <thead>
                 <tr>
                   <th scope="col">Product</th>
+                  <th scope="col">Printing method</th>
                   <th scope="col">Delivery time</th>
                   <th scope="col">Qty</th>
                   <th scope="col">Price</th>
-                  <th scope="col">Subtotal</th>
                 </tr>
               </thead>
 
               {% for item in cart_items %}
                 <tr>
                   <td class="py-3">
-                    <p class="my-0"><strong>{{ item.product.name }} {{ item.product.size }}</strong></p>
+                    <p class="my-0">{{ item.product.name }} {{ item.product.size }}</p>
+                  </td>
+                  <td class="py-3">
+                    <p class="my-0">{{ item.product.method }}</p>
                   </td>
                   <td class="py-3">
                     <p class="my-0">{{ item.product.delivery_time }} business days</p>
@@ -48,8 +51,8 @@
                   <td class="py-3">
                     <p class="my-0">€{{ item.product.price }}</p>
                   </td>
-                  <td class="py-3">
-                    <p class="my-0">€{{ item.product.price }}</p>
+                  <td>
+                    <a class="delete-product btn postfly-small-btn mb-3 ms-5" id="delete_{{ item.product_id }}"><small>Delete <i class="far fa-trash-alt"></i></small></a>
                   </td>
                 </tr>
               {% endfor %}
@@ -77,4 +80,9 @@
       </div>
     </div>
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+  {{ block.super }}
+  <script src="{% static 'js/bag.js' %}"></script>
 {% endblock %}

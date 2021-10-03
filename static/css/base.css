@@ -71,6 +71,13 @@ body {
   border-radius: 25px;
 }
 
+.postfly-small-btn {
+  background-color: #E72F4C;
+  color: #FFF;
+  width: 100px;
+  border-radius: 25px;
+}
+
 .gtt-btn {
   display: none;
   z-index: 99;
