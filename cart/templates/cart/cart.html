@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div class="container">
+    <div class="row">
+        <div class="col text-center">
+          <h2 class="mt-5">Shopping cart</h2>
+        </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="container mb-10">
+    <div class="row ms-5">
+        <div class="col">
+            <h5 class="mt-5 mb-5">Order overview</h5>
+        </div>
+    </div>
+
+    <div class="row ms-5 mb-10">
+      <div class="col">
+        {% if cart_items %}
+          <div class="table-responsive rounded">
+            <table class="table table-sm table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">Product</th>
+                  <th scope="col">Printing method</th>
+                  <th scope="col">Delivery time</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+
+              {% for item in cart_items %}
+                <tr>
+                  <td class="py-3">
+                    <p class="my-0">{{ item.product.name }} {{ item.product.size }}</p>
+                  </td>
+                  <td class="py-3">
+                    <p class="my-0">{{ item.product.method }}</p>
+                  </td>
+                  <td class="py-3">
+                    <p class="my-0">{{ item.product.delivery_time }} business days</p>
+                  </td>
+                  <td class="py-3 w-15">
+                    <p class="my-0">{{ item.product.quantity }} pieces</p>
+                  </td>
+                  <td class="py-3">
+                    <p class="my-0">€{{ item.product.price }}</p>
+                  </td>
+                  <td>
+                    <a class="delete-product btn postfly-small-btn mb-3 ms-5" id="delete_{{ item.product_id }}"><small><i class="far fa-trash-alt"></i></small></a>
+                  </td>
+                </tr>
+              {% endfor %}
+              <tr>
+                <td colspan="5" class="pt-5 text-end">
+                  <h5 class="me-3 mb-3">Price overview</h5>
+                  <h6 class="me-3">Cart total: €{{total|floatformat:2 }}</h6>
+                  <h6 class="me-3">VAT: €{{ tax|floatformat:2 }}</h6>
+                  <hr class="me-3 float-end">
+                  <h4 class="mt-5 me-3"><strong>Grand total: €{{grand_total|floatformat:2 }}</strong></h4>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="5" class="pt-5 text-center">
+                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3">Keep shopping</a>
+                  <a href="" class="btn postfly-general-btn mb-3 ms-5">Secure checkout</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        {% else %}
+          <p class="lead mb-5">Your cart is empty.</p>
+          <a href="{% url 'products' %}" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Continue shopping</a>
+        {% endif %}
+      </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+  {{ block.super }}
+  <script>
+    $('.delete-product').click(function(e) {
+      let csrfToken = "{{ csrf_token }}";
+      let productId = $(this).attr('id').split('delete_')[1];
+      let url = `/cart/delete/${productId}/`;
+      let data = {'csrfmiddlewaretoken': csrfToken};
+
+      $.post(url, data)
+        .done(function() {
+          location.reload();
+        });
+    });
+  </script>
+{% endblock %}

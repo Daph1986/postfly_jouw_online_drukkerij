@@ -1,7 +1,7 @@
 {% load static %}
 
 <!-- Navbar -->
-<nav class="navbar navbar-light navbar-expand-xl bg-grey">
+<nav class="navbar navbar-expand-xl bg-grey">
   <div class="container-fluid">
     <a class="navbar-brand ms-3" href="{% url 'home' %}">
       <img class="pp-logo" src="{% static 'img/paper_plane_logo.png' %}" alt="Paper Plane Logo">
@@ -209,7 +209,7 @@
             </li>
           {% endif %}
           <li class="nav-item">
-            <a class="{% if grand_total %}font-weight-bold{% else %}{% endif %} nav-link text-black ms-lg-2 ms-xl-5" href="#">
+            <a class="{% if grand_total %}fw-bold text-danger{% else %}text-black{% endif %} nav-link ms-lg-2 ms-xl-5" href="{% url 'view_cart' %}">
               <div>
                 <i class="fas fa-shopping-cart"></i>
                   {% if grand_total %}
