@@ -1,4 +1,6 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, HttpResponse, get_object_or_404
+from django.contrib import messages
+from products.models import Product
 
 
 def view_cart(request):
@@ -8,7 +10,7 @@ def view_cart(request):
 
 
 def add_to_cart(request, product_id):
-    """Add a product to the shopping bag"""
+    """Add a product to the shopping cart"""
 
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -21,3 +23,22 @@ def add_to_cart(request, product_id):
 
     request.session['cart'] = cart
     return redirect(redirect_url)
+
+
+def delete_from_cart(request, product_id):
+    """Deleting a product from the shopping cart"""
+
+    try:
+        product = get_object_or_404(Product, pk=product_id)
+        cart = request.session.get('cart', {})
+        cart.pop(product_id)
+        messages.success(
+            request, f'{product.name} successfully removed from your cart')
+
+        request.session['cart'] = cart
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        messages.error(
+            request, f'Error while deleting product {e}')
+        return HttpResponse(status=500)

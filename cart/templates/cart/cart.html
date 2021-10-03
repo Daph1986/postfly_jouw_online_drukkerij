@@ -84,5 +84,17 @@
 
 {% block postloadjs %}
   {{ block.super }}
-  <script src="{% static 'js/bag.js' %}"></script>
+  <script>
+    $('.delete-product').click(function(e) {
+      let csrfToken = "{{ csrf_token }}";
+      let productId = $(this).attr('id').split('delete_')[1];
+      let url = `/cart/delete/${productId}/`;
+      let data = {'csrfmiddlewaretoken': csrfToken};
+
+      $.post(url, data)
+        .done(function() {
+          location.reload();
+        });
+    });
+  </script>
 {% endblock %}
