@@ -1,0 +1,1 @@
+[{"model": "products.printingmethod", "pk": 3, "fields": {"name": "4/0 CMYK Printed on one side", "method": "one_sided"}}, {"model": "products.printingmethod", "pk": 4, "fields": {"name": "4/4 CMYK Printed on both sides", "method": "double_sided"}}]
