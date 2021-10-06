@@ -2,32 +2,42 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="{% static 'img/logo.png' %}" class="img-fluid mx-auto d-block" alt="POSTFLY logo">
-            </div>
-        </div>
+  <div class="p-5 mb-5 hero-home">
+    <h1 class="text-uppercase fs-3 fw-bolder p-5 home-sm">Our products</h1>
+    <div class="py-2 p-5">
+      <a href="{% url 'products' %}" class="btn btn-lg postfly-home-btn btn-dark text-uppercase hvr-grow">Shop Now</a>
     </div>
+  </div>
+  <div class="row d-none d-sm-block">
+    <div class="col">
+      <img src="{% static 'img/logo.png' %}" class="mx-auto d-block logo logo-overlay" alt="POSTFLY logo">
+    </div>
+  </div>
+  <div class="row text-center mb-5 banner">
+    <div class="col bg-category text-white">
+      <h4 class="logo-font my-1">Delivery to 1 address in the Netherlands is included in your order!</h4>                
+    </div>            
+  </div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col my-auto">
-                <img src="{% static 'img/foil.png' %}" class="img-fluid mx-auto d-block" alt="POSTFLY Placeholder">
-            </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <img src="{% static '/img/home/sample.png' %}" alt="Free sample kit" class="img-thumbnail border-danger border-2">
+        <h1 class="text-uppercase mt-3 ms-3 fs-3 fw-bolder text-postfly">Our papers</h1>
+        <div class="py-2">
+          <a href="#" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">Free sample kit</a>
         </div>
-        <div class="row mt-5 mb-10">
-            <div class="col-md-4 col-sm-12 text-center">
-                <a href="#" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Free sample kit</a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a href="#" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Shop now</a>
-            </div>
-            <div class="col-md-4 col-sm-12 text-center">
-                <a href="#" class="btn postfly-general-btn my-3 my-md-5 active" role="button" data-bs-toggle="button">Request Quottion</a>
-            </div>
-        </div>
+      </div>
+			<div class="row mobile-mb d-block d-sm-none"></div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <img src="{% static '/img/home/press.png' %}" alt="Meet the team" class="img-thumbnail border-danger border-2">
+				<h1 class="text-uppercase mt-3 ms-3 fs-3 fw-bolder text-postfly">About us</h1>
+          <div class="py-2 mb-10">
+            <a href="#" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">Printing house</a>
+          </div>
+      </div>
     </div>
+  </div>
 {% endblock %}

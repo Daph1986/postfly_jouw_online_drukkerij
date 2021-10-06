@@ -63,6 +63,9 @@ body {
 }
 
 /* --------------------------- Buttons --------------------------- */
+.postfly-home-btn {
+  border-radius: 25px;
+}
 
 .postfly-general-btn {
   background-color: #E72F4C;
@@ -95,8 +98,55 @@ body {
   background-color: #af2439;
 }
 
-/* ---------------------------- Cards ---------------------------- */
+/* ---------------------------- Home ----------------------------- */
+.logo {
+  max-width: 20%;
+  position: absolute;
+  margin: auto;
+  display: block;
+  top: 61px;
+  left: 50;
+  right: 0;
+}
 
+.logo-overlay {
+  background: rgba(255, 255, 255, 0.377);
+}
+
+.hero-home {
+  background-image: url('/static/img/home/foil.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.text-postfly {
+  color: #E72F4C;
+}
+
+.row.banner {
+  --bs-gutter-x: 0;
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+/* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
 }
@@ -121,7 +171,6 @@ body {
 }
 
 /* ----------------------- Shopping cart ------------------------- */
-
 hr:not([size]) {
   width: 200px;
 }
@@ -150,14 +199,29 @@ footer a {
 }
 
 /* ----------------------- Media queries ------------------------- */
-@media (max-width: 767.98px) {
-  .mb-10 {
-    margin-bottom: 200px;
-  }
-}
-
 @media (max-width: 1199.98px) {
   .dropdown-menu .dropdown-submenu {
     left: 76%;
+  }
+  .hero-home {
+    height: 400px;
+  }
+  .banner h4 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .mb-10 {
+    margin-bottom: 250px;
+  }
+  .mobile-mb {
+    margin-bottom: 50px;
+  }
+  .home-sm {
+    background-color:rgba(255, 255, 255, 0.432);
+  }
+  .hero-home {
+    height: 250px;
   }
 }
