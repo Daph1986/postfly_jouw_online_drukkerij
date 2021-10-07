@@ -36,3 +36,9 @@ def ink_coverage(request):
     """View to return files ink coverage page"""
 
     return render(request, 'home/ink.html')
+
+
+def job_options(request):
+    """View to return files job options page"""
+
+    return render(request, 'home/joboptions.html')

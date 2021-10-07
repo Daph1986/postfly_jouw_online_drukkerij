@@ -8,4 +8,5 @@ urlpatterns = [
     path('bestandstype/', views.file_type, name='file_type'),
     path('diep_zwart/', views.deep_black, name='deep_black'),
     path('inktbezetting/', views.ink_coverage, name='ink_coverage'),
+    path('joboptions/', views.job_options, name='job_options'),
 ]

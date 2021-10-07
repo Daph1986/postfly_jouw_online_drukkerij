@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">Job options</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container mb-10">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <h6 class="px-4 px-md-0 lh-lg">What are job options?</h6>
+        <p class="px-4 px-md-0">
+          A job option can best be compared with a settings package where the correct settings have already been set. 
+          This “package” is called a job option.
+        </p>
+        <a href="{% static 'img/home/joboptions/postfly_joboptions.zip' %}" class="text-postfly">POSTFLY joboption <i class="fas fa-cloud-download-alt"></i></a>
+        <p class="px-4 px-md-0 mt-3">
+          Because you work immediately with the right settings, 
+          the file automatically meets our specific requirements and many errors and delays can be avoided.
+        </p>
+        <p class="px-4 px-md-0">
+          There are also some standard job options. 
+          For example, you can choose between a job option that makes your PDF very small so that you can easily email it to your customer for approval. 
+          You also have a “press” job option that is very handy to use as a general print profile. 
+          So you’re always in the right place with this one.
+        </p>
+        <p class="px-4 px-md-0">
+          Note: You still have to format the file according to the correct requirements, check our explanation under the heading <a href="{% url 'specs' %}" class="text-postfly">specifications</a>.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-3">
+        <h6 class="px-4 px-md-0 lh-lg">Installing the job options</h6>
+        <p class="px-4 px-md-0">
+          When you double click on the job option you just downloaded it will install itself. If this doesn’t work, follow the steps below:<br>
+          In Indesign (2021), click File → Adobe PDF Presets → Define
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml">
+      <img src="{% static 'img/home/joboptions/joboptions_1.png' %}" alt="Job options" class="w-400 ms-3">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          A new window will appear where you can find the different standard job options. Click the ‘Load’ button to add POSTFLY’s.
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml">
+      <img src="{% static 'img/home/joboptions/joboptions_2.png' %}" alt="Job options" class="w-300 ms-3">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          Load the file you just downloaded, then you will find the job options in the list.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 d-lg-none">
+      <img src="{% static 'img/home/joboptions/joboptions_3.png' %}" alt="Separations preview 2" class="w-400 mb-5 ms-4">
+      <img src="{% static 'img/home/joboptions/joboptions_4.png' %}" alt="Separations preview 3" class="w-400 ms-4">
+    </div>
+    <div class="d-lg-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml d-none">
+        <img src="{% static 'img/home/joboptions/joboptions_3.png' %}" alt="Separations preview 2" class="w-400 ms-3">
+        <img src="{% static 'img/home/joboptions/joboptions_4.png' %}" alt="Separations preview 3" class="w-400 ml-mr">
+    </div>
+  </div>
+{% endblock %}
