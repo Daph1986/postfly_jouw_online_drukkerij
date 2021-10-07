@@ -30,3 +30,9 @@ def deep_black(request):
     """View to return files deep black page"""
 
     return render(request, 'home/black.html')
+
+
+def ink_coverage(request):
+    """View to return files ink coverage page"""
+
+    return render(request, 'home/ink.html')

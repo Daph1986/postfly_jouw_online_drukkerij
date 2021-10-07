@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">Ink coverage</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container mb-10">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          Paper can only absorb a maximum percentage of ink. 
+          If more ink is supplied than paper can handle, you will end up with dirty smudges and streaks. 
+          The maximum ink coverage is 300%. You can easily check this yourself by adding up the values of the 4 printing colors. 
+          In the example below we create a new color in Indesign. If we add the 4 values together, we get at a percentage of 200%.<br>
+          So there is no chance of streaks or spots due to an excess of ink.
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml">
+      <img src="{% static 'img/home/ink_coverage/swatch_options_red.png' %}" alt="Swatch options red" class="w-400">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <h6 class="px-4 px-md-0 lh-lg">How do you check this yourself?</h6>
+        <p class="px-4 px-md-0">
+          In Indesign (2021) click in the menu bar on Window→ Output→ Separations Preview. Then you will see the window below.
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml">
+      <img src="{% static 'img/home/ink_coverage/separations_preview_1.png' %}" alt="Separations preview" class="w-300">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          At view you choose the option ‘separations’. 
+          With this option the values of the colors can be measured. 
+          Or you can choose the option “Ink Limit”. With this option you can see where there is an excess of ink.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 d-lg-none">
+      <img src="{% static 'img/home/ink_coverage/separations_preview_2.png' %}" alt="Separations preview 2" class="w-400 mb-5 ms-4">
+      <img src="{% static 'img/home/ink_coverage/separations_preview_3.png' %}" alt="Separations preview 3" class="w-400 ms-4">
+    </div>
+    <div class="d-lg-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml d-none">
+        <img src="{% static 'img/home/ink_coverage/separations_preview_2.png' %}" alt="Separations preview 2" class="w-400">
+        <img src="{% static 'img/home/ink_coverage/separations_preview_3.png' %}" alt="Separations preview 3" class="w-400 ml-mr">
+    </div>
+  </div>
+{% endblock %}

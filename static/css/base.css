@@ -21,6 +21,31 @@ body {
   color: #E72F4C;
 }
 
+.w-200 {
+  width: 200px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.w-450 {
+  width: 450px;
+}
+
+.ml {
+  margin-left: 100px;
+}
+
+.ml-mr {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 /* --------------------------- Navbar ---------------------------- */
 .pp-logo {
   width: 35px; 
@@ -156,27 +181,6 @@ body {
   height: 500px;
 }
 
-.bleed {
-  width: 400px;
-}
-
-.files {
-  width: 200px;
-}
-
-.swatches {
-  width: 450px;
-}
-
-.ml {
-  margin-left: 100px;
-}
-
-.ml-mr {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 /* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
@@ -248,10 +252,10 @@ footer a {
     margin-left: 25px;
     margin-right: 25px;
   }
-  .files {
+  .w-200 {
     width: 100px;
   }
-  .swatches {
+  .w-450 {
     width: 225px;
   }
 }
@@ -270,7 +274,7 @@ footer a {
   .specs-img {
     height: 250px;
   }
-  .bleed,
+  .w-400,
   .apples {
     width: 300px;
   }
