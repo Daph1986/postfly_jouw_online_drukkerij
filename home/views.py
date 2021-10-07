@@ -21,6 +21,12 @@ def bleed(request):
 
 
 def file_type(request):
-    """View to return files bleed page"""
+    """View to return files file type page"""
 
     return render(request, 'home/file.html')
+
+
+def deep_black(request):
+    """View to return files deep black page"""
+
+    return render(request, 'home/black.html')

@@ -164,6 +164,10 @@ body {
   width: 200px;
 }
 
+.swatches {
+  width: 450px;
+}
+
 .ml {
   margin-left: 100px;
 }
@@ -247,6 +251,9 @@ footer a {
   .files {
     width: 100px;
   }
+  .swatches {
+    width: 225px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -263,7 +270,8 @@ footer a {
   .specs-img {
     height: 250px;
   }
-  .bleed {
+  .bleed,
+  .apples {
     width: 300px;
   }
   .ml {
