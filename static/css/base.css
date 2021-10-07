@@ -156,6 +156,10 @@ body {
   height: 500px;
 }
 
+.bleed {
+  width: 400px;
+}
+
 /* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
@@ -235,5 +239,8 @@ footer a {
   .hero-home,
   .specs-img {
     height: 250px;
+  }
+  .bleed {
+    width: 300px;
   }
 }

@@ -12,3 +12,9 @@ def specs(request):
     """View to return files specifications page"""
 
     return render(request, 'home/specs.html')
+
+
+def bleed(request):
+    """View to return files bleed page"""
+
+    return render(request, 'home/bleed.html')
