@@ -160,6 +160,19 @@ body {
   width: 400px;
 }
 
+.files {
+  width: 200px;
+}
+
+.ml {
+  margin-left: 100px;
+}
+
+.ml-mr {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 /* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
@@ -224,6 +237,16 @@ footer a {
   .banner h4 {
     font-size: 0.9rem;
   }
+  .ml {
+    margin-left: 0px;
+  }
+  .ml-mr {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .files {
+    width: 100px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -242,5 +265,8 @@ footer a {
   }
   .bleed {
     width: 300px;
+  }
+  .ml {
+    margin-left: 20px;
   }
 }

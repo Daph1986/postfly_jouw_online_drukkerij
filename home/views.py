@@ -18,3 +18,9 @@ def bleed(request):
     """View to return files bleed page"""
 
     return render(request, 'home/bleed.html')
+
+
+def file_type(request):
+    """View to return files bleed page"""
+
+    return render(request, 'home/file.html')
