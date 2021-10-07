@@ -17,6 +17,10 @@ body {
   border-color: #707070;
 }
 
+.text-postfly {
+  color: #E72F4C;
+}
+
 /* --------------------------- Navbar ---------------------------- */
 .pp-logo {
   width: 35px; 
@@ -111,6 +115,7 @@ body {
 
 .logo-overlay {
   background: rgba(255, 255, 255, 0.377);
+  padding-left: 10px;
 }
 
 .hero-home {
@@ -119,10 +124,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-}
-
-.text-postfly {
-  color: #E72F4C;
 }
 
 .row.banner {
@@ -144,6 +145,15 @@ body {
 .hvr-grow:focus,
 .hvr-grow:active {
   transform: scale(1.1);
+}
+
+/* ---------------------------- Files ----------------------------- */
+.specs-img {
+  background-image: url('/static/img/home/specs/cmyk.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
 }
 
 /* ---------------------------- Cards ---------------------------- */
@@ -203,7 +213,8 @@ footer a {
   .dropdown-menu .dropdown-submenu {
     left: 76%;
   }
-  .hero-home {
+  .hero-home,
+  .specs-img {
     height: 400px;
   }
   .banner h4 {
@@ -221,7 +232,8 @@ footer a {
   .home-sm {
     background-color:rgba(255, 255, 255, 0.432);
   }
-  .hero-home {
+  .hero-home,
+  .specs-img {
     height: 250px;
   }
 }
