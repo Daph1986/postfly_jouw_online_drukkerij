@@ -9,4 +9,5 @@ urlpatterns = [
     path('diep_zwart/', views.deep_black, name='deep_black'),
     path('inktbezetting/', views.ink_coverage, name='ink_coverage'),
     path('joboptions/', views.job_options, name='job_options'),
+    path('kleur/', views.color, name='color'),
 ]

@@ -42,3 +42,9 @@ def job_options(request):
     """View to return files job options page"""
 
     return render(request, 'home/joboptions.html')
+
+
+def color(request):
+    """View to return files color page"""
+
+    return render(request, 'home/color.html')
