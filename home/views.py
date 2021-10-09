@@ -60,3 +60,9 @@ def foil(request):
     """View to return files cold foil page"""
 
     return render(request, 'home/foil.html')
+
+
+def overprint(request):
+    """View to return files overprint page"""
+
+    return render(request, 'home/overprint.html')
