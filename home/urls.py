@@ -13,4 +13,5 @@ urlpatterns = [
     path('lettercontouren/', views.outlines, name='outlines'),
     path('cold_foil/', views.foil, name='foil'),
     path('overprint/', views.overprint, name='overprint'),
+    path('resolutie/', views.resolution, name='resolution'),
 ]

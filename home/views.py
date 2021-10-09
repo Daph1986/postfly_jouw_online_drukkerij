@@ -66,3 +66,9 @@ def overprint(request):
     """View to return files overprint page"""
 
     return render(request, 'home/overprint.html')
+
+
+def resolution(request):
+    """View to return files resolution page"""
+
+    return render(request, 'home/resolution.html')
