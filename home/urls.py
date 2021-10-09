@@ -11,4 +11,5 @@ urlpatterns = [
     path('joboptions/', views.job_options, name='job_options'),
     path('kleur/', views.color, name='color'),
     path('lettercontouren/', views.outlines, name='outlines'),
+    path('cold_foil/', views.foil, name='foil'),
 ]

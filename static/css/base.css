@@ -189,6 +189,14 @@ body {
   height: 500px;
 }
 
+.foil-img {
+  background-image: url('/static/img/home/foil/cold_foil.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
 /* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
@@ -248,7 +256,8 @@ footer a {
   }
   .hero-home,
   .specs-img,
-  .outlines-img {
+  .outlines-img,
+  .foil-img {
     height: 400px;
   }
   .banner h4 {
@@ -281,7 +290,8 @@ footer a {
   }
   .hero-home,
   .specs-img,
-  .outlines-img {
+  .outlines-img,
+  .foil-img {
     height: 250px;
   }
   .w-400,

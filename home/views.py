@@ -54,3 +54,9 @@ def outlines(request):
     """View to return files outlines page"""
 
     return render(request, 'home/outlines.html')
+
+
+def foil(request):
+    """View to return files cold foil page"""
+
+    return render(request, 'home/foil.html')
