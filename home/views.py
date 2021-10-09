@@ -48,3 +48,9 @@ def color(request):
     """View to return files color page"""
 
     return render(request, 'home/color.html')
+
+
+def outlines(request):
+    """View to return files outlines page"""
+
+    return render(request, 'home/outlines.html')

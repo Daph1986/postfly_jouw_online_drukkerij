@@ -181,6 +181,14 @@ body {
   height: 500px;
 }
 
+.outlines-img {
+  background-image: url('/static/img/home/outlines/outlines.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
 /* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
@@ -239,7 +247,8 @@ footer a {
     left: 76%;
   }
   .hero-home,
-  .specs-img {
+  .specs-img,
+  .outlines-img {
     height: 400px;
   }
   .banner h4 {
@@ -271,7 +280,8 @@ footer a {
     background-color:rgba(255, 255, 255, 0.432);
   }
   .hero-home,
-  .specs-img {
+  .specs-img,
+  .outlines-img {
     height: 250px;
   }
   .w-400,
