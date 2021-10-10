@@ -72,3 +72,9 @@ def resolution(request):
     """View to return files resolution page"""
 
     return render(request, 'home/resolution.html')
+
+
+def templates(request):
+    """View to return files templates page"""
+
+    return render(request, 'home/templates.html')

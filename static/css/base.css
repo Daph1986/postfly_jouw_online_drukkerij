@@ -197,6 +197,29 @@ body {
   height: 500px;
 }
 
+.accordion-button {
+  width: 60%;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #FFF;
+  box-shadow: inset 0 -1px 0 rgb(255, 255, 255);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #FFF;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
 /* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
