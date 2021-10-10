@@ -78,3 +78,9 @@ def templates(request):
     """View to return files templates page"""
 
     return render(request, 'home/templates.html')
+
+
+def faq(request):
+    """View to return FAQ page"""
+
+    return render(request, 'home/faq.html')

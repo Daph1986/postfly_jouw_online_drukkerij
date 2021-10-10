@@ -15,4 +15,5 @@ urlpatterns = [
     path('overprint/', views.overprint, name='overprint'),
     path('resolutie/', views.resolution, name='resolution'),
     path('templates/', views.templates, name='templates'),
+    path('faq/', views.faq, name='faq'),
 ]

@@ -197,6 +197,16 @@ body {
   height: 500px;
 }
 
+/* ---------------------------- FAQ ------------------------------ */
+.faq-img {
+  background-image: url('/static/img/home/faq/faq.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+
+/* -------------------------- Accordions ------------------------- */
 .accordion-button {
   width: 60%;
 }
@@ -280,7 +290,8 @@ footer a {
   .hero-home,
   .specs-img,
   .outlines-img,
-  .foil-img {
+  .foil-img,
+  .faq-img {
     height: 400px;
   }
   .banner h4 {
@@ -305,6 +316,9 @@ footer a {
   .mb-10 {
     margin-bottom: 250px;
   }
+  .mb-special{
+    margin-bottom: 199px;
+  }
   .mobile-mb {
     margin-bottom: 50px;
   }
@@ -314,7 +328,8 @@ footer a {
   .hero-home,
   .specs-img,
   .outlines-img,
-  .foil-img {
+  .foil-img,
+  .faq-img {
     height: 250px;
   }
   .w-400,
