@@ -95,3 +95,9 @@ def printing_house(request):
     """View to return team page"""
 
     return render(request, 'home/printing.html')
+
+
+def our_concept(request):
+    """View to return our concept page"""
+
+    return render(request, 'home/concept.html')

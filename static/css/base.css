@@ -210,6 +210,23 @@ body {
   height: 650px;
 }
 
+/* -------------------------- About us --------------------------- */
+.concept-cmyk-img {
+  background-image: url('/static/img/home/concept/cmyk_letters.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.concept-nature-img {
+  background-image: url('/static/img/home/concept/nature.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
 /* -------------------------- Accordions ------------------------- */
 .accordion-button {
   width: 60%;
@@ -300,7 +317,9 @@ footer a {
   .specs-img,
   .outlines-img,
   .foil-img,
-  .faq-img {
+  .faq-img,
+  .concept-cmyk-img,
+  .concept-nature-img {
     height: 400px;
   }
   .banner h4 {
@@ -349,7 +368,9 @@ footer a {
   .specs-img,
   .outlines-img,
   .foil-img,
-  .faq-img {
+  .faq-img,
+  .concept-cmyk-img,
+  .concept-nature-img {
     height: 250px;
   }
   .w-400,
