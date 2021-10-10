@@ -37,6 +37,10 @@ body {
   width: 450px;
 }
 
+.w-750 {
+  width: 750px;
+}
+
 .ml {
   margin-left: 100px;
 }
@@ -315,11 +319,22 @@ footer a {
   .w-450 {
     width: 225px;
   }
+  .w-750 {
+    width: 550px;
+  }
 }
 
 @media (max-width: 767.98px) {
+  body,
+  .postfly-general-btn,
+  a.dropdown-item {
+    font-size: 14px;
+  }
   .mb-10 {
     margin-bottom: 250px;
+  }
+  .ml {
+    margin-left: 20px;
   }
   .mb-special{
     margin-bottom: 199px;
@@ -341,7 +356,7 @@ footer a {
   .apples {
     width: 300px;
   }
-  .ml {
-    margin-left: 20px;
+  .w-750 {
+    width: 375px;
   }
 }

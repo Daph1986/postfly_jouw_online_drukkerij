@@ -89,3 +89,9 @@ def team(request):
     """View to return team page"""
 
     return render(request, 'home/team.html')
+
+
+def printing_house(request):
+    """View to return team page"""
+
+    return render(request, 'home/printing.html')
