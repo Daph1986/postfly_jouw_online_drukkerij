@@ -254,6 +254,11 @@ body {
   width: 50%;
 }
 
+.card-img-team {
+  border-top-left-radius: calc(1.5rem - 1px);
+  border-top-right-radius: calc(1.5rem - 1px);
+}
+
 /* ----------------------- Shopping cart ------------------------- */
 hr:not([size]) {
   width: 200px;

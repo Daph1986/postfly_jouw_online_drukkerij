@@ -84,3 +84,8 @@ def faq(request):
     """View to return FAQ page"""
 
     return render(request, 'home/faq.html')
+
+def team(request):
+    """View to return team page"""
+
+    return render(request, 'home/team.html')

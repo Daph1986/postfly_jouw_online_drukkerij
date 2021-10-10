@@ -16,4 +16,5 @@ urlpatterns = [
     path('resolutie/', views.resolution, name='resolution'),
     path('templates/', views.templates, name='templates'),
     path('faq/', views.faq, name='faq'),
+    path('team/', views.team, name='team'),
 ]
