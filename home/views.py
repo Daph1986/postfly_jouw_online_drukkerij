@@ -101,3 +101,9 @@ def our_concept(request):
     """View to return our concept page"""
 
     return render(request, 'home/concept.html')
+
+
+def contact(request):
+    """View to return our concept page"""
+
+    return render(request, 'home/contact.html')

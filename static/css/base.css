@@ -227,6 +227,23 @@ body {
   height: 500px;
 }
 
+/* ------------------------- Contact us -------------------------- */
+.contact-img{
+  background-image: url('/static/img/home/contact/contact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.row div.col-6.d-none.d-lg-block.contact-info {
+  padding-left: 100px;
+}
+
+.ml-special-contact {
+  margin-left: 20px;
+}
+
 /* -------------------------- Accordions ------------------------- */
 .accordion-button {
   width: 60%;
@@ -319,7 +336,8 @@ footer a {
   .foil-img,
   .faq-img,
   .concept-cmyk-img,
-  .concept-nature-img {
+  .concept-nature-img,
+  .contact-img {
     height: 400px;
   }
   .banner h4 {
@@ -340,6 +358,9 @@ footer a {
   }
   .w-750 {
     width: 550px;
+  }
+  .w-special-logo {
+    width: 300px;
   }
 }
 
@@ -370,7 +391,8 @@ footer a {
   .foil-img,
   .faq-img,
   .concept-cmyk-img,
-  .concept-nature-img {
+  .concept-nature-img,
+  .contact-img {
     height: 250px;
   }
   .w-400,
@@ -379,5 +401,8 @@ footer a {
   }
   .w-750 {
     width: 375px;
+  }
+  .w-special-logo {
+    width: 200px;
   }
 }
