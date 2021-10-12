@@ -40,12 +40,12 @@
                 <h6 class="mt-5">I have placed an order, can I still change or cancel it?</h6>
                 <p>
                   No, as soon as you have ordered your order will go into production. But you can always 
-                  <a href="" class="text-postfly text-decoration-none">contact</a> us to find out what the possibilities are.
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> us to find out what the possibilities are.
                 </p>
                 <h6 class="mt-5">I don't see the size I want or have wishes that are not on the website, are there options for that?</h6>
                 <p>
                   We have more options than you see on the website, request a <a href="" class="text-postfly text-decoration-none">quotation</a> 
-                  or <a href="" class="text-postfly text-decoration-none">contact</a> us.
+                  or <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> us.
                 </p>
                 <h6 class="mt-5">Do different prices apply when reprinting an order?</h6>
                 <p>
@@ -55,11 +55,11 @@
                 </p>
                 <h6 class="mt-5">I want to see the paper types, is that possible?</h6>
                 <p>
-                  Yes, definitely, request a free <a href="" class="text-postfly text-decoration-none">sample kit</a> and we will send it to you.
+                  Yes, definitely, request a free <a href="{% url 'sample_kit' %}" class="text-postfly text-decoration-none">sample kit</a> and we will send it to you.
                 </p>
                 <h6 class="mt-5">I have no idea how to make a print ready file, can POSTFLY make one for me?</h6>
                 <p>
-                  Yes you can, feel free to <a href="" class="text-postfly text-decoration-none">contact</a> us for more information.
+                  Yes you can, feel free to <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> us for more information.
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@
                 <h6>What payment options do you have?</h6>
                 <p>
                   You place your order online and pay with your credit card. If you do not have a credit card, please 
-                  <a href="" class="text-postfly text-decoration-none">contact</a> 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
                   us and we can look for a suitable solution.
                 </p>
                 <h6 class="mt-5">Where can I find my invoice?</h6>
@@ -85,7 +85,7 @@
                 <h6 class="mt-5">Can I pay afterwards?</h6>
                 <p>
                   No, you order online and pay with a credit card. If you do not have a credit card, please
-                  <a href="" class="text-postfly text-decoration-none">contact</a> 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
                   us and we can look for a suitable solution.
                 </p>
                 <h6 class="mt-5">I have received a reminder, an exhortation or a summation for an invoice, what about that?</h6>
@@ -93,7 +93,7 @@
                   If your invoice has not been paid according to our system, you will first receive a reminder from us. 
                   If we do not receive a response or payment, a exhortation will follow and then a summons. 
                   If you don't think it's right, please
-                  <a href="" class="text-postfly text-decoration-none">contact</a> 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
                   us right away.
                 </p>
               </div>
@@ -117,13 +117,13 @@
                   We use a courier, DHL, PostNL and DPD, depending on the order we take the most suitable shipping option. 
                   It is therefore difficult to indicate the time in advance, normally deliveries are made on business days between 8:00 and 18:00.
                   We do have options such as DHL Express, to see if it is suitable for your order, it is best to
-                  <a href="" class="text-postfly text-decoration-none">contact</a> 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
                   us.
                 </p>
                 <h6 class="mt-5">Can I also have my package delivered abroad?</h6>
                 <p>
                   Yes, there are options, please
-                  <a href="" class="text-postfly text-decoration-none">contact</a> 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
                   us to discuss this. 
                   The shipping costs and delivery times depend on the country of destination and the weight plays an important role in this.
                 </p>
@@ -134,14 +134,14 @@
                 <h6 class="mt-5">Can my order be delivered to multiple addresses?</h6>
                 <p>
                   Yes that is possible, please
-                  <a href="" class="text-postfly text-decoration-none">contact</a> 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
                   us tso that we know what needs to go where, there is an additional cost.
                 </p>
                 <h6 class="mt-5">Do you also have the option of express delivery?</h6>
                 <p>
                   Sometimes that is indeed possible, but unfortunately not always.
                   Please
-                  <a href="" class="text-postfly text-decoration-none">contact</a> 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
                   us to discuss the possibilities.
                 </p>
               </div>
@@ -247,5 +247,5 @@
       </div>
     </div>
   </div>
-  <div class="p-5 mb-special mb-md-5 faq-img"></div>
+  <div class="p-5 faq-img"></div>
 {% endblock %}
