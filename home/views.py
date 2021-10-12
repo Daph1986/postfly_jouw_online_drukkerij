@@ -107,3 +107,9 @@ def contact(request):
     """View to return our concept page"""
 
     return render(request, 'home/contact.html')
+
+
+def sample_kit(request):
+    """View to return our concept page"""
+
+    return render(request, 'home/sample.html')

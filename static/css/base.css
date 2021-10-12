@@ -4,6 +4,10 @@ body {
   font-family: 'Poppins';
 }
 
+body, html {
+  height: 100%;
+}
+
 .mb-10 {
   margin-bottom: 150px;
 }
@@ -244,6 +248,20 @@ body {
   margin-left: 20px;
 }
 
+/* ------------------------- Sample kit -------------------------- */
+.sample-parallax {
+  background-image: url('/static/img/home/sample_kit/sample_kit.png');
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-text {
+  height: 900px;
+  background-color: white;
+}
 /* -------------------------- Accordions ------------------------- */
 .accordion-button {
   width: 60%;
@@ -334,11 +352,13 @@ footer a {
   .specs-img,
   .outlines-img,
   .foil-img,
-  .faq-img,
   .concept-cmyk-img,
   .concept-nature-img,
   .contact-img {
     height: 400px;
+  }
+  .faq-img {
+    height: 475px;
   }
   .banner h4 {
     font-size: 0.9rem;
@@ -362,6 +382,9 @@ footer a {
   .w-special-logo {
     width: 300px;
   }
+  .sample-parallax {
+    height: 40%;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -376,11 +399,8 @@ footer a {
   .ml {
     margin-left: 20px;
   }
-  .mb-special{
-    margin-bottom: 199px;
-  }
   .mobile-mb {
-    margin-bottom: 50px;
+    margin-bottom: 225px;
   }
   .home-sm {
     background-color:rgba(255, 255, 255, 0.432);
@@ -389,7 +409,6 @@ footer a {
   .specs-img,
   .outlines-img,
   .foil-img,
-  .faq-img,
   .concept-cmyk-img,
   .concept-nature-img,
   .contact-img {
@@ -397,12 +416,18 @@ footer a {
   }
   .w-400,
   .apples {
-    width: 300px;
+    width: 200px;
   }
   .w-750 {
-    width: 375px;
+    width: 300px;
   }
   .w-special-logo {
     width: 200px;
+  }
+  .w-special-icon {
+    width: 75px;
+  }
+  .w-300 {
+    width: 150px;
   }
 }

@@ -20,4 +20,5 @@ urlpatterns = [
     path('eigen_drukkerij/', views.printing_house, name='printing_house'),
     path('ons_concept/', views.our_concept, name='our_concept'),
     path('contact/', views.contact, name='contact'),
+    path('monstermap/', views.sample_kit, name='sample_kit'),
 ]
