@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container mb-10">
+  <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-xl-6 mt-5">
         <h6 class="px-4 px-md-0 lh-lg">POSTFLY our story</h6>
@@ -37,7 +37,7 @@
       </div>
     </div> 
     <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4">
-      <img src="{% static 'img/home/press.png' %}" alt="Koenig & Bauer press" class="w-750 ms-1 ms-md-2">
+      <img src="{% static 'img/home/press.png' %}" alt="Koenig & Bauer press" class="w-750 ms-4 ms-md-2">
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-xl-6">
@@ -69,10 +69,10 @@
           <img src="{% static 'img/home/printing/ggm.png' %}" alt="Logo Grafisch Groep Matthtys" class="w-300 d-block">
         </a>
       </div>
-        <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-5 ml">
-          <a href="{% url 'products' %}" class="btn postfly-general-btn me-0 me-md-5 my-5">Our products</a>
-          <a href="#" class="btn postfly-general-btn mx-3 mx-md-5 my-5">Request a quotation</a>
-        </div>
+      <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-5 ml mb-10">
+        <a href="{% url 'products' %}" class="btn postfly-general-btn me-0 me-md-5 my-5">Our products</a>
+        <a href="#" class="btn postfly-general-btn mx-3 mx-md-5 my-5">Request a quotation</a>
+      </div>
     </div> 
   </div>
 {% endblock %}

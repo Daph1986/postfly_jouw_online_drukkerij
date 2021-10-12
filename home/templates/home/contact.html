@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-  <div class="container mb-10">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 col-xl-6 mt-5">
         <form action="">
@@ -30,7 +30,7 @@
           </div>
           <button type="submit" class="btn postfly-general-btn mt-3 mb-3">Send</button>
         </form>
-        <div class="col-10 py-4 d-lg-none ml-special-contact">
+        <div class="col-10 py-4 d-lg-none ml-special-contact mb-10">
           <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-special-logo d-block"></a>
           <h6><i class="fas fa-map-marker-alt me-2 "></i> Mailing address</h6>
           <p class="ms-4">
@@ -58,7 +58,7 @@
           </a>
         </div>
       </div>
-      <div class="col-6 d-none d-lg-block contact-info">
+      <div class="col-6 d-none d-lg-block contact-info mb-10">
         <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300 d-block"></a>
         <h6><i class="fas fa-map-marker-alt me-2"></i> Mailing address</h6>
         <p class="ms-4">
