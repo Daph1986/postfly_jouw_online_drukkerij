@@ -113,3 +113,9 @@ def sample_kit(request):
     """View to return our concept page"""
 
     return render(request, 'home/sample.html')
+
+
+def quotation(request):
+    """View to return our concept page"""
+
+    return render(request, 'home/quotation.html')

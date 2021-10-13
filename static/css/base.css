@@ -262,6 +262,23 @@ body, html {
   height: 900px;
   background-color: white;
 }
+
+/* ------------------------- Quotation --------------------------- */
+.quotation-parallax{
+  background-image: url('/static/img/home/quotation/offerte.png');
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quotation-text {
+  height: 1100px;
+  background-color: white;
+}
+
+
 /* -------------------------- Accordions ------------------------- */
 .accordion-button {
   width: 60%;

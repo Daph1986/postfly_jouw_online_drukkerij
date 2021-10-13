@@ -21,4 +21,5 @@ urlpatterns = [
     path('ons_concept/', views.our_concept, name='our_concept'),
     path('contact/', views.contact, name='contact'),
     path('monstermap/', views.sample_kit, name='sample_kit'),
+    path('offerte/', views.quotation, name='quotation'),
 ]
