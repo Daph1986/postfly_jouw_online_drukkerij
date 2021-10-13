@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">File type</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          In order to start printing a design, we need a print-ready file.
+          Not all file types can be processed by us. 
+          Most formatting programs have their own file format. 
+          You can recognise it by the extension at the end of the filename 
+          (for example: .doc, .xls, .psd, .pub, .ai, …).
+        </p>
+        <p class="px-4 px-md-0">
+          We can only process your files if you provide them in PDF or JPG.
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-5 ml">
+      <img src="{% static 'img/home/file_type/pdf.png' %}" alt="PDF" class="w-200">
+      <img src="{% static 'img/home/file_type/jpg.png' %}" alt="JPG" class="w-200">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          This way you limit the size of the file and you maintain the high quality of the layout. 
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-5 ml">
+        <img src="{% static 'img/home/file_type/id_icon.png' %}" alt="InDesign icon" class="w-200 w-special-icon mb-10">
+        <img src="{% static 'img/home/file_type/ai_icon.png' %}" alt="Illustrator icon" class="w-200 w-special-icon ml-mr mb-10">
+        <img src="{% static 'img/home/file_type/ps_icon.png' %}" alt="PhotoShop icon" class="w-200 w-special-icon mb-10">
+    </div>
+  </div>
+{% endblock %}

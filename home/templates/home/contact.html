@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div class="p-5 mb-5 contact-img"></div>
+  <div>
+    <h2 class="my-5 text-center">Contact us</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-6 mt-5">
+        <form action="">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Your details</label>
+            <input type="text" class="form-control mb-4" id="first_name" placeholder="First Name*">
+            <input type="text" class="form-control mb-4" id="last_name" placeholder="Last Name*">
+            <input type="email" class="form-control mb-4" id="email" placeholder="Email address*">
+            <input type="text" class="form-control mb-4" id="subject" placeholder="Subject*">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label id="checkbox" class="no-robot-checkbox mt-3">
+              <input type="checkbox" required="" aria-required="true" />
+              <span>I'm not a robot!</span>
+            </label>
+          </div>
+          <button type="submit" class="btn postfly-general-btn mt-3 mb-3">Send</button>
+        </form>
+        <div class="col-10 py-4 d-lg-none ml-special-contact mb-10">
+          <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-special-logo d-block"></a>
+          <h6><i class="fas fa-map-marker-alt me-2 "></i> Mailing address</h6>
+          <p class="ms-4">
+            Postbus 22921 <br>
+            1100 DK Amsterdam
+          </p>
+          <h6><i class="fas fa-map-marker-alt me-2"></i> Head office</h6>
+          <p class="ms-4">
+            Muizenvenstraat 5 <br>
+            2300 Turnhout <br>
+            Belgium
+          </p>
+          <h6><i class="fas fa-phone-alt me-1"></i> Telephone</h6>
+          <p class="ms-4"> +31 (0)20 365 22 93</p>
+          <h6><i class="fas fa-envelope me-1"></i> Mail</h6>
+          <p class="ms-4"> info@postfly.nl</p>
+          <h6><i class="fas fa-clock me-1"></i></i> Opening hours</h6>
+          <p class="ms-4">
+            Monday to Friday <br>
+            09:00-17:00 hrs
+          </p>
+          <h6><i class="fas fa-info me-3"></i> Other info</h6>
+          <a href="{% static 'img/home/contact/postfly_voorwaarden.zip' %}" 
+            class="text-postfly text-decoration-none ms-4">Terms and conditions <i class="fas fa-cloud-download-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-6 d-none d-lg-block contact-info mb-10">
+        <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300 d-block"></a>
+        <h6><i class="fas fa-map-marker-alt me-2"></i> Mailing address</h6>
+        <p class="ms-4">
+          Postbus 22921 <br>
+          1100 DK Amsterdam
+        </p>
+        <h6><i class="fas fa-map-marker-alt me-2"></i> Head office</h6>
+        <p class="ms-4">
+          Muizenvenstraat 5 <br>
+          2300 Turnhout <br>
+          Belgium
+        </p>
+        <h6><i class="fas fa-phone-alt me-1"></i> Telephone</h6>
+        <p class="ms-4"> +31 (0)20 365 22 93</p>
+        <h6><i class="fas fa-envelope me-1"></i> Mail</h6>
+        <p class="ms-4"> info@postfly.nl</p>
+        <h6><i class="fas fa-clock me-1"></i></i> Opening hours</h6>
+        <p class="ms-4">
+          Monday to Friday <br>
+          09:00-17:00 hrs
+        </p>
+        <h6><i class="fas fa-info me-3"></i> Other info</h6>
+        <a href="{% static 'img/home/contact/postfly_voorwaarden.zip' %}" 
+          class="text-postfly text-decoration-none px-4 px-md-0 ms-4">Terms and conditions <i class="fas fa-cloud-download-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

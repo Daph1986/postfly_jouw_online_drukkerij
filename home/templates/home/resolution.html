@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">Resolution</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          Resolution equals the quality of the image. 
+          Resolution is expressed in dpi (dots per inch). 
+          The higher the number of “dots” per inch, the sharper and higher the quality of the image. 
+          In order to be able to deliver a good quality of printed matter, we need a file with a resolution of 300 dpi. 
+          If the resolution is too low, you will get a blurry or jagged (block effect) result.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 d-lg-none">
+      <img src="{% static 'img/home/resolution/resolution.png' %}" alt="Resolutie" class="w-400 mb-5 ms-4">
+      <img src="{% static 'img/home/resolution/dpi.png' %}" alt="DPI" class="w-400 ms-4">
+    </div>
+    <div class="d-lg-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml d-none">
+        <img src="{% static 'img/home/resolution/resolution.png' %}" alt="Resolutie" class="w-400 ms-2">
+        <img src="{% static 'img/home/resolution/dpi.png' %}" alt="DPI" class="w-400 ml-mr">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-3">
+        <h6 class="px-4 px-md-0 mb-4">How can I check or adjust the resolution?</h6>
+        <p class="px-4 px-md-0">
+          Open the design or image in Photoshop. In the menu bar, click Image → Image Size. 
+          In the window that appears you can check the settings of the design or image. 
+          Make sure that the ‘Resolution’ box reads 300 pixels/inch. If not, you can adjust it to 300 pixels/inch. 
+          After adjusting the resolution, you also check the dimensions. These must be actual size (or possibly larger).
+        </p>
+      </div>
+    </div>
+    <div class="col-12 d-lg-none mb-10">
+      <img src="{% static 'img/home/resolution/image_size.png' %}" alt="Image size" class="w-400 mb-5 ms-4 mb-10">
+      <img src="{% static 'img/home/resolution/image_size_resolution.png' %}" alt="Image size resolution" class="w-400 ms-4 mb-10">
+    </div>
+    <div class="d-lg-flex align-items-center mt-3 mt-md-4 mt-lg-4 ml d-none mb-10">
+        <img src="{% static 'img/home/resolution/image_size.png' %}" alt="Image size" class="w-400 ms-2 mb-10">
+        <img src="{% static 'img/home/resolution/image_size_resolution.png' %}" alt="Image size resolution" class="w-450 ml-mr mb-10">
+    </div>
+  </div>
+{% endblock %}

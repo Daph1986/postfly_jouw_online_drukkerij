@@ -146,22 +146,22 @@
               Files
             </a>
             <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a href="#" class="dropdown-item">Specifications</a></li>
-              <li><a href="#" class="dropdown-item">Bleed</a></li>
-              <li><a href="#" class="dropdown-item">File type</a></li>
-              <li><a href="#" class="dropdown-item">Deep black</a></li>
-              <li><a href="#" class="dropdown-item">Ink coverage</a></li>
-              <li><a href="#" class="dropdown-item">Jop obtions</a></li>
-              <li><a href="#" class="dropdown-item">Color</a></li>
-              <li><a href="#" class="dropdown-item">Outlines</a></li>
-              <li><a href="#" class="dropdown-item">Foil</a></li>
-              <li><a href="#" class="dropdown-item">Overprint</a></li>
-              <li><a href="#" class="dropdown-item">Resolution</a></li>
-              <li><a href="#" class="dropdown-item">Templates</a></li>
+              <li><a href="{% url 'specs' %}" class="dropdown-item">Specifications</a></li>
+              <li><a href="{% url 'bleed' %}" class="dropdown-item">Bleed</a></li>
+              <li><a href="{% url 'file_type' %}" class="dropdown-item">File type</a></li>
+              <li><a href="{% url 'deep_black' %}" class="dropdown-item">Deep black</a></li>
+              <li><a href="{% url 'ink_coverage' %}" class="dropdown-item">Ink coverage</a></li>
+              <li><a href="{% url 'job_options' %}" class="dropdown-item">Job obtions</a></li>
+              <li><a href="{% url 'color' %}" class="dropdown-item">Color</a></li>
+              <li><a href="{% url 'outlines' %}" class="dropdown-item">Outlines</a></li>
+              <li><a href="{% url 'foil' %}" class="dropdown-item">Foil</a></li>
+              <li><a href="{% url 'overprint' %}" class="dropdown-item">Overprint</a></li>
+              <li><a href="{% url 'resolution' %}" class="dropdown-item">Resolution</a></li>
+              <li><a href="{% url 'templates' %}" class="dropdown-item">Templates</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="#">
+            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'faq' %}"">
               FAQ
             </a>
           </li>
@@ -170,9 +170,9 @@
               About us
             </a>
               <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown"down">
-                <li><a href="#" class="dropdown-item">Team</a></li>
-                <li><a href="#" class="dropdown-item">Printing in-house</a></li>
-                <li><a href="#" class="dropdown-item">Our concept</a></li>
+                <li><a href="{% url 'team' %}" class="dropdown-item">Team</a></li>
+                <li><a href="{% url 'printing_house' %}" class="dropdown-item">Printing in-house</a></li>
+                <li><a href="{% url 'our_concept' %}" class="dropdown-item">Our concept</a></li>
               </ul>
           </li>
           <li class="nav-item dropdown">
@@ -180,9 +180,9 @@
               Contact
             </a>
               <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">  
-                <li><a href="#" class="dropdown-item">Contact us</a></li>
-                <li><a href="#" class="dropdown-item">Free sample kit</a></li>
-                <li><a href="#" class="dropdown-item">Quotation request</a></li>
+                <li><a href="{% url 'contact' %}" class="dropdown-item">Contact us</a></li>
+                <li><a href="{% url 'sample_kit' %}" class="dropdown-item">Free sample kit</a></li>
+                <li><a href="{% url 'quotation' %}" class="dropdown-item">Quotation request</a></li>
               </ul>
           </li>
           <li class="nav-item">

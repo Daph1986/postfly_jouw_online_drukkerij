@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">Deep black</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          In many programs, the default black consists of only 100% black. 
+          This is black, but next to ‘deep black’ it seems much greyer.<br>
+          To get a deep black you have to add something of each color.
+          The following values give the best results: Cyan 40%, Magenta 40%, Yellow 20% and Black 100%. 
+          This way you get an ink coverage of 200% instead of only 100%.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-5">
+        <img src="{% static 'img/home/deep_black/diep_zwart.png' %}" alt="Deep black" class="mx-auto d-block apples">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <h6 class="px-4 px-md-0 lh-lg">How do you make the best deep black?</h6>
+        <p class="px-4 px-md-0">
+          In Indesign (2021) you create a new color as follows:
+          In the menu bar, click Window→ Colour→ Swatches. 
+          Then you will see the window below. Press the plus sign at the bottom right and enter the values as below. 
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-5 ml mb-10">
+        <img src="{% static 'img/home/deep_black/swatches.png' %}" alt="Swatches" class="w-200 ms-1 ms-md-3 mb-10">
+        <img src="{% static 'img/home/deep_black/swatch_options.png' %}" alt="Swatch options" class="w-450 w-special-img ml-mr mb-10">
+    </div>
+  </div>
+{% endblock %}

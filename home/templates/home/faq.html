@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">Frequently asked questions</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container mb-5">
+    <div class="row justify-content-center">
+      <div class="col-12 mt-5">
+        <img src="{% static 'img/home/faq/faq_1.png' %}" alt="FAQ top image" class="mx-auto d-block apples">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-10 mt-5">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h5>General</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h6>Where can I place my order?</h6>
+                <p>It goes like this:</p>
+                <ol>
+                  <li>Go to the products in the menu bar and add the products you want to order;</li>
+                  <li>When you have all your desired products in the shopping cart, you can upload your designs there.</li>
+                  <li>After your designs have been uploaded you can proceed with the checkout, fill in your details and complete your order.</li>
+                </ol>
+                <h6 class="mt-5">Where can I find the delivery times for the products?</h6>
+                <p>
+                  With the <a href="{% url 'products' %}" class="text-postfly text-decoration-none">products</a> you can choose a production time of 3 or 5 business days.
+                  If you have hand in your files before 11 a.m. you may count that day as a business day.
+                </p>
+                <h6 class="mt-5">I have placed an order, can I still change or cancel it?</h6>
+                <p>
+                  No, as soon as you have ordered your order will go into production. But you can always 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> us to find out what the possibilities are.
+                </p>
+                <h6 class="mt-5">I don't see the size I want or have wishes that are not on the website, are there options for that?</h6>
+                <p>
+                  We have more options than you see on the website, request a <a href="{% url 'quotation' %}" class="text-postfly text-decoration-none">quotation</a> 
+                  or <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> us.
+                </p>
+                <h6 class="mt-5">Do different prices apply when reprinting an order?</h6>
+                <p>
+                  No, even if you order the exact same print job again at a later date, 
+                  you simply pay the price as stated on the website. 
+                  Production always starts from scratch, the printing plates cannot be reused due to the combined printing process.
+                </p>
+                <h6 class="mt-5">I want to see the paper types, is that possible?</h6>
+                <p>
+                  Yes, definitely, request a free <a href="{% url 'sample_kit' %}" class="text-postfly text-decoration-none">sample kit</a> and we will send it to you.
+                </p>
+                <h6 class="mt-5">I have no idea how to make a print ready file, can POSTFLY make one for me?</h6>
+                <p>
+                  Yes you can, feel free to <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> us for more information.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h5>Payment</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h6>What payment options do you have?</h6>
+                <p>
+                  You place your order online and pay with your credit card. If you do not have a credit card, please 
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
+                  us and we can look for a suitable solution.
+                </p>
+                <h6 class="mt-5">Where can I find my invoice?</h6>
+                <p>
+                  The invoice will be emailed to you after we have received the payment. This will be done to the email address you provided.
+                </p>
+                <h6 class="mt-5">Can I pay afterwards?</h6>
+                <p>
+                  No, you order online and pay with a credit card. If you do not have a credit card, please
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
+                  us and we can look for a suitable solution.
+                </p>
+                <h6 class="mt-5">I have received a reminder, an exhortation or a summation for an invoice, what about that?</h6>
+                <p>
+                  If your invoice has not been paid according to our system, you will first receive a reminder from us. 
+                  If we do not receive a response or payment, a exhortation will follow and then a summons. 
+                  If you don't think it's right, please
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
+                  us right away.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h5>Delivery</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h6>What is the delivery time of your products?</h6>
+                <p>
+                  With the <a href="{% url 'products' %}" class="text-postfly text-decoration-none">products</a> you can choose a production time of 3 or 5 business days.
+                  If you have hand in your files before 11 a.m. you may count that day as a business day.
+                </p>
+                <h6 class="mt-5">At what time will my order be delivered?</h6>
+                <p>
+                  We use a courier, DHL, PostNL and DPD, depending on the order we take the most suitable shipping option. 
+                  It is therefore difficult to indicate the time in advance, normally deliveries are made on business days between 8:00 and 18:00.
+                  We do have options such as DHL Express, to see if it is suitable for your order, it is best to
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
+                  us.
+                </p>
+                <h6 class="mt-5">Can I also have my package delivered abroad?</h6>
+                <p>
+                  Yes, there are options, please
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
+                  us to discuss this. 
+                  The shipping costs and delivery times depend on the country of destination and the weight plays an important role in this.
+                </p>
+                <h6 class="mt-5">Can my order also be sent directly, incognito to my customer?</h6>
+                <p>
+                  Yes, you can, then just check the box for this option during the ordering process.
+                </p>
+                <h6 class="mt-5">Can my order be delivered to multiple addresses?</h6>
+                <p>
+                  Yes that is possible, please
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
+                  us tso that we know what needs to go where, there is an additional cost.
+                </p>
+                <h6 class="mt-5">Do you also have the option of express delivery?</h6>
+                <p>
+                  Sometimes that is indeed possible, but unfortunately not always.
+                  Please
+                  <a href="{% url 'contact' %}" class="text-postfly text-decoration-none">contact</a> 
+                  us to discuss the possibilities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <h5>Paper types</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h6>300 gr mat</h6>
+                <p>
+                  A paper with a matte appearance. Very suitable type of paper for photos, for example, because of the smooth structure.
+                  This paper is not suitable for stamping.
+                </p>
+                <h6 class="mt-5">300 gr ECO</h6>
+                <p>
+                  FSC certified, paper with an ecologically conscious appearance.
+                  This paper is suitable for stamping.
+                </p>
+                <h6 class="mt-5">170 gr ECO</h6>
+                <p>
+                  FSC certified - light uncoated paper, paper with an ecological, environmentally conscious appearance.
+                  This paper is suitable for stamping.
+                </p>
+                <h6 class="mt-5">135 gr Gloss</h6>
+                <p>
+                  Glossy white paper MC satin - light, flexible paper.
+                </p>
+                <h6 class="mt-5">115 gr Blueback</h6>
+                <p>
+                  Due to the blue back, the poster is not translucent and can easily be pasted over something. Ideal for outdoor promotions.
+                </p>
+                <h6 class="mt-5">400 gr Mat</h6>
+                <p>
+                  MC matte - top quality paper - very firm 'cardboard' feel.
+                </p>
+                <h6 class="mt-5">Cold Foil</h6>
+                <p>
+                  Sturdy 350 gr sulphate cardboard + finished on both sides with matte dispersion varnish and on one sidd with cold foil,
+                  which makes it possible to provide metallic effects.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                <h5>Glossary</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <h6>What is resolution?</h6>
+                <p>
+                  Resolution equals the quality of the image. 
+                  Resolution is expressed in dpi (dots per inch). 
+                  The higher the number of “dots” per inch, the sharper and higher the quality of the image. 
+                  In order to be able to deliver a good quality of printed matter, we need a file with a resolution of 300 dpi. 
+                  If the resolution is too low, you will get a blurry or jagged (block effect) result.
+                </p>
+                <p>
+                  For more information on resolution, see "Files" in the menu bar and take a look at the topic about 
+                  <a href="{% url 'resolution' %}" class="text-postfly text-decoration-none">resolution</a>.
+                </p>
+                <h6 class="mt-5">What is bleed?</h6>
+                <p>
+                  Bleed is 3 mm extra that you have to provide on all four sides of a file to avoid a white edge when cutting.
+                </p>
+                <p>
+                  For more information on bleed, see "Files" in the menu bar and take a look at the topic about 
+                  <a href="{% url 'bleed' %}" class="text-postfly text-decoration-none">bleed</a>.
+                </p>
+                <h6 class="mt-5">What is CMYK?</h6>
+                <p>
+                  CMYK stands for the 4 printing colors cyan (C), magenta (M), yellow (Y) and black (key) (K).
+                </p>
+                <p>
+                  For more information on CMYK, see "Files" in the menu bar and take a look at the topic about 
+                  <a href="{% url 'color' %}" class="text-postfly text-decoration-none">color</a>.
+                </p>
+                <h6 class="mt-5">What is ink coverage?</h6>
+                <p>
+                  Paper can only absorb a maximum percentage of ink.  
+                  The maximum ink coverage is 300%.
+                </p>
+                <p>
+                  For more information on ink coverage, see "Files" in the menu bar and take a look at the topic about 
+                  <a href="{% url 'ink_coverage' %}" class="text-postfly text-decoration-none">ink coverage</a>.
+                </p>
+                <h6 class="mt-5">What is combined printing?</h6>
+                <p>
+                  POSTFLY combines different print jobs from different customers. This way you as a customer can enjoy shared costs.
+                  That is why we work with fixed types of paper and quantities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="p-5 faq-img"></div>
+{% endblock %}

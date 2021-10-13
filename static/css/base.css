@@ -4,6 +4,10 @@ body {
   font-family: 'Poppins';
 }
 
+body, html {
+  height: 100%;
+}
+
 .mb-10 {
   margin-bottom: 150px;
 }
@@ -15,6 +19,39 @@ body {
 .custom-sort-selector {
   width: 225px;
   border-color: #707070;
+}
+
+.text-postfly {
+  color: #E72F4C;
+}
+
+.w-200 {
+  width: 200px;
+}
+
+.w-300 {
+  width: 300px;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.w-450 {
+  width: 450px;
+}
+
+.w-750 {
+  width: 750px;
+}
+
+.ml {
+  margin-left: 100px;
+}
+
+.ml-mr {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* --------------------------- Navbar ---------------------------- */
@@ -111,6 +148,7 @@ body {
 
 .logo-overlay {
   background: rgba(255, 255, 255, 0.377);
+  padding-left: 10px;
 }
 
 .hero-home {
@@ -119,10 +157,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-}
-
-.text-postfly {
-  color: #E72F4C;
 }
 
 .row.banner {
@@ -146,6 +180,129 @@ body {
   transform: scale(1.1);
 }
 
+/* ---------------------------- Files ----------------------------- */
+.specs-img {
+  background-image: url('/static/img/home/specs/cmyk.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.outlines-img {
+  background-image: url('/static/img/home/outlines/outlines.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.foil-img {
+  background-image: url('/static/img/home/foil/cold_foil.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* ---------------------------- FAQ ------------------------------ */
+.faq-img {
+  background-image: url('/static/img/home/faq/faq.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+}
+
+/* -------------------------- About us --------------------------- */
+.concept-cmyk-img {
+  background-image: url('/static/img/home/concept/cmyk_letters.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.concept-nature-img {
+  background-image: url('/static/img/home/concept/nature.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* ------------------------- Contact us -------------------------- */
+.contact-img{
+  background-image: url('/static/img/home/contact/contact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.row div.col-6.d-none.d-lg-block.contact-info {
+  padding-left: 100px;
+}
+
+.ml-special-contact {
+  margin-left: 20px;
+}
+
+/* ------------------------- Sample kit -------------------------- */
+.sample-parallax {
+  background-image: url('/static/img/home/sample_kit/sample_kit.png');
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-text {
+  height: 900px;
+  background-color: white;
+}
+
+/* ------------------------- Quotation --------------------------- */
+.quotation-parallax{
+  background-image: url('/static/img/home/quotation/offerte.png');
+  height: 50%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quotation-text {
+  height: 1100px;
+  background-color: white;
+}
+
+
+/* -------------------------- Accordions ------------------------- */
+.accordion-button {
+  width: 60%;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #FFF;
+  box-shadow: inset 0 -1px 0 rgb(255, 255, 255);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #FFF;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+}
+
+.accordion-item {
+  background-color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+
 /* ---------------------------- Cards ---------------------------- */
 .stand-out {
   font-weight: bold;
@@ -168,6 +325,11 @@ body {
 
 .card-img-custom {
   width: 50%;
+}
+
+.card-img-team {
+  border-top-left-radius: calc(1.5rem - 1px);
+  border-top-right-radius: calc(1.5rem - 1px);
 }
 
 /* ----------------------- Shopping cart ------------------------- */
@@ -203,25 +365,86 @@ footer a {
   .dropdown-menu .dropdown-submenu {
     left: 76%;
   }
-  .hero-home {
+  .hero-home,
+  .specs-img,
+  .outlines-img,
+  .foil-img,
+  .concept-cmyk-img,
+  .concept-nature-img,
+  .contact-img {
     height: 400px;
+  }
+  .faq-img {
+    height: 475px;
   }
   .banner h4 {
     font-size: 0.9rem;
   }
+  .ml {
+    margin-left: 0px;
+  }
+  .ml-mr {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .w-200 {
+    width: 100px;
+  }
+  .w-450 {
+    width: 225px;
+  }
+  .w-750 {
+    width: 550px;
+  }
+  .w-special-logo {
+    width: 300px;
+  }
+  .sample-parallax {
+    height: 40%;
+  }
 }
 
 @media (max-width: 767.98px) {
+  body,
+  .postfly-general-btn,
+  a.dropdown-item {
+    font-size: 14px;
+  }
   .mb-10 {
     margin-bottom: 250px;
   }
+  .ml {
+    margin-left: 20px;
+  }
   .mobile-mb {
-    margin-bottom: 50px;
+    margin-bottom: 225px;
   }
   .home-sm {
     background-color:rgba(255, 255, 255, 0.432);
   }
-  .hero-home {
+  .hero-home,
+  .specs-img,
+  .outlines-img,
+  .foil-img,
+  .concept-cmyk-img,
+  .concept-nature-img,
+  .contact-img {
     height: 250px;
+  }
+  .w-400,
+  .apples {
+    width: 200px;
+  }
+  .w-750 {
+    width: 300px;
+  }
+  .w-special-logo {
+    width: 200px;
+  }
+  .w-special-icon {
+    width: 75px;
+  }
+  .w-300 {
+    width: 150px;
   }
 }

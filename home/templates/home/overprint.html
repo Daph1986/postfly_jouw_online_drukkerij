@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="mt-5 mb-0 mb-md-5 text-center">Overprint</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-12 col-xl-6 mt-5">
+        <div class="col-12 col-xl-6 py-4 d-lg-none">
+          <img src="{% static 'img/home/overprint/overprint_1.png' %}" alt="Overprint" class="w-450 mx-auto d-block mb-5">
+        </div>
+        <h6 class="px-4 px-md-0 lh-lg">What is overprint?</h6>
+        <p class="px-4 px-md-0">
+          Sometimes bizarre things happen to your design, white texts disappear, 
+          suddenly different colors come through your image. 
+          And that while this was not visible at all or just visible on your design. 
+          Such problems usually occur due to the incorrect use of overprint settings in the original layout.
+        </p>
+        <p class="px-4 px-md-0">
+          If 2 objects, both with a different color are placed on top of each other, where they overlap, 
+          the color will be saved. The underlying color will not be visible. This is not the case when using overprint. 
+          The underlying will be visible here.
+        </p>
+        <p class="px-4 px-md-0">
+          Let’s illustrate this with examples.
+        </p>
+        <p class="px-4 px-md-0">
+          Example 1 WITHOUT overprint:
+          The magenta square is no longer a complete square, where cyan overlapped the magenta, there is now a recess.
+        </p>
+      </div>
+      <div class="col-12 col-xl-6 mt-5 d-none d-lg-block">
+        <img src="{% static 'img/home/overprint/overprint_1.png' %}" alt="Overprint" class="w-400 mx-auto d-block">
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4">
+      <img src="{% static 'img/home/overprint/overprint_3.png' %}" alt="Overprint example 1" class="w-400 ms-3 ms-md-0">
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-12 col-xl-6 mt-5">
+        <p class="px-4 px-md-0">
+          Example 2 WITH overprint:
+          If we put the cyan surface in overprint, the magenta surface will come through. 
+          A full square is visible on both plates BUT the printing result will be different. 
+          Where the colors overlap, a purple color can be seen. Cyan + Magenta = Purple
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4">
+      <img src="{% static 'img/home/overprint/overprint_2.png' %}" alt="Overprint example 2" class="w-400 ms-3 ms-md-0">
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          This already explains a lot. White text in overprint on a black surface will certainly go wrong, 
+          because white is not a color which can be printed. 
+          A white text should therefore always be saved and should certainly not be put in overprint. 
+          The white of your design is the paper.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-12 col-xl-10 mt-3">
+        <h6 class="px-4 px-md-0">How can I check if overprint has been applied and use it if necessary?</h6>
+        <p class="px-4 px-md-0">
+          It is very easy to check whether overprint has been used. In Indesign (2021), 
+          click on View → Overprint Preview in the menu bar at the top.
+        </p>
+      </div>
+    </div>
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4">
+      <img src="{% static 'img/home/overprint/overprint_4.png' %}" alt="Overprint preview" class="w-400 ms-4 ms-md-0">
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-12 col-xl-10 mt-5">
+        <p class="px-4 px-md-0">
+          If you want to use the overprint options, 
+          click in the menu bar on Window → Output → Attributes. A window with the overprint functions appears.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 d-lg-none mb-10">
+      <img src="{% static 'img/home/overprint/overprint_5.png' %}" alt="Overprint output" class="w-400 mb-5 ms-4 mb-10">
+      <img src="{% static 'img/home/overprint/overprint_6.png' %}" alt="Overprint attributes" class="w-300 ms-4 mb-10">
+    </div>
+    <div class="d-lg-flex align-items-center mt-3 mt-md-4 mt-lg-4 d-none">
+        <img src="{% static 'img/home/overprint/overprint_5.png' %}" alt="Overprint output" class="w-400 mb-10">
+        <img src="{% static 'img/home/overprint/overprint_6.png' %}" alt="Overprint attributes" class="w-300 ml-mr mb-10">
+    </div>
+  </div>
+{% endblock %}

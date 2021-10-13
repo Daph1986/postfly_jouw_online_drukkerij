@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">Printing in-house</h2>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-6 mt-5">
+        <h6 class="px-4 px-md-0 lh-lg">POSTFLY our story</h6>
+        <p class="px-4 px-md-0">
+          POSTFLY was founded in 2001 as an online printing company under the care of Grafische Groep Matthys.
+          POSTFLY is there for all your combined printing, from flyers to posters, from business cards to brochures.
+          We started with an office at the Keienbergweg in Amsterdam-Zuidoost with a team of five people. 
+          With our move to the Hoogoorddreef in Amsterdam-Zuidoost, we were able to make our work more and more efficient. 
+          There are now two members of the original team active and work is carried out from the head office in Turnhout, Belgium 
+          or completely corona-proof from home.
+        </p>
+        <div class="col-12 col-xl-6 py-4 d-lg-none">
+          <img src="{% static 'img/home/printing/logo_signs.png' %}" alt="Logo signs" class="w-300 d-block ms-4">
+        </div>
+      </div>
+      <div class="col-12 col-xl-6 mt-5 d-none d-lg-block">
+        <img src="{% static 'img/home/printing/logo_signs.png' %}" alt="Logo signs" class="w-300 d-block">
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 mt-3">
+        <p class="px-4 px-md-0">
+          Grafische Groep Matthys is located in the graphic city of Turnhout in Belgium, it is run by 4 brothers, 
+          the third generation of this family business.
+        </p>
+      </div>
+    </div> 
+    <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-4">
+      <img src="{% static 'img/home/press.png' %}" alt="Koenig & Bauer press" class="w-750 ms-4 ms-md-2">
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-6">
+        <p class="px-4 px-md-0 mt-5">
+          Together we have the expertise to guide all your orders from A to Z.<br>
+          We have several recent printing presses, and we have all modern finishes in-house.
+          We combine the printing forms so that we can offer them competitively, 
+          but also if you need specialist printing or striking packaging material you have come to the right place. 
+          Since 2008 we have specialised in the “inline cold foil” technique, 
+          which allows beautiful effects on your printed matter or packaging.
+        </p>
+        <p class="px-4 px-md-0 mt-5">
+          Feel free to take a look at our <a href="{% url 'products' %}" class="text-postfly text-decoration-none">products</a> 
+          page or request a <a href="" class="text-postfly text-decoration-none">quotation</a> 
+          from us for different or specialist requirements!
+        </p>
+        <div class="col-12 col-xl-6 py-4 d-lg-none">
+          <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300 d-block ms-4"></a>
+        </div>
+        <div class="col-12 col-xl-6 py-4 d-lg-none">
+          <a href="https://www.groepmatthys.com/"target="_blank">
+            <img src="{% static 'img/home/printing/ggm.png' %}" alt="Logo Grafisch Groep Matthtys" class="w-300 d-block ms-4">
+          </a>
+        </div>
+      </div>
+      <div class="col-12 col-xl-6 mt-4 d-none d-lg-block">
+        <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300 d-block"></a>
+        <a href="https://www.groepmatthys.com/"target="_blank">
+          <img src="{% static 'img/home/printing/ggm.png' %}" alt="Logo Grafisch Groep Matthtys" class="w-300 d-block">
+        </a>
+      </div>
+      <div class="d-flex align-items-center mt-3 mt-md-4 mt-lg-5 ml mb-10">
+        <a href="{% url 'products' %}" class="btn postfly-general-btn me-0 me-md-5 my-5">Our products</a>
+        <a href="{% url 'quotation' %}" class="btn postfly-general-btn mx-3 mx-md-5 my-5">Request a quotation</a>
+      </div>
+    </div> 
+  </div>
+{% endblock %}
