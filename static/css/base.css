@@ -29,6 +29,10 @@ body, html {
   width: 200px;
 }
 
+.w-235 {
+  width: 235px;
+}
+
 .w-300 {
   width: 300px;
 }
@@ -182,7 +186,7 @@ body, html {
 
 /* ---------------------------- Files ----------------------------- */
 .specs-img {
-  background-image: url('/static/img/home/specs/cmyk.png');
+  background-image: url('/static/img/home/specs/cmyk_check.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -389,6 +393,9 @@ footer a {
   }
   .w-200 {
     width: 100px;
+  }
+  .w-235 {
+    width: 120px;
   }
   .w-450 {
     width: 225px;
