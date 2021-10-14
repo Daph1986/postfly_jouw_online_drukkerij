@@ -185,10 +185,11 @@ For more details about testing and bugs please view this [file](testing/README.m
 ======
 
 ### Content
-Most content has been written by me, the prices and technical stories regarding the delivery of the files and the origin of the printing house come from the sites of [POSTFLY](http://www.postfly.nl/) and [Grafische Groep Matthys](https://www.groepmatthys.com/) and were sometimes adjusted by me.
+Most content has been written by me, the technical stories regarding the delivery of the files and the origin of the printing company come from the sites of [POSTFLY](http://www.postfly.nl/) and [Grafische Groep Matthys](https://www.groepmatthys.com/) and were sometimes adjusted by me. Prices are based on the product price from the original site, and adjusted here and there, but are for learning purposes only for this project. No rights can therefore be derived from this.
 
 ### Code
-
+1. [Hover.css](https://ianlunn.github.io/Hover/) to learn how to let the buttons on the home page grow on hover.
+2. [W3 Schools](https://www.w3schools.com/howto/howto_css_parallax.asp) to learn how to create the parallax effect.
 
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -196,16 +197,20 @@ Most content has been written by me, the prices and technical stories regarding 
 
 #### Images
 
-1. [POSTFLY](http://www.postfly.nl/) the POSTFLY logo provided by my colleague Filip Matthys.
+1. [POSTFLY](http://www.postfly.nl/) the POSTFLY logo provided by my colleague Filip Matthys, for the joboptions and base of the templates, and for the images on the deep black and resolution (sunflower image) page.
 2. [Flaticon](https://www.flaticon.com/free-icon/paper-plane_164627?term=paper%20plane&page=3&position=52&page=3&position=52&related_id=164627&origin=search) to get and adjust the paper plane of the logo.
 3. [favicon.io](https://favicon.io/favicon-converter/) was used to get the favicon of the logo.
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
-5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for their logo,  the images of the foil samples, the head office and the presses, thanks for my colleague Bart Lauwaert for providing the original photos to me.
+5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for their logo,  the images of some foil samples and the foil fan, the head office and the presses, thanks for my colleague Bart Lauwaert for providing the original photos to me and for the how to cold foil pdf.
+6. [WPJournalist](https://wpjournalist.nl/avatar-maken/) to create the avatars of the team.
+7. [Adobe Stock](https://stock.adobe.com/nl), for the images on the speicifications, file type, color, resolution (dpi image), templates, FAQ, concept, contact, quotation, register, login and forgot password page. These are licensed images downloaded with a paid Adobe Stock account.
+8. The other images on the site and the screenshots of indesign etc. are my own photos and screenshots.
+
 
 ### Other
 
 1. [Luchidchart](https://www.lucidchart.com/pages/) to create the Django diagram model.
-1. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
+2. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
 
 <!-- 3. [cdnjs](https://cdnjs.com/) to get the fontawesome cdn from.
 5. [Am I Responsive?](http://ami.responsivedesign.is/) to check the responsiveness and make the mockups.
