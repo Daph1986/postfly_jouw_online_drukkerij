@@ -51,7 +51,7 @@
               <p class="card-text stand-out">Delivery time is {{ product.delivery_time }} business days</p>
               <p class="card-text">{{ product.method }}</p>
               <p class="card-text">{{ product.quantity }} pieces</p>
-              <p class="card-text stand-out">€{{ product.price }}</p>
+              <p class="card-text"><strong>€{{ product.price }}</strong> ex VAT</p>
               <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
