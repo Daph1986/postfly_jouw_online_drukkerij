@@ -103,6 +103,20 @@ body, html {
   display: block;
 }
 
+/* --------------------------- Toasts ---------------------------- */
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 15px;
+  z-index: 99999999999;
+}
+
+.postfly-toast {
+  overflow: visible;
+  border-radius: 25px;
+}
+
+
 /* --------------------------- Buttons --------------------------- */
 .postfly-home-btn {
   border-radius: 25px;
