@@ -1,66 +1,59 @@
+import uuid
+
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 
-import datetime
-
 from products.models import Product
-
-def generate_order_number():
-    """ Creates a custom order number that starts at 8000. """
-    last_order = Order.objects.all().order_by('order_number').last()
-    current_year = str(datetime.date.today().strftime('%y'))
-
-    if not last_order:
-        return 'AMB' + current_year + '-8000'
-    elif str(last_order.order_number[3:7]) != current_year:
-        return 'AMB' + current_year + '-8000'
-
-    current_order = int(last_order.order_number[9:13])
-    next_order = current_order + 1
-    new_order_number = 'AMB' + current_year + str(next_order).zfill(4)
-
-    return new_order_number
 
 
 class Order(models.Model):
-	order_number = models.CharField(max_length=10, 
-                                    null=False, editable=False)
-	first_name = models.CharField(max_length=40, null=False, blank=False)
-	last_name = models.CharField(max_length=40, 
+    order_number = models.CharField(max_length=32, null=False, editable=False)
+    first_name = models.CharField(max_length=50, null=False, blank=False)
+    last_name = models.CharField(max_length=50, 
                                  null=False, blank=False, default=None)
-	company_name = models.CharField(max_length=50, null=True, blank=True)
-	email = models.EmailField(max_length=254, null=False, blank=False)
-	phone_number = models.CharField(max_length=20, null=False, blank=False)
-	country = models.CharField(max_length=40, null=False, blank=False)
-	postcode = models.CharField(max_length=20, null=True, blank=True)
-	town_or_city = models.CharField(max_length=40, null=False, blank=False)
-	street_address1 = models.CharField(max_length=80, null=False, blank=False)
-	street_address2 = models.CharField(max_length=80, null=True, blank=True)
-	date = models.DateTimeField(auto_now_add=True)
-	order_total = models.DecimalField(max_digits=10, decimal_places=2, 
+    company_name = models.CharField(max_length=50, null=True, blank=True)
+    email = models.EmailField(max_length=254, null=False, blank=False)
+    phone_number = models.CharField(max_length=20, null=False, blank=False)
+    country = models.CharField(max_length=40, null=False, blank=False)
+    postcode = models.CharField(max_length=20, null=True, blank=True)
+    town_or_city = models.CharField(max_length=40, null=False, blank=False)
+    street_address1 = models.CharField(max_length=80, null=False, blank=False)
+    street_address2 = models.CharField(max_length=80, null=True, blank=True)
+    date = models.DateTimeField(auto_now_add=True)
+    order_total = models.DecimalField(max_digits=10, decimal_places=2, 
                                       null=False, default=0)
-	tax = models.DecimalField(max_digits=10, decimal_places=2, 
-                              null=False, default=0)
-	grand_total = models.DecimalField(max_digits=10, decimal_places=2, 
+    tax = models.DecimalField(max_digits=10, decimal_places=2, 
+                                      null=False, default=0)
+    grand_total = models.DecimalField(max_digits=10, decimal_places=2, 
                                       null=False, default=0)
 
-	def update_total(self):
-		""" Update grand total when new product is added. """
+    def _generate_order_number(self):
+        """
+        Generate a random, unique order number using UUID
+        """
+        return uuid.uuid4().hex.upper()
 
-		self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))[
-			'lineitem_total__sum']
-		self.grand_total = self.order_total + self.tax
-		self.save()
+    def update_total(self):
+        """ Update grand total when new product is added. """
 
-	def save(self, *args, **kwargs):
-		""" Override the save method to set the order number """
-		if not self.order_number:
-			self.order_number = self._generate_order_number()
-		super().save(*args, **kwargs)
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))[
+            'lineitem_total__sum'] or 0
+        self.tax = self.order_total * settings.TAX_PERCENTAGE / 100
+        self.grand_total = self.order_total + self.tax
+        self.save()
 
-	def __str__(self):
-		return self.order_number
+    def save(self, *args, **kwargs):
+        """
+        Override the original save method to set the order number
+        if it hasn't been set already.
+        """
+        if not self.order_number:
+            self.order_number = self._generate_order_number()
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.order_number
 
 
 class OrderLineItem(models.Model):
