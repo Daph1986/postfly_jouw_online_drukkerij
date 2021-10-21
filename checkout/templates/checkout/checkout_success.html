@@ -18,7 +18,7 @@
 {% block content %}
   <div class="container mt-4">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-10 mb-10">
+      <div class="col-12 col-lg-10">
         <div class="order-confirmation-wrapper p-3 border">
           <div class="order-confirmation-heading-wrapper">
             <h3 class="text-center">Order confirmation</h3>
@@ -205,7 +205,13 @@
           </div>
           <!-- Price details -->
         </div>
-       </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 mt-5 mb-10">                    
+        <a href="{% url 'products' %}" class="btn postfly-general-btn me-3 mb-3">
+          <span class="font-weight-bold">Products</span>
+        </a>
       </div>
     </div>
   </div>
