@@ -18,7 +18,6 @@ class OrderForm(forms.ModelForm):
 			'company_name': 'Company name',
             'email': 'Email address',
             'phone_number': 'Phone number',
-			'country': 'Country',
             'postcode': 'Postal code',
             'town_or_city': 'Town or city',
             'street_address1': 'Street address + house number',
