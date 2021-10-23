@@ -49,6 +49,11 @@ INSTALLED_APPS = [
     'home',
     'products',
     'cart',
+    'checkout',
+
+    # Other
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +68,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'postfly_jouw_online_drukkerij.urls'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 TEMPLATES = [
     {
@@ -80,6 +88,10 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
@@ -159,6 +171,13 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Stripe
+TAX_PERCENTAGE = 21
+STRIPE_CURRENCY = 'eur'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

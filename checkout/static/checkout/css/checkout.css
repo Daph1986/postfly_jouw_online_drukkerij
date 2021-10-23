@@ -1,0 +1,101 @@
+/* ---------------------- Stripe form styling ---------------------- */
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  padding: 7px 12px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+  color: #70707086;
+}
+
+.fieldset-label {
+  position: relative;
+  right: -.4rem;
+}
+
+.form-control:focus {
+  border-color: #E72F4C;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+  -webkit-box-shadow: 0 0 0 30px #E72F4C36 inset;
+  box-shadow: inset 0 0 0 30px #E72F4C36;
+}
+
+select,
+select option {
+  color: #000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #70707086;
+}
+
+/* ------------------ Order confirmation styling ------------------- */
+.order-confirmation-heading-wrapper {
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #E72F4C;
+  color: #FFF;
+}
+
+.order-confirmation-wrapper {
+  border-radius: 25px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-color: #707070;
+}
+
+/* ------------------------ Payment overlay ------------------------ */
+#loading-overlay {
+  display: none;
+	position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 47, 75, 0.719);
+  z-index: 9999;
+}
+
+.loading-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+	width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #F3F3F3;
+  border-radius: 50%;
+  border-top: 16px solid #5c5b5b;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

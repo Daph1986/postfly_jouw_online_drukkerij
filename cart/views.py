@@ -18,10 +18,16 @@ def add_to_cart(request, product_id):
     cart = request.session.get('cart', {})
 
     if product_id in list(cart.keys()):
-        cart[product_id] += quantity
+        messages.warning(
+            request, f'{ product.name } {product.size} {product.quantity} \
+                pieces is already in your shopping cart! Only one of \
+                     the same product is allowed.')
+
     else:
         cart[product_id] = quantity
-        messages.success(request, f'Successfully added {product.name} {product.size} {product.quantity} pieces to your cart')
+        messages.success(
+            request, f'Successfully added {product.name} {product.size} \
+                 {product.quantity} pieces to your cart')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
