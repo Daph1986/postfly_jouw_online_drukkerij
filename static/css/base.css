@@ -12,6 +12,10 @@ body, html {
   margin-bottom: 150px;
 }
 
+.mt-10 {
+  margin-top: 10rem;
+}
+
 .bg-category {
   background-color: #E72F4C;
 }
@@ -269,7 +273,7 @@ body, html {
 /* ------------------------- Sample kit -------------------------- */
 .sample-parallax {
   background-image: url('/static/img/home/sample_kit/sample_kit.png');
-  height: 50%;
+  height: 45vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +288,7 @@ body, html {
 /* ------------------------- Quotation --------------------------- */
 .quotation-parallax{
   background-image: url('/static/img/home/quotation/offerte.png');
-  height: 50%;
+  height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -296,6 +300,21 @@ body, html {
   background-color: white;
 }
 
+/* ------------------------- Account --------------------------- */
+.account-parallax{
+  background-image: url('/static/img/account/account.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 45vh;
+}
+
+.account-text {
+  height: 575px;
+  background-color: white;
+}
 
 /* -------------------------- Accordions ------------------------- */
 .accordion-button {
@@ -360,7 +379,7 @@ hr:not([size]) {
   margin-top: 1.5rem; /* mt-4 */
 }
 
-.allauth-form-inner-content input {
+.allauth-form-inner-content .form-control {
   box-sizing: border-box;
   padding: 7px 12px;
   border: 1px solid #000;
@@ -382,6 +401,14 @@ hr:not([size]) {
 
 .allauth-form-inner-content input::placeholder {
   color: #70707086;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 1px 3px 0 #dcdee0;
+  -webkit-box-shadow: 0 0 0 1000px #E72F4B36 inset !important;
+  -webkit-text-fill-color: black !important;
 }
 
 /* --------------------------- Footer ---------------------------- */

@@ -35,6 +35,14 @@
   box-shadow: 0 0 0 0.25rem #E72F4C36;
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 1px 3px 0 #dcdee0;
+  -webkit-box-shadow: 0 0 0 1000px #E72F4B36 inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
 select,
 select option {
   color: #000;
