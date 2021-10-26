@@ -6,13 +6,23 @@
 {% endblock %}
 
 {% block page_header %}
-  <div class="container">
-    <div class="row">
-        <div class="col text-center">
-          <h2 class="mt-5">Thank you for your order!</h2>
-        </div>
+  {% if from_profile %}
+    <div class="container">
+      <div class="row">
+          <div class="col text-center">
+            <h2 class="mt-5">Order details</h2>
+          </div>
+      </div>
     </div>
-  </div>
+  {% else %}
+    <div class="container">
+      <div class="row">
+          <div class="col text-center">
+            <h2 class="mt-5">Thank you for your order!</h2>
+          </div>
+      </div>
+    </div>
+  {% endif %}
 {% endblock %}
 
 {% block content %}
@@ -20,29 +30,37 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         <div class="order-confirmation-wrapper p-3 border">
-          <div class="order-confirmation-heading-wrapper">
-            <h3 class="text-center">Order confirmation</h3>
-          </div> 
+          {% if from_profile %}
+            <div class="order-confirmation-heading-wrapper">
+              <h3 class="text-center">Order {{ order.order_number }} ordered on {{ order.date }}</h3>
+            </div>
+          {% else %}
+            <div class="order-confirmation-heading-wrapper">
+              <h3 class="text-center">Order confirmation</h3>
+            </div> 
+          {% endif %}
+          {% if not from_profile %}
           <!-- Order info -->
-          <div class="row">
-            <h6 class="fw-bold mt-3">Order info</h6>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <p class="mb-0">Order number:</p>
+            <div class="row">
+              <h6 class="fw-bold mt-3">Order info</h6>
             </div>
-            <div class="col-12 col-md-8 text-md-end">
-              <p class="mb-0">{{ order.order_number }}</p>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <p class="mb-0">Order number:</p>
+              </div>
+              <div class="col-12 col-md-8 text-md-end">
+                <p class="mb-0">{{ order.order_number }}</p>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-4">
-              <p class="mb-0">Order date:</p>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <p class="mb-0">Order date:</p>
+              </div>
+              <div class="col-12 col-md-8 text-md-end">
+                <p class="mb-0">{{ order.date }}</p>
+              </div>
             </div>
-            <div class="col-12 col-md-8 text-md-end">
-              <p class="mb-0">{{ order.date }}</p>
-            </div>
-          </div>
+          {% endif %}
           <!-- Order info end -->
 
           <!-- Order details -->
@@ -208,10 +226,16 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-12 col-md-10 mt-5 mb-10">                    
-        <a href="{% url 'products' %}" class="btn postfly-general-btn me-3 mb-3">
-          <span class="font-weight-bold">Products</span>
-        </a>
+      <div class="col-12 col-md-10 mt-5 mb-10">
+        {% if from_profile %}                    
+          <a href="{% url 'dashboard' %}" class="btn postfly-general-btn me-3 mb-3">
+            <span class="font-weight-bold">Back to dashboard</span>
+          </a>
+        {% else %}
+          <a href="{% url 'products' %}" class="btn postfly-general-btn me-3 mb-3">
+            <span class="font-weight-bold">Products</span>
+          </a>
+          {% endif %}
       </div>
     </div>
   </div>

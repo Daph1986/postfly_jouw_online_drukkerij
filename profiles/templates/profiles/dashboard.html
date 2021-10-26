@@ -12,18 +12,68 @@
           <h2 class="mt-5">Dashboard</h2>
         </div>
     </div>
-    <div class="row">
-      <div class="col-10 col-md-6 col-xl-4">
-        <p>Order history</p>
-          {{ orders }}
-          <a href="{% url 'dashboard' %}" class="btn hvr-grow postfly-general-btn me-3 mb-3">
-            <span class="font-weight-bold">Dashboard</span>
-          </a>
-      </div>
-    </div>
   </div>
 {% endblock %}
 
 {% block content %}
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-xl-8">
+        <h5 class="mt-5 ms-2">Order history</h5>
+          <div class="table-responisve mt-4">
+            <table class="table table-borderless">
+              <thead class="text-postfly">
+                <tr>
+                  <th>Order number</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for order in orders %}
+                  <tr>
+                    <td>{{ order.order_number|truncatechars:10 }}</td>
+                    <td>{{ order.date }}</td>
+                    <td>To fill in later</td>
+                    <td>
+                      <a href="{% url 'order_detail' order.order_number %}">
+                        <i class="far fa-eye text-black mx-3"></i>
+                      </a>
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <!--Paginator-->
+          <div class="row mb-5">
+            <div class="col-12 col-md-10 col-xl-8">
+              <span class="ms-1">
+                {% if page_object.has_previous %}
+                  <a href="?page={{ page_object.previous_page_number }}" class="text-decoration-none text-postfly">
+                    <i class="fas fa-angle-double-left text-postfly"></i> previous
+                  </a>
+                {% endif %}
+
+                <span class="px-1">
+                  Page {{ page_object.number }} of {{ page_object.paginator.num_pages }}
+                </span>
+
+                {% if page_object.has_next %}
+                  <a href="?page={{ page_object.next_page_number }}" class="text-decoration-none text-postfly">next
+                    <i class="fas fa-angle-double-right text-postfly"></i>
+                  </a>
+                {% endif %}
+              </span>
+            </div>
+          </div>
+          <!--Paginator end-->
+          <a href="{% url 'profile' %}" class="btn hvr-grow postfly-general-btn me-3 mb-3">
+            <span class="font-weight-bold">Back to profile</span>
+          </a>
+      </div>
+    </div>
+  </div>
   
 {% endblock %}

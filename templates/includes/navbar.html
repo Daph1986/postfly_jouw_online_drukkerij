@@ -185,8 +185,7 @@
                 <li><a href="{% url 'quotation' %}" class="dropdown-item">Quotation request</a></li>
               </ul>
           </li>
-          {% if request.user.is_authenticated %}
-          {% else %}
+          {% if not request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
                   <i class="fas fa-user"></i> Register
@@ -241,9 +240,3 @@
       </div>
   </div>
 </nav>
-
-
-
-
-  
-  
