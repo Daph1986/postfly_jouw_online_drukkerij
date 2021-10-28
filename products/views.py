@@ -1,8 +1,10 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from products.forms import ProductForm
 from .models import Product, Category, Size
 
 # Create your views here.
@@ -62,3 +64,70 @@ def all_products(request):
 	}
 
 	return render(request, 'products/products.html', context)
+
+
+@login_required
+def add_product(request):
+	""" For admin use to add a product to the store """
+	if not request.user.is_superuser:
+		messages.error(request, 'Sorry, your are not allowed to add a product, that is for store owners only.')
+		return redirect(reverse('home'))
+
+	if request.method == "POST":
+		form = ProductForm(request.POST)
+		if form.is_valid():
+			form.save()
+			messages.success(request, 'Success, the product was added to the store!')
+			return redirect(reverse('products'))
+		else:
+			messages.error(request, 'Sorry, your attempt to add the product failed, please check your form!')
+	else:
+		form = ProductForm()
+
+	template = 'products/add_product.html'
+	context = {
+		'form': form,
+	}
+
+	return render(request, template, context)
+
+
+@login_required
+def update_product(request, product_id):
+	""" For admin use to update a product in the store """
+	if not request.user.is_superuser:
+		messages.error(request, 'Sorry, your are not allowed to update a product, that is for store owners only.')
+		return redirect(reverse('home'))
+	
+	product = get_object_or_404(Product, pk=product_id)
+	if request.method == 'POST':
+		form = ProductForm(request.POST, instance=product)
+		if form.is_valid():
+			form.save()
+			messages.success(request, 'Product has been updated succesfully!')
+		else:
+			messages.error(request, 'Sorry, your attempt to update the product failed, please check your form!')
+	else:
+		form = ProductForm(instance=product)
+		messages.info(request, f'You are updating {product.sku}')
+
+	template = 'products/update_product.html'
+	context = {
+        'form': form,
+        'product': product,
+    }
+
+	return render(request, template, context)
+
+
+@login_required
+def delete_product(request, product_id):
+	""" For admin use to delete a product in the store """
+	if not request.user.is_superuser:
+		messages.error(request, 'Sorry, your are not allowed to delete a product, that is for store owners only.')
+		return redirect(reverse('home'))
+	
+	product = get_object_or_404(Product, pk=product_id)
+	product.delete()
+	messages.success(request, 'Product has been deleted succesfully!')
+	return redirect(reverse('products'))
