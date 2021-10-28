@@ -1,0 +1,34 @@
+Hello {{ order.first_name }} {{ order.last_name }},
+
+Hereby you receive a confirmation of the order you have submitted. Your order information is below:
+
+Order number: {{ order.order_number }}
+Order date: {{ order.date }}
+
+Oder overview:
+{% for item in order.lineitems.all %}
+Product {% if order.lineitems.all.count > 1 %}{{ forloop.counter }}{% endif %}:
+{{ item.product.name }} {{ item.product.size }} {{ item.product.method }} {{ item.product.quantity }} pieces
+Delivery time: {{ item.product.delivery_time }} business days
+{% endfor%}
+
+Order total: ${{ order.order_total }}
+VAT: ${{ order.tax }}
+Grand total: ${{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} {% if order.street_address2 %}, {{ order.street_address2 }} {% endif %}
+in {{ order.town_or_city }}{% if order.postcode%}, {{ order.postcode }}{% endif %}, {{ order.country }}.
+
+If there is any need to, we will contact you at phone number {{ order.phone_number }}.
+
+Please do not hesitate to contact us via email at {{ contact_email }} or by phone on +31(0)20 365 22 93 if you have any questions.
+
+We thank you for this order and will handle it with the utmost care.
+
+With kind regards,
+
+Daphne Heimgartner-Frankhuisen
+
+POSTFLY NL
+Postbus 22921
+1100 DK Amsterdam

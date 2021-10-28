@@ -4,18 +4,25 @@
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
-{% block content %}
-<h1>{% trans "Sign Up" %}</h1>
+{% block inner_content %}
+<div class="account-parallax"></div>
+  <div class="account-text">
+    <h2 class="mt-5 text-center">{% trans "No account yet? <br>Create your account here!" %}</h2>
+    <div class="row banner justify-content-center">
+      <div class="col-10 col-md-6 col-xl-4 mt-4">
+        <p class="fw-bold ms-3">{% blocktrans %}Do you already have an account? <a class="text-postfly text-decoration-none fw-bold" href="{{ login_url }}">Log in here!</a>{% endblocktrans %}</p>
 
-<p>{% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}</p>
-
-<form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-  {% csrf_token %}
-  {{ form.as_p }}
-  {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-  {% endif %}
-  <button type="submit">{% trans "Sign Up" %} &raquo;</button>
-</form>
+        <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
+          {% csrf_token %}
+          {{ form|crispy }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button class="btn hvr-grow postfly-general-btn me-3 my-3" type="submit">{% trans "Sign up!" %} </button>
+        </form> 
+      </div>
+    </div>  
+  </div>
+<div class="account-parallax"></div>
 
 {% endblock %}

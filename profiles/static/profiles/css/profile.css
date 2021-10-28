@@ -1,0 +1,29 @@
+.profile-form input,
+.profile-form select {
+  box-sizing: border-box;
+  padding: 7px 12px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.form-control:focus {
+  border-color: #E72F4C;
+  box-shadow: 0 0 0 0.25rem #E72F4C36;
+}
+
+.profile-form input::placeholder, 
+#id_default_country option:first-child {
+  color: #70707086;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  box-shadow: 0 1px 3px 0 #dcdee0;
+  -webkit-box-shadow: 0 0 0 1000px #E72F4B36 inset !important;
+  -webkit-text-fill-color: black !important;
+}
