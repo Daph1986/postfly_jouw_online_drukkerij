@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -82,5 +82,28 @@ def add_product(request):
 	context = {
 		'form': form,
 	}
+
+	return render(request, template, context)
+
+
+def update_product(request, product_id):
+	""" For admin use to update a product in the store """
+	product = get_object_or_404(Product, pk=product_id)
+	if request.method == 'POST':
+		form = ProductForm(request.POST, instance=product)
+		if form.is_valid():
+			form.save()
+			messages.success(request, 'Product has been updated succesfully!')
+		else:
+			messages.error(request, 'Sorry, your attempt to update the product failed, please check your form!')
+	else:
+		form = ProductForm(instance=product)
+		messages.info(request, f'You are updating {product.sku}')
+
+	template = 'products/update_product.html'
+	context = {
+        'form': form,
+        'product': product,
+    }
 
 	return render(request, template, context)
