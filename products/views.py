@@ -70,7 +70,7 @@ def all_products(request):
 def add_product(request):
 	""" For admin use to add a product to the store """
 	if not request.user.is_superuser:
-		messages.error(request, 'Sorry, your are not allowed to add a product, that is for store only.')
+		messages.error(request, 'Sorry, your are not allowed to add a product, that is for store owners only.')
 		return redirect(reverse('home'))
 
 	if request.method == "POST":
@@ -96,7 +96,7 @@ def add_product(request):
 def update_product(request, product_id):
 	""" For admin use to update a product in the store """
 	if not request.user.is_superuser:
-		messages.error(request, 'Sorry, your are not allowed to update a product, that is for store only.')
+		messages.error(request, 'Sorry, your are not allowed to update a product, that is for store owners only.')
 		return redirect(reverse('home'))
 	
 	product = get_object_or_404(Product, pk=product_id)
@@ -124,7 +124,7 @@ def update_product(request, product_id):
 def delete_product(request, product_id):
 	""" For admin use to delete a product in the store """
 	if not request.user.is_superuser:
-		messages.error(request, 'Sorry, your are not allowed to delete a product, that is for store only.')
+		messages.error(request, 'Sorry, your are not allowed to delete a product, that is for store owners only.')
 		return redirect(reverse('home'))
 	
 	product = get_object_or_404(Product, pk=product_id)
