@@ -14,8 +14,8 @@
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
   {% endif %}
-  <a href="{% url 'home' %}" class="btn postfly-general-btn me-3 my-3">Cancel</a>
-  <button class="btn hvr-grow postfly-general-btn me-3 my-3" type="submit">{% trans 'Log out!' %}</button>
+  <a href="{% url 'home' %}" class="btn postfly-general-btn hvr-grow me-3 my-3">Cancel</a>
+  <button class="btn postfly-general-btn hvr-grow me-3 my-3" type="submit">{% trans 'Log out!' %}</button>
 </form>
 
 
