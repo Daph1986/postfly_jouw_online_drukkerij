@@ -58,6 +58,12 @@
                   <input class="form-control" type="hidden" class="btn postfly-general-btn mb-3" name="quantity" value="1"
                   data-lesson_id="{{ product.id }}" id="id_quantity_{{ product.id }}">
                   <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                  {% if request.user.is_superuser %}
+                    <div class="mb-3">
+                      <a href="{% url 'update_product' product.id %}"><i class="fas fa-edit"></i></a> |
+                      <a href="{% url 'delete_product' product.id %}" class="text-danger"><i class="fas fa-trash"></i></a>
+                    </div>
+                  {% endif %}
                   <button type="submit" class="btn postfly-general-btn mb-3">Add to shopping cart</button>
                 </div>
               </form>

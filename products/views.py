@@ -72,7 +72,7 @@ def add_product(request):
 		if form.is_valid():
 			form.save()
 			messages.success(request, 'Success, the product was added to the store!')
-			return redirect(reverse('add_product'))
+			return redirect(reverse('products'))
 		else:
 			messages.error(request, 'Sorry, your attempt to add the product failed, please check your form!')
 	else:
@@ -107,3 +107,11 @@ def update_product(request, product_id):
     }
 
 	return render(request, template, context)
+
+
+def delete_product(request, product_id):
+	""" For admin use to delete a product in the store """
+	product = get_object_or_404(Product, pk=product_id)
+	product.delete()
+	messages.success(request, 'Product has been deleted succesfully!')
+	return redirect(reverse('products'))
