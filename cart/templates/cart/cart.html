@@ -12,14 +12,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="container mb-10">
+<div class="container">
     <div class="row ms-5">
         <div class="col">
             <h5 class="mt-5 mb-5">Order overview</h5>
         </div>
     </div>
 
-    <div class="row ms-5 mb-10">
+    <div class="row ms-5">
       <div class="col">
         {% if cart_items %}
           <div class="table-responsive rounded">
@@ -67,14 +67,15 @@
               </tr>
               <tr>
                 <td colspan="5" class="pt-5 text-center">
-                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3">Keep shopping</a>
-                  <a href="{% url 'checkout' %}" class="btn postfly-general-btn mb-3 ms-5">Secure checkout</a>
+                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3 mx-5">Keep shopping</a>
+                  <a href="{% url 'checkout' %}" class="btn postfly-general-btn mb-3">Secure checkout</a>
+                  <div class="mb-10"></div>
                 </td>
               </tr>
             </table>
           </div>
         {% else %}
-          <p class="lead mb-5">Your cart is empty.</p>
+          <p class="lead mb-5 mb-10">Your cart is empty.</p>
           <a href="{% url 'products' %}" class="btn postfly-general-btn my-3 my-md-5 active">Continue shopping</a>
         {% endif %}
       </div>
