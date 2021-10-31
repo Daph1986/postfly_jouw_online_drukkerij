@@ -3,7 +3,7 @@
 
 {% block page_header %}
   <div class="p-5 mb-5 hero-home">
-    <h1 class="text-uppercase fs-3 fw-bolder p-5 home-sm">Our products</h1>
+    <h1 class="text-uppercase fs-3 fw-bolder p-0 p-md-5 home-sm">Our products</h1>
     <div class="py-2 p-5">
       <a href="{% url 'products' %}" class="btn btn-lg postfly-home-btn btn-dark text-uppercase hvr-grow">Shop Now</a>
     </div>
@@ -15,7 +15,7 @@
   </div>
   <div class="row text-center mb-5 banner">
     <div class="col bg-category text-white">
-      <h4 class="logo-font my-1">Delivery to 1 address in the Netherlands is included in your order!</h4>                
+      <h4 class="logo-font my-1 px-3">Delivery to 1 address in the Netherlands is included in your order!</h4>                
     </div>            
   </div>
 {% endblock %}
@@ -30,7 +30,7 @@
           <a href="{% url 'sample_kit' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">Free sample kit</a>
         </div>
       </div>
-			<div class="row mobile-mb d-block d-sm-none"></div>
+			<div class="row mobile-mb d-block d-sm-none mb-5"></div>
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
         <img src="{% static 'img/home/press.png' %}" alt="Koenig & Bauer press" class="img-thumbnail border-danger border-2">
 				<h1 class="text-uppercase mt-3 ms-3 fs-3 fw-bolder text-postfly">About us</h1>
