@@ -12,22 +12,19 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 col-xl-6 mt-5">
-        <form action="">
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Your details</label>
-            <input type="text" class="form-control mb-4" id="first_name" placeholder="First Name*">
-            <input type="text" class="form-control mb-4" id="last_name" placeholder="Last Name*">
-            <input type="email" class="form-control mb-4" id="email" placeholder="Email address*">
-            <input type="text" class="form-control mb-4" id="subject" placeholder="Subject*">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            <label id="checkbox" class="no-robot-checkbox mt-3">
-              <input type="checkbox" required="" aria-required="true" />
-              <span>I'm not a robot!</span>
-            </label>
-          </div>
+        <form method="POST" id="contact-form">
+          {% csrf_token %}
+          <fieldset class="rounded mb-2 mt-4">
+            <legend class="fieldset-label small text-black px-2 w-auto"><strong>Your details</strong></legend>
+            {{ contact_form.first_name | as_crispy_field }}
+            {{ contact_form.last_name | as_crispy_field }}
+            {{ contact_form.email | as_crispy_field }}
+            {{ contact_form.subject | as_crispy_field }}
+          </fieldset>
+          <fieldset class="rounded mb-2 mt-4">
+            <legend class="fieldset-label small text-black px-2 w-auto"><strong>Message</strong></legend>
+            {{ contact_form.message | as_crispy_field }}
+          </fieldset>
           <button type="submit" class="btn postfly-general-btn hvr-grow mt-3 mb-3">Send</button>
         </form>
         <div class="col-10 py-4 d-lg-none ml-special-contact mb-10">
