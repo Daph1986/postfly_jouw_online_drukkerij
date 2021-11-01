@@ -12,9 +12,9 @@ Product {% if order.lineitems.all.count > 1 %}{{ forloop.counter }}{% endif %}:
 Delivery time: {{ item.product.delivery_time }} business days
 {% endfor%}
 
-Order total: ${{ order.order_total }}
-VAT: ${{ order.tax }}
-Grand total: ${{ order.grand_total }}
+Order total: €{{ order.order_total }}
+VAT: €{{ order.tax }}
+Grand total: €{{ order.grand_total }}
 
 Your order will be shipped to {{ order.street_address1 }} {% if order.street_address2 %}, {{ order.street_address2 }} {% endif %}
 in {{ order.town_or_city }}{% if order.postcode%}, {{ order.postcode }}{% endif %}, {{ order.country }}.
