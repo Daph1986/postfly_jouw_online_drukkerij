@@ -3,8 +3,8 @@
 
 {% block page_header %}
   <div class="container">
-    <div class="row">
-        <div class="col text-center">
+    <div class="row ms-5 ms-md-0">
+        <div class="col text-md-center">
           <h2 class="mt-5">Shopping cart</h2>
         </div>
     </div>
@@ -24,32 +24,48 @@
         {% if cart_items %}
           <div class="table-responsive rounded">
             <table class="table table-sm table-borderless">
-              <thead>
+              <div class="d-block d-md-none">
+                {% for item in cart_items %}
+                  <div class="row">
+                    <div class="col-12 col-sm-6 mb-2">
+                      <p>
+                        <strong>Product</strong> {{ item.product.name }} {{ item.product.size }}<br>
+                        <strong>Printing method</strong> {{ item.product.method }}<br>
+                        <strong>Delivery time</strong> {{ item.product.delivery_time }} business days<br>
+                        <strong>Qty</strong> {{ item.product.quantity }} pieces<br>
+                        <strong>Price</strong> €{{ item.product.price }} <br>
+                        <a class="delete-product btn postfly-small-btn mt-2" id="delete_{{ item.product_id }}"><small><i class="far fa-trash-alt"></i></small></a>
+                      </p>
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+              <thead class="mobile-hide">
                 <tr>
                   <th scope="col">Product</th>
-                  <th scope="col">Printing method</th>
-                  <th scope="col">Delivery time</th>
-                  <th scope="col">Qty</th>
-                  <th scope="col">Price</th>
+                  <th scope="col" class="text-end">Printing method</th>
+                  <th scope="col" class="text-end">Delivery time</th>
+                  <th scope="col" class="text-end">Qty</th>
+                  <th scope="col" class="text-end">Price</th>
                 </tr>
               </thead>
 
               {% for item in cart_items %}
-                <tr>
+                <tr class="mobile-hide">
                   <td class="py-3">
                     <p class="my-0">{{ item.product.name }} {{ item.product.size }}</p>
                   </td>
                   <td class="py-3">
-                    <p class="my-0">{{ item.product.method }}</p>
+                    <p class="my-0 text-end">{{ item.product.method }}</p>
                   </td>
                   <td class="py-3">
-                    <p class="my-0">{{ item.product.delivery_time }} business days</p>
+                    <p class="my-0 text-end">{{ item.product.delivery_time }} business days</p>
                   </td>
                   <td class="py-3 w-15">
-                    <p class="my-0">{{ item.product.quantity }} pieces</p>
+                    <p class="my-0 text-end">{{ item.product.quantity }} pieces</p>
                   </td>
                   <td class="py-3">
-                    <p class="my-0">€{{ item.product.price }}</p>
+                    <p class="my-0 text-end">€{{ item.product.price }}</p>
                   </td>
                   <td>
                     <a class="delete-product btn postfly-small-btn mb-3 ms-5" id="delete_{{ item.product_id }}"><small><i class="far fa-trash-alt"></i></small></a>
@@ -57,17 +73,17 @@
                 </tr>
               {% endfor %}
               <tr>
-                <td colspan="5" class="pt-5 text-end">
-                  <h5 class="me-3 mb-3">Price overview</h5>
+                <td colspan="5" class="pt-md-5 text-md-end">
+                  <h5 class="me-3 mb-3 mt-2">Price overview</h5>
                   <h6 class="me-3">Cart total: €{{total|floatformat:2 }}</h6>
                   <h6 class="me-3">VAT: €{{ tax|floatformat:2 }}</h6>
-                  <hr class="me-3 float-end">
-                  <h4 class="mt-5 me-3"><strong>Grand total: €{{grand_total|floatformat:2 }}</strong></h4>
+                  <hr class="me-3 float-md-end">
+                  <h4 class="mt-md-5 me-3"><strong>Grand total: €{{grand_total|floatformat:2 }}</strong></h4>
                 </td>
               </tr>
               <tr>
-                <td colspan="5" class="pt-5 text-center">
-                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3 mx-5">Keep shopping</a>
+                <td colspan="5" class="pt-5 text-start text-md-center">
+                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3 mx-md-5">Keep shopping</a>
                   <a href="{% url 'checkout' %}" class="btn postfly-general-btn mb-3">Secure checkout</a>
                   <div class="mb-10"></div>
                 </td>

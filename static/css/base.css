@@ -514,15 +514,32 @@ footer a {
     width: 200px;
   }
   .w-750 {
-    width: 300px;
+    width: 250px;
   }
   .w-special-logo {
     width: 200px;
+  }
+  .w-special-img {
+    width: 150px;
   }
   .w-special-icon {
     width: 75px;
   }
   .w-300 {
     width: 150px;
+  }
+  .pp-footer-logo {
+    width: 150px;
+  }
+  .gtt-btn {
+    bottom: 30px;
+    right: 30px;
+  }
+  .mobile-hide {
+    display: none;
+  }
+  .message-container {
+    width: 80%;
+    right: 40px;
   }
 }
