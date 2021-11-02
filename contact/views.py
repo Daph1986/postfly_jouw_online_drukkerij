@@ -1,13 +1,13 @@
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.conf import settings
 from django.contrib import messages
 from django.template.loader import render_to_string
 
 from profiles.models import UserProfile
 
-from .forms import ContactForm
+from .forms import ContactForm, SampleKitForm
 
 def contact(request):
     """View to return our contact page with the contact form"""
@@ -41,7 +41,7 @@ def contact(request):
 
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-            return redirect('/contact',
+            return redirect(reverse('home'),
                             messages.success(request, f'Thank you for contacting \
                                             us. We will be in touch sortly.'))
     
@@ -54,10 +54,68 @@ def contact(request):
 
 
 def sample_kit(request):
-    """View to return our sample request page"""
+    """View to return our contact page with the contact form"""
+    if request.method == 'GET':
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                sample_kit_form = SampleKitForm(initial={
+                    'email': profile.user.email,
+                    'street_address1': profile.default_street_address1,
+                    'street_address2': profile.default_street_address2,
+                    'postcode': profile.default_postcode,
+                    'town_or_city': profile.default_town_or_city,
+                    'country': profile.default_country,
+                    'phone_number': profile.default_phone_number,
+                    }
+                )
+            except UserProfile.DoesNotExist:
+                sample_kit_form = SampleKitForm()
+        else:
+            sample_kit_form = SampleKitForm()
+    else:
+        sample_kit_form = SampleKitForm(request.POST)
+        if sample_kit_form.is_valid():
+            first_name = sample_kit_form.cleaned_data['first_name']
+            last_name = sample_kit_form.cleaned_data['last_name']
+            email = sample_kit_form.cleaned_data['email']
+            company_name = sample_kit_form.cleaned_data['company_name']
+            street_address1 = sample_kit_form.cleaned_data['street_address1']
+            street_address2 = sample_kit_form.cleaned_data['street_address2']
+            postcode = sample_kit_form.cleaned_data['postcode']
+            town_or_city = sample_kit_form.cleaned_data['town_or_city']
+            country = sample_kit_form.cleaned_data['country']
+            phone_number = sample_kit_form.cleaned_data['phone_number']
+            html_msg = render_to_string(
+                'emails/sample_kit_email.html',
+                {'first_name': first_name, \
+                 'last_name': last_name, \
+                 'company_name': company_name, \
+                 'street_address1': street_address1, \
+                 'street_address2': street_address2, \
+                 'postcode': postcode, \
+                 'town_or_city': town_or_city, \
+                 'country': country, \
+                 'phone_number': phone_number})
+            try:
+                send_mail(first_name, last_name, settings.EMAIL_HOST_USER, [
+                    email, settings.EMAIL_HOST_USER],
+                    html_message=html_msg, fail_silently=False)
 
-    return render(request, 'contact/sample.html')
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect(reverse('home'),
+                            messages.success(request, f'Thank you for your \
+                                            request. Your free sample kit \
+                                            will be shipped as soon as \
+                                            possible.'))
+    
+    template = 'contact/sample.html'
+    context = {
+        'sample_kit_form': sample_kit_form,
+    }
 
+    return render(request, template, context)
 
 def quotation(request):
     """View to return our quotation page"""
