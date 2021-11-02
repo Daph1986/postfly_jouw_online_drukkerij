@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="font-size: 1.25rem; color:#000;font-family: poppins;">
+    <!-- Hello line -->
+    <p>Hi
+        <span style="color: #E72F4C;">
+            <strong>POSTFLY</strong>
+        </span>,
+    </p>
+    <!-- Message body -->
+    <div style="background-color: #f2f2f2;
+    border: 1px solid #cbcbcb;
+    border-radius: 15px;
+    padding: 1rem; height: auto; ">
+        <p style="color: #535353; font-weight: 400;">
+            Please send my sample kit to:
+            <i>
+                <span><strong>Company name:</strong></span> {{ company_name }}<br>
+                <span><strong>Street address + house number:</strong></span> {{ street_address1 }}
+                <span><strong>Additional address information:</strong></span> {{ street_address2 }}
+                <span><strong>Postal code:</strong></span> {{ postcode}}
+                <span><strong>Town or city:</strong></span> {{ town_or_city }}
+                <span><strong>Country:</strong></span> {{ country }}
+            </i>
+            When you have questions you can reach me at:
+            <i>
+              <span><strong>Phone number:</strong></span> {{ phone_number }}<br><br>
+          </i>
+        </p>
+    </div>
+    <!-- Signature -->
+    <p>With kind Regards,<br>
+        {{ first_name|title }} {{ last_name|title }}
+    </p>
+</body>
+
+</html>

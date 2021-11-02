@@ -92,7 +92,7 @@ def team(request):
 
 
 def printing_house(request):
-    """View to return team page"""
+    """View to return printing house page"""
 
     return render(request, 'home/printing.html')
 
@@ -101,21 +101,3 @@ def our_concept(request):
     """View to return our concept page"""
 
     return render(request, 'home/concept.html')
-
-
-def contact(request):
-    """View to return our concept page"""
-
-    return render(request, 'home/contact.html')
-
-
-def sample_kit(request):
-    """View to return our concept page"""
-
-    return render(request, 'home/sample.html')
-
-
-def quotation(request):
-    """View to return our concept page"""
-
-    return render(request, 'home/quotation.html')
