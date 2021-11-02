@@ -18,7 +18,7 @@
       <div class="col-12 col-md-6 col-xl-6 mt-5">
         <form method="POST" id="contact-form">
           {% csrf_token %}
-          <fieldset class="rounded mb-2 mt-4">
+          <fieldset class="rounded mb-2">
             <legend class="fieldset-label small text-black px-2 w-auto"><strong>Your details</strong></legend>
             {{ contact_form.first_name | as_crispy_field }}
             {{ contact_form.last_name | as_crispy_field }}
