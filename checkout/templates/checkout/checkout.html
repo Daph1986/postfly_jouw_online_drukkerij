@@ -82,9 +82,10 @@
                 <label for="id-save-info">Save this information to my profile</label>
                 <input type="checkbox" class="ms-2 me-2" id="id-save-info" name="save-info" checked> <br>
               {% else %}
-              <label for="id-save-info">If you want to have this information saved to your profile
-                <a href="{% url 'account_login' %}" class="btn hvr-grow postfly-general-btn me-3 my-5">Login</a> or
-                <a href="{% url 'account_signup' %}" class="btn hvr-grow postfly-general-btn ms-3 my-5">Register</a>
+              <label for="id-save-info">If you want to have this information saved to your profile <br>
+                <a href="{% url 'account_login' %}" class="btn hvr-grow postfly-general-btn mt-2 mt-md-2 me-3">Login</a>
+                or
+                <a href="{% url 'account_signup' %}" class="btn hvr-grow postfly-general-btn ms-md-2 mt-3 mt-md-2">Register</a>
               </label>
               {% endif %}
             </div>
@@ -103,7 +104,7 @@
             <a href="{% url 'view_cart' %}" class="btn hvr-grow postfly-general-btn me-3 mb-3">
               Adjust order
             </a>
-            <button id="submit-button" class="btn hvr-grow postfly-general-btn ms-3 mb-3">
+            <button id="submit-button" class="btn hvr-grow postfly-general-btn ms-md-3 mb-3">
               Complete order
             </button>
             <p class="small text-danger my-0">
