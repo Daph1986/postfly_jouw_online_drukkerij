@@ -52,7 +52,7 @@ def dashboard(request):
 		'order_list_admin': order_list_admin,
 		'page_object': page_object,
 		'page_object_admin': page_object_admin,
-        'total_orders': total_orders,
+		'total_orders': total_orders,
 		'total_orders_admin': total_orders_admin,
 		'on_profile_page': True
     }
