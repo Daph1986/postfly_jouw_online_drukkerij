@@ -62,12 +62,13 @@ class StripeWebHookHandler:
 		if username != 'AnonymousUser':
 			profile =  UserProfile.objects.get(user__username=username)
 			if save_info:
-				profile.default_phone_number = shipping_details.phone
-				profile.default_country = shipping_details.address.country
-				profile.default_postcode = shipping_details.address.postal_code
-				profile.default_town_or_city = shipping_details.address.city
+				profile.default_company_name = shipping_details.company_name
 				profile.default_street_address1 = shipping_details.address.line1
 				profile.default_street_address2 = shipping_details.address.line2
+				profile.default_postcode = shipping_details.address.postal_code
+				profile.default_town_or_city = shipping_details.address.city
+				profile.default_country = shipping_details.address.country
+				profile.default_phone_number = shipping_details.phone
 				profile.save()
 
 		order_exists =  False
@@ -77,12 +78,13 @@ class StripeWebHookHandler:
 				order = Order.objects.get (
 					last_name__iexact=shipping_details.name,
 					email__iexact=billing_details.email,
-					phone_number__iexact=shipping_details.phone,
-					country__iexact=shipping_details.address.country,
-					postcode__iexact=shipping_details.address.postal_code,
-					town_or_city__iexact=shipping_details.address.city,
+					company_name__iexact=shipping_details.company_name,
 					street_address1__iexact=shipping_details.address.line1,
 					street_address2__iexact=shipping_details.address.line2,
+					postcode__iexact=shipping_details.address.postal_code,
+					town_or_city__iexact=shipping_details.address.city,
+					country__iexact=shipping_details.address.country,
+					phone_number__iexact=shipping_details.phone,
 					grand_total=grand_total,
 					original_cart=cart,
                     stripe_pid=pid,
@@ -105,12 +107,13 @@ class StripeWebHookHandler:
 						last_name=shipping_details.name,
 						user_profile=profile,
 						email=billing_details.email,
-						phone_number=shipping_details.phone,
-						country=shipping_details.address.country,
-						postcode=shipping_details.address.postal_code,
-						town_or_city=shipping_details.address.city,
+						company_name=shipping_details.company_name,
 						street_address1=shipping_details.address.line1,
 						street_address2=shipping_details.address.line2,
+						postcode=shipping_details.address.postal_code,
+						town_or_city=shipping_details.address.city,
+						country=shipping_details.address.country,
+						phone_number=shipping_details.phone,
 						original_cart=cart,
                     	stripe_pid=pid,
 				)

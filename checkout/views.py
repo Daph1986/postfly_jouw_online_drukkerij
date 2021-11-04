@@ -41,14 +41,14 @@ def checkout(request):
         form_data = {
             'first_name': request.POST['first_name'],
             'last_name': request.POST['last_name'],
-            'company_name': request.POST['company_name'],
             'email': request.POST['email'],
-            'phone_number': request.POST['phone_number'],
-            'country': request.POST['country'],
-            'postcode': request.POST['postcode'],
-            'town_or_city': request.POST['town_or_city'],
+            'company_name': request.POST['company_name'],
             'street_address1': request.POST['street_address1'],
             'street_address2': request.POST['street_address2'],
+            'postcode': request.POST['postcode'],
+            'town_or_city': request.POST['town_or_city'],
+            'country': request.POST['country'],
+            'phone_number': request.POST['phone_number'],
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -100,12 +100,13 @@ def checkout(request):
                 profile = UserProfile.objects.get(user=request.user)
                 order_form = OrderForm(initial={
                     'email': profile.user.email,
-                    'phone_number': profile.default_phone_number,
-                    'country': profile.default_country,
-                    'postcode': profile.default_postcode,
-                    'town_or_city': profile.default_town_or_city,
+                    'company_name': profile.default_company_name,
                     'street_address1': profile.default_street_address1,
                     'street_address2': profile.default_street_address2,
+                    'postcode': profile.default_postcode,
+                    'town_or_city': profile.default_town_or_city,
+                    'country': profile.default_country,
+                    'phone_number': profile.default_phone_number,
                 })
             except UserProfile.DoesNotExist:
                 order_form = OrderForm()
@@ -141,12 +142,12 @@ def checkout_success(request, order_number):
     if save_info:
         profile_data = {
             'default_company_name': order.company_name,
-            'default_phone_number': order.phone_number,
-            'default_town_or_city': order.town_or_city,
             'default_street_address1': order.street_address1,
             'default_street_address2': order.street_address2,
             'default_postcode': order.postcode,
+            'default_town_or_city': order.town_or_city,
             'default_country': order.country,
+            'default_phone_number': order.phone_number,
         }
         user_profile_form = UserProfileForm(profile_data, instance=profile)
         if user_profile_form.is_valid():
