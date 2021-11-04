@@ -32,26 +32,35 @@ def profile(request):
 	return render(request, template, context)
 
 
+@login_required
 def dashboard(request):
 	""" A view that displays the dashboad for the customer """
 	profile = get_object_or_404(UserProfile, user=request.user)
-	orders = profile.orders.all().order_by('-date')
-	paginator = Paginator(orders, 6)
+	order_list = profile.orders.all().order_by('-date')
+	order_list_admin = Order.objects.all().order_by('-date')
+	paginator = Paginator(order_list, 10)
+	paginator_admin = Paginator(order_list_admin, 10)
 	page_number = request.GET.get('page')
 	page_object = paginator.get_page(page_number)
-	total_orders = orders.count()
+	page_object_admin = paginator_admin.get_page(page_number)
+	total_orders = order_list.count()
+	total_orders_admin = order_list_admin.count()
 
 	template = 'profiles/dashboard.html'
 	context = {
-        'orders': orders,
+        'order_list': order_list,
+		'order_list_admin': order_list_admin,
 		'page_object': page_object,
-        'total_orders': total_orders,
-        'on_profile_page': True
+		'page_object_admin': page_object_admin,
+		'total_orders': total_orders,
+		'total_orders_admin': total_orders_admin,
+		'on_profile_page': True
     }
 
 	return render(request, template, context)
 
 
+@login_required
 def order_detail(request, order_number):
 	""" Displays the order details of a specific order """
 	order = get_object_or_404(Order, order_number=order_number)
