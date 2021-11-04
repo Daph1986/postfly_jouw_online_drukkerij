@@ -6,10 +6,10 @@
 */
 
 
-let stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
-let clientSecret = $('#id_client_secret').text().slice(1, -1);
-let stripe = Stripe(stripePublicKey);
-let elements = stripe.elements();
+const stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
+const clientSecret = $('#id_client_secret').text().slice(1, -1);
+const stripe = Stripe(stripePublicKey);
+const elements = stripe.elements();
 
 let style = {
   base: {
