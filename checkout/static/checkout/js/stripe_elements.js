@@ -72,7 +72,6 @@ form.addEventListener('submit', function(ev) {
               name: $.trim(form.first_name.value) + ' ' + $.trim(form.last_name.value),
               phone: $.trim(form.phone_number.value),
               email: $.trim(form.email.value),
-              company_name: $.trim(form.company_name.value),
               address:{
                 line1: $.trim(form.street_address1.value),
                 line2: $.trim(form.street_address2.value),
@@ -84,7 +83,6 @@ form.addEventListener('submit', function(ev) {
           shipping: {
             name: $.trim(form.first_name.value) + ' ' + $.trim(form.last_name.value),
             phone: $.trim(form.phone_number.value),
-            company_name: $.trim(form.company_name.value),
             address: {
               line1: $.trim(form.street_address1.value),
               line2: $.trim(form.street_address2.value),
