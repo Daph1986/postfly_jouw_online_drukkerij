@@ -62,7 +62,6 @@ class StripeWebHookHandler:
 		if username != 'AnonymousUser':
 			profile =  UserProfile.objects.get(user__username=username)
 			if save_info:
-				profile.default_company_name = shipping_details.company_name
 				profile.default_street_address1 = shipping_details.address.line1
 				profile.default_street_address2 = shipping_details.address.line2
 				profile.default_postcode = shipping_details.address.postal_code
@@ -78,7 +77,6 @@ class StripeWebHookHandler:
 				order = Order.objects.get (
 					last_name__iexact=shipping_details.name,
 					email__iexact=billing_details.email,
-					company_name__iexact=shipping_details.company_name,
 					street_address1__iexact=shipping_details.address.line1,
 					street_address2__iexact=shipping_details.address.line2,
 					postcode__iexact=shipping_details.address.postal_code,
@@ -107,7 +105,6 @@ class StripeWebHookHandler:
 						last_name=shipping_details.name,
 						user_profile=profile,
 						email=billing_details.email,
-						company_name=shipping_details.company_name,
 						street_address1=shipping_details.address.line1,
 						street_address2=shipping_details.address.line2,
 						postcode=shipping_details.address.postal_code,
