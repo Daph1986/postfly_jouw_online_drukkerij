@@ -5,7 +5,7 @@ Hereby you receive a confirmation of the order you have submitted. Your order in
 Order number: {{ order.order_number }}
 Order date: {{ order.date }}
 
-Oder overview:
+Order overview:
 {% for item in order.lineitems.all %}
 Product {% if order.lineitems.all.count > 1 %}{{ forloop.counter }}{% endif %}:
 {{ item.product.name }} {{ item.product.size }} {{ item.product.method }} {{ item.product.quantity }} pieces
@@ -16,8 +16,7 @@ Order total: €{{ order.order_total }}
 VAT: €{{ order.tax }}
 Grand total: €{{ order.grand_total }}
 
-Your order will be shipped to {{ order.street_address1 }} {% if order.street_address2 %}, {{ order.street_address2 }} {% endif %}
-in {{ order.town_or_city }}{% if order.postcode%}, {{ order.postcode }}{% endif %}, {{ order.country }}.
+Your order will be shipped to {{ order.street_address1 }} {% if order.street_address2 %}, {{ order.street_address2 }} {% endif %} in {{ order.town_or_city }}{% if order.postcode%}, {{ order.postcode }}{% endif %}, {{ order.country }}.
 
 If there is any need to, we will contact you at phone number {{ order.phone_number }}.
 
