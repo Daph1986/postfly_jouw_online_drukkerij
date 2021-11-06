@@ -8,7 +8,7 @@ Jouw online drukkerij!
 
 POSTFLY is a site where you can order all your necessary printed matter online.
 [POSTFLY](http://www.postfly.nl/) already has an existing site, but it needs an update.
-The existing site as it is now no longer meets the needs of customers and employees. This is a first draft for the company's new site and in this case is for educational purposes only.
+The existing site as it is now no longer meets the needs of customers and employees. This is a first draft for the company's new site and in this case is for educational purposes only. For this reason only a few of the many products are used on this site.
 
 The focus with this site is to combine knowledge about everything conserning printed matter with what was learned during the Code Institute course.
 The site's goal is to have a more efficient system for employees and a easy to understand order system for B2B customers.
@@ -16,7 +16,7 @@ The site's goal is to have a more efficient system for employees and a easy to u
 :clapper: Demo
 ======
 
-<!-- By clicking this [link]() a live demo version will be visible. -->
+By clicking this [link](https://postfly-jouw-online-drukkerij.herokuapp.com/) a live demo version will be visible.
 
 <!-- <img src="static/readme_images/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
 <img src="static/readme_images/mockup_2.png" alt="Mockup 2" width="65%" height="65%"> -->
@@ -66,7 +66,7 @@ The site's goal is to have a more efficient system for employees and a easy to u
 :busts_in_silhouette: UX
 ======
 
-This is meant to be a B2B site which targets visitors who are in need of printed matter, such as flyers, folders, posters, business cards, brochures, etc.
+This is meant to be a B2B site which targets visitors who are in need of printed matter, such as flyers, posters, business cards, etc.
 
 ### User stories
 
@@ -81,6 +81,37 @@ The design goal is to make a clear, accessible, structured site so that visitors
 
 For customers, the site should be an improvement over the existing site. Frequently heard complaints with the existing site include that it is not clear where the artwork should be uploaded and that the payment system is not working.
 If this can be done, it will also ease the workload of the employees, by solving many complaints and questions related to the site.
+The site shows a homepage with links to different parts of the site. It contains a products page where the different products are displayed. There is a files section which gives guidance on how to prepare your digital files and a frequently asked question page for the answers to most asked questions. Furthermore there is a section "About us" which gives a bit of background information about the company and there is a contact section where a contact form can be used, a sample kit request form and a quotation form can be filled out.
+The site also contains a register page, a log in page and a shopping cart which will color red and update the price when there is a product in the cart.
+The register link will dissapear when logged in and the login link will change to account, where the dashboard, profile and logout link will be displayed. When you are a logged in admin there will also be a product management link.
+
+| Nav menu | Logged in User | Logged out User |
+ --- | --- | ---
+Home| &#9989; | &#9989; |
+Products |&#9989; | &#9989; |
+Files|&#9989; | &#9989; |
+FAQ| &#9989; | &#9989; |
+About us| &#9989; | &#9989; |
+Contact | &#9989; | &#9989; |
+Register| &#10060; | &#9989; |
+Log in| &#10060; | &#9989; |
+Account| &#9989; | &#10060; |
+Dashboard| &#9989; | &#10060; |
+Profile| &#9989; | &#10060; |
+Log out| &#9989; | &#10060; |
+Shopping cart | &#9989; | &#9989; |
+
+
+A difference has also been made in user rights:
+| Options | Standard User Account | Admin User Account |
+ --- | --- | ---
+Add products | &#10060; | &#9989; |
+Update products | &#10060; | &#9989; |
+Delete products | &#10060; | &#9989; |
+See own orders| &#9989; | &#9989; |
+customers | &#10060; | &#9989; |
+Edit profile| &#9989; | &#9989; |
+
 
 ### Structure
 
@@ -104,11 +135,10 @@ For the icons [Font Awesome](https://fontawesome.com/) was used.
 
 The site contains the following features: 
 - A page with an overview of all the products which can be sort by name, price and category.
-- A product detail page with the prices of the products and the delivery times.
 - A frequently asked questions page.
 - Pages with tips and tricks about designing / handing in artwork.
 - A contact form where customers can ask questions.
-- A form where customers can request a quote or deviating products / products that are not on the site but we may have.
+- A form where customers can request a quotation or deviating products / products that are not on the site but we may have.
 - A sample kit form where customers can request a sample kit with our paper types.
 - A register page.
 - A login page.
@@ -116,7 +146,7 @@ The site contains the following features:
 - An order sytem, to order the products and upload the artwork for the products.
 - A dashboard, with the order history.
 - A profile page to adjust the user's details. 
-- An option to choose the language, Dutch or English. Default will be Dutch.
+<!-- - An option to choose the language, Dutch or English. Default will be Dutch. -->
 
 ### Features for the future 
 
@@ -124,8 +154,10 @@ The following features can be added:
 
 - Integrate the previously created project POSTFLY Business card creator into this site, so that customers can create their design on the site instead of uploading their separately made artwork.
 - A chat function for live chat with an employee.
-- An artwork upload system where you as a customer can check the artwork theirself.
+- An artwork upload system where a customer can check their artwork themself.
 - An option to have multiple billing and delivery addresses for one user.
+- An option to see the status of the order on the dashboard.
+<!-- - An option to choose the language, Dutch or English. Default will be Dutch. -->
 <div align="right"><a href="#top">🔝</a></div>
 
 :gear: Technologies
@@ -149,7 +181,6 @@ The following features can be added:
 - Django-allauth
 - Django-crispy-forms 
 - Django-countries
-
 
 ### Wireframes
 
@@ -190,6 +221,8 @@ Most content has been written by me, the technical stories regarding the deliver
 ### Code
 1. [Hover.css](https://ianlunn.github.io/Hover/) to learn how to let the buttons on the home page grow on hover.
 2. [W3 Schools](https://www.w3schools.com/howto/howto_css_parallax.asp) to learn how to create the parallax effect.
+3. [W3 Schools](https://www.w3schools.com/howto/howto_css_loader.asp) to learn how to create the loader on the payment process page.
+4. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
 
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -213,12 +246,14 @@ Most content has been written by me, the technical stories regarding the deliver
 2. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
 
 <!-- 3. [cdnjs](https://cdnjs.com/) to get the fontawesome cdn from.
-5. [Am I Responsive?](http://ami.responsivedesign.is/) to check the responsiveness and make the mockups.
 6. [WebAIM](https://webaim.org/resources/contrastchecker/) used for checking contrasts on the site. -->
 
 ### Acknowledgements
 
 - My mentor from Code Institute, thank you Narender for your time and guidance.
-- My husband, thank you Django for taking more care of our son so I can work on my education, and thank you for your patience.
+- My husband, thank you Django for taking more care of our son so I can work on my education, and thank you for your patience and guidance in the time I had a lot of mental breakdowns.
+- Special thanks to CI former students Aukje van der Wal and Django Heimgartner whose projects Dark Luna and Silkscreenservice learnt me a lot.
+- A huge thanks to the incredible CI tutor support for helping me a out a lot of times during this project.
+- Special thanks to CI fellow student Gwendolyn Jo for lifting my spirits during multiple mental breakdowns.
 <!-- - Special thanks to my colleagues, friends and family for their support, tips and for testing my project. -->
 <div align="right"><a href="#top">🔝</a></div>
