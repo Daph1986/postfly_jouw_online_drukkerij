@@ -209,7 +209,7 @@ For more details about testing and bugs please view this [file](testing/README.m
 
 ### Deployment
 
-<!-- The deployment section is a bit more extensive for that reason please view this separate [file](deployment/README.md). -->
+The deployment section is a bit more extensive for that reason please view this separate [file](readme/deployment/README.md).
 <div align="right"><a href="#top">🔝</a></div>
 
 :copyright: Credits
@@ -219,17 +219,16 @@ For more details about testing and bugs please view this [file](testing/README.m
 Most content has been written by me, the technical stories regarding the delivery of the files and the origin of the printing company come from the sites of [POSTFLY](http://www.postfly.nl/) and [Grafische Groep Matthys](https://www.groepmatthys.com/) and were sometimes adjusted by me. Prices are based on the product price from the original site, and adjusted here and there, but are for learning purposes only for this project. No rights can therefore be derived from this.
 
 ### Code
-1. [Hover.css](https://ianlunn.github.io/Hover/) to learn how to let the buttons on the home page grow on hover.
-2. [W3 Schools](https://www.w3schools.com/howto/howto_css_parallax.asp) to learn how to create the parallax effect.
-3. [W3 Schools](https://www.w3schools.com/howto/howto_css_loader.asp) to learn how to create the loader on the payment process page.
-4. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
-
+1. [Code Institute LMS Full Stack Frameworks with Django Boutique Ado project by Chris Zielinski](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSF_102+Q1_2020/courseware/4201818c00aa4ba3a0dae243725f6e32/d3188bf68530497aa5fba55d07a9d7d7/?child=first) this was used as the basis of the code and then modified to make it my own site.
+2. [Hover.css](https://ianlunn.github.io/Hover/) to learn how to let the buttons on the home page grow on hover.
+3. [W3 Schools](https://www.w3schools.com/howto/howto_css_parallax.asp) to learn how to create the parallax effect.
+4. [W3 Schools](https://www.w3schools.com/howto/howto_css_loader.asp) to learn how to create the loader on the payment process page.
+5. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Media
 
 #### Images
-
 1. [POSTFLY](http://www.postfly.nl/) the POSTFLY logo provided by my colleague Filip Matthys, for the joboptions and base of the templates, and for the images on the deep black and resolution (sunflower image) page.
 2. [Flaticon](https://www.flaticon.com/free-icon/paper-plane_164627?term=paper%20plane&page=3&position=52&page=3&position=52&related_id=164627&origin=search) to get and adjust the paper plane of the logo.
 3. [favicon.io](https://favicon.io/favicon-converter/) was used to get the favicon of the logo.
@@ -241,15 +240,14 @@ Most content has been written by me, the technical stories regarding the deliver
 
 
 ### Other
-
 1. [Luchidchart](https://www.lucidchart.com/pages/) to create the Django diagram model.
 2. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
+3. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) to get a new secret key for Django
 
 <!-- 3. [cdnjs](https://cdnjs.com/) to get the fontawesome cdn from.
 6. [WebAIM](https://webaim.org/resources/contrastchecker/) used for checking contrasts on the site. -->
 
 ### Acknowledgements
-
 - My mentor from Code Institute, thank you Narender for your time and guidance.
 - My husband, thank you Django for taking more care of our son so I can work on my education, and thank you for your patience and guidance in the time I had a lot of mental breakdowns.
 - Special thanks to CI former students Aukje van der Wal and Django Heimgartner whose projects Dark Luna and Silkscreenservice learnt me a lot.
