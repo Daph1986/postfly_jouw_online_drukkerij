@@ -1,1 +1,1 @@
-Confirmation for POSTFLY Order {{ order.order_number }}
+Confirmation for POSTFLY Order AMB21-{{ order.order_number }}

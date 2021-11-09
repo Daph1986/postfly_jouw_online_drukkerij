@@ -43,7 +43,7 @@
                 {% if request.user.is_superuser %}
                   {% for order in order_list_admin %}
                     <tr>
-                      <td>{{ order.order_number|truncatechars:10 }}</td>
+                      <td>AMB21-{{ order.order_number }}</td>
                       <td>{{ order.date }}</td>
                       <td>{{ order.user_profile }}</td>
                       <td>
@@ -56,7 +56,7 @@
                 {% else %}
                   {% for order in order_list %}
                     <tr>
-                      <td>{{ order.order_number|truncatechars:10 }}</td>
+                      <td>AMB21-{{ order.order_number }}</td>
                       <td>{{ order.date }}</td>
                       <td>
                         <a href="{% url 'order_detail' order.order_number %}">

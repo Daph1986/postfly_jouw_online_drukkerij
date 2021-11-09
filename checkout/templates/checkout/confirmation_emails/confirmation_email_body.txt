@@ -2,7 +2,7 @@ Hello {{ order.first_name }} {{ order.last_name }},
 
 Hereby you receive a confirmation of the order you have submitted. Your order information is below:
 
-Order number: {{ order.order_number }}
+Order number: AMB21-{{ order.order_number }}
 Order date: {{ order.date }}
 
 Order overview:
