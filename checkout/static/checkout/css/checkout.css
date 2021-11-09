@@ -100,3 +100,10 @@ select option[value=""] {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* ----------------------- Media queries ------------------------- */
+@media (max-width: 767.98px) {
+  .h3-mobile {
+    font-size: 1rem;
+  }
+}
