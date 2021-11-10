@@ -169,9 +169,10 @@ def quotation(request):
                 return HttpResponse('Invalid header found.')
             return redirect(reverse('home'),
                             messages.success(request, f'Thank you for your \
-                                            request. We will send you a \
-                                            quotation as soon as \
-                                            possible.'))
+                                            request. A copy of your request \
+                                            has been send to your email. \
+                                            We will send you a quotation \
+                                            as soon as possible.'))
     
     template = 'contact/quotation.html'
     context = {

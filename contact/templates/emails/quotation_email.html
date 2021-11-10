@@ -6,7 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="font-size: 1rem; color:#000;font-family: poppins;">
+<body style="font-size: 1rem; color:#000;font-family: poppins;
+	background-color: #f2f2f2;
+	border: 1px solid #707070;
+  border-radius: 25px;
+	padding: 1rem; height: auto; width: 50%;">
 	<!-- Hello line -->
 	<p>Hi
 		<span style="color: #E72F4C;">
@@ -14,34 +18,33 @@
 		</span>,
 	</p>
 	<!-- Message body -->
-	<div style="background-color: #f2f2f2;
-    border: 1px solid #cbcbcb;
-    border-radius: 25px;
-    padding: 1rem; height: auto; width: 50%;">
-		<p style="color: #535353; font-weight: 400;">
-			Please make a quotaion for:<br>
+	<div>
+		<p>
+			Please make a quotation for:<br>
 			<i>
-				{{ message }} <br> <br>
+				<span><strong>{{ message }}</strong></span><br> <br>
 			</i>
 			The quotaion can be addressed to:<br>
 			<i>
-				{% if order.company_name %}
-					{{ company_name }}<br>
+				{% if company_name %}
+					<span><strong>{{ company_name }}</strong></span><br>
 				{% endif %}
-				{{ street_address1 }}<br>
-				{{ street_address2 }}<br>
-				{{ postcode}} {{ town_or_city }}<br>
-				{{ country }} <br> <br>
+				<span><strong>{{ street_address1 }}</strong></span><br>
+				{% if street_address2 %}
+					<span><strong>{{ street_address2 }}</strong></span><br>
+				{% endif %}
+				<span><strong>{{ postcode}} {{ town_or_city }}</strong></span><br>
+				<span><strong>{{ country }}</strong></span><br> <br>
 			</i>
 			When you have questions you can reach me at phone number:<br>
 			<i>
-				{{ phone_number }}<br><br>
+				<span><strong>{{ phone_number }}</strong></span><br> <br>
 			</i>
 		</p>
 	</div>
 	<!-- Signature -->
 	<p>With kind Regards,<br>
-		{{ first_name|title }} {{ last_name|title }}
+		<span><strong>{{ first_name|title }} {{ last_name|title }}</strong></span>
 	</p>
 </body>
 
