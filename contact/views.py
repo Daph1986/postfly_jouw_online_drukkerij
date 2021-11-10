@@ -42,8 +42,11 @@ def contact(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect(reverse('home'),
-                            messages.success(request, f'Thank you for contacting \
-                                            us. We will be in touch sortly.'))
+                            messages.success(request, f'Thank you for \
+                                            contacting us. A copy of your \
+                                            message has been send to your \
+                                            email.We will be in touch \
+                                            sortly.'))
     
     template = 'contact/contact.html'
     context = {
@@ -61,6 +64,7 @@ def sample_kit(request):
                 profile = UserProfile.objects.get(user=request.user)
                 sample_kit_form = SampleKitForm(initial={
                     'email': profile.user.email,
+                    'company_name': profile.default_company_name,
                     'street_address1': profile.default_street_address1,
                     'street_address2': profile.default_street_address2,
                     'postcode': profile.default_postcode,
@@ -106,9 +110,10 @@ def sample_kit(request):
                 return HttpResponse('Invalid header found.')
             return redirect(reverse('home'),
                             messages.success(request, f'Thank you for your \
-                                            request. Your free sample kit \
-                                            will be shipped as soon as \
-                                            possible.'))
+                                            request. A copy of your request \
+                                            has been send to your email. \
+                                            Your free sample kit will be \
+                                            shipped as soon as possible.'))
     
     template = 'contact/sample.html'
     context = {
@@ -125,6 +130,7 @@ def quotation(request):
                 profile = UserProfile.objects.get(user=request.user)
                 quotation_form = QuotationForm(initial={
                     'email': profile.user.email,
+                    'company_name': profile.default_company_name,
                     'street_address1': profile.default_street_address1,
                     'street_address2': profile.default_street_address2,
                     'postcode': profile.default_postcode,

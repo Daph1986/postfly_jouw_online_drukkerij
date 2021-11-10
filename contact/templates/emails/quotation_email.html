@@ -36,10 +36,12 @@
 				<span><strong>{{ postcode}} {{ town_or_city }}</strong></span><br>
 				<span><strong>{{ country }}</strong></span><br> <br>
 			</i>
-			When you have questions you can reach me at phone number:<br>
-			<i>
-				<span><strong>{{ phone_number }}</strong></span><br> <br>
-			</i>
+			{% if phone_number %}
+				When you have questions you can reach me at phone number:<br>
+				<i>
+					<span><strong>{{ phone_number }}</strong></span>
+				</i>
+			{% endif %}
 		</p>
 	</div>
 	<!-- Signature -->

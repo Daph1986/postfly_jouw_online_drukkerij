@@ -2,33 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="font-size: 1.25rem; color:#000;font-family: poppins;">
-    <!-- Hello line -->
-    <p>Hi
-        <span style="color: #E72F4C;">
-            <strong>POSTFLY</strong>
-        </span>,
-    </p>
-    <!-- Message body -->
-    <div style="background-color: #f2f2f2;
-    border: 1px solid #cbcbcb;
-    border-radius: 15px;
-    padding: 1rem; height: auto; ">
-        <p style="color: #535353; font-weight: 400;">
-            <i>
-                <span><strong>Subject:</strong></span> {{ subject }}<br><br>
-                <span><strong>Message:</strong></span> {{ message }}
-            </i>
-        </p>
-    </div>
-    <!-- Signature -->
-    <p>With kind Regards,<br>
-        {{ first_name|title }} {{ last_name|title }}
-    </p>
+<body style="font-size: 1rem; color:#000;font-family: poppins;
+	background-color: #f2f2f2;
+	border: 1px solid #707070;
+  border-radius: 25px;
+	padding: 1rem; height: auto; width: 50%;">
+	<!-- Hello line -->
+	<p>Hi
+		<span style="color: #E72F4C;">
+			<strong>POSTFLY</strong>
+		</span>,
+	</p>
+	<!-- Message body -->
+	<div>
+		<p>
+			<i>
+				<span><strong>Subject:</strong></span> {{ subject }}<br><br>
+				<span><strong>Message:</strong></span> {{ message }}
+			</i>
+		</p>
+	</div>
+	<!-- Signature -->
+	<p>With kind Regards,<br>
+		<span><strong>{{ first_name|title }} {{ last_name|title }}</strong></span>
+	</p>
 </body>
 
 </html>
