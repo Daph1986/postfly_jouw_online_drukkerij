@@ -2,15 +2,15 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+  <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
   <div class="container">
     <div class="row">
-        <div class="col text-center">
-          <h2 class="mt-5">Checkout</h2>
-        </div>
+      <div class="col text-center">
+        <h2 class="mt-5">Checkout</h2>
+      </div>
     </div>
   </div>
 {% endblock %}
@@ -23,21 +23,23 @@
         <h6 class="my-5">Order overview ({{ product_count }})</h6>
         <div class="row">
           <div class="col-7">
-              <p class="mb-1 mt-0 small"><strong>Product</strong></p>
+            <p class="mb-1 mt-0 small"><strong>Product</strong></p>
           </div>
           <div class="col-3 text-end">
-              <p class="mb-1 mt-0 small"><strong>Subtotal</strong></p>
+            <p class="mb-1 mt-0 small"><strong>Subtotal</strong></p>
           </div>
         </div>
         {% for item in cart_items %}
-          <div class="row">
-            <div class="col-7">
-              <p class="my-0 small">{{ item.product.name }} {{ item.product.size }} {{ item.product.quantity }} pieces</p>
-            </div>
-            <div class="col-3 text-end">
-              <p class="my-0 small">€{{ item.product.price }}</p>
-            </div>
+        <div class="row">
+          <div class="col-7">
+            <p class="my-0 small">{{ item.product.name }} {{ item.product.size }} {{ item.product.quantity }} pieces</p>
+            <p class="my-0 small">{{ item.product.method}}</p>
+            <p class="my-0 small">Delivery time {{ item.product.delivery_time}} business days</p><br>
           </div>
+          <div class="col-3 text-end">
+            <p class="my-0 small">€{{ item.product.price }}</p>
+          </div>
+        </div>
         {% endfor %}
         <hr>
         <div class="row">
@@ -57,11 +59,11 @@
           </div>
         </div>
       </div>
-      
+
       <div class="col-12 col-lg-6">
         <p class="ms-2">Please fill out the form below to complete your order.</p>
         <form action="{% url 'checkout' %}" method="POST" id="payment-form">
-           {% csrf_token %}
+          {% csrf_token %}
           <fieldset class="rounded mb-2 mt-4">
             <legend class="fieldset-label small text-black px-2 w-auto"><strong>Personal details</strong></legend>
             {{ order_form.first_name | as_crispy_field }}
@@ -79,13 +81,14 @@
             {{ order_form.phone_number | as_crispy_field }}
             <div class="p-0">
               {% if user.is_authenticated %}
-                <label for="id-save-info">Save this information to my profile</label>
-                <input type="checkbox" class="ms-2 me-2" id="id-save-info" name="save-info" checked> <br>
+              <label for="id-save-info">Save this information to my profile</label>
+              <input type="checkbox" class="ms-2 me-2" id="id-save-info" name="save-info" checked> <br>
               {% else %}
               <label for="id-save-info">If you want to have this information saved to your profile <br>
                 <a href="{% url 'account_login' %}" class="btn hvr-grow postfly-general-btn mt-2 mt-md-2 me-3">Login</a>
                 or
-                <a href="{% url 'account_signup' %}" class="btn hvr-grow postfly-general-btn ms-md-2 mt-3 mt-md-2">Register</a>
+                <a href="{% url 'account_signup' %}"
+                  class="btn hvr-grow postfly-general-btn ms-md-2 mt-3 mt-md-2">Register</a>
               </label>
               {% endif %}
             </div>
@@ -100,7 +103,7 @@
             <input type="hidden" value="{{ client_secret }}" name="client_secret">
           </fieldset>
 
-          <div class="submit-button text-right mt-3 mb-10">                    
+          <div class="submit-button text-right mt-3 mb-10">
             <a href="{% url 'view_cart' %}" class="btn hvr-grow postfly-general-btn me-3 mb-3">
               Adjust order
             </a>
