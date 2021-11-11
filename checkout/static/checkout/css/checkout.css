@@ -1,5 +1,6 @@
 /* ---------------------- Stripe form styling ---------------------- */
-.StripeElement,
+
+.StripeElement, 
 .stripe-style-input {
   box-sizing: border-box;
   padding: 7px 12px;
@@ -11,8 +12,8 @@
   transition: box-shadow 150ms ease;
 }
 
-.StripeElement--focus,
-.stripe-style-input:focus,
+.StripeElement--focus, 
+.stripe-style-input:focus, 
 .stripe-style-input:active {
   box-shadow: 0 1px 3px 0 #dcdee0;
 }
@@ -35,28 +36,27 @@
   box-shadow: 0 0 0 0.25rem #E72F4C36;
 }
 
-input:-webkit-autofill,
-textarea:-webkit-autofill,
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
 select:-webkit-autofill {
   box-shadow: 0 1px 3px 0 #dcdee0;
   -webkit-box-shadow: 0 0 0 1000px #E72F4B36 inset !important;
   -webkit-text-fill-color: black !important;
 }
 
-select,
-select option {
+select, select option {
   color: #000;
 }
 
-select:invalid,
-select option[value=""] {
+select:invalid, select option[value=""] {
   color: #70707086;
 }
 
 /* ------------------ Order confirmation styling ------------------- */
+
 .order-confirmation-heading-wrapper {
   border-radius: 25px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   background-color: #E72F4C;
   color: #FFF;
@@ -64,15 +64,16 @@ select option[value=""] {
 
 .order-confirmation-wrapper {
   border-radius: 25px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-color: #707070;
 }
 
 /* ------------------------ Payment overlay ------------------------ */
+
 #loading-overlay {
   display: none;
-	position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -86,7 +87,7 @@ select option[value=""] {
   left: 50%;
   top: 50%;
   z-index: 1;
-	width: 120px;
+  width: 120px;
   height: 120px;
   margin: -76px 0 0 -76px;
   border: 16px solid #F3F3F3;
@@ -97,11 +98,16 @@ select option[value=""] {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* ----------------------- Media queries ------------------------- */
+
 @media (max-width: 767.98px) {
   .h3-mobile {
     font-size: 1rem;

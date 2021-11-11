@@ -1,21 +1,22 @@
 from django import forms
 from .models import Order
 
+
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('first_name', 'last_name', 'company_name', 
-				  'email', 'phone_number','street_address1', 
-				  'street_address2', 'town_or_city', 'postcode', 
-				  'country',)
+        fields = ('first_name', 'last_name', 'company_name',
+                  'email', 'phone_number', 'street_address1',
+                  'street_address2', 'town_or_city', 'postcode',
+                  'country',)
 
     def __init__(self, *args, **kwargs):
         """ Order form which is displayed at checkout page """
         super().__init__(*args, **kwargs)
         placeholders = {
             'first_name': 'First name',
-			'last_name': 'Last name',
-			'company_name': 'Company name',
+            'last_name': 'Last name',
+            'company_name': 'Company name',
             'email': 'Email address',
             'phone_number': 'Phone number',
             'postcode': 'Postal code',

@@ -2,24 +2,24 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+  <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
   {% if from_profile %}
     <div class="container">
       <div class="row">
-          <div class="col text-center">
-            <h2 class="mt-5">Order details</h2>
-          </div>
+        <div class="col text-center">
+          <h2 class="mt-5">Order details</h2>
+        </div>
       </div>
     </div>
-  {% else %}
+    {% else %}
     <div class="container">
       <div class="row">
-          <div class="col text-center">
-            <h2 class="mt-5">Thank you for your order!</h2>
-          </div>
+        <div class="col text-center">
+          <h2 class="mt-5">Thank you for your order!</h2>
+        </div>
       </div>
     </div>
   {% endif %}
@@ -37,7 +37,7 @@
           {% else %}
             <div class="order-confirmation-heading-wrapper">
               <h3 class="text-center">Order confirmation</h3>
-            </div> 
+            </div>
           {% endif %}
           {% if not from_profile %}
           <!-- Order info -->
@@ -67,7 +67,7 @@
           <div class="row">
             <h6 class="fw-bold mt-3">Order details</h6>
           </div>
-          {% for item in order.lineitems.all %}
+            {% for item in order.lineitems.all %}
             <div class="row">
               <div class="col-12 col-md-4">
                 <p class="mb-0 text-postfly fw-bold">Product & paper type:</p>
@@ -229,7 +229,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 mt-5 mb-10">
-        {% if from_profile %}                    
+        {% if from_profile %}
           <a href="{% url 'dashboard' %}" class="btn postfly-general-btn hvr-grow me-3 mb-3">
             <span class="font-weight-bold">Back to dashboard</span>
           </a>
@@ -237,7 +237,7 @@
           <a href="{% url 'products' %}" class="btn postfly-general-btn hvr-grow me-3 mb-3">
             <span class="font-weight-bold">Products</span>
           </a>
-          {% endif %}
+        {% endif %}
       </div>
     </div>
   </div>
