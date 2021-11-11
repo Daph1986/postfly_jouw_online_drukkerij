@@ -1,5 +1,10 @@
-from django.http import request
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404,
+    HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -15,6 +20,7 @@ from cart.contexts import cart_contents
 
 import stripe
 import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -39,7 +45,7 @@ def checkout(request):
 
         if request.method == 'POST':
             cart = request.session.get('cart', {})
-        
+
             form_data = {
                 'first_name': request.POST['first_name'],
                 'last_name': request.POST['last_name'],
@@ -71,21 +77,25 @@ def checkout(request):
                             order_line_item.save()
                     except Product.DoesNotExist:
                         messages.error(request, (
-                            "One of the products in your cart hasn't been found in our database."
-                            "Please contact us for assistance!")
+                            "One of the products in your cart hasn't been \
+                            found in our database. Please contact us for \
+                            assistance!")
                         )
                         order.delete()
                         return redirect(reverse('view_cart'))
 
                 request.session['save_info'] = 'save_info' in request.POST
-                return redirect(reverse('checkout_success', args=[order.order_number]))
+                return redirect(reverse('checkout_success',
+                                        args=[order.order_number]))
             else:
                 messages.error(request, 'There was an error with your form. \
-                    Please check your information to be sure everything is correct.')
+                    Please check your information to be sure everything \
+                        is correct.')
         else:
             cart = request.session.get('cart', {})
             if not cart:
-                messages.error(request, "Your shopping cart is empty at this moment")
+                messages.error(request, "Your shopping cart is \
+                    empty at this moment")
                 return redirect(reverse('products'))
 
             current_cart = cart_contents(request)
@@ -175,11 +185,11 @@ def send_confirmation_email(order):
         """ Sends the user a confirmation email """
         client_email = order.email
         subject = render_to_string(
-			'checkout/confirmation_emails/confirmation_email_subject.txt',
-			{'order': order})
+            'checkout/confirmation_emails/confirmation_email_subject.txt',
+            {'order': order})
         body = render_to_string(
-			'checkout/confirmation_emails/confirmation_email_body.txt',
-			{'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+            'checkout/confirmation_emails/confirmation_email_body.txt',
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
 
         send_mail(
             subject,
