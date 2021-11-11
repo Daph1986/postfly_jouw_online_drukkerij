@@ -1,4 +1,5 @@
 asgiref==3.4.1
+autopep8==1.6.0
 beautifulsoup4==4.10.0
 boto3==1.19.7
 botocore==1.22.7
@@ -13,15 +14,18 @@ Django==3.2.6
 django-allauth==0.45.0
 django-countries==7.2.1
 django-crispy-forms==1.13.0
+django-livereload-server==0.3.2
 django-storages==1.12.3
+flake8==3.9.2
 gunicorn==20.1.0
 idna==3.2
 jmespath==0.10.0
 mccabe==0.6.1
 oauthlib==3.1.1
+pep8==1.7.1
 Pillow==8.3.2
 psycopg2-binary==2.9.1
-pycodestyle==2.7.0
+pycodestyle==2.8.0
 pycparser==2.20
 pyflakes==2.3.1
 PyJWT==2.1.0
@@ -35,5 +39,6 @@ six==1.16.0
 soupsieve==2.2.1
 sqlparse==0.4.1
 stripe==2.61.0
+toml==0.10.2
 tornado==6.1
 urllib3==1.26.6
