@@ -203,15 +203,6 @@ Using the superuser log in details log in.
 
 Go to `Email addresses` underneath `ACCOUNTS`, and mark `Primary` and `Verified` for the superuser email address, save the changes you made.
 
-16. Create a new webhook endpoint on the Stripe dashboard. <br>
-<img src="../deployment/stripe_webhook.png" alt="Stripe wenhook endpoint" width="75%" height="75%"/> <br>
-
-17. Reveal your webhooks siging secret and add it to the Heroku Confic Vars:
-
-| Key | Value |
- --- | ---
-STRIPE_WH_SECRET| `your_STRIPE_WH_SECRET`
-
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Set up Amazon AWS
