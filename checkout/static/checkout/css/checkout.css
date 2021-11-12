@@ -52,6 +52,13 @@ select:invalid, select option[value=""] {
   color: #70707086;
 }
 
+/* ------------------------ Checkout form -------------------------- */
+
+hr.divider {
+  width: 250px;
+  margin-left: 265px;
+}
+
 /* ------------------ Order confirmation styling ------------------- */
 
 .order-confirmation-heading-wrapper {
@@ -108,8 +115,19 @@ select:invalid, select option[value=""] {
 
 /* ----------------------- Media queries ------------------------- */
 
+@media (max-width: 1199.98px) {
+  hr.divider {
+    width: 265px;
+    margin-left: 300px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .h3-mobile {
     font-size: 1rem;
+  }
+  hr.divider {
+    width: 170px;
+    margin-left: 130px;
   }
 }
