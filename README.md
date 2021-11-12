@@ -179,8 +179,9 @@ The following features can be added:
 - Boto3
 - Django
 - Django-allauth
-- Django-crispy-forms 
+- Django-crispy-forms
 - Django-countries
+- Django-livereload-server
 
 ### Wireframes
 
@@ -235,14 +236,16 @@ Most content has been written by me, the technical stories regarding the deliver
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
 5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for their logo,  the images of some foil samples and the foil fan, the head office and the presses, thanks for my colleague Bart Lauwaert for providing the original photos to me and for the how to cold foil pdf.
 6. [WPJournalist](https://wpjournalist.nl/avatar-maken/) to create the avatars of the team.
-7. [Adobe Stock](https://stock.adobe.com/nl), for the images on the speicifications, file type, color, resolution (dpi image), templates, FAQ, concept, contact, quotation, register, login and forgot password page. These are licensed images downloaded with a paid Adobe Stock account.
-8. The other images on the site and the screenshots of indesign etc. are my own photos and screenshots.
+7. [Adobe Stock](https://stock.adobe.com/nl) for the images on the speicifications, file type, color, resolution (dpi image), templates, FAQ, concept, contact, quotation, register, login and forgot password page. These are licensed images downloaded with a paid Adobe Stock account.
+8. [Cleanpng](https://www.cleanpng.com/png-ink-cartridge-printer-toner-printing-color-drops-2337753/download-png.html) for the cmyk image of the 404 and 500 error page, text added with Adobe Illustrator.
+9. The other images on the site and the screenshots of indesign etc. are my own photos and screenshots.
 
 
 ### Other
 1. [Luchidchart](https://www.lucidchart.com/pages/) to create the Django diagram model.
 2. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
 3. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) to get a new secret key for Django
+4. [Django livereload server](https://github.com/tjwalch/django-livereload-server) to learn how to not have to refresh the page every time.
 
 <!-- 3. [cdnjs](https://cdnjs.com/) to get the fontawesome cdn from.
 6. [WebAIM](https://webaim.org/resources/contrastchecker/) used for checking contrasts on the site. -->
