@@ -9,10 +9,10 @@
 
 <p class="mt-4">{% trans 'Are you sure you want to log out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}" class="ms-5">
+<form method="post" action="{% url 'account_logout' %}" class="mx-5">
   {% csrf_token %}
   {% if redirect_field_value %}
-  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
   <a href="{% url 'home' %}" class="btn postfly-general-btn hvr-grow me-3 my-3">Cancel</a>
   <button class="btn postfly-general-btn hvr-grow me-3 my-3" type="submit">{% trans 'Log out!' %}</button>

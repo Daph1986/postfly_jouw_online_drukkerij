@@ -1,4 +1,5 @@
 /* ------------------ Styling for gerneral use ------------------- */
+
 body {
   color: #000;
   font-family: 'Poppins';
@@ -63,8 +64,9 @@ body, html {
 }
 
 /* --------------------------- Navbar ---------------------------- */
+
 .pp-logo {
-  width: 35px; 
+  width: 35px;
   height: 35px;
 }
 
@@ -99,15 +101,18 @@ body, html {
   min-width: 1rem;
   border-radius: 0px;
 }
+
 .dropdown-menu .dropdown-submenu-left {
   right: 50%;
   left: auto;
 }
-.dropdown-menu > li:hover > .dropdown-submenu {
+
+.dropdown-menu>li:hover>.dropdown-submenu {
   display: block;
 }
 
 /* --------------------------- Toasts ---------------------------- */
+
 .message-container {
   position: fixed;
   top: 72px;
@@ -120,8 +125,8 @@ body, html {
   border-radius: 25px;
 }
 
-
 /* --------------------------- Buttons --------------------------- */
+
 .postfly-home-btn {
   border-radius: 25px;
 }
@@ -175,6 +180,7 @@ body, html {
 }
 
 /* ---------------------------- Home ----------------------------- */
+
 .logo {
   max-width: 20%;
   position: absolute;
@@ -203,6 +209,7 @@ body, html {
 }
 
 /* ---------------------------- Files ----------------------------- */
+
 .specs-img {
   background-image: url('/static/img/home/specs/cmyk_check.png');
   background-position: center;
@@ -228,6 +235,7 @@ body, html {
 }
 
 /* ---------------------------- FAQ ------------------------------ */
+
 .faq-img {
   background-image: url('/static/img/home/faq/faq.png');
   background-position: center;
@@ -237,6 +245,7 @@ body, html {
 }
 
 /* -------------------------- About us --------------------------- */
+
 .concept-cmyk-img {
   background-image: url('/static/img/home/concept/cmyk_letters.png');
   background-position: center;
@@ -254,7 +263,8 @@ body, html {
 }
 
 /* ------------------------- Contact us -------------------------- */
-.contact-img{
+
+.contact-img {
   background-image: url('/static/img/home/contact/contact.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -271,6 +281,7 @@ body, html {
 }
 
 /* ------------------------- Sample kit -------------------------- */
+
 .sample-parallax {
   background-image: url('/static/img/home/sample_kit/sample_kit.png');
   height: 45vh;
@@ -286,7 +297,8 @@ body, html {
 }
 
 /* ------------------------- Quotation --------------------------- */
-.quotation-parallax{
+
+.quotation-parallax {
   background-image: url('/static/img/home/quotation/offerte.png');
   height: 50vh;
   background-attachment: fixed;
@@ -301,7 +313,8 @@ body, html {
 }
 
 /* ------------------------- Account --------------------------- */
-.account-parallax{
+
+.account-parallax {
   background-image: url('/static/img/account/account.png');
   background-attachment: fixed;
   background-position: center;
@@ -317,6 +330,7 @@ body, html {
 }
 
 /* -------------------------- Accordions ------------------------- */
+
 .accordion-button {
   width: 60%;
 }
@@ -339,8 +353,8 @@ body, html {
   border: 1px solid rgb(255, 255, 255);
 }
 
-
 /* ---------------------------- Cards ---------------------------- */
+
 .stand-out {
   font-weight: bold;
 }
@@ -355,7 +369,7 @@ body, html {
 
 .custom-card {
   border-radius: 25px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-color: #707070;
 }
@@ -370,13 +384,16 @@ body, html {
 }
 
 /* ----------------------- Shopping cart ------------------------- */
+
 hr:not([size]) {
   width: 200px;
 }
 
 /* ----------------- Allauth form adjustments -------------------- */
+
 .allauth-form-inner-content p {
-  margin-top: 1.5rem; /* mt-4 */
+  margin-top: 1.5rem;
+  /* mt-4 */
 }
 
 .allauth-form-inner-content .form-control {
@@ -412,6 +429,7 @@ select:-webkit-autofill {
 }
 
 /* --------------------------- Footer ---------------------------- */
+
 footer {
   padding: 0.8rem;
   background-color: #EFEFEF;
@@ -422,7 +440,7 @@ footer a {
 }
 
 .pp-footer-logo {
-  width: 200px; 
+  width: 200px;
 }
 
 .footer_icons {
@@ -435,6 +453,7 @@ footer a {
 }
 
 /* ----------------------- Media queries ------------------------- */
+
 @media (max-width: 1199.98px) {
   .dropdown-menu .dropdown-submenu {
     left: 76%;
@@ -497,7 +516,7 @@ footer a {
     margin-bottom: 225px;
   }
   .home-sm {
-    background-color:rgba(255, 255, 255, 0.432);
+    background-color: rgba(255, 255, 255, 0.432);
     width: 200px;
   }
   .hero-home,

@@ -3,7 +3,7 @@
 
 {% block page_header %}
   <div class="container">
-    <div class="row ms-5 ms-md-0">
+    <div class="row ms-3 ms-md-0">
         <div class="col text-md-center">
           <h2 class="mt-5">Shopping cart</h2>
         </div>
@@ -13,13 +13,13 @@
 
 {% block content %}
 <div class="container">
-    <div class="row ms-5">
+    <div class="row ms-3">
         <div class="col">
-            <h5 class="mt-5 mb-5">Order overview</h5>
+            <h5 class="mt-5 mb-5">Order overview ({{ product_count }})</h5>
         </div>
     </div>
 
-    <div class="row ms-5">
+    <div class="row ms-3">
       <div class="col">
         {% if cart_items %}
           <div class="table-responsive rounded">
