@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['postfly-jouw-online-drukkerij.herokuapp.com', '127.0.0.1' ]
+ALLOWED_HOSTS = ['postfly-jouw-online-drukkerij.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -87,7 +87,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # required by allauth
+                'django.template.context_processors.request',  # required by allauth
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'cart.contexts.cart_contents',
@@ -127,7 +127,7 @@ WSGI_APPLICATION = 'postfly_jouw_online_drukkerij.wsgi.application'
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-        }
+    }
 else:
     DATABASES = {
         'default': {
@@ -212,7 +212,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET')
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'postfly@example.com'
+    DEFAULT_FROM_EMAIL = 'daphnepostfly@gmail.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
