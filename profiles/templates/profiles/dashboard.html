@@ -41,7 +41,7 @@
               </thead>
               <tbody>
                 {% if request.user.is_superuser %}
-                  {% for order in order_list_admin %}
+                  {% for order in page_object_admin %}
                     <tr>
                       <td>AMB21-{{ order.order_number }}</td>
                       <td>{{ order.date }}</td>
@@ -54,7 +54,7 @@
                     </tr>
                   {% endfor %}
                 {% else %}
-                  {% for order in order_list %}
+                  {% for order in page_object %}
                     <tr>
                       <td>AMB21-{{ order.order_number }}</td>
                       <td>{{ order.date }}</td>
@@ -74,6 +74,23 @@
             <div class="row mb-5">
               <div class="col-12 col-md-10 col-xl-8">
                 <span class="ms-1">
+                  <!--Admin -->
+                  {% if request.user.is_superuser %}
+                    {% if page_object_admin.has_previous %}
+                      <a href="?page={{ page_object_admin.previous_page_number }}" class="text-decoration-none text-postfly">
+                        <i class="fas fa-angle-double-left text-postfly"></i> previous
+                      </a>
+                    {% endif %}
+                      <span class="px-1">
+                        Page {{ page_object_admin.number }} of {{ page_object_admin.paginator.num_pages }}
+                      </span>
+                    {% if page_object_admin.has_next %}
+                      <a href="?page={{ page_object_admin.next_page_number }}" class="text-decoration-none text-postfly">next
+                        <i class="fas fa-angle-double-right text-postfly"></i>
+                      </a>
+                    {% endif %}
+                  {% else %}
+                  <!--Standard user-->
                   {% if page_object.has_previous %}
                     <a href="?page={{ page_object.previous_page_number }}" class="text-decoration-none text-postfly">
                       <i class="fas fa-angle-double-left text-postfly"></i> previous
@@ -87,6 +104,7 @@
                       <i class="fas fa-angle-double-right text-postfly"></i>
                     </a>
                   {% endif %}
+                {% endif %}
                 </span>
               </div>
             </div>
