@@ -36,6 +36,8 @@ class Order(models.Model):
     original_cart = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(max_length=254, null=False, blank=False,
                                   default='')
+    artwork = models.FileField(upload_to='artwork/%Y/%m/%d', blank=False, 
+                               null=False, default='')
 
     def _generate_order_number(self):
         """

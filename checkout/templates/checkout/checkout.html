@@ -62,7 +62,7 @@
 
       <div class="col-12 col-lg-6">
         <p class="ms-2">Please fill out the form below to complete your order.</p>
-        <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+        <form action="{% url 'checkout' %}" method="POST" id="payment-form" enctype="multipart/form-data">
           {% csrf_token %}
           <fieldset class="rounded mb-2 mt-4">
             <legend class="fieldset-label small text-black px-2 w-auto"><strong>Personal details</strong></legend>
@@ -92,6 +92,10 @@
               </label>
               {% endif %}
             </div>
+          </fieldset>
+          <fieldset class="rounded mb-2">
+            <legend class="fieldset-label small text-black px-2 w-auto"><strong>Upload your artwork zip-file</strong></legend>
+            {{ order_form.artwork | as_crispy_field }}
           </fieldset>
           <fieldset class="mb-2">
             <legend class="fieldset-label small text-black w-auto"><strong>Payment</strong></legend>

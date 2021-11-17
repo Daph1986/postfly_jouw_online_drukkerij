@@ -8,7 +8,7 @@ class OrderForm(forms.ModelForm):
         fields = ('first_name', 'last_name', 'company_name',
                   'email', 'phone_number', 'street_address1',
                   'street_address2', 'town_or_city', 'postcode',
-                  'country',)
+                  'country', 'artwork',)
 
     def __init__(self, *args, **kwargs):
         """ Order form which is displayed at checkout page """
@@ -23,6 +23,7 @@ class OrderForm(forms.ModelForm):
             'town_or_city': 'Town or city',
             'street_address1': 'Street address + house number',
             'street_address2': 'Additional address information',
+            'artwork': 'Upload your digital files here'
         }
 
         self.fields['first_name'].widget.attrs['autofocus'] = True
