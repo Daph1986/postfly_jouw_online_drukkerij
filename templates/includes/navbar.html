@@ -143,7 +143,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Files
+              Guidelines
             </a>
             <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
               <li><a href="{% url 'specs' %}" class="dropdown-item">Specifications</a></li>
@@ -185,6 +185,7 @@
                 <li><a href="{% url 'quotation' %}" class="dropdown-item">Quotation request</a></li>
               </ul>
           </li>
+          <div class="mx-3"></div>
           {% if not request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
@@ -214,7 +215,7 @@
             </li>
           {% endif %}
           <li class="nav-item">
-            <a class="{% if grand_total %}fw-bold text-danger{% else %}text-black{% endif %} nav-link ms-lg-2 ms-xl-5" href="{% url 'view_cart' %}">
+            <a class="{% if grand_total %}fw-bold text-danger{% else %}text-black{% endif %} nav-link ms-lg-2 ms-xl-4" href="{% url 'view_cart' %}">
               <div>
                 <i class="fas fa-shopping-cart"></i>
                   {% if grand_total %}
@@ -226,7 +227,7 @@
             </a>
           </li>
         </ul>
-        <div class=" my-auto py-1 py-lg-0">
+        <div class="my-auto py-1 py-lg-0">
           <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
               <input class="form-control border-dark rounded-0" type="search" name="q" placeholder="Search" aria-label="Search">
