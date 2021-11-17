@@ -1,7 +1,5 @@
 from django import forms
 from django_countries.fields import CountryField
-from captcha.fields import ReCaptchaField
-from captcha.widgets import ReCaptchaV3
 
 
 class ContactForm(forms.Form):
@@ -11,9 +9,7 @@ class ContactForm(forms.Form):
     email = forms.CharField(required=True)
     subject = forms.CharField(required=True)
     message = forms.CharField(widget=forms.Textarea, required=True)
-    captcha = ReCaptchaField(
-        widget=ReCaptchaV3(attrs={'required_score':0.75}),
-    )
+    
 
     def __init__(self, *args, **kwargs):
         """ 
@@ -26,7 +22,6 @@ class ContactForm(forms.Form):
             'email': 'Email address',
             'subject': 'Subject',
             'message': 'Message',
-            'captcha': 'Captcha'
         }
 
         self.fields['message'].widget.attrs = {'rows': 8}

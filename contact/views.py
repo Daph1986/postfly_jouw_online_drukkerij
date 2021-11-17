@@ -45,7 +45,7 @@ def contact(request):
                             messages.success(request, f'Thank you for \
                                             contacting us. A copy of your \
                                             message has been send to your \
-                                            email.We will be in touch \
+                                            email. We will be in touch \
                                             sortly.'))
     
     template = 'contact/contact.html'
