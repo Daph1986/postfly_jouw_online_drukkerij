@@ -27,6 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
 
+# django-recaptcha
+# https://github.com/praekelt/django-recaptcha
+RECAPTCHA_PUBLIC_KEY = os.getenv('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = os.getenv('RECAPTCHA_PRIVATE_KEY')
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if 'DEVELOPMENT' in os.environ else False
 
@@ -53,6 +58,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
+    'captcha',
 
     # Other
     'crispy_forms',
