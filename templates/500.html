@@ -1,24 +1,31 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block page_header %}
   <div>
     <h2 class="my-5 text-center">Uh oh! A 500 internal server error occurred.</h2>
-    <h5 class="my-2 text-center">Something went wrong!</h5>
+    <h5 class="my-2 mx-2 text-center">Something went wrong!</h5>
   </div>
 {% endblock %}
 
 {% block content %}
   <div class="container">
     <div class="row">
-      <div class="col-12 mt-5"">
-        <img src="{% static 'img/errors/500.png' %}" alt="500" class="mx-auto d-block">
+      <div class="col-12 mt-5">
+        <img src="{% static 'img/errors/500.png' %}" alt="500" class="mx-auto d-block w-400">
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="row text-center">
+      <div class="col-12 mb-10">
         <div class="py-2">
-          <p>Sorry about that, you can return to the homepage of <a href="{% url 'home' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow mb-10">POSTFLY</a></p>
+          <p>
+            Sorry about that, you can return to the homepage of
+            <a href="{% url 'home' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">
+              POSTFLY
+            </a>
+          </p>
         </div>
       </div>
+    </div>
   </div>
 {% endblock content %}
