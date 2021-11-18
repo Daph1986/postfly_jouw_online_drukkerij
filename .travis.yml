@@ -6,4 +6,4 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python manage.py test --noinput --settings silkscreenservice.settings_test
+  - python manage.py test --noinput --settings postfly_jouw_online_drukkerij.settings_test
