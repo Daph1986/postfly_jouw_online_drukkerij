@@ -4,6 +4,8 @@ Jouw online drukkerij!
 
 **[Code Institute](https://codeinstitute.net/)  Milestone Project 4: Full Stack Frameworks with Django**
 
+[![Build Status](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij.svg?branch=main)](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij)
+
 <img src="readme/general/logo.png" alt="Logo" width="75%" height="75%">
 
 POSTFLY is a site where you can order all your necessary printed matter online.
