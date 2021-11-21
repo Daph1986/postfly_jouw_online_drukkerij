@@ -65,6 +65,11 @@ body, html {
 
 /* --------------------------- Navbar ---------------------------- */
 
+.navbar-nav,
+.search {
+  font-size: 14px;
+}
+
 .pp-logo {
   width: 35px;
   height: 35px;
@@ -81,6 +86,7 @@ body, html {
 
 .dropdown-item {
   padding: .25rem 2rem;
+  font-size: 14px;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
