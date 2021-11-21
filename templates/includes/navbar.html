@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-xl bg-grey navbar-light">
@@ -23,7 +24,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
+              {% trans 'Products' %}
             </a>
             <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
               <li>
@@ -111,7 +112,7 @@
                 </ul>
               </li>
               <li>
-                <a href="{% url 'products' %}?category=business_cards_400_gr_mat" class="dropdown-item">Business cards 400 gr Mat</a>
+                <a href="{% url 'products' %}?category=business_cards_400_gr_mat" class="dropdown-item">{% trans 'Business cards 400 gr Mat' %}</a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
                   <li>
                     <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_400_gr_mat&size=7">85x55 mm</a>
@@ -125,7 +126,7 @@
                 </ul>
               </li>
               <li>
-                <a href="{% url 'products' %}?category=business_cards_cold_foil" class="dropdown-item">Business cards Cold Foil</a>
+                <a href="{% url 'products' %}?category=business_cards_cold_foil" class="dropdown-item">{% trans 'Business cards Cold Foil' %}</a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
                   <li>
                     <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_cold_foil&size=7">85x55 mm</a>
@@ -138,26 +139,26 @@
                   </li>
                 </ul>
               </li>
-              <li><a href="{% url 'products' %}" class="dropdown-item">All products</a></li>
+              <li><a href="{% url 'products' %}" class="dropdown-item">{% trans 'All products' %}</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Guidelines
+              {% trans 'Guidelines' %}
             </a>
             <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a href="{% url 'specs' %}" class="dropdown-item">Specifications</a></li>
-              <li><a href="{% url 'bleed' %}" class="dropdown-item">Bleed</a></li>
-              <li><a href="{% url 'file_type' %}" class="dropdown-item">File type</a></li>
-              <li><a href="{% url 'deep_black' %}" class="dropdown-item">Deep black</a></li>
-              <li><a href="{% url 'ink_coverage' %}" class="dropdown-item">Ink coverage</a></li>
-              <li><a href="{% url 'job_options' %}" class="dropdown-item">Job obtions</a></li>
-              <li><a href="{% url 'color' %}" class="dropdown-item">Color</a></li>
-              <li><a href="{% url 'outlines' %}" class="dropdown-item">Outlines</a></li>
-              <li><a href="{% url 'foil' %}" class="dropdown-item">Foil</a></li>
-              <li><a href="{% url 'overprint' %}" class="dropdown-item">Overprint</a></li>
-              <li><a href="{% url 'resolution' %}" class="dropdown-item">Resolution</a></li>
-              <li><a href="{% url 'templates' %}" class="dropdown-item">Templates</a></li>
+              <li><a href="{% url 'specs' %}" class="dropdown-item">{% trans 'Specifications' %}</a></li>
+              <li><a href="{% url 'bleed' %}" class="dropdown-item">{% trans 'Bleed' %}</a></li>
+              <li><a href="{% url 'file_type' %}" class="dropdown-item">{% trans 'File type' %}</a></li>
+              <li><a href="{% url 'deep_black' %}" class="dropdown-item">{% trans 'Deep black' %}</a></li>
+              <li><a href="{% url 'ink_coverage' %}" class="dropdown-item">{% trans 'Ink coverage' %}</a></li>
+              <li><a href="{% url 'job_options' %}" class="dropdown-item">{% trans 'Job obtions' %}</a></li>
+              <li><a href="{% url 'color' %}" class="dropdown-item">{% trans 'Color' %}</a></li>
+              <li><a href="{% url 'outlines' %}" class="dropdown-item">{% trans 'Outlines' %}</a></li>
+              <li><a href="{% url 'foil' %}" class="dropdown-item">{% trans 'Foil' %}</a></li>
+              <li><a href="{% url 'overprint' %}" class="dropdown-item">{% trans 'Overprint' %}</a></li>
+              <li><a href="{% url 'resolution' %}" class="dropdown-item">{% trans 'Resolution' %}</a></li>
+              <li><a href="{% url 'templates' %}" class="dropdown-item">{% trans 'Templates' %}</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -167,12 +168,12 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About us
+              {% trans 'About us' %}
             </a>
               <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown"down">
                 <li><a href="{% url 'team' %}" class="dropdown-item">Team</a></li>
-                <li><a href="{% url 'printing_house' %}" class="dropdown-item">Printing in-house</a></li>
-                <li><a href="{% url 'our_concept' %}" class="dropdown-item">Our concept</a></li>
+                <li><a href="{% url 'printing_house' %}" class="dropdown-item">{% trans 'Printing in-house' %}</a></li>
+                <li><a href="{% url 'our_concept' %}" class="dropdown-item">{% trans 'Our concept' %}</a></li>
               </ul>
           </li>
           <li class="nav-item dropdown">
@@ -180,16 +181,16 @@
               Contact
             </a>
               <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">  
-                <li><a href="{% url 'contact' %}" class="dropdown-item">Contact us</a></li>
-                <li><a href="{% url 'sample_kit' %}" class="dropdown-item">Free sample kit</a></li>
-                <li><a href="{% url 'quotation' %}" class="dropdown-item">Quotation request</a></li>
+                <li><a href="{% url 'contact' %}" class="dropdown-item">{% trans 'Contact us' %}</a></li>
+                <li><a href="{% url 'sample_kit' %}" class="dropdown-item">{% trans 'Free sample kit' %}</a></li>
+                <li><a href="{% url 'quotation' %}" class="dropdown-item">{% trans 'Quotation request' %}</a></li>
               </ul>
           </li>
           <div class="mx-3"></div>
           {% if not request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
-                  <i class="fas fa-user"></i> Register
+                  <i class="fas fa-user"></i> {% trans 'Register' %}
             </a>
           </li>
           {% endif %}
@@ -203,7 +204,7 @@
                 {% if request.user.is_superuser %}
                 <li><a href="{% url 'add_product' %}" class="dropdown-item">Product management</a></li>
                 {% endif %}
-                <li><a href="{% url 'profile' %}" class="dropdown-item">Profile</a></li>
+                <li><a href="{% url 'profile' %}" class="dropdown-item">{% trans 'Profile' %}</a></li>
                 <li><a href="{% url 'account_logout' %}" class="dropdown-item">Log out</a></li>
               </ul>
             </li>
@@ -230,7 +231,7 @@
         <div class="my-auto py-1 py-lg-0">
           <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
-              <input class="form-control border-dark rounded-0" type="search" name="q" placeholder="Search" aria-label="Search">
+              <input class="form-control border-dark rounded-0 search" type="search" name="q" placeholder="Search" aria-label="Search">
                 <div class="input-group-append">
                   <button class="form-control btn btn-white border border-dark rounded-0" type="submit">
                     <span class="icon">

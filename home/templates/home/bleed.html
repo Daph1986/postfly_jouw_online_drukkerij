@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Bleed</h2>
+    <h2 class="my-5 text-center">{% trans 'Bleed' %}</h2>
   </div>
 {% endblock %}
 
@@ -12,30 +13,19 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-6 mt-5">
         <p class="px-4 px-md-0">
-          Even with our modern computer-controlled cutting machines there is a chance of a small cutting deviation. 
-          That is why we use a cutting margin of 3 mm inwards and outwards.
-          If a file is not submitted correctly, there is a chance that a white border will be visible on your printed matter.
-          To prevent this, we need an extra 3 mm on each side, also called bleed.
+          {% trans 'Even with our modern computer-controlled cutting machines there is a chance of a small cutting deviation. That is why we use a cutting margin of 3 mm inwards and outwards. If a file is not submitted correctly, there is a chance that a white border will be visible on your printed matter. To prevent this, we need an extra 3 mm on each side, also called bleed.' %}
         </p>
         <p class="px-4 px-md-0">
-          As an example: an A4 flyer has a net size of 297 x 210 mm.
-          Giving this A4 bleed this gives you a gross size of 303 x 216 mm (297 x 210 mm + 
-          3 mm on each side).
-          The example on this page shows this.
+          {% trans 'As an example: an A4 flyer has a net size of 297 x 210 mm. Giving this A4 bleed this gives you a gross size of 303 x 216 mm (297 x 210 mm + 3 mm on each side). The example on this page shows this.' %}
         </p>
         <div class="col-12 col-xl-6 py-4 d-lg-none">
           <img src="{% static 'img/home/bleed/snijmarges.png' %}" alt="Bleed" class="w-400 mx-auto d-block">
         </div>
         <p class="px-4 px-md-0">
-          The red line is the bleed edge, let your background continue to this line. 
-          This prevents a white border on a background image when a crop defect occurs. 
-          The black line is the cutting edge and the blue line indicates the safety zone for placing texts.
-          Make sure that you stay within this safety zone with your texts, 
-          this way you prevent texts from “sticking” to the edge and you are sure that nothing is cut off.
+          {% trans 'The red line is the bleed edge, let your background continue to this line. This prevents a white border on a background image when a crop defect occurs. The black line is the cutting edge and the blue line indicates the safety zone for placing texts. Make sure that you stay within this safety zone with your texts, this way you prevent texts from “sticking” to the edge and you are sure that nothing is cut off.' %}
         </p>
         <p class="px-4 px-md-0 mb-10">
-          We also advise you not to use frames, because of a possible cutting deviation you 
-          run the risk that the frame is wider on one side than on the other.
+          {% trans 'We also advise you not to use frames, because of a possible cutting deviation you run the risk that the frame is wider on one side than on the other.' %}
         </p>
       </div>
       <div class="col-12 col-xl-6 mt-5 d-none d-lg-block mb-10">

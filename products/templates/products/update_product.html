@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -10,7 +11,7 @@
     <div class="row">
         <div class="col text-center">
           <h2 class="mt-5">Product management</h2>
-          <h5 class="mt-3">Update a product in the store</h5>
+          <h5 class="mt-3">{% trans 'Update a product in the store' %}</h5>
         </div>
     </div>
   </div>
@@ -29,7 +30,7 @@
             Cancel
           </a>
           <button type="submit" class="btn hvr-grow postfly-general-btn ms-3 mb-3">
-            Updated product
+            {% trans 'Update product' %}
           </button>
         </div>
        </form>

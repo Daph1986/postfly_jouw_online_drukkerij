@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div class="container">
       <div class="row">
           <div class="col text-center">
-            <h2 class="mt-5">Our products</h2>
+            <h2 class="mt-5">{% trans 'Our products' %}</h2>
             {% for c in current_categories %}
               <a class="mt-4 badge rounded-pill bg-category card-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                   <span class="p-2 text-white rounded-0">{{ c.friendly_name }}</span>
@@ -22,13 +23,13 @@
       <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
         <div class="sort-select-wrapper w-15">
             <select id="sort-selector" class="custom-sort-selector border-1 {% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
-                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
-                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
-                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
-                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
-                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
-                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>{% trans 'Sort by...' %}</option>
+                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>{% trans 'Price (low to high)' %}</option>
+                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>{% trans 'Price (high to low)' %}</option>
+                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>{% trans 'Name (A-Z)' %}</option>
+                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>{% trans 'Name (Z-A)' %}</option>
+                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>{% trans 'Category (A-Z)' %}</option>
+                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>{% trans 'Category (Z-A)' %}</option>
             </select>
         </div>
     </div>
@@ -48,10 +49,10 @@
             <div class="card-body">
               <h5 class="card-title mt-2 mb-3">{{ product.name }} {{ product.size }}</h5>
               <span class="badge rounded-pill bg-{{ product.product_tag.color }} card-badge mb-3">{{ product.product_tag }}</span>
-              <p class="card-text stand-out">Delivery time is {{ product.delivery_time }} business days</p>
+              <p class="card-text stand-out">{% trans 'Delivery time is' %} {{ product.delivery_time }} {% trans 'business days' %}</p>
               <p class="card-text">{{ product.method }}</p>
-              <p class="card-text">{{ product.quantity }} pieces</p>
-              <p class="card-text"><strong>€{{ product.price }}</strong> ex VAT</p>
+              <p class="card-text">{{ product.quantity }} {% trans 'pieces' %}</p>
+              <p class="card-text"><strong>€{{ product.price }}</strong> {% trans 'ex VAT' %}</p>
               <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
@@ -64,7 +65,7 @@
                       <a href="{% url 'delete_product' product.id %}" class="text-danger"><i class="fas fa-trash"></i></a>
                     </div>
                   {% endif %}
-                  <button type="submit" class="btn postfly-general-btn hvr-grow mb-3">Add to shopping cart</button>
+                  <button type="submit" class="btn postfly-general-btn hvr-grow mb-3">{% trans 'Add to shopping cart' %}</button>
                 </div>
               </form>
             </div>
