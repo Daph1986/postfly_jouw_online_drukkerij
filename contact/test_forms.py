@@ -23,15 +23,15 @@ class TestContactForm(TestCase):
         self.assertIn('subject', form.errors.keys())
         self.assertIn('message', form.errors.keys())
         self.assertEqual(form.errors['first_name']
-                         [0], 'This field is required.')
+                         [0], 'This field is required.', 'Dit veld is verplicht.')
         self.assertEqual(form.errors['last_name']
-                         [0], 'This field is required.')
+                         [0], 'This field is required.', 'Dit veld is verplicht.')
         self.assertEqual(form.errors['email']
-                         [0], 'This field is required.')
+                         [0], 'This field is required.', 'Dit veld is verplicht.')
         self.assertEqual(form.errors['subject']
-                         [0], 'This field is required.')
+                         [0], 'This field is required.', 'Dit veld is verplicht.')
         self.assertEqual(form.errors['message']
-                         [0], 'This field is required.')
+                         [0], 'This field is required.', 'Dit veld is verplicht.')
 
 
 class TestSampleKitForm(TestCase):
