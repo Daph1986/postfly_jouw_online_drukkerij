@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-21 23:25+0100\n"
+"POT-Creation-Date: 2021-11-22 15:28+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1330,6 +1330,53 @@ msgctxt "stick"
 msgid "club"
 msgstr ""
 
+#: home/templates/home/black.html:7 templates/includes/navbar.html:153
+msgid "Deep black"
+msgstr "Diep zwart"
+
+#: home/templates/home/black.html:16
+#, python-format
+msgid "In many programs, the default black consists of only 100%% black."
+msgstr "In vele programma’s bestaat het standaard zwart slechts uit 100% zwart."
+
+#: home/templates/home/black.html:17
+msgid "This is black, but next to ‘deep black’ it seems much greyer."
+msgstr "Dit is zwart, maar naast ‘diepzwart’ lijkt dit veel grijzer."
+
+#: home/templates/home/black.html:18
+msgid "To get a deep black you have to add something of each color."
+msgstr "Om diep zwart te verkrijgen moet je van elke kleur iets toevoegen."
+
+#: home/templates/home/black.html:19
+#, python-format
+msgid ""
+"The following values give the best results: Cyan 40%%, Magenta 40%%, Yellow "
+"20%% and Black 100%%."
+msgstr "De volgende waardes geven het mooiste resultaat: Cyaan 40%, Magenta 40%, Yellow 20% en Black 100%."
+
+#: home/templates/home/black.html:20
+#, python-format
+msgid "This way you get an ink coverage of 200%% instead of only 100%%."
+msgstr "Zo krijg je een inktbezetting van 200% in plaats van slechts 100%."
+
+#: home/templates/home/black.html:31
+msgid "How do you make the best deep black?"
+msgstr "Hoe maak je het beste diepzwart op?"
+
+#: home/templates/home/black.html:33
+msgid "In Indesign (2021) you create a new color as follows:"
+msgstr "In Indesign (2021) maak je een nieuwe kleur als volgt aan :"
+
+#: home/templates/home/black.html:34
+msgid "In the menu bar, click Window→ Colour→ Swatches."
+msgstr "Klik in de menubalk op Window→ Colour→ Swatches (Venster→ Kleuren→ Stalen)."
+
+#: home/templates/home/black.html:35
+msgid ""
+"Then you will see the window below. Press the plus sign at the bottom right "
+"and enter the values as below."
+msgstr "Dan krijg je onderstaand venster te zien. Druk op het plusje rechts onder en vul de waardes in als hieronder."
+
 #: home/templates/home/bleed.html:7 templates/includes/navbar.html:151
 msgid "Bleed"
 msgstr "Afloop"
@@ -1380,7 +1427,49 @@ msgid ""
 "We also advise you not to use frames, because of a possible cutting "
 "deviation you run the risk that the frame is wider on one side than on the "
 "other."
-msgstr "Wij adviseren je ook geen gebruik te maken van kaders, door een mogelijke snijafwijking loop je daarmee namelijk het risico dat het kader aan de ene zijde breder is dan aan de andere zijde."
+msgstr ""
+"Wij adviseren je ook geen gebruik te maken van kaders, door een mogelijke "
+"snijafwijking loop je daarmee namelijk het risico dat het kader aan de ene "
+"zijde breder is dan aan de andere zijde."
+
+#: home/templates/home/file.html:7 templates/includes/navbar.html:152
+msgid "File type"
+msgstr "Bestandstype"
+
+#: home/templates/home/file.html:16
+msgid "In order to start printing a design, we need a print-ready file."
+msgstr ""
+"Om te kunnen starten met het drukken van een ontwerp hebben wij een "
+"drukklaar bestand nodig."
+
+#: home/templates/home/file.html:17
+msgid "Not all file types can be processed by us."
+msgstr "Niet alle bestandstypes zijn voor ons verwerkbaar."
+
+#: home/templates/home/file.html:18
+msgid "Most formatting programs have their own file format."
+msgstr "De meeste opmaakprogramma’s hebben hun eigen bestandsformaat."
+
+#: home/templates/home/file.html:19
+msgid "You can recognise it by the extension at the end of the filename"
+msgstr "Je kan het herkennen aan de extensie op het einde van de bestandsnaam"
+
+#: home/templates/home/file.html:20
+msgid "(for example: .doc, .xls, .psd, .pub, .ai, …)."
+msgstr "(bijvoorbeeld: .doc, .xls, .psd, .pub, .ai, …)."
+
+#: home/templates/home/file.html:23
+msgid "We can only process your files if you provide them in PDF or JPG."
+msgstr ""
+"Wij kunnen je bestanden alleen verwerken als je ze in PDF of JPG aanlevert."
+
+#: home/templates/home/file.html:34
+msgid ""
+"This way you limit the size of the file and you maintain the high quality of "
+"the layout."
+msgstr ""
+"Zo beperk je de grootte van het bestand en behoud je de hoge kwaliteit van "
+"de opmaak. "
 
 #: home/templates/home/index.html:7 products/templates/products/products.html:9
 msgid "Our products"
@@ -2018,14 +2107,6 @@ msgstr "Alle producten"
 #: templates/includes/navbar.html:147
 msgid "Guidelines"
 msgstr "Aanleveren"
-
-#: templates/includes/navbar.html:152
-msgid "File type"
-msgstr "Bestandstype"
-
-#: templates/includes/navbar.html:153
-msgid "Deep black"
-msgstr "Diep zwart"
 
 #: templates/includes/navbar.html:154
 msgid "Ink coverage"

@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Deep black</h2>
+    <h2 class="my-5 text-center">{% trans 'Deep black' %}</h2>
   </div>
 {% endblock %}
 
@@ -12,11 +13,11 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          In many programs, the default black consists of only 100% black. 
-          This is black, but next to ‘deep black’ it seems much greyer.<br>
-          To get a deep black you have to add something of each color.
-          The following values give the best results: Cyan 40%, Magenta 40%, Yellow 20% and Black 100%. 
-          This way you get an ink coverage of 200% instead of only 100%.
+          {% trans 'In many programs, the default black consists of only 100% black.' %} 
+          {% trans 'This is black, but next to ‘deep black’ it seems much greyer.' %}<br>
+          {% trans 'To get a deep black you have to add something of each color.' %}
+          {% trans 'The following values give the best results: Cyan 40%, Magenta 40%, Yellow 20% and Black 100%.' %} 
+          {% trans 'This way you get an ink coverage of 200% instead of only 100%.' %}
         </p>
       </div>
     </div>
@@ -27,11 +28,11 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
-        <h6 class="px-4 px-md-0 lh-lg">How do you make the best deep black?</h6>
+        <h6 class="px-4 px-md-0 lh-lg">{% trans 'How do you make the best deep black?' %}</h6>
         <p class="px-4 px-md-0">
-          In Indesign (2021) you create a new color as follows:
-          In the menu bar, click Window→ Colour→ Swatches. 
-          Then you will see the window below. Press the plus sign at the bottom right and enter the values as below. 
+          {% trans 'In Indesign (2021) you create a new color as follows:' %}
+          {% trans 'In the menu bar, click Window→ Colour→ Swatches.' %}
+          {% trans 'Then you will see the window below. Press the plus sign at the bottom right and enter the values as below.' %}
         </p>
       </div>
     </div>

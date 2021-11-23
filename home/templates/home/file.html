@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">File type</h2>
+    <h2 class="my-5 text-center">{% trans 'File type' %}</h2>
   </div>
 {% endblock %}
 
@@ -12,14 +13,14 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          In order to start printing a design, we need a print-ready file.
-          Not all file types can be processed by us. 
-          Most formatting programs have their own file format. 
-          You can recognise it by the extension at the end of the filename 
-          (for example: .doc, .xls, .psd, .pub, .ai, …).
+          {% trans 'In order to start printing a design, we need a print-ready file.' %}
+          {% trans 'Not all file types can be processed by us.' %}
+          {% trans 'Most formatting programs have their own file format.' %}
+          {% trans 'You can recognise it by the extension at the end of the filename' %}
+          {% trans '(for example: .doc, .xls, .psd, .pub, .ai, …).' %}
         </p>
         <p class="px-4 px-md-0">
-          We can only process your files if you provide them in PDF or JPG.
+          {% trans 'We can only process your files if you provide them in PDF or JPG.' %}
         </p>
       </div>
     </div>
@@ -30,7 +31,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          This way you limit the size of the file and you maintain the high quality of the layout. 
+          {% trans 'This way you limit the size of the file and you maintain the high quality of the layout.' %}
         </p>
       </div>
     </div>
