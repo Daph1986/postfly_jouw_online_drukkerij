@@ -186,7 +186,8 @@
                 <li><a href="{% url 'quotation' %}" class="dropdown-item">{% trans 'Quotation request' %}</a></li>
               </ul>
           </li>
-          <div class="mx-3"></div>
+        </ul>
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 me-auto mb-2 mb-lg-0">
           {% if not request.user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
