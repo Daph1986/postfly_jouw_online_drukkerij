@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Job options</h2>
+    <h2 class="my-5 text-center">{% trans 'Job options' %}</h2>
   </div>
 {% endblock %}
 
@@ -11,35 +12,41 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
-        <h6 class="px-4 px-md-0 lh-lg">What are job options?</h6>
+        <h6 class="px-4 px-md-0 lh-lg">{% trans 'What are job options?' %}</h6>
         <p class="px-4 px-md-0">
-          A job option can best be compared with a settings package where the correct settings have already been set. 
-          This “package” is called a job option.
+          {% trans 'A job option can best be compared with a settings package where the correct settings have already been set.' %} 
+          {% trans 'This “package” is called a job option.' %}
+        </p>
+        <p class="px4- px-md-0">
+          {% trans 'We have got one here for you to download:' %}
         </p>
         <a href="{% static 'img/home/joboptions/postfly_joboptions.zip' %}" 
           class="text-postfly text-decoration-none px-4 px-md-0">POSTFLY joboption <i class="fas fa-cloud-download-alt"></i></a>
         <p class="px-4 px-md-0 mt-3">
-          Because you work immediately with the right settings, 
-          the file automatically meets our specific requirements and many errors and delays can be avoided.
+          {% trans 'Because you work immediately with the right settings,' %} 
+          {% trans 'the file automatically meets our specific requirements and many errors and delays can be avoided.' %} 
         </p>
         <p class="px-4 px-md-0">
-          There are also some standard job options. 
-          For example, you can choose between a job option that makes your PDF very small so that you can easily email it to your customer for approval. 
-          You also have a “press” job option that is very handy to use as a general print profile. 
-          So you’re always in the right place with this one.
+          {% trans 'There are also some standard job options.' %}  
+          {% trans 'For example, you can choose between a job option that makes your PDF very small' %}  
+          {% trans 'so that you can easily email it to your customer for approval.' %}  
+          {% trans 'You also have a “press” job option that is very handy to use as a general print profile.' %}  
+          {% trans 'So you’re always in the right place with this one.' %} 
         </p>
         <p class="px-4 px-md-0">
-          Note: You still have to format the file according to the correct requirements, check our explanation under the heading 
-            <a href="{% url 'specs' %}" class="text-postfly text-decoration-none">specifications</a>.
+          {% trans 'Note: You still have to format the file according to the correct requirements,' %}  
+          {% trans 'check our explanation under the heading' %} 
+            <a href="{% url 'specs' %}" class="text-postfly text-decoration-none">{% trans 'specifications' %} </a>.
         </p>
       </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-3">
-        <h6 class="px-4 px-md-0 lh-lg">Installing the job options</h6>
+        <h6 class="px-4 px-md-0 lh-lg">{% trans 'Installing the job options' %}</h6>
         <p class="px-4 px-md-0">
-          When you double click on the job option you just downloaded it will install itself. If this doesn’t work, follow the steps below:<br>
-          In Indesign (2021), click File → Adobe PDF Presets → Define
+          {% trans 'When you double click on the job option you just downloaded it will install itself.' %} 
+          {% trans 'If this doesn’t work, follow the steps below:' %}<br>
+          {% trans 'In Indesign (2021), click File → Adobe PDF Presets → Define' %}
         </p>
       </div>
     </div>
@@ -49,7 +56,8 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          A new window will appear where you can find the different standard job options. Click the ‘Load’ button to add POSTFLY’s.
+          {% trans 'A new window will appear where you can find the different standard job options.' %}
+          {% trans 'Click the ‘Load’ button to add POSTFLY’s.' %}
         </p>
       </div>
     </div>
@@ -59,7 +67,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          Load the file you just downloaded, then you will find the job options in the list.
+          {% trans 'Load the file you just downloaded, then you will find the job options in the list.' %}
         </p>
       </div>
     </div>

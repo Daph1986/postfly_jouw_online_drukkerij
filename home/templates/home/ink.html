@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Ink coverage</h2>
+    <h2 class="my-5 text-center">{% trans 'Ink coverage' %}</h2>
   </div>
 {% endblock %}
 
@@ -12,11 +13,11 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          Paper can only absorb a maximum percentage of ink. 
-          If more ink is supplied than paper can handle, you will end up with dirty smudges and streaks. 
-          The maximum ink coverage is 300%. You can easily check this yourself by adding up the values of the 4 printing colors. 
-          In the example below we create a new color in Indesign. If we add the 4 values together, we get at a percentage of 200%.<br>
-          So there is no chance of streaks or spots due to an excess of ink.
+          {% trans 'Paper can only absorb a maximum percentage of ink.' %} 
+          {% trans 'If more ink is supplied than paper can handle, you will end up with dirty smudges and streaks.' %} 
+          {% trans 'The maximum ink coverage is 300%. You can easily check this yourself by adding up the values of the 4 printing colors.' %} 
+          {% trans 'In the example below we create a new color in Indesign. If we add the 4 values together, we get at a percentage of 200%.<br>' %}
+          {% trans 'So there is no chance of streaks or spots due to an excess of ink.' %}
         </p>
       </div>
     </div>
@@ -25,9 +26,9 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
-        <h6 class="px-4 px-md-0 lh-lg">How do you check this yourself?</h6>
+        <h6 class="px-4 px-md-0 lh-lg">{% trans 'How do you check this yourself?' %}</h6>
         <p class="px-4 px-md-0">
-          In Indesign (2021) click in the menu bar on Window→ Output→ Separations Preview. Then you will see the window below.
+          {% trans 'In Indesign (2021) click in the menu bar on Window→ Output→ Separations Preview. Then you will see the window below.' %}
         </p>
       </div>
     </div>
@@ -37,9 +38,9 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          At view you choose the option ‘separations’. 
-          With this option the values of the colors can be measured. 
-          Or you can choose the option “Ink Limit”. With this option you can see where there is an excess of ink.
+          {% trans 'At view you choose the option ‘separations’.' %} 
+          {% trans 'With this option the values of the colors can be measured.' %} 
+          {% trans 'Or you can choose the option “Ink Limit”. With this option you can see where there is an excess of ink.' %}
         </p>
       </div>
     </div>

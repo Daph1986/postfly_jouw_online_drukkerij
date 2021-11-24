@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Color</h2>
+    <h2 class="my-5 text-center">{% trans 'Color' %}</h2>
   </div>
 {% endblock %}
 
@@ -12,16 +13,18 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          Different color settings are possible for your files. The most common are RGB, CMYK and PMS.
-          A correct color mode at the start of your design is very important!
+          {% trans 'Different color settings are possible for your files.' %} 
+          {% trans 'The most common are RGB, CMYK and PMS.' %}
+          {% trans 'A correct color mode at the start of your design is very important!' %} 
         </p>
         <h6 class="px-4 px-md-0 lh-lg">RGB</h6>
         <p class="px-4 px-md-0 mt-3">
-          RGB stands for Red, Green and Blue and are screen colors.
-          A computer screen is made up of RGB and these colors ensure that images can be displayed on the screen.
-          They are a lot brighter than CMYK colors. So it is important to choose the right color mode in your design.
-          Files supplied in RGB are not correct for printing and are automatically converted to CMYK by us.
-          Keep in mind that your design can suddenly look very different.
+          {% trans 'RGB stands for Red, Green and Blue and are screen colors.' %} 
+          {% trans 'A computer screen is made up of RGB and these colors ensure that images can be displayed on the screen.' %} 
+          {% trans 'They are a lot brighter than CMYK colors.' %}  
+          {% trans 'So it is important to choose the right color mode in your design.' %} 
+          {% trans 'Files supplied in RGB are not correct for printing and are automatically converted to CMYK by us.' %} 
+          {% trans 'Keep in mind that your design can suddenly look very different.' %} 
         </p>
       </div>
     </div>
@@ -32,9 +35,9 @@
       <div class="col-12 col-xl-10 mt-3">
         <h6 class="px-4 px-md-0 lh-lg">CMYK</h6>
         <p class="px-4 px-md-0">
-          CMYK stands for the 4 printing colors cyan (C), magenta (M), yellow (Y) and black (key) (K).
-          The printing process uses a printing press consisting of 4 towers.
-          Each tower contains one of these 4 basic colors, which makes it possible to obtain a wide range of colors.
+          {% trans 'CMYK stands for the 4 printing colors cyan (C), magenta (M), yellow (Y) and black (key) (K).' %} 
+          {% trans 'The printing process uses a printing press consisting of 4 towers.' %} 
+          {% trans 'Each tower contains one of these 4 basic colors, which makes it possible to obtain a wide range of colors.' %} 
         </p>
       </div>
     </div>
@@ -44,8 +47,8 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
         <p class="px-4 px-md-0">
-          As you can see, it is important to submit your file in the correct color mode,
-          as POSTFLY is not responsible for color deviations in incorrectly submitted files.
+          {% trans 'As you can see, it is important to submit your file in the correct color mode,' %} 
+          {% trans 'as POSTFLY is not responsible for color deviations in incorrectly submitted files.' %} 
         </p>
       </div>
     </div>
@@ -59,11 +62,12 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10 mt-5">
-        <h6 class="px-4 px-md-0">How can you check that you are working in the correct color mode and how do you adjust
-          it?</h6>
+        <h6 class="px-4 px-md-0">
+          {% trans 'How can you check that you are working in the correct color mode and how do you adjust it?' %} 
+        </h6>
         <p class="px-4 px-md-0 mt-3">
-          Open your design or image in Photoshop(2021) and click Image → Mode in the menu bar. For a print-ready design,
-          choose the CMYK color mode.
+          {% trans 'Open your design or image in Photoshop(2021) and click Image → Mode in the menu bar.' %}  
+          {% trans 'For a print-ready design, choose the CMYK color mode.' %} 
         </p>
       </div>
     </div>
@@ -74,17 +78,18 @@
       <div class="col-12 col-xl-10 mt-5">
         <h6 class="px-4 px-md-0 lh-lg">PMS</h6>
         <p class="px-4 px-md-0">
-          Finally, you have PMS, which stands for Pantone Matching System.
-          This is a universal and standardized system for naming colors.<br>
-          PMS or Pantone colors are predefined colors by default. You can choose the desired PMS color from a PMS fan.
-          Each color has a unique code that is the same all over the world.
-          PMS colors are widely used in logos and corporate identities to ensure that the chosen color is always printed
-          the same.
+          {% trans 'Finally, you have PMS, which stands for Pantone Matching System.' %} 
+          {% trans 'This is a universal and standardized system for naming colors.' %} <br>
+          {% trans 'PMS or Pantone colors are predefined colors by default.' %}  
+          {% trans 'You can choose the desired PMS color from a PMS fan.' %} 
+          {% trans 'Each color has a unique code that is the same all over the world.' %} 
+          {% trans 'PMS colors are widely used in logos and corporate identities to ensure that the chosen' %}  
+          {% trans 'color is always printed the same.' %} 
         </p>
         <p class="px-4 px-md-0">
-          However, we work with combined printing, this cannot be done with PMS colors in a design.
-          If this is the case, it will be automatically converted to CMYK, but better still,
-          you convert them to CMYK yourself in advance so that you are not faced with surprises!
+          {% trans 'However, we work with combined printing, this cannot be done with PMS colors in a design.' %} 
+          {% trans 'If this is the case, it will be automatically converted to CMYK, but better still,' %} 
+          {% trans 'you convert them to CMYK yourself in advance so that you are not faced with surprises!' %} 
         </p>
       </div>
     </div>

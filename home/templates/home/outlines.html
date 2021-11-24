@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Outlines</h2>
+    <h2 class="my-5 text-center">{% trans 'Outlines' %}</h2>
   </div>
   <div class="p-5 mb-5 outlines-img"></div>
 {% endblock %}
@@ -13,21 +14,23 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-10">
         <p class="px-4 px-md-0">
-          Fonts make the design. There is a wide choice of different types, but unfortunately not everyone has the same
-          fonts available.<br>
-          It is therefore advisable to convert the fonts into outlines in your design.
-          This way you avoid error messages on missing fonts and you can be sure that they are always displayed correctly.
+          {% trans 'Fonts make the design.' %} 
+          {% trans 'There is a wide choice of different types, but unfortunately' %} 
+          {% trans 'not everyone has the same fonts available.' %}<br>
+          {% trans 'It is therefore advisable to convert the fonts into outlines in your design.' %}
+          {% trans 'This way you avoid error messages on missing fonts and you can be sure' %} 
+          {% trans 'that they are always displayed correctly.' %}
         </p>
-        <h6 class="px-4 px-md-0">How do you convert texts into outlines?</h6>
+        <h6 class="px-4 px-md-0">{% trans 'How do you convert texts into outlines?' %}</h6>
         <p class="px-4 px-md-0">
-          Open your design in InDesign or Illustrator (2021).
-          Select the texts and click on Type → Create Outlines in the menu bar at the top.
+          {% trans 'Open your design in InDesign or Illustrator (2021).' %}
+          {% trans 'Select the texts and click on Type → Create Outlines in the menu bar at the top.' %}
         </p>
         <p class="px-4 px-md-0">
-          In the texts below, you will see the letters selected separately for the text that has been converted to
-          outlines.
-          Here you can no longer edit the text.
-          This is still possible with the text without outlines.
+          {% trans 'In the texts below, you will see the letters selected separately' %} 
+          {% trans 'for the text that has been converted to outlines.' %}
+          {% trans 'Here you can no longer edit the text.' %}
+          {% trans 'This is still possible with the text without outlines.' %}
         </p>
       </div>
     </div>
