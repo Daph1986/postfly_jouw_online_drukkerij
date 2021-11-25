@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-24 22:40+0100\n"
+"POT-Creation-Date: 2021-11-25 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1022,7 +1022,7 @@ msgid "%(truncated_text)s…"
 msgstr ""
 
 #: env/lib/python3.9/site-packages/django/utils/text.py:240
-#: templates/allauth/account/login.html:29
+#: home/templates/home/faq.html:70 templates/allauth/account/login.html:29
 msgid "or"
 msgstr ""
 
@@ -1349,101 +1349,106 @@ msgid "To get a deep black you have to add something of each color."
 msgstr "Om diep zwart te verkrijgen moet je van elke kleur iets toevoegen."
 
 #: home/templates/home/black.html:19
-#, python-format
-msgid ""
-"The following values give the best results: Cyan 40%%, Magenta 40%%, Yellow "
-"20%% and Black 100%%."
+#, fuzzy, python-format
+#| msgid "The following values give the best results: Cyan 40%%, Magenta 40%%,"
+msgid "The following values give the best results: Cyan 40%%, Magenta 40%%,"
 msgstr ""
 "De volgende waardes geven het mooiste resultaat: Cyaan 40%, Magenta 40%, "
-"Yellow 20% en Black 100%."
 
 #: home/templates/home/black.html:20
+#, python-format
+msgid "Yellow 20%% and Black 100%%."
+msgstr "Yellow 20% en Black 100%."
+
+#: home/templates/home/black.html:21
 #, python-format
 msgid "This way you get an ink coverage of 200%% instead of only 100%%."
 msgstr "Zo krijg je een inktbezetting van 200% in plaats van slechts 100%."
 
-#: home/templates/home/black.html:31
+#: home/templates/home/black.html:32
 msgid "How do you make the best deep black?"
 msgstr "Hoe maak je het beste diepzwart op?"
 
-#: home/templates/home/black.html:33
-msgid "In Indesign (2021) you create a new color as follows:"
-msgstr "In Indesign (2021) maak je een nieuwe kleur als volgt aan :"
-
 #: home/templates/home/black.html:34
+msgid "In Indesign (2021) you create a new color as follows:"
+msgstr "In Indesign (2021) maak je een nieuwe kleur als volgt aan:"
+
+#: home/templates/home/black.html:35
 msgid "In the menu bar, click Window→ Colour→ Swatches."
 msgstr ""
 "Klik in de menubalk op Window→ Colour→ Swatches (Venster→ Kleuren→ Stalen)."
 
-#: home/templates/home/black.html:35
-msgid ""
-"Then you will see the window below. Press the plus sign at the bottom right "
-"and enter the values as below."
-msgstr ""
-"Dan krijg je onderstaand venster te zien. Druk op het plusje rechts onder en "
-"vul de waardes in als hieronder."
+#: home/templates/home/black.html:36 home/templates/home/ink.html:34
+msgid "Then you will see the window below."
+msgstr "Dan krijg je onderstaand venster te zien."
+
+#: home/templates/home/black.html:37
+msgid "Press the plus sign at the bottom right and enter the values as below."
+msgstr "Druk op het plusje rechts onder en vul de waardes in als hieronder."
 
 #: home/templates/home/bleed.html:7 templates/includes/navbar.html:151
 msgid "Bleed"
 msgstr "Afloop"
 
 #: home/templates/home/bleed.html:16
-msgid ""
-"Even with our modern computer-controlled cutting machines there is a chance "
-"of a small cutting deviation."
-msgstr ""
-"Ook met onze moderne computergestuurde snijmachines is de kans op een kleine "
-"snijafwijking aanwezig. "
+msgid "Even with our modern computer-controlled cutting machines"
+msgstr "Ook met onze moderne computergestuurde snijmachines "
 
 #: home/templates/home/bleed.html:17
+msgid "there is a chance of a small cutting deviation."
+msgstr "is de kans op een kleine snijafwijking aanwezig."
+
+#: home/templates/home/bleed.html:18
 msgid "That is why we use a cutting margin of 3 mm inwards and outwards."
 msgstr ""
 "Vandaar dat wij een snijmarge van 3mm naar binnen en naar buiten hanteren."
 
-#: home/templates/home/bleed.html:18
-msgid ""
-"If a file is not submitted correctly, there is a chance that a white border "
-"will be visible on your printed matter."
+#: home/templates/home/bleed.html:19
+msgid "If a file is not submitted correctly, there is a chance that a white"
 msgstr ""
 "Door het niet correct aanleveren van een bestand bestaat de kans dat er een "
-"wit randje zichtbaar is op jouw drukwerk. "
+"wit"
 
-#: home/templates/home/bleed.html:19
+#: home/templates/home/bleed.html:20
+msgid "border will be visible on your printed matter."
+msgstr "randje zichtbaar is op jouw drukwerk."
+
+#: home/templates/home/bleed.html:21
 msgid "To prevent this, we need an extra 3 mm on each side, also called bleed."
 msgstr ""
 "Om dat te voorkomen hebben we aan elke zijde 3mm extra nodig, afloop ook wel "
 "bleed genoemd."
 
-#: home/templates/home/bleed.html:22
+#: home/templates/home/bleed.html:24
 msgid "As an example: an A4 flyer has a net size of 297 x 210 mm."
 msgstr "Als voorbeeld: een A4 flyer heeft een netto formaat van 297 x 210 mm."
 
-#: home/templates/home/bleed.html:23
-msgid ""
-"Giving this A4 bleed this gives you a gross size of 303 x 216 mm (297 x 210 "
-"mm + 3 mm on each side)."
-msgstr ""
-"Door hieraan afloop te geven, krijg je een bruto formaat van 303 x 216 mm "
-"(297 x 210 mm + 3 mm aan elke zijde)."
+#: home/templates/home/bleed.html:25
+msgid "Giving this A4 bleed this gives you a gross size of"
+msgstr "Door hieraan afloop te geven, krijg je een bruto formaat van"
 
-#: home/templates/home/bleed.html:24
+#: home/templates/home/bleed.html:26
+msgid "303 x 216 mm (297 x 210 mm + 3 mm on each side)."
+msgstr "303 x 216 mm (297 x 210 mm + 3 mm aan elke zijde)."
+
+#: home/templates/home/bleed.html:27
 msgid "The example on this page shows this."
 msgstr "Het voorbeeld hier laat dat zien."
 
-#: home/templates/home/bleed.html:30
+#: home/templates/home/bleed.html:33
 msgid ""
 "The red line is the bleed edge, let your background continue to this line."
 msgstr ""
 "De rode lijn is de bleed rand, laat je achtergrond doorlopen tot deze lijn. "
 
-#: home/templates/home/bleed.html:31
+#: home/templates/home/bleed.html:34
 msgid ""
 "This prevents a white border on a background image when a crop defect occurs"
 msgstr ""
 "Dat voorkomt een witrandje bij een achtergrondafbeelding wanneer zich een "
 "snijafwijking voor doet."
 
-#: home/templates/home/bleed.html:32
+#: home/templates/home/bleed.html:35
 msgid ""
 "The black line is the cutting edge and the blue line indicates the safety "
 "zone for placing texts."
@@ -1451,27 +1456,27 @@ msgstr ""
 "De zwarte lijn is de snijrand en de blauwe lijn geeft de veiligheidszone aan "
 "voor het plaatsen van tekst."
 
-#: home/templates/home/bleed.html:33
+#: home/templates/home/bleed.html:36
 msgid "Make sure that you stay within this safety zone with your texts,"
 msgstr "Zorg dat je met teksten binnen deze veiligheidszone blijft,"
 
-#: home/templates/home/bleed.html:34
+#: home/templates/home/bleed.html:37
 msgid "this way you prevent texts from “sticking”"
 msgstr "zo voorkom je dat teksten tegen de rand “plakken” "
 
-#: home/templates/home/bleed.html:35
+#: home/templates/home/bleed.html:38
 msgid "to the edge and you are sure that nothing is cut off."
 msgstr "en ben je er zeker van dat er niets wordt weggesneden."
 
-#: home/templates/home/bleed.html:38
+#: home/templates/home/bleed.html:41
 msgid "We also advise you not to use frames,"
 msgstr "Wij adviseren je ook geen gebruik te maken van kaders,"
 
-#: home/templates/home/bleed.html:39
+#: home/templates/home/bleed.html:42
 msgid "because of a possible cutting deviation you run the risk"
 msgstr "door een mogelijke snijafwijking loop je daarmee namelijk het risico"
 
-#: home/templates/home/bleed.html:40
+#: home/templates/home/bleed.html:43
 msgid "that the frame is wider on one side than on the other."
 msgstr "dat het kader aan de ene zijde breder is dan aan de andere zijde."
 
@@ -1496,22 +1501,23 @@ msgid "RGB stands for Red, Green and Blue and are screen colors."
 msgstr "RGB staat voor Rood, Groen en Blauw en zijn schermkleuren."
 
 #: home/templates/home/color.html:23
-msgid ""
-"A computer screen is made up of RGB and these colors ensure that images can "
-"be displayed on the screen."
+msgid "A computer screen is made up of RGB and these colors ensure that"
 msgstr ""
 "Een computerscherm is opgebouwd uit RGB en deze kleuren zorgen ervoor dat "
-"afbeeldingen weergegeven kunnen worden op het scherm."
 
 #: home/templates/home/color.html:24
+msgid "images can be displayed on the screen."
+msgstr "afbeeldingen weergegeven kunnen worden op het scherm."
+
+#: home/templates/home/color.html:25
 msgid "They are a lot brighter than CMYK colors."
 msgstr "Ze zijn een stuk feller dan CMYK-kleuren."
 
-#: home/templates/home/color.html:25
+#: home/templates/home/color.html:26
 msgid "So it is important to choose the right color mode in your design."
 msgstr "Het is dus belangrijk om in je ontwerp de juiste kleurmodus te kiezen."
 
-#: home/templates/home/color.html:26
+#: home/templates/home/color.html:27
 msgid ""
 "Files supplied in RGB are not correct for printing and are automatically "
 "converted to CMYK by us."
@@ -1519,11 +1525,11 @@ msgstr ""
 "Bestanden aangeleverd in RGB zijn niet correct om mee te drukken en worden "
 "automatisch door ons omgezet naar CMYK."
 
-#: home/templates/home/color.html:27
+#: home/templates/home/color.html:28
 msgid "Keep in mind that your design can suddenly look very different."
 msgstr "Hou er rekening mee dat je ontwerp er opeens heel anders kan uitzien."
 
-#: home/templates/home/color.html:38
+#: home/templates/home/color.html:39
 msgid ""
 "CMYK stands for the 4 printing colors cyan (C), magenta (M), yellow (Y) and "
 "black (key) (K)."
@@ -1531,21 +1537,22 @@ msgstr ""
 "CMYK staat voor de vier drukkleuren cyaan (C), magenta (M), geel (yellow) "
 "(Y) en zwart (key) (K)."
 
-#: home/templates/home/color.html:39
+#: home/templates/home/color.html:40
 msgid "The printing process uses a printing press consisting of 4 towers."
 msgstr ""
 "Bij het drukproces wordt er gebruik gemaakt van een drukpers die uit 4 "
 "torens bestaat."
 
-#: home/templates/home/color.html:40
-msgid ""
-"Each tower contains one of these 4 basic colors, which makes it possible to "
-"obtain a wide range of colors."
-msgstr ""
-"In elke toren zit één van deze 4 basiskleuren en is het hiermee mogelijk om "
-"een groot gamma aan kleuren te verkrijgen."
+#: home/templates/home/color.html:41
+msgid "Each tower contains one of these 4 basic colors,"
+msgstr "In elke toren zit één van deze 4 basiskleuren"
 
-#: home/templates/home/color.html:50
+#: home/templates/home/color.html:42
+msgid "which makes it possible to obtain a wide range of colors."
+msgstr ""
+"en is het hiermee mogelijk om een groot gamma aan kleuren te verkrijgen."
+
+#: home/templates/home/color.html:52
 msgid ""
 "As you can see, it is important to submit your file in the correct color "
 "mode,"
@@ -1553,7 +1560,7 @@ msgstr ""
 "Zoals je ziet is het belangrijk om je bestand in de goede kleurmodus aan te "
 "leveren, "
 
-#: home/templates/home/color.html:51
+#: home/templates/home/color.html:53
 msgid ""
 "as POSTFLY is not responsible for color deviations in incorrectly submitted "
 "files."
@@ -1561,7 +1568,7 @@ msgstr ""
 "POSTFLY is namelijk niet verantwoordelijk voor kleurafwijkingen bij onjuist "
 "aangeleverde bestanden."
 
-#: home/templates/home/color.html:66
+#: home/templates/home/color.html:68
 msgid ""
 "How can you check that you are working in the correct color mode and how do "
 "you adjust it?"
@@ -1569,7 +1576,7 @@ msgstr ""
 "Hoe kan je checken dat je in de juiste kleurmodus werkt en hoe pas je hem "
 "aan?"
 
-#: home/templates/home/color.html:69
+#: home/templates/home/color.html:71
 msgid ""
 "Open your design or image in Photoshop(2021) and click Image → Mode in the "
 "menu bar."
@@ -1577,33 +1584,33 @@ msgstr ""
 "Open je ontwerp of afbeelding in Photoshop(2021) en klik in de menubalk op "
 "Image → Mode (Beeld → Modus)."
 
-#: home/templates/home/color.html:70
+#: home/templates/home/color.html:72
 msgid "For a print-ready design, choose the CMYK color mode."
 msgstr "Voor een drukklaar ontwerp kies je de kleurmodus CMYK."
 
-#: home/templates/home/color.html:81
+#: home/templates/home/color.html:83
 msgid "Finally, you have PMS, which stands for Pantone Matching System."
 msgstr "Tot slot heb je nog PMS, wat staat voor Pantone Matching System."
 
-#: home/templates/home/color.html:82
+#: home/templates/home/color.html:84
 msgid "This is a universal and standardized system for naming colors."
 msgstr ""
 "Dit is een universeel en gestandaardiseerd systeem om kleuren te benoemen."
 
-#: home/templates/home/color.html:83
+#: home/templates/home/color.html:85
 msgid "PMS or Pantone colors are predefined colors by default."
 msgstr ""
 "PMS- of Pantone kleuren zijn standaard op voorhand vastgelegde kleuren."
 
-#: home/templates/home/color.html:84
+#: home/templates/home/color.html:86
 msgid "You can choose the desired PMS color from a PMS fan."
 msgstr "De gewenste PMS-kleur kan je kiezen uit een PMS-waaier."
 
-#: home/templates/home/color.html:85
+#: home/templates/home/color.html:87
 msgid "Each color has a unique code that is the same all over the world."
 msgstr "Elke kleur heeft een unieke code die overal ter wereld hetzelfde is."
 
-#: home/templates/home/color.html:86
+#: home/templates/home/color.html:88
 msgid ""
 "PMS colors are widely used in logos and corporate identities to ensure that "
 "the chosen"
@@ -1611,11 +1618,11 @@ msgstr ""
 "PMS kleuren worden veel gebruikt in logo’s en huisstijlen om er zeker van te "
 "zijn dat de gekozen"
 
-#: home/templates/home/color.html:87
+#: home/templates/home/color.html:89
 msgid "color is always printed the same."
 msgstr "kleur steeds hetzelfde gedrukt wordt."
 
-#: home/templates/home/color.html:90
+#: home/templates/home/color.html:92
 msgid ""
 "However, we work with combined printing, this cannot be done with PMS colors "
 "in a design."
@@ -1623,7 +1630,7 @@ msgstr ""
 "Wij werken echter met combinatiedrukwerk dit kan niet gecombineerd worden "
 "met PMS kleuren in een ontwerp."
 
-#: home/templates/home/color.html:91
+#: home/templates/home/color.html:93
 msgid ""
 "If this is the case, it will be automatically converted to CMYK, but better "
 "still,"
@@ -1631,13 +1638,721 @@ msgstr ""
 "Indien dit toch het geval is wordt het automatisch omgezet naar CMYK, maar "
 "beter nog"
 
-#: home/templates/home/color.html:92
+#: home/templates/home/color.html:94
 msgid ""
 "you convert them to CMYK yourself in advance so that you are not faced with "
 "surprises!"
 msgstr ""
 "zet je ze zelf op voorhand om naar CMYK zodat je niet voor verrassingen komt "
 "te staan!"
+
+#: home/templates/home/concept.html:7 templates/includes/navbar.html:176
+msgid "Our concept"
+msgstr "Ons concept"
+
+#: home/templates/home/concept.html:16
+msgid "From bits and bytes to ink and paper"
+msgstr "Van bits en bytes naar inkt en papier"
+
+#: home/templates/home/concept.html:18
+msgid "We show a clear delivery time for our products,"
+msgstr "Wij geven een duidelijke levertermijn weer voor onze producten,"
+
+#: home/templates/home/concept.html:19
+msgid ""
+"prices are known in advance and delivery to 1 address in the Netherlands"
+msgstr "prijzen zijn vooraf bekend en levering op 1 adres in Nederland"
+
+#: home/templates/home/concept.html:20
+msgid "is free of charge, so you will not be faced with surprises."
+msgstr "is kosteloos, zo kom je niet voor verrassingen te staan."
+
+#: home/templates/home/concept.html:23
+msgid "We like to think in terms of solutions and strive for quick responses,"
+msgstr "We denken graag in oplossingen en streven naar snelle reacties"
+
+#: home/templates/home/concept.html:24
+msgid "whether that is by email or telephone, that does not matter to us."
+msgstr "of dat via de mail of telefoon is, dat maakt voor ons niet uit."
+
+#: home/templates/home/concept.html:25
+msgid ""
+"Because we are a small and close-knit team, we have short direct lines and"
+msgstr "Omdat we een klein en hecht team zijn, hebben we korte directe lijnen en"
+
+#: home/templates/home/concept.html:26
+msgid "a flat organizational structure."
+msgstr "een vlakke organisatiestructuur."
+
+#: home/templates/home/concept.html:35
+msgid "The environment"
+msgstr "Het Milieu"
+
+#: home/templates/home/concept.html:37
+msgid ""
+"POSTFLY and Grafische Groep Matthys consider a healthy living environment"
+msgstr "POSTFLY en Grafische Groep Matthys vinden een gezond leefmilieu"
+
+#: home/templates/home/concept.html:38
+msgid "important for the next generations,"
+msgstr "voor de volgende generaties belangrijk,"
+
+#: home/templates/home/concept.html:39
+msgid "which is why we do what we can to contribute to a healthy environment."
+msgstr "daarom doen we wat we kunnen om ons steentje bij te dragen aan een gezond milieu."
+
+#: home/templates/home/concept.html:42
+msgid ""
+"From 2011, we calculate and produce your printed matter exclusively with "
+"electricity"
+msgstr "Vanaf 2011 calculeren en produceren we je drukwerk uitsluitend met elektriciteit"
+
+#: home/templates/home/concept.html:43
+msgid ""
+"from our solar panels and green electricity from renewable energy sources."
+msgstr "van onze zonnepanelen en groene elektriciteit uit hernieuwbare energiebronnen."
+
+#: home/templates/home/concept.html:46
+msgid "We have Eco-papers, so it’s no problem to have your"
+msgstr "We beschikken over Eco-papiersoorten, dus het is geen probleem"
+
+#: home/templates/home/concept.html:47
+msgid "printed matter well-priced and ecologically printed."
+msgstr "om je drukwerk goed geprijsd en ecologisch te laten drukken."
+
+#: home/templates/home/concept.html:48
+msgid "We combine our orders,"
+msgstr "Wij combineren onze orders,"
+
+#: home/templates/home/concept.html:49
+msgid "which is not only nice for you from a price point of view,"
+msgstr "dit is niet alleen leuk voor jou prijstechnisch gezien,"
+
+#: home/templates/home/concept.html:50
+msgid "but also ensures that the production is more environmentally friendly."
+msgstr "maar zorgt er ook voor dat de productie milieuvriendelijker is."
+
+#: home/templates/home/concept.html:51
+msgid "Only 1 set of printing plates needs to be used per printing form."
+msgstr ""
+"Er hoeft slechts 1 set drukplaten gebruikt worden per drukvorm."
+
+#: home/templates/home/concept.html:52
+msgid "That material is therefore divided by all orders"
+msgstr "Dat materiaal wordt dus gedeeld door alle orders"
+
+#: home/templates/home/concept.html:53
+msgid "that are collected on that printing sheet."
+msgstr "die op dat drukvel verzameld staan."
+
+#: home/templates/home/concept.html:54
+msgid "You therefore use less raw materials and reduce the waste mountain."
+msgstr "Je verbruikt dus minder grondstoffen en vermindert de afvalberg."
+
+#: home/templates/home/concept.html:57
+msgid ""
+"We are also FSC certified. FSC (Forest Stewardship Council) is a label or"
+msgstr "Ook zijn wij FSC-gecertificeerd. FSC (Forest Stewardship Council) is een label of"
+
+#: home/templates/home/concept.html:58
+msgid "quality mark on a paper product that indicates"
+msgstr "keurmerk op een papierproduct dat aangeeft"
+
+#: home/templates/home/concept.html:59
+msgid "it comes from a sustainably managed forest."
+msgstr "of het afkomstig is uit een duurzaam beheerd bos."
+
+#: home/templates/home/concept.html:60
+msgid ""
+"The FSC label guarantees sustainable origin because not only the forest of "
+"origin is checked,"
+msgstr "Het FSC label garandeert de duurzame oorsprong omdat niet enkel het bos van oorsprong wordt gecontroleerd,"
+
+#: home/templates/home/concept.html:61
+msgid "but also the entire trade chain up to the end consumer."
+msgstr "maar ook de hele handelsketen tot bij de eind consument."
+
+#: home/templates/home/concept.html:64
+msgid "Finally, we ourselves had the recyclability of our printed matter and"
+msgstr "Tot slot hebben we zelf de recycleerbaarheid van ons drukwerk en"
+
+#: home/templates/home/concept.html:65
+msgid "packaging added with cold foil technology tested."
+msgstr "verpakkingen voorzien van cold foil techniek laten testen."
+
+#: home/templates/home/concept.html:66
+msgid "This showed that all variants we tested could be recycled well."
+msgstr "Daaruit is gebleken dat alle varianten die we getest hebben goed gerecycled konden worden."
+
+#: home/templates/home/concept.html:67
+msgid "The applied adhesive ink, emulsion varnish and foil were perfectly"
+msgstr "De aangebrachte lijminkt, dispersielak en folie werden prima"
+
+#: home/templates/home/concept.html:68
+msgid ""
+"discharged through the recycling process as is the case with traditional "
+"printing and"
+msgstr "door het recyclingproces afgevoerd zoals bij klassiek drukwerk het geval is en"
+
+#: home/templates/home/concept.html:69
+msgid "they did not appear to be a disruptive"
+msgstr "ze bleken ook geen verstorende"
+
+#: home/templates/home/concept.html:70
+msgid "factor during the production of a new sheet of paper."
+msgstr "factor tijdens de productie van een nieuw vel papier."
+
+#: home/templates/home/faq.html:7
+msgid "Frequently asked questions"
+msgstr "Veel gestelde vragen"
+
+#: home/templates/home/faq.html:25
+msgid "General"
+msgstr "Algemeen"
+
+#: home/templates/home/faq.html:31
+msgid "Where can I place my order?"
+msgstr "Waar kan ik mijn bestelling plaatsen?"
+
+#: home/templates/home/faq.html:32
+msgid "It goes like this:"
+msgstr "Dat gaat als volgt:"
+
+#: home/templates/home/faq.html:35
+msgid ""
+"Go to the products in the menu bar and add the products you want to order"
+msgstr ""
+"Ga in de menubalk naar de producten en voeg de producten toe die je wilt "
+"bestellen"
+
+#: home/templates/home/faq.html:38
+msgid "When you have all your desired products in the shopping cart,"
+msgstr "Als je al de gewenste producten in je winkelwagen hebt,"
+
+#: home/templates/home/faq.html:39
+msgid "proceed to secure checkout"
+msgstr "ga je verder naar veilig afrekenen"
+
+#: home/templates/home/faq.html:42
+msgid "Fill out the checkout form,"
+msgstr "Vul het formulier helemaal in,"
+
+#: home/templates/home/faq.html:43
+msgid "upload your files and complete your order"
+msgstr "upload je bestanden en rond je bestelling af"
+
+#: home/templates/home/faq.html:47
+msgid "Where can I find the delivery times for the products?"
+msgstr "Waar vind ik de levertijden voor de producten?"
+
+#: home/templates/home/faq.html:50 home/templates/home/faq.html:166
+msgid "With the"
+msgstr "Bij onze"
+
+#: home/templates/home/faq.html:51 home/templates/home/faq.html:167
+#: home/templates/home/foil.html:71 home/templates/home/printing.html:63
+msgid "products"
+msgstr "producten"
+
+#: home/templates/home/faq.html:52 home/templates/home/faq.html:168
+msgid "you can choose a production time of 3 or 5 business days."
+msgstr "kan je een productietijd van 3 of 5 werkdagen kiezen."
+
+#: home/templates/home/faq.html:53 home/templates/home/faq.html:169
+msgid ""
+"If you have hand in your files before 11 a.m. you may count that day as a "
+"business day."
+msgstr ""
+"Als je jouw bestanden voor 11 uur in de ochtend aanlevert, mag je die dag "
+"meetellen als werkdag."
+
+#: home/templates/home/faq.html:56
+msgid "I have placed an order, can I still change or cancel it?"
+msgstr "Ik heb een bestelling geplaatst, kan ik die nog wijzigen of annuleren?"
+
+#: home/templates/home/faq.html:59
+msgid "No, as soon as you have ordered your order will go into production."
+msgstr "Nee, zodra je besteld hebt gaat je order in productie."
+
+#: home/templates/home/faq.html:60
+msgid "But you can always"
+msgstr "Maar je kunt altijd"
+
+#: home/templates/home/faq.html:62
+msgid "us to find out what the possibilities are."
+msgstr "met ons opnemen om te overleggen wat de mogelijkheden zijn."
+
+#: home/templates/home/faq.html:65
+msgid ""
+"I do not see the size I want or have wishes that are not on the website, are "
+"there options for that?"
+msgstr ""
+"Ik zie niet het formaat staan wat ik wil of heb wensen die niet op de "
+"website staan, zijn daar opties voor?"
+
+#: home/templates/home/faq.html:68
+msgid "We have more options than you see on the website, request a"
+msgstr "Wij hebben meer mogelijkheden dan op de website staat, vraag om een"
+
+#: home/templates/home/faq.html:69 home/templates/home/foil.html:90
+#: home/templates/home/printing.html:67
+msgid "quotation"
+msgstr "offerte"
+
+#: home/templates/home/faq.html:71
+#: templates/allauth/account/password_reset.html:29
+msgid "contact"
+msgstr "contacteer"
+
+#: home/templates/home/faq.html:72
+msgid "us."
+msgstr "ons."
+
+#: home/templates/home/faq.html:75
+msgid "Do different prices apply when reprinting an order?"
+msgstr "Gelden er andere prijzen bij een herdruk van een bestelling?"
+
+#: home/templates/home/faq.html:78
+msgid "No, even if you order the exact same print job again at a later date,"
+msgstr ""
+"Nee, ook als je exact hetzelfde drukwerk op een later tijdstip opnieuw "
+"besteld"
+
+#: home/templates/home/faq.html:79
+msgid "you simply pay the price as stated on the website."
+msgstr "betaal je gewoon de standaardprijs zoals vermeld op de website."
+
+#: home/templates/home/faq.html:80
+msgid "Production always starts from scratch,"
+msgstr "De productie begint steeds van nul,"
+
+#: home/templates/home/faq.html:81
+msgid ""
+"the printing plates cannot be reused due to the combined printing process."
+msgstr ""
+"de drukplaten kunnen wegens het combinatiedrukwerk niet worden herbruikt."
+
+#: home/templates/home/faq.html:84
+msgid "I want to see the paper types, is that possible?"
+msgstr "Ik wil de papiersoorten zien, kan dat?"
+
+#: home/templates/home/faq.html:87
+msgid "Yes, definitely, request a free"
+msgstr "Ja zeker, vraag gratis"
+
+#: home/templates/home/faq.html:88
+msgid "sample kit"
+msgstr "samples"
+
+#: home/templates/home/faq.html:89
+msgid "and we will send it to you."
+msgstr "aan en we sturen ze naar je op."
+
+#: home/templates/home/faq.html:92
+msgid ""
+"I have no idea how to make a print ready file, can POSTFLY make one for me?"
+msgstr ""
+"Ik heb geen idee hoe ik een bestand op maak, kan POSTFLY dat voor mij doen?"
+
+#: home/templates/home/faq.html:95
+msgid "Yes you can, feel free to"
+msgstr "Ja dat kan, neem gerust"
+
+#: home/templates/home/faq.html:97
+msgid "us for more information."
+msgstr "met ons op voor meer informatie."
+
+#: home/templates/home/faq.html:106
+msgid "Payment"
+msgstr "Betaling"
+
+#: home/templates/home/faq.html:113
+msgid "What payment options do you have?"
+msgstr "Welke betaalmogelijkheden hebben jullie?"
+
+#: home/templates/home/faq.html:116
+msgid "You place your order online and pay with your credit card."
+msgstr "Je plaatst je bestelling online en betaald hem met je creditcard."
+
+#: home/templates/home/faq.html:117 home/templates/home/faq.html:133
+msgid "If you do not have a credit card, please"
+msgstr "Heb je geen creditcard, neem dan"
+
+#: home/templates/home/faq.html:119 home/templates/home/faq.html:135
+msgid "us and we can look for a suitable solution."
+msgstr "met ons op, dan kunnen we kijken naar een passende oplossing."
+
+#: home/templates/home/faq.html:122
+msgid "Where can I find my invoice?"
+msgstr "Waar vind ik mijn factuur?"
+
+#: home/templates/home/faq.html:125
+msgid "The invoice will be emailed to you after we have received the payment."
+msgstr ""
+"De factuur wordt, nadat wij de betaling op de bank terug zien naar je "
+"gemaild."
+
+#: home/templates/home/faq.html:126
+msgid "This will be done to the email address you provided."
+msgstr "Dit gebeurt naar het door jouw opgegeven emailadres."
+
+#: home/templates/home/faq.html:129
+msgid "Can I pay afterwards?"
+msgstr "Kan ik achteraf betalen?"
+
+#: home/templates/home/faq.html:132
+msgid "No, you order online and pay with a credit card."
+msgstr "Nee, je besteld online en betaald met creditcard. "
+
+#: home/templates/home/faq.html:138
+msgid ""
+"I have received a reminder, an exhortation or a summation for an invoice, "
+"what about that?"
+msgstr "Ik heb een herinnering, aanmaning of sommatie gekregen hoe zit dat?"
+
+#: home/templates/home/faq.html:141
+msgid "If your invoice has not been paid according to our system,"
+msgstr "Als je factuur volgens ons systeem niet betaald is,"
+
+#: home/templates/home/faq.html:142
+msgid "you will first receive a reminder from us."
+msgstr "ontvang je van ons daarover eerst een herinnering."
+
+#: home/templates/home/faq.html:143
+msgid "If we do not receive a response or payment,"
+msgstr "Mochten wij daarop geen reactie of betaling krijgen,"
+
+#: home/templates/home/faq.html:144
+msgid "a exhortation will follow and then a summons."
+msgstr "dan volgt er een aanmaning en daarna een sommatie."
+
+#: home/templates/home/faq.html:145
+msgid "If you feel it is not right, please"
+msgstr "Klopt het volgens jou niet, neem dan gelijk"
+
+#: home/templates/home/faq.html:147
+msgid "us right away."
+msgstr "met ons op."
+
+#: home/templates/home/faq.html:156
+msgid "Delivery"
+msgstr "Levering"
+
+#: home/templates/home/faq.html:163
+msgid "What is the delivery time of your products?"
+msgstr "Wat is de levertermijn van jullie producten?"
+
+#: home/templates/home/faq.html:172
+msgid "At what time will my order be delivered?"
+msgstr "Op welk tijdsstip wordt mijn bestelling geleverd?"
+
+#: home/templates/home/faq.html:175
+msgid "We use a courier, DHL, PostNL and DPD,"
+msgstr "Wij maken gebruik van een koerier, DHL, PostNL en DPD,"
+
+#: home/templates/home/faq.html:176
+msgid "depending on the order we take the most suitable shipping option."
+msgstr ""
+"afhankelijk van de bestelling kiezen we daar de best geschikte verzendoptie "
+"voor."
+
+#: home/templates/home/faq.html:177
+msgid "It is therefore difficult to indicate the time in advance,"
+msgstr "Het tijdsstip is daarom lastig vooraf aan te geven,"
+
+#: home/templates/home/faq.html:178
+msgid "normally deliveries are made on business days between 8:00 and 18:00."
+msgstr "normaliter wordt er op werkdagen tussen 8:00 en 18:00 uur geleverd."
+
+#: home/templates/home/faq.html:179
+msgid ""
+"We do have options such as DHL Express, to see if it is suitable for your "
+"order,"
+msgstr ""
+"We hebben wel mogelijkheden zoals bijvoorbeeld DHL Express, om te kijken of "
+"dat geschikt is voor jou bestelling"
+
+#: home/templates/home/faq.html:180
+msgid "it is best to send us an"
+msgstr "kan je ons het beste"
+
+#: home/templates/home/faq.html:181
+msgid "email"
+msgstr "emailen"
+
+#: home/templates/home/faq.html:184
+msgid "Can I also have my package delivered abroad?"
+msgstr "Kan ik mijn pakket ook in het buitenland laten leveren?"
+
+#: home/templates/home/faq.html:187
+msgid "Yes, there are options, please"
+msgstr "Ja daar zijn mogelijkheden voor, neem"
+
+#: home/templates/home/faq.html:189
+msgid "us to discuss this."
+msgstr "met ons op om dat door te spreken."
+
+#: home/templates/home/faq.html:190
+msgid ""
+"The shipping costs and delivery times depend on the country of destination "
+"and"
+msgstr ""
+"De verzendkosten en levertermijnen zijn afhankelijk van het land van "
+"bestemming en"
+
+#: home/templates/home/faq.html:191
+msgid "the weight plays an important role in this."
+msgstr "het gewicht speelt hier een belangrijke rol in."
+
+#: home/templates/home/faq.html:194
+msgid "Can my order also be sent directly, incognito to my customer?"
+msgstr ""
+"Kan mijn bestelling ook direct, neutraal naar mijn klant gestuurd worden?"
+
+#: home/templates/home/faq.html:197
+msgid "Yes, please"
+msgstr "Ja dat kan, neem"
+
+#: home/templates/home/faq.html:199
+msgid "us to arrange it."
+msgstr "met ons op om dit te laten verzorgen."
+
+#: home/templates/home/faq.html:202
+msgid "Can my order be delivered to multiple addresses?"
+msgstr "Kan mijn bestelling ook op meerdere adressen laten leveren?"
+
+#: home/templates/home/faq.html:205
+msgid "Yes that is possible, please"
+msgstr "Ja dat kan, neem"
+
+#: home/templates/home/faq.html:207
+msgid ""
+"us tso that we know what needs to go where, there is an additional cost."
+msgstr ""
+"met ons op zodat we weten wat waar heen moet, hier zit wel een meerprijs aan."
+
+#: home/templates/home/faq.html:210
+msgid "Do you also have the option of express delivery?"
+msgstr "Hebben jullie ook de mogelijkheid tot een spoedlevering?"
+
+#: home/templates/home/faq.html:213
+msgid "Sometimes that is indeed possible, but unfortunately not always."
+msgstr "Soms kan dat inderdaad, maar helaas niet altijd."
+
+#: home/templates/home/faq.html:214
+msgid "Please"
+msgstr "Neem"
+
+#: home/templates/home/faq.html:216
+msgid "us to discuss the possibilities."
+msgstr "met ons op om de mogelijkheden te bespreken."
+
+#: home/templates/home/faq.html:225
+msgid "Paper types"
+msgstr "Papiersoorten"
+
+#: home/templates/home/faq.html:233
+msgid "A paper with a matte appearance."
+msgstr "Een mat glad afgewerkt papiersoort."
+
+#: home/templates/home/faq.html:234
+msgid "Very suitable type of paper for photos,"
+msgstr "Zeer geschikt voor bijvoorbeeld foto's,"
+
+#: home/templates/home/faq.html:235
+msgid "for example, because of the smooth structure."
+msgstr "vanwege de gladde structuur."
+
+#: home/templates/home/faq.html:236
+msgid "This paper is not suitable for stamping."
+msgstr "Dit papier is niet geschikt om op te stempelen."
+
+#: home/templates/home/faq.html:240
+msgid "FSC certified, paper with an ecologically conscious appearance."
+msgstr "FSC gecertificeerd, een ecologisch bewuste papierkeuze. "
+
+#: home/templates/home/faq.html:241 home/templates/home/faq.html:247
+msgid "This paper is suitable for stamping."
+msgstr "Dit papier is geschikt om op te stempelen."
+
+#: home/templates/home/faq.html:245
+msgid "FSC certified - light uncoated paper, paper with an ecological,"
+msgstr "FSC gecertificeerd - licht ongestreken papier, een ecologische en"
+
+#: home/templates/home/faq.html:246
+msgid "environmentally conscious appearance."
+msgstr "milieubewuste papierkeuze."
+
+#: home/templates/home/faq.html:251
+msgid "Glossy white paper MC satin - light, flexible paper."
+msgstr "Glanzend wit papier MC gesatineerd - licht, flexibel papier."
+
+#: home/templates/home/faq.html:255
+msgid ""
+"Due to the blue back, the poster is not translucent and can easily be pasted "
+"over something."
+msgstr ""
+"Door de blauwe achterkant schijnt de poster niet door en kan hij makkelijk "
+"geplakt worden."
+
+#: home/templates/home/faq.html:256
+msgid "Ideal for outdoor promotions."
+msgstr "Geschikt voor promoties buiten."
+
+#: home/templates/home/faq.html:260
+msgid "MC matte - top quality paper - very firm cardboard feel."
+msgstr "MC mat - papier van topkwaliteit - zeer stevig karton gevoel."
+
+#: home/templates/home/faq.html:264
+msgid "Sturdy 350 gr sulphate cardboard + finished on both sides"
+msgstr "Stevig 350 gr sulfaatkarton + aan beide zijden afgewerkt"
+
+#: home/templates/home/faq.html:265
+msgid "with matte dispersion varnish and on one sidd with cold foil,"
+msgstr "met matte dispersielak en aan een zijde met koudfolie,"
+
+#: home/templates/home/faq.html:266
+msgid "which makes it possible to provide metallic effects."
+msgstr "waardoor het mogelijk is om metallic effecten te creëren."
+
+#: home/templates/home/faq.html:275
+msgid "Glossary"
+msgstr "Woordenlijst"
+
+#: home/templates/home/faq.html:282
+msgid "What is resolution?"
+msgstr "Wat is resolutie?"
+
+#: home/templates/home/faq.html:285 home/templates/home/resolution.html:16
+msgid "Resolution equals the quality of the image."
+msgstr "Resolutie staat gelijk aan de kwaliteit van het beeld."
+
+#: home/templates/home/faq.html:286 home/templates/home/resolution.html:17
+msgid "Resolution is expressed in dpi (dots per inch)."
+msgstr "Resolutie wordt uitgedrukt in dpi (dots per inch)."
+
+#: home/templates/home/faq.html:287 home/templates/home/resolution.html:18
+msgid "The higher the number of “dots” per inch,"
+msgstr "Hoe hoger het aantal “dots” (puntjes) per inch,"
+
+#: home/templates/home/faq.html:288 home/templates/home/resolution.html:19
+msgid "the sharper and higher the quality of the image."
+msgstr "hoe scherper en hoger de kwaliteit van het beeld."
+
+#: home/templates/home/faq.html:289 home/templates/home/resolution.html:20
+msgid "In order to be able to deliver a good quality of printed matter,"
+msgstr "Om kwalitatief drukwerk te kunnen afleveren"
+
+#: home/templates/home/faq.html:290 home/templates/home/resolution.html:21
+msgid "we need a file with a resolution of 300 dpi."
+msgstr "hebben we een bestand nodig met een resolutie van 300 dpi."
+
+#: home/templates/home/faq.html:291 home/templates/home/resolution.html:22
+msgid "If the resolution is too low,"
+msgstr "Indien de resolutie te laag is"
+
+#: home/templates/home/faq.html:292 home/templates/home/resolution.html:23
+msgid "you will get a blurry or jagged (block effect) result."
+msgstr "krijg je een wazig of gekarteld (blokjeseffect) resultaat."
+
+#: home/templates/home/faq.html:295
+msgid "For more information on resolution,"
+msgstr "Voor meer informatie over resolutie,"
+
+#: home/templates/home/faq.html:296
+msgid "see \"Files\" in the menu bar and take a look at the topic about"
+msgstr ""
+"ga naar 'Aanleveren' in het menu en bekijk de informatie onder het kopje"
+
+#: home/templates/home/faq.html:297
+msgid "resolution"
+msgstr "resolutie"
+
+#: home/templates/home/faq.html:300
+msgid "What is bleed?"
+msgstr "Wat is afloop / bleed?"
+
+#: home/templates/home/faq.html:303
+msgid "Bleed is 3 mm extra that you have to provide on all four sides"
+msgstr ""
+"Afloop of bleed is 3 mm extra dat je moet voorzien aan alle vier de zijdes"
+
+#: home/templates/home/faq.html:304
+msgid "of a file to avoid a white edge when cutting."
+msgstr "van een document om bij een snijden een wit randje te vermijden."
+
+#: home/templates/home/faq.html:307
+msgid "For more information on bleed, see \"Files\""
+msgstr "Voor meer informatie over afloop, ga naar 'Aanleveren'"
+
+#: home/templates/home/faq.html:308 home/templates/home/faq.html:320
+#: home/templates/home/faq.html:332
+msgid "in the menu bar and take a look at the topic about"
+msgstr "in het menu en bekijk de informatie onder het kopje"
+
+#: home/templates/home/faq.html:309
+msgid "bleed"
+msgstr "afloop"
+
+#: home/templates/home/faq.html:312
+msgid "What is CMYK?"
+msgstr "Wat is CMYK?"
+
+#: home/templates/home/faq.html:315
+msgid "CMYK stands for the 4 printing colors cyan (C), magenta (M),"
+msgstr "CMYK staat voor de vier drukkleuren cyaan (C), magenta (M),"
+
+#: home/templates/home/faq.html:316
+msgid "yellow (Y) and black (key) (K)."
+msgstr "geel (yellow) (Y) en zwart (key) (K)."
+
+#: home/templates/home/faq.html:319
+msgid "For more information on CMYK, see \"Files\""
+msgstr "Voor meer informatie over CMYK, ga naar 'Aanleveren'"
+
+#: home/templates/home/faq.html:321
+msgid "color"
+msgstr "kleur"
+
+#: home/templates/home/faq.html:324
+msgid "What is ink coverage?"
+msgstr "Wat is inkt bezetting?"
+
+#: home/templates/home/faq.html:327 home/templates/home/ink.html:16
+msgid "Paper can only absorb a maximum percentage of ink."
+msgstr "Papier kan slechts een maximaal percentage aan inkt absorberen. "
+
+#: home/templates/home/faq.html:328
+#, python-format
+msgid "The maximum ink coverage is 300%%."
+msgstr "De maximale inktbezetting bedraagt 300%."
+
+#: home/templates/home/faq.html:331
+msgid "For more information on ink coverage, see \"Files\""
+msgstr "Voor meer informatie over inkt bezetting, ga naar 'Aanleveren'"
+
+#: home/templates/home/faq.html:333
+#, fuzzy
+#| msgid "Ink coverage"
+msgid "ink coverage"
+msgstr "Inkt bezetting"
+
+#: home/templates/home/faq.html:336
+msgid "What is combined printing?"
+msgstr "Wat is combinatie drukwerk?"
+
+#: home/templates/home/faq.html:339
+msgid "POSTFLY combines different print jobs from different customers."
+msgstr ""
+"POSTFLY combineert verschillende drukopdrachten van verschillende klanten."
+
+#: home/templates/home/faq.html:340
+msgid "This way you as a customer can enjoy shared costs."
+msgstr "Zo kan je als klant genieten van gedeelde kosten."
+
+#: home/templates/home/faq.html:341
+msgid "That is why we work with fixed types of paper and quantities."
+msgstr "Daarom werken wij met vaste papiersoorten en oplages."
 
 #: home/templates/home/file.html:7 templates/includes/navbar.html:152
 msgid "File type"
@@ -1781,38 +2496,38 @@ msgstr ""
 "We hebben een handig document gemaakt “how to cold foil’ dat je hieronder "
 "kan downloaden of kan opvragen via email."
 
-#: home/templates/home/foil.html:53
+#: home/templates/home/foil.html:54
 msgid ""
 "The basic delivery is a high-resolution PDF format in 4 colors + a 5th color "
-"(for the foil) and with the"
+"(for the foil)"
 msgstr ""
 "De basisaanlevering is een hoge resolutie PDF opgemaakt in 4 kleuren + een "
-"5de kleur (voor de folie) en met de"
+"5de kleur (voor de folie)"
 
-#: home/templates/home/foil.html:54
-msgid "necessary bleed."
-msgstr "nodige afloop."
+#: home/templates/home/foil.html:55
+msgid "and with the necessary bleed."
+msgstr "en met de nodige afloop."
 
-#: home/templates/home/foil.html:63
+#: home/templates/home/foil.html:64
 msgid "Inline Cold Foil and combined printing"
 msgstr "Inline Cold Foil met combinatiedrukwerk?"
 
-#: home/templates/home/foil.html:65
+#: home/templates/home/foil.html:66
 msgid "We also offer the cold foil through combined printing,"
 msgstr "Ook de Cold Foil bieden wij aan via combinatiedrukwerk,"
 
-#: home/templates/home/foil.html:66
+#: home/templates/home/foil.html:67
 msgid ""
 "which gives you the opportunity to have your creations printed with this "
 "technique."
 msgstr ""
 "dit geeft jou de kans om jouw creaties te laten drukken met deze techniek."
 
-#: home/templates/home/foil.html:67
+#: home/templates/home/foil.html:68
 msgid "500 business cards? 500 invitations? 1000 A5 cards?"
 msgstr "500 visitekaartjes? 500 uitnodigingen? 1000 A5 kaarten?"
 
-#: home/templates/home/foil.html:68
+#: home/templates/home/foil.html:69
 msgid ""
 "A small edition, with a beautiful printing technique, for a competitive "
 "price, that’s possible,"
@@ -1820,37 +2535,33 @@ msgstr ""
 "Een kleine oplage, met een prachtige druktechniek, voor een scherpe prijs, "
 "dat kan,"
 
-#: home/templates/home/foil.html:69
+#: home/templates/home/foil.html:70
 msgid "you will find the options on our"
 msgstr "je vindt de mogelijkheden op onze"
 
-#: home/templates/home/foil.html:70
-msgid "products"
-msgstr "producten"
-
-#: home/templates/home/foil.html:71
+#: home/templates/home/foil.html:72
 msgid "page."
 msgstr "pagina."
 
-#: home/templates/home/foil.html:74
+#: home/templates/home/foil.html:75
 msgid "All items are printed 5*/4 (* one side with ‘inline cold foil’) +"
 msgstr "Alle items worden 5*/4 gedrukt (* 1 zijde met ‘inline cold foil’) +"
 
-#: home/templates/home/foil.html:75
+#: home/templates/home/foil.html:76
 msgid "finished on both sides with matte dispersion varnish."
 msgstr "dubbelzijdig afgewerkt met matte dispersielak."
 
-#: home/templates/home/foil.html:76
+#: home/templates/home/foil.html:77
 msgid "The paper is standard a high-quality, sturdy 350 gr sulphate cardboard,"
 msgstr "Het papier is standaard een kwalitatief stevig 350 gr sulfaatkarton,"
 
-#: home/templates/home/foil.html:77
+#: home/templates/home/foil.html:78
 msgid "excellent for high-quality businesscards, invitations, cards, etc."
 msgstr ""
 "uitstekend geschikt voor hoogwaardige visitekaartjes, uitnodigingen, mapjes, "
 "enz."
 
-#: home/templates/home/foil.html:78
+#: home/templates/home/foil.html:79
 msgid ""
 "By collecting these assignments on one high-quality paper on large format "
 "70x100 cm sheets,"
@@ -1858,100 +2569,96 @@ msgstr ""
 "Door het verzamelen van deze opdrachten op 1 kwalitatieve papiersoort op "
 "groot formaat 70x100 cm-vellen,"
 
-#: home/templates/home/foil.html:79
+#: home/templates/home/foil.html:80
 msgid "everyone enjoys a competitive price."
 msgstr "geniet iedereen van een scherpe prijs."
 
-#: home/templates/home/foil.html:80
+#: home/templates/home/foil.html:81
 msgid ""
 "After all, the start-up costs and the printing plate costs are shared by "
 "everyone."
 msgstr ""
 "De startkosten en de drukplaatkosten worden immers door iedereen gedeeld."
 
-#: home/templates/home/foil.html:81
+#: home/templates/home/foil.html:82
 msgid "The print run per item ordered is 500 copies as standard"
 msgstr "De oplage per besteld item is standaard 500 stuks"
 
-#: home/templates/home/foil.html:82
+#: home/templates/home/foil.html:83
 msgid ""
 "(with the option of extra per 500 copies up to a total print run of 3000 "
 "copies)."
 msgstr ""
-"(met mogelijkheid van per 500 stuks extra tot een totale oplage van 3000 stuks)."
+"(met mogelijkheid van per 500 stuks extra tot een totale oplage van 3000 "
+"stuks)."
 
-#: home/templates/home/foil.html:83
+#: home/templates/home/foil.html:84
 msgid "Ordered items are delivered trimmed to the size indicated."
 msgstr ""
 "Bestelde items worden schoongesneden geleverd op het aangeduide formaat."
 
-#: home/templates/home/foil.html:86
+#: home/templates/home/foil.html:87
 msgid ""
 "These assignments are collected weekly and combined printed and finished."
 msgstr ""
 "Deze opdrachten worden wekelijks verzameld en gecombineerd gedrukt en "
 "afgewerkt."
 
-#: home/templates/home/foil.html:87
+#: home/templates/home/foil.html:88
 msgid "Delivery time is therefore a maximum of 9 business days."
 msgstr "Er is daardoor dus een leveringstermijn van maximaal 9 werkdagen."
 
-#: home/templates/home/foil.html:88
+#: home/templates/home/foil.html:89
 msgid "Of course you can always request a"
 msgstr "Uiteraard kun je altijd een"
 
-#: home/templates/home/foil.html:89
-msgid "quotation"
-msgstr "offerte"
-
-#: home/templates/home/foil.html:90
+#: home/templates/home/foil.html:91
 msgid "if your wishes deviate from this."
 msgstr "aanvragen indien jouw wensen hiervan afwijken."
 
-#: home/templates/home/foil.html:91
+#: home/templates/home/foil.html:92
 msgid ""
 "At that time, your order will be printed completely individually and a short"
-msgstr "Op dat moment wordt jouw opdracht volledig individueel gedrukt en is een korte"
+msgstr ""
+"Op dat moment wordt jouw opdracht volledig individueel gedrukt en is een "
+"korte"
 
-#: home/templates/home/foil.html:92
+#: home/templates/home/foil.html:93
 msgid "delivery period is possible in consultation."
 msgstr "leveringstermijn mogelijk in overleg."
 
-#: home/templates/home/index.html:7 products/templates/products/products.html:9
+#: home/templates/home/index.html:8 home/templates/home/printing.html:90
+#: products/templates/products/products.html:9
 msgid "Our products"
 msgstr "Onze producten"
 
-#: home/templates/home/index.html:9
+#: home/templates/home/index.html:12
 msgid "Shop Now"
 msgstr "Shop Nu"
 
-#: home/templates/home/index.html:14
+#: home/templates/home/index.html:19
 msgid "Delivery to 1 address in the Netherlands is included in your order!"
 msgstr "Levering op 1 adres in Nederland is gratis!"
 
-#: home/templates/home/index.html:24
+#: home/templates/home/index.html:30
 msgid "Our papers"
 msgstr "Onze papiersoorten"
 
-#: home/templates/home/index.html:26 templates/includes/navbar.html:185
+#: home/templates/home/index.html:33 templates/includes/navbar.html:185
 msgid "Free sample kit"
 msgstr "Gratis samples"
 
-#: home/templates/home/index.html:32 templates/includes/navbar.html:171
+#: home/templates/home/index.html:41 templates/includes/navbar.html:171
 msgid "About us"
 msgstr "Over ons"
 
-#: home/templates/home/index.html:34
+#: home/templates/home/index.html:44
 msgid "Printing house"
 msgstr "Eigen drukkerij"
 
 #: home/templates/home/ink.html:7 templates/includes/navbar.html:154
 msgid "Ink coverage"
 msgstr "Inkt bezetting"
-
-#: home/templates/home/ink.html:16
-msgid "Paper can only absorb a maximum percentage of ink."
-msgstr "Papier kan slechts een maximaal percentage aan inkt absorberen. "
 
 #: home/templates/home/ink.html:17
 msgid ""
@@ -1962,55 +2669,63 @@ msgstr ""
 "vuile vegen en strepen."
 
 #: home/templates/home/ink.html:18
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "The maximum ink coverage is 300%%. You can easily check this yourself by "
+#| "adding "
 msgid ""
 "The maximum ink coverage is 300%%. You can easily check this yourself by "
-"adding up the values of the 4 printing colors."
+"adding "
 msgstr ""
 "De maximale inktbezetting bedraagt 300%. Dit kan je zelf makkelijk "
-"controleren door de waardes van de 4 drukkleuren op te tellen."
+"controleren door"
 
 #: home/templates/home/ink.html:19
-#, python-format
-msgid ""
-"In the example below we create a new color in Indesign. If we add the 4 "
-"values together, we get at a percentage of 200%%.<br>"
-msgstr ""
-"In het voorbeeld hieronder maken we een nieuwe kleur aan in Indesign. Als we "
-"de 4 waardes bij elkaar optellen komen we aan een percentage van 200%."
+msgid "up the values of the 4 printing colors."
+msgstr "de waardes van de 4 drukkleuren op te tellen."
 
 #: home/templates/home/ink.html:20
+msgid "In the example below we create a new color in Indesign."
+msgstr "In het voorbeeld hieronder maken we een nieuwe kleur aan in Indesign."
+
+#: home/templates/home/ink.html:21
+#, fuzzy, python-format
+#| msgid "If we add the 4 values together, we get at a percentage of 200%%."
+msgid "If we add the 4 values together, we get at a percentage of 200%%."
+msgstr ""
+"Als we de 4 waardes bij elkaar optellen komen we aan een percentage van 200%."
+
+#: home/templates/home/ink.html:22
 msgid "So there is no chance of streaks or spots due to an excess of ink."
 msgstr "Er is dus geen kans op strepen of vlekken door een teveel aan inkt."
 
-#: home/templates/home/ink.html:29
+#: home/templates/home/ink.html:31
 msgid "How do you check this yourself?"
 msgstr "Hoe controleer je dit zelf?"
 
-#: home/templates/home/ink.html:31
+#: home/templates/home/ink.html:33
 msgid ""
 "In Indesign (2021) click in the menu bar on Window→ Output→ Separations "
-"Preview. Then you will see the window below."
+"Preview."
 msgstr ""
 "In Indesign (2021) klik je in de menubalk op Window→ Output→ Separations "
-"Preview (Venster→ Uitvoer→ Voorvertoning scheidingen). Dan krijg je "
-"onderstaand venster te zien. "
+"Preview (Venster→ Uitvoer→ Voorvertoning scheidingen)."
 
-#: home/templates/home/ink.html:41
+#: home/templates/home/ink.html:45
 msgid "At view you choose the option ‘separations’."
 msgstr "Bij view  / weergave kies je de optie ‘separations’."
 
-#: home/templates/home/ink.html:42
+#: home/templates/home/ink.html:46
 msgid "With this option the values of the colors can be measured."
 msgstr "Met deze optie kunnen de waardes van de kleuren gemeten worden. "
 
-#: home/templates/home/ink.html:43
-msgid ""
-"Or you can choose the option “Ink Limit”. With this option you can see where "
-"there is an excess of ink."
-msgstr ""
-"Of je kan de optie “Ink Limit” kiezen. Met deze optie kan je zien waar er "
-"zich een teveel aan inkt bevindt."
+#: home/templates/home/ink.html:47
+msgid "Or you can choose the option “Ink Limit”."
+msgstr "Of je kan de optie “Ink Limit” kiezen. "
+
+#: home/templates/home/ink.html:48
+msgid "With this option you can see where there is an excess of ink."
+msgstr "Met deze optie kan je zien waar er zich een teveel aan inkt bevindt."
 
 #: home/templates/home/joboptions.html:7
 msgid "Job options"
@@ -2023,24 +2738,28 @@ msgstr "Wat zijn joboptions?"
 #: home/templates/home/joboptions.html:17
 msgid ""
 "A job option can best be compared with a settings package where the correct "
-"settings have already been set."
+"settings"
 msgstr ""
 "Een joboption kan je het best vergelijken met een instellingenpakket waar "
-"reeds de juiste instellingen zijn ingesteld."
+"reeds de juiste instellingen"
 
 #: home/templates/home/joboptions.html:18
+msgid "have already been set."
+msgstr "zijn ingesteld."
+
+#: home/templates/home/joboptions.html:19
 msgid "This “package” is called a job option."
 msgstr "Dit “pakket” noemt men een joboption."
 
-#: home/templates/home/joboptions.html:21
+#: home/templates/home/joboptions.html:22
 msgid "We have got one here for you to download:"
 msgstr "Wij hebben er hier één die je kunt downloaden:"
 
-#: home/templates/home/joboptions.html:26
+#: home/templates/home/joboptions.html:28
 msgid "Because you work immediately with the right settings,"
 msgstr "Omdat je meteen met de juiste instellingen werkt,"
 
-#: home/templates/home/joboptions.html:27
+#: home/templates/home/joboptions.html:29
 msgid ""
 "the file automatically meets our specific requirements and many errors and "
 "delays can be avoided."
@@ -2048,22 +2767,22 @@ msgstr ""
 " voldoet het bestand automatisch aan onze specifieke voorwaarden en kunnen "
 "er veel fouten en vertragingen vermeden worden."
 
-#: home/templates/home/joboptions.html:30
+#: home/templates/home/joboptions.html:32
 msgid "There are also some standard job options."
 msgstr "Er zijn ook enkele standaard joboptions."
 
-#: home/templates/home/joboptions.html:31
+#: home/templates/home/joboptions.html:33
 msgid ""
 "For example, you can choose between a job option that makes your PDF very "
 "small"
 msgstr ""
 "Zo kan je kiezen tussen een joboption die je PDF zeer klein van formaat maakt"
 
-#: home/templates/home/joboptions.html:32
+#: home/templates/home/joboptions.html:34
 msgid "so that you can easily email it to your customer for approval."
 msgstr "zodat je deze makkelijk naar je klant kunt mailen ter goedkeuring."
 
-#: home/templates/home/joboptions.html:33
+#: home/templates/home/joboptions.html:35
 msgid ""
 "You also have a “press” job option that is very handy to use as a general "
 "print profile."
@@ -2071,30 +2790,30 @@ msgstr ""
 "Verder heb je ook een “press” joboption die weer heel handig is om als "
 "algemeen drukprofiel te gebruiken."
 
-#: home/templates/home/joboptions.html:34
+#: home/templates/home/joboptions.html:36
 msgid "So you’re always in the right place with this one."
 msgstr "Dus met deze zit je ook steeds goed."
 
-#: home/templates/home/joboptions.html:37
+#: home/templates/home/joboptions.html:39
 msgid ""
 "Note: You still have to format the file according to the correct "
 "requirements,"
 msgstr ""
 "Let op : Je moet het bestand nog wel opmaken volgens de juiste vereisten,"
 
-#: home/templates/home/joboptions.html:38
+#: home/templates/home/joboptions.html:40
 msgid "check our explanation under the heading"
 msgstr "check hiervoor onze uitleg onder het kopje"
 
-#: home/templates/home/joboptions.html:39
+#: home/templates/home/joboptions.html:41
 msgid "specifications"
 msgstr "specificaties"
 
-#: home/templates/home/joboptions.html:45
+#: home/templates/home/joboptions.html:47
 msgid "Installing the job options"
 msgstr "De joboptions installeren"
 
-#: home/templates/home/joboptions.html:47
+#: home/templates/home/joboptions.html:49
 msgid ""
 "When you double click on the job option you just downloaded it will install "
 "itself."
@@ -2102,19 +2821,19 @@ msgstr ""
 "Wanneer je dubbel klikt op de joboption die je net gedownload hebt zal deze "
 "zichzelf installeren."
 
-#: home/templates/home/joboptions.html:48
+#: home/templates/home/joboptions.html:50
 #, fuzzy
 #| msgid "If this doesn’t work, follow the steps below:<br>"
 msgid "If this doesn’t work, follow the steps below:"
 msgstr "Mocht dit zo niet lukken doorloop dan onderstaande stappen:"
 
-#: home/templates/home/joboptions.html:49
+#: home/templates/home/joboptions.html:51
 msgid "In Indesign (2021), click File → Adobe PDF Presets → Define"
 msgstr ""
 "Klik in Indesign (2021) op File → Adobe PDF Presets → Define (Bestand → "
 "Adobe PDF instellingen → Definiëren)"
 
-#: home/templates/home/joboptions.html:59
+#: home/templates/home/joboptions.html:61
 msgid ""
 "A new window will appear where you can find the different standard job "
 "options."
@@ -2122,11 +2841,11 @@ msgstr ""
 "Er verschijnt een nieuw venster waar je de verschillende standaard "
 "joboptions kan terugvinden. "
 
-#: home/templates/home/joboptions.html:60
+#: home/templates/home/joboptions.html:62
 msgid "Click the ‘Load’ button to add POSTFLY’s."
 msgstr "Klik op de knop ‘Load’ (Laden) om die van POSTFLY erbij te plaatsen."
 
-#: home/templates/home/joboptions.html:70
+#: home/templates/home/joboptions.html:72
 msgid ""
 "Load the file you just downloaded, then you will find the job options in the "
 "list."
@@ -2200,6 +2919,317 @@ msgstr "Hier kan je de tekst niet meer bewerken."
 msgid "This is still possible with the text without outlines."
 msgstr "Bij de tekst zonder lettercontouren gaat dat nog wel."
 
+#: home/templates/home/overprint.html:18
+msgid "What is overprint?"
+msgstr "Wat is overprint?"
+
+#: home/templates/home/overprint.html:20
+msgid "Sometimes bizarre things happen to your design, white texts disappear,"
+msgstr "Soms gebeuren er bizarre dingen met je ontwerp,"
+
+#: home/templates/home/overprint.html:21
+msgid "suddenly different colors come through your image."
+msgstr ""
+"er verdwijnen witte teksten, plots komen er andere kleuren door je "
+"afbeelding heen."
+
+#: home/templates/home/overprint.html:22
+msgid ""
+"And that while this was not visible at all or just visible on your design."
+msgstr "Dat terwijl dit helemaal niet of net wel zichtbaar was op je ontwerp."
+
+#: home/templates/home/overprint.html:23
+msgid ""
+"Such problems usually occur due to the incorrect use of overprint settings "
+"in the original layout."
+msgstr ""
+"Zulke problemen komen meestal voor door het foutieve gebruik van overprint-"
+"instellingen in de oorspronkelijke opmaak."
+
+#: home/templates/home/overprint.html:26
+msgid ""
+"If 2 objects, both with a different color are placed on top of each other,"
+msgstr ""
+"Als er 2 objecten, beide met een verschillende kleur over elkaar heen "
+"geplaatst worden,"
+
+#: home/templates/home/overprint.html:27
+msgid "where they overlap, the color will be saved."
+msgstr "zal daar waar ze elkaar overlappen, de kleur uitgespaard worden."
+
+#: home/templates/home/overprint.html:28
+msgid "The underlying color will not be visible."
+msgstr "De onderliggende kleur zal niet zichtbaar zijn."
+
+#: home/templates/home/overprint.html:29
+msgid "This is not the case when using overprint."
+msgstr ""
+"Bij gebruik van overprint (ook wel overdruk genoemd) is dit niet het geval."
+
+#: home/templates/home/overprint.html:30
+msgid "The underlying will be visible here."
+msgstr "Het onderliggende zal hier wel zichtbaar worden."
+
+#: home/templates/home/overprint.html:33
+msgid "Let’s illustrate this with examples."
+msgstr "Laten we het iets duidelijker maken met voorbeelden."
+
+#: home/templates/home/overprint.html:36
+msgid "Example 1 WITHOUT overprint:"
+msgstr "Voorbeeld 1 ZONDER overprint:"
+
+#: home/templates/home/overprint.html:37
+msgid "The magenta square is no longer a complete square,"
+msgstr "Het magenta vierkant is geen volledig vierkant meer,"
+
+#: home/templates/home/overprint.html:38
+msgid "where cyan overlapped the magenta, there is now a recess."
+msgstr "daar waar cyaan het magenta overlapte is nu een uitsparing."
+
+#: home/templates/home/overprint.html:51
+msgid "Example 2 WITH overprint:"
+msgstr "Voorbeeld 2 MET overprint:"
+
+#: home/templates/home/overprint.html:52
+msgid "If we put the cyan surface in overprint,"
+msgstr "Zetten we het cyaan vlak in overprint"
+
+#: home/templates/home/overprint.html:53
+msgid "the magenta surface will come through."
+msgstr "dan gaat het magenta vlak erdoor komen."
+
+#: home/templates/home/overprint.html:54
+msgid ""
+"A full square is visible on both plates BUT the printing result will be "
+"different."
+msgstr ""
+"Op beide platen is een volledig vierkant zichtbaar MAAR het drukresultaat "
+"gaat anders zijn."
+
+#: home/templates/home/overprint.html:55
+msgid ""
+"Where the colors overlap, a purple color can be seen. Cyan + Magenta = Purple"
+msgstr ""
+"Daar waar de kleuren elkaar overlappen is een paarse kleur te zien. Cyaan + "
+"Magenta = Paars"
+
+#: home/templates/home/overprint.html:65
+msgid "This already explains a lot."
+msgstr "Dit verklaard al een hoop."
+
+#: home/templates/home/overprint.html:66
+msgid " White text in overprint on a black surface will certainly go wrong,"
+msgstr "Een witte tekst in overprint op een zwart vlak loopt zeker fout,"
+
+#: home/templates/home/overprint.html:67
+msgid "because white is not a color which can be printed."
+msgstr "want wit drukken is niet mogelijk."
+
+#: home/templates/home/overprint.html:68
+msgid "A white text should therefore always be saved"
+msgstr "Een witte tekst moet daarom altijd uitgespaard worden"
+
+#: home/templates/home/overprint.html:69
+msgid "and should certainly not be put in overprint."
+msgstr "en mag zeker niet in overprint gezet worden."
+
+#: home/templates/home/overprint.html:70
+msgid "The white of your design is the paper."
+msgstr "Het wit van je ontwerp is namelijk het papier."
+
+#: home/templates/home/overprint.html:77
+msgid "How can I check if overprint has been applied and use it if necessary?"
+msgstr ""
+"Hoe kan ik checken of er overprint is toegepast en het indien nodig "
+"gebruiken?"
+
+#: home/templates/home/overprint.html:80
+msgid "It is very easy to check whether overprint has been used."
+msgstr "Het is heel makkelijk te controleren of er overprint gebruikt is."
+
+#: home/templates/home/overprint.html:81
+msgid "In Indesign (2021),"
+msgstr "In Indesign (2021)"
+
+#: home/templates/home/overprint.html:82
+msgid "click on View → Overprint Preview in the menu bar at the top."
+msgstr ""
+"klik je bovenaan in de menubalk op View → Overprint Preview (Beeld → "
+"Overdruk voorbeeld)"
+
+#: home/templates/home/overprint.html:92
+msgid "If you want to use the overprint options,"
+msgstr "Wil je gebruik maken van de overprint- opties"
+
+#: home/templates/home/overprint.html:93
+msgid "click in the menu bar on Window → Output → Attributes."
+msgstr ""
+"klik dan in de menubalk op Window → Output → Attributes (Venster → Uitvoer "
+"→  Kenmerken)."
+
+#: home/templates/home/overprint.html:94
+msgid "A window with the overprint functions appears."
+msgstr "Er verschijnt een venster met de overprint functies."
+
+#: home/templates/home/printing.html:7 templates/includes/navbar.html:175
+msgid "Printing in-house"
+msgstr "Eigen drukkerij"
+
+#: home/templates/home/printing.html:15
+msgid "POSTFLY our story"
+msgstr "POSTFLY ons verhaal"
+
+#: home/templates/home/printing.html:17
+msgid "POSTFLY was founded in 2001 as an online printing company under"
+msgstr "In 2001 is POSTFLY ontstaan als online drukkerij onder"
+
+#: home/templates/home/printing.html:18
+msgid "the care of Grafische Groep Matthys."
+msgstr "de hoede van Grafisch Groep Matthys."
+
+#: home/templates/home/printing.html:19
+msgid ""
+"POSTFLY is there for all your combined printing, from flyers to posters,"
+msgstr ""
+"POSTFLY is er voor al jouw combinatie drukwerk, van flyers tot posters,"
+
+#: home/templates/home/printing.html:20
+msgid "from business cards to brochures."
+msgstr "van visitekaartjes tot brochures."
+
+#: home/templates/home/printing.html:21
+msgid "We started with an office at the Keienbergweg in Amsterdam-Zuidoost"
+msgstr ""
+"Wij zijn begonnen met een kantoor aan de Keienbergweg in Amsterdam-Zuidoost"
+
+#: home/templates/home/printing.html:22
+msgid "with a team of five people."
+msgstr "met een team van vijf mensen."
+
+#: home/templates/home/printing.html:23
+msgid "With our move to the Hoogoorddreef in Amsterdam-Zuidoost,"
+msgstr "Met de verhuizing naar de Hoogoorddreef in Amsterdam-Zuidoost"
+
+#: home/templates/home/printing.html:24
+msgid "we were able to make our work more and more efficient."
+msgstr "konden we onze werkzaamheden steeds efficiënter maken."
+
+#: home/templates/home/printing.html:25
+msgid "There are now two members of the original team active and"
+msgstr "Inmiddels zijn er van het originele team nog twee leden actief en"
+
+#: home/templates/home/printing.html:26
+msgid "work is carried out from the head office in Turnhout,"
+msgstr "worden werkzaamheden verricht vanuit het hoofdkantoor in Turnhout,"
+
+#: home/templates/home/printing.html:27
+msgid "Belgium or completely corona-proof from home."
+msgstr "België of geheel coronaproof vanuit huis."
+
+#: home/templates/home/printing.html:40
+msgid ""
+"Grafische Groep Matthys is located in the graphic city of Turnhout in "
+"Belgium,"
+msgstr ""
+"Grafische Groep Matthys is gevestigd in de grafische stad Turnhout, in "
+"België,"
+
+#: home/templates/home/printing.html:41
+msgid "it is run by 4 brothers, the third generation of this family business."
+msgstr ""
+"het staat onderleiding van 4 broers, de derde generatie van dit "
+"familiebedrijf."
+
+#: home/templates/home/printing.html:51
+msgid "Together we have the expertise to guide all your orders from A to Z."
+msgstr ""
+"Samen hebben we de expertise in huis om al jouw orders van a tot z te "
+"begeleiden."
+
+#: home/templates/home/printing.html:52
+msgid "We have several recent printing presses,"
+msgstr "We beschikken over meerdere recente drukpersen,"
+
+#: home/templates/home/printing.html:53
+msgid "and we have all modern finishes in-house."
+msgstr "en hebben alle moderne afwerkingen in eigen huis."
+
+#: home/templates/home/printing.html:54
+msgid "We combine the printing forms so that we can offer them competitively,"
+msgstr "Wij combineren de drukvormen zodat wij deze scherp kunnen aanbieden,"
+
+#: home/templates/home/printing.html:55
+msgid "but also if you need specialist printing or"
+msgstr "maar voor specialistisch drukwerk of"
+
+#: home/templates/home/printing.html:56
+msgid "striking packaging material you have come to the right place."
+msgstr "opvallend verpakkingsmateriaal zit je bij ons goed."
+
+#: home/templates/home/printing.html:57
+msgid "Since 2008 we have specialised in the “inline cold foil” technique,"
+msgstr "Sinds 2008 zijn wij gespecialiseerd in de “inline cold foil’ techniek,"
+
+#: home/templates/home/printing.html:58
+msgid "which allows beautiful effects on your printed matter or packaging."
+msgstr "hiermee zijn prachtige effecten mogelijk op je drukwerk of verpakking."
+
+#: home/templates/home/printing.html:61
+msgid "Feel free to take a look at our"
+msgstr "Kijk gerust een op onze"
+
+#: home/templates/home/printing.html:65
+msgid "page or request a"
+msgstr "pagina of vraag een"
+
+#: home/templates/home/printing.html:69
+msgid "from us for different or specialist requirements!"
+msgstr "bij ons aan voor afwijkende of specialistische wensen!"
+
+#: home/templates/home/printing.html:93
+msgid "Request a quotation"
+msgstr "Offerte aanvragen"
+
+#: home/templates/home/resolution.html:7 templates/includes/navbar.html:160
+msgid "Resolution"
+msgstr "Resolutie"
+
+#: home/templates/home/resolution.html:37
+msgid "How can I check or adjust the resolution?"
+msgstr "Hoe kan ik de resolutie checken of aanpassen?"
+
+#: home/templates/home/resolution.html:39
+msgid "Open the design or image in Photoshop."
+msgstr "Open het ontwerp of afbeelding in Photoshop."
+
+#: home/templates/home/resolution.html:40
+msgid "In the menu bar, click Image → Image Size."
+msgstr "Klik in de menubalk op Image → Image Size (Beeld → Beeldgrootte)."
+
+#: home/templates/home/resolution.html:41
+msgid ""
+"In the window that appears you can check the settings of the design or image."
+msgstr ""
+"In het venster wat dan verschijnt kan je de instellingen van het ontwerp of "
+"afbeelding controleren."
+
+#: home/templates/home/resolution.html:42
+msgid "Make sure that the ‘Resolution’ box reads 300 pixels/inch."
+msgstr ""
+"Zorg ervoor dat in het vakje ‘Resolution’ (resolutie) 300 pixels/inch staat."
+
+#: home/templates/home/resolution.html:43
+msgid "If not, you can adjust it to 300 pixels/inch."
+msgstr "Mocht dat niet zo zijn dan kan je het aanpassen naar 300 pixels/inch."
+
+#: home/templates/home/resolution.html:44
+msgid "After adjusting the resolution, you also check the dimensions."
+msgstr "Na het aanpassen van de resolutie kijk je ook de afmetingen nog na."
+
+#: home/templates/home/resolution.html:45
+msgid "These must be actual size (or possibly larger)."
+msgstr "Deze moeten op ware grootte (of eventueel groter) zijn."
+
 #: home/templates/home/specs.html:7 templates/includes/navbar.html:150
 msgid "Specifications"
 msgstr "Specificaties"
@@ -2213,72 +3243,147 @@ msgstr ""
 
 #: home/templates/home/specs.html:18
 msgid ""
-"we ensure the correct processing of your file, but errors in the layout or "
-"in the digital files do not entitle you to a free reprint."
+"we ensure the correct processing of your file, but errors in the layout or"
 msgstr ""
 "wij zorgen voor een correcte verwerking van je bestand, maar fouten in de "
-"opmaak of in het digitaal materiaal geven geen recht op een kosteloze "
-"herdruk."
+"opmaak of"
 
-#: home/templates/home/specs.html:21
+#: home/templates/home/specs.html:19
+msgid "in the digital files do not entitle you to a free reprint."
+msgstr "in het digitaal materiaal geven geen recht op een kosteloze herdruk."
+
+#: home/templates/home/specs.html:22
 msgid ""
 "When formatting your files, you have to take a number of things into account."
 msgstr ""
 "Bij het opmaken van je bestanden moet je met een aantal zaken rekening "
 "houden."
 
-#: home/templates/home/specs.html:22
+#: home/templates/home/specs.html:23
 msgid "Check your design using the checklist below:"
 msgstr "Check jouw ontwerp aan de hand van onderstaande controlelijst:"
 
-#: home/templates/home/specs.html:24
+#: home/templates/home/specs.html:26
 msgid "Resolution:"
 msgstr "Resolutie:"
 
-#: home/templates/home/specs.html:25
+#: home/templates/home/specs.html:29
 #, fuzzy, python-format
-#| msgid "Color setting: CMYK, 300% maximum ink coverage and no overprint"
+#| msgid "Color setting: CMYK, 300%% maximum ink coverage and no overprint"
 msgid "Color setting: CMYK, 300%% maximum ink coverage and no overprint"
 msgstr ""
 "Kleurinstelling: CMYK, maximale inktbezetting van 300% en geen overprint"
 
-#: home/templates/home/specs.html:26
+#: home/templates/home/specs.html:32
 msgid "Bleed: 3 mm all around, meaning on all sides"
 msgstr "Alfoop: 3 mm rondom, ofwel aan alle zijdes"
 
-#: home/templates/home/specs.html:27
+#: home/templates/home/specs.html:35
 msgid "File type: PDF or JPG"
 msgstr "Bestandstype: PDF of JPG"
 
-#: home/templates/home/specs.html:31
+#: home/templates/home/specs.html:39
 msgid "You can also download a"
 msgstr "Je kunt als leidraad ook een"
 
-#: home/templates/home/specs.html:32
-msgid ""
-"as a guideline to start with your design, but make sure that our template is "
-"not in the final print file. Because you obviously don’t want that template "
-"printed!"
-msgstr ""
-"downloaden om te starten met je ontwerp, zorg er wel voor dat ons template "
-"niet in het uiteindelijk drukbestand zit. Dit template wil je uiteraard niet "
-"mee gedrukt hebben."
+#: home/templates/home/specs.html:41
+msgid "as a guideline to start with your design,"
+msgstr "downloaden om te starten met je ontwerp,"
 
-#: home/templates/home/specs.html:35
+#: home/templates/home/specs.html:42
+msgid "but make sure that our template is not in the final print file."
+msgstr ""
+"maar zorg er wel voor dat ons template niet in het uiteindelijk drukbestand "
+"zit."
+
+#: home/templates/home/specs.html:43
+msgid "Because you obviously don’t want that template printed!"
+msgstr "Dat template wil je uiteraard niet mee gedrukt hebben!"
+
+#: home/templates/home/specs.html:46
 msgid "Hints:"
 msgstr "Tips:"
 
-#: home/templates/home/specs.html:37
+#: home/templates/home/specs.html:49
 msgid "Make sure the photos and images go till the edge"
 msgstr "Laat foto’s en beelden doorlopen"
 
-#: home/templates/home/specs.html:38
+#: home/templates/home/specs.html:52
 msgid "Do not place thin frames against the cutting edge"
 msgstr "Plaats geen dunne kaders tegen de snijrand"
 
-#: home/templates/home/specs.html:39
+#: home/templates/home/specs.html:55
 msgid "Place your texts at least 3 mm from the cutting edge"
 msgstr "Zet je teksten minimaal 3mm van de snijrand af"
+
+#: home/templates/home/team.html:7
+msgid "Our team"
+msgstr "Ons team"
+
+#: home/templates/home/team.html:22
+msgid "Wouter is indispensable at POSTLY, and has been there from the start."
+msgstr ""
+"Wouter is niet meer weg te denken bij POSTLY en is er vanaf het begin bij."
+
+#: home/templates/home/team.html:23
+msgid "He is familiar with all the ins and outs of printing, quotations,"
+msgstr "Hij is bekend met alle in’s en out’s van het drukwerk, van offertes"
+
+#: home/templates/home/team.html:24
+msgid "orders and accounts payable. But lending a helping hand with packing,"
+msgstr ""
+"en orders tot crediteurenadministratie. Maar een handje mee helpen met "
+"inpakken,"
+
+#: home/templates/home/team.html:25
+msgid "distributing or delivery is also no problem."
+msgstr "verdelen of afleveren is ook geen enkel probleem."
+
+#: home/templates/home/team.html:38
+msgid "Daphne has been working at POSTFLY since 2009."
+msgstr "Daphne werkt sinds 2009 bij POSTFLY."
+
+#: home/templates/home/team.html:39
+msgid "She started as a receptionist, but is now familiar with everything from"
+msgstr ""
+"Zij startte als receptioniste, maar is inmiddels van alle martken thuis."
+
+#: home/templates/home/team.html:40
+msgid "checking artwork to accounts receivable, and from processing orders to"
+msgstr ""
+"Van artwork checken tot debiteurenadministratie, van orders verwerken tot"
+
+#: home/templates/home/team.html:41
+msgid "Full stack software development."
+msgstr "Full stack software development."
+
+#: home/templates/home/templates.html:16
+msgid ""
+"On this page you can download our templates for the most common formats,"
+msgstr ""
+"Op deze pagina kan je onze templates downloaden voor de meest gangbare "
+"formaten,"
+
+#: home/templates/home/templates.html:17
+msgid "so you have a little more clarity about the required margins."
+msgstr ""
+"zo heb je iets meer duidelijkheid over hoe het zit met de benodigde marges."
+
+#: home/templates/home/templates.html:18
+msgid "Make sure that when you deliver the print file to us,"
+msgstr "Zorg er voor dat wanneer je het drukbestand bij ons aanlevert"
+
+#: home/templates/home/templates.html:19
+msgid "our template is no longer in it,"
+msgstr "ons template hier niet meer in zit,"
+
+#: home/templates/home/templates.html:20
+msgid "because it is not the intention to print this along with the design."
+msgstr "het is namelijk niet de bedoeling dat dit mee gedrukt wordt."
+
+#: home/templates/home/templates.html:69
+msgid "Business cards"
+msgstr "Visitekaartjes"
 
 #: products/templates/products/add_product.html:14
 msgid "Add a product to the store"
@@ -2601,10 +3706,6 @@ msgstr ""
 msgid "Reset password!"
 msgstr ""
 
-#: templates/allauth/account/password_reset.html:29
-msgid "contact"
-msgstr ""
-
 #: templates/allauth/account/password_reset_done.html:9
 msgid "Password reset"
 msgstr ""
@@ -2817,25 +3918,9 @@ msgstr "Jopobtions"
 msgid "Foil"
 msgstr "Opmaak folie"
 
-#: templates/includes/navbar.html:159
-msgid "Overprint"
-msgstr "Overdruk"
-
-#: templates/includes/navbar.html:160
-msgid "Resolution"
-msgstr "Resolutie"
-
 #: templates/includes/navbar.html:161
 msgid "Templates"
 msgstr ""
-
-#: templates/includes/navbar.html:175
-msgid "Printing in-house"
-msgstr "Eigen drukkerij"
-
-#: templates/includes/navbar.html:176
-msgid "Our concept"
-msgstr "Ons concept"
 
 #: templates/includes/navbar.html:184
 msgid "Contact us"
@@ -2845,13 +3930,30 @@ msgstr "Contacteer ons"
 msgid "Quotation request"
 msgstr "Offerte aanvragen"
 
-#: templates/includes/navbar.html:193
+#: templates/includes/navbar.html:194
 msgid "Register"
 msgstr "Registreer"
 
-#: templates/includes/navbar.html:207
+#: templates/includes/navbar.html:208
 msgid "Profile"
 msgstr "Profiel"
+
+#~ msgid ""
+#~ "as a guideline to start with your design, but make sure that our template "
+#~ "is not in the final print file. Because you obviously don’t want that "
+#~ "template printed!"
+#~ msgstr ""
+#~ "downloaden om te starten met je ontwerp, zorg er wel voor dat ons "
+#~ "template niet in het uiteindelijk drukbestand zit. Dit template wil je "
+#~ "uiteraard niet mee gedrukt hebben."
+
+#, fuzzy
+#~| msgid "The white of your design is the paper."
+#~ msgid "you can upload your designs there."
+#~ msgstr "Het wit van je ontwerp is namelijk het papier."
+
+#~ msgid "Overprint"
+#~ msgstr "Overdruk"
 
 #~ msgid ""
 #~ "Even with our modern computer-controlled cutting machines there is a "

@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Printing in-house</h2>
+    <h2 class="my-5 text-center">{% trans 'Printing in-house' %}</h2>
   </div>
 {% endblock %}
 
@@ -11,15 +12,19 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-xl-6 mt-5">
-        <h6 class="px-4 px-md-0 lh-lg">POSTFLY our story</h6>
+        <h6 class="px-4 px-md-0 lh-lg">{% trans 'POSTFLY our story' %}</h6>
         <p class="px-4 px-md-0">
-          POSTFLY was founded in 2001 as an online printing company under the care of Grafische Groep Matthys.
-          POSTFLY is there for all your combined printing, from flyers to posters, from business cards to brochures.
-          We started with an office at the Keienbergweg in Amsterdam-Zuidoost with a team of five people.
-          With our move to the Hoogoorddreef in Amsterdam-Zuidoost, we were able to make our work more and more efficient.
-          There are now two members of the original team active and work is carried out from the head office in Turnhout,
-          Belgium
-          or completely corona-proof from home.
+          {% trans 'POSTFLY was founded in 2001 as an online printing company under' %} 
+          {% trans 'the care of Grafische Groep Matthys.' %}
+          {% trans 'POSTFLY is there for all your combined printing, from flyers to posters,' %} 
+          {% trans 'from business cards to brochures.' %}
+          {% trans 'We started with an office at the Keienbergweg in Amsterdam-Zuidoost' %} 
+          {% trans 'with a team of five people.' %}
+          {% trans 'With our move to the Hoogoorddreef in Amsterdam-Zuidoost,' %} 
+          {% trans 'we were able to make our work more and more efficient.' %}
+          {% trans 'There are now two members of the original team active and' %} 
+          {% trans 'work is carried out from the head office in Turnhout,' %}
+          {% trans 'Belgium or completely corona-proof from home.' %}
         </p>
         <div class="col-12 col-xl-6 py-4 d-lg-none">
           <img src="{% static 'img/home/printing/logo_signs.png' %}" alt="Logo signs" class="w-300 d-block ms-4">
@@ -32,8 +37,8 @@
     <div class="row justify-content-center">
       <div class="col-12 mt-3">
         <p class="px-4 px-md-0">
-          Grafische Groep Matthys is located in the graphic city of Turnhout in Belgium, it is run by 4 brothers,
-          the third generation of this family business.
+          {% trans 'Grafische Groep Matthys is located in the graphic city of Turnhout in Belgium,' %} 
+          {% trans 'it is run by 4 brothers, the third generation of this family business.' %}
         </p>
       </div>
     </div>
@@ -43,39 +48,50 @@
     <div class="row justify-content-center">
       <div class="col-12 col-xl-6">
         <p class="px-4 px-md-0 mt-5">
-          Together we have the expertise to guide all your orders from A to Z.<br>
-          We have several recent printing presses, and we have all modern finishes in-house.
-          We combine the printing forms so that we can offer them competitively,
-          but also if you need specialist printing or striking packaging material you have come to the right place.
-          Since 2008 we have specialised in the “inline cold foil” technique,
-          which allows beautiful effects on your printed matter or packaging.
+          {% trans 'Together we have the expertise to guide all your orders from A to Z.' %} <br>
+          {% trans 'We have several recent printing presses,' %} 
+          {% trans 'and we have all modern finishes in-house.' %}
+          {% trans 'We combine the printing forms so that we can offer them competitively,' %}
+          {% trans 'but also if you need specialist printing or' %} 
+          {% trans 'striking packaging material you have come to the right place.' %}
+          {% trans 'Since 2008 we have specialised in the “inline cold foil” technique,' %}
+          {% trans 'which allows beautiful effects on your printed matter or packaging.' %}
         </p>
         <p class="px-4 px-md-0 mt-5">
-          Feel free to take a look at our <a href="{% url 'products' %}"
-            class="text-postfly text-decoration-none">products</a>
-          page or request a <a href="{% url 'quotation' %}" class="text-postfly text-decoration-none">quotation</a>
-          from us for different or specialist requirements!
+          {% trans 'Feel free to take a look at our' %} 
+          <a href="{% url 'products' %}" class="text-postfly text-decoration-none">
+            {% trans 'products' %}
+          </a>
+          {% trans 'page or request a' %} 
+          <a href="{% url 'quotation' %}" class="text-postfly text-decoration-none">
+            {% trans 'quotation' %}
+          </a>
+          {% trans 'from us for different or specialist requirements!' %}
         </p>
         <div class="col-12 col-xl-6 mt-2 d-lg-none text-center">
-          <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY"
-              class="w-300"></a>
+          <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300"></a>
         </div>
         <div class="col-12 col-xl-6 mb-2 d-lg-none text-center">
           <a href="https://www.groepmatthys.com/" target="_blank">
-            <img src="{% static 'img/home/printing/ggm.png' %}" alt="Logo Grafisch Groep Matthtys"
-              class="w-300">
+            <img src="{% static 'img/home/printing/ggm.png' %}" alt="Logo Grafisch Groep Matthtys" class="w-300">
           </a>
         </div>
       </div>
       <div class="col-12 col-xl-6 mt-4 d-none d-lg-block">
-        <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300 d-block"></a>
+        <a href="{% url 'home' %}">
+          <img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300 d-block">
+        </a>
         <a href="https://www.groepmatthys.com/" target="_blank">
           <img src="{% static 'img/home/printing/ggm.png' %}" alt="Logo Grafisch Groep Matthtys" class="w-300 d-block">
         </a>
       </div>
       <div class="col-12 mt-3 mt-md-4 mt-lg-5 mb-10 text-md-start text-center">
-        <a href="{% url 'products' %}" class="btn postfly-general-btn hvr-grow me-0 me-md-3 my-3 my-md-5">Our products</a>
-        <a href="{% url 'quotation' %}" class="btn postfly-general-btn hvr-grow mx-md-3 my-2 my-md-5">Request a quotation</a>
+        <a href="{% url 'products' %}" class="btn postfly-general-btn hvr-grow me-0 me-md-3 my-3 my-md-5">
+          {% trans 'Our products' %}
+        </a>
+        <a href="{% url 'quotation' %}" class="btn postfly-general-btn hvr-grow mx-md-3 my-2 my-md-5">
+          {% trans 'Request a quotation' %}
+        </a>
       </div>
     </div>
   </div>

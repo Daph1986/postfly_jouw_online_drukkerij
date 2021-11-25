@@ -1,48 +1,49 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
-    <h2 class="my-5 text-center">Our team</h2>
+    <h2 class="my-5 text-center">{% trans 'Our team' %}</h2>
   </div>
 {% endblock %}
 
 {% block content %}
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mx-3 mt-5">
-      <div class="card custom-card text-center border-2 mx-3 mx-md-0 h-100">
-        <div class="text-center">
-          <img class="card-img-top card-img-team mb-3" src="{% static 'img/home/team/wouter.png' %}" alt="Wouter">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title mt-2 mb-3">Wouter</h5>
-          <p class="card-text">
-          Wouter is indispensable at POSTLY, and has been there from the start.
-          He is familiar with all the ins and outs of printing, quotations, orders
-          and accounts payable. But lending a helping hand with packing, 
-          istributing or delivery is also no problem.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mx-3 mt-5">
-      <div class="card custom-card text-center border-2 mx-3 mx-md-0 h-100">
-        <div class="text-center">
-          <img class="card-img-top card-img-team mb-3" src="{% static 'img/home/team/daphne.png' %}" alt="Daphne">
-        </div>
-        <div class="card-body">
-          <h5 class="card-title mt-2 mb-3">Daphne</h5>
-          <p class="card-text">
-            Daphne has been working at POSTFLY since 2009. 
-            She started as a receptionist, but is now familiar with everything from 
-            checking artwork to accounts receivable, and from processing orders to 
-              ull stack software development.
-          </p>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mx-3 mt-5">
+        <div class="card custom-card text-center border-2 mx-3 mx-md-0 h-100">
+          <div class="text-center">
+            <img class="card-img-top card-img-team mb-3" src="{% static 'img/home/team/wouter.png' %}" alt="Wouter">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title mt-2 mb-3">Wouter</h5>
+            <p class="card-text">
+              {% trans 'Wouter is indispensable at POSTLY, and has been there from the start.' %}
+              {% trans 'He is familiar with all the ins and outs of printing, quotations,' %} 
+              {% trans 'orders and accounts payable. But lending a helping hand with packing,' %}
+              {% trans 'distributing or delivery is also no problem.' %}
+            </p>
+          </div>
         </div>
       </div>
+      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 mx-3 mt-5">
+        <div class="card custom-card text-center border-2 mx-3 mx-md-0 h-100">
+          <div class="text-center">
+            <img class="card-img-top card-img-team mb-3" src="{% static 'img/home/team/daphne.png' %}" alt="Daphne">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title mt-2 mb-3">Daphne</h5>
+            <p class="card-text">
+              {% trans 'Daphne has been working at POSTFLY since 2009.' %}
+              {% trans 'She started as a receptionist, but is now familiar with everything from' %}
+              {% trans 'checking artwork to accounts receivable, and from processing orders to' %}
+              {% trans 'Full stack software development.' %}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-10"></div>
     </div>
-    <div class="mb-10"></div>
   </div>
-</div>
 {% endblock %}

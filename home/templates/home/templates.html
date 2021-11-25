@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div>
@@ -12,10 +13,11 @@
     <div class="row justify-content-center">
       <div class="col-12 mt-5">
         <p class="px-4 px-md-0">
-          On this page you can download our templates for the most common formats, 
-          so you have a little more clarity about the required margins. 
-          Make sure that when you deliver the print file to us, our template is no longer in it, 
-          because it is not the intention to print this along with the design.
+          {% trans 'On this page you can download our templates for the most common formats,' %}
+          {% trans 'so you have a little more clarity about the required margins.' %}
+          {% trans 'Make sure that when you deliver the print file to us,' %}
+          {% trans 'our template is no longer in it,' %}
+          {% trans 'because it is not the intention to print this along with the design.' %}
         </p>
       </div>
     </div>
@@ -24,49 +26,65 @@
         <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                 <h6 class="ms-2">Flyers</h6>
               </button>
             </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <a href="{% static 'img/home/templates/template_a4.zip' %}" class="text-postfly text-decoration-none px-4">A4</a> <br>
-                <a href="{% static 'img/home/templates/template_a5.zip' %}" class="text-postfly text-decoration-none px-4">A5</a> <br>
-                <a href="{% static 'img/home/templates/template_a6.zip' %}" class="text-postfly text-decoration-none px-4">A6</a>
+                <a href="{% static 'img/home/templates/template_a4.zip' %}"
+                  class="text-postfly text-decoration-none px-4">A4</a> <br>
+                <a href="{% static 'img/home/templates/template_a5.zip' %}"
+                  class="text-postfly text-decoration-none px-4">A5</a> <br>
+                <a href="{% static 'img/home/templates/template_a6.zip' %}"
+                  class="text-postfly text-decoration-none px-4">A6</a>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 <h6 class="ms-2">Posters</h6>
               </button>
             </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <a href="{% static 'img/home/templates/template_a0.zip' %}" class="text-postfly text-decoration-none px-4">A0</a> <br>
-                <a href="{% static 'img/home/templates/template_a1.zip' %}" class="text-postfly text-decoration-none px-4">A1</a> <br>
-                <a href="{% static 'img/home/templates/template_a2.zip' %}" class="text-postfly text-decoration-none px-4">A2</a>
+                <a href="{% static 'img/home/templates/template_a0.zip' %}"
+                  class="text-postfly text-decoration-none px-4">A0</a> <br>
+                <a href="{% static 'img/home/templates/template_a1.zip' %}"
+                  class="text-postfly text-decoration-none px-4">A1</a> <br>
+                <a href="{% static 'img/home/templates/template_a2.zip' %}"
+                  class="text-postfly text-decoration-none px-4">A2</a>
               </div>
             </div>
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                <h6 class="ms-2">Business cards</h6>
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h6 class="ms-2">{% trans 'Business cards' %}</h6>
               </button>
             </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
               <div class="accordion-body">
-                <a href="{% static 'img/home/templates/template_85x55.zip' %}" class="text-postfly text-decoration-none px-4">85x55 mm</a> <br>
-                <a href="{% static 'img/home/templates/template_170x55.zip' %}" class="text-postfly text-decoration-none px-4">170x55 mm</a> <br>
-                <a href="{% static 'img/home/templates/template_110x85.zip' %}" class="text-postfly text-decoration-none px-4">110x85 mm</a>
+                <a href="{% static 'img/home/templates/template_85x55.zip' %}"
+                  class="text-postfly text-decoration-none px-4">85x55 mm</a> <br>
+                <a href="{% static 'img/home/templates/template_170x55.zip' %}"
+                  class="text-postfly text-decoration-none px-4">170x55 mm</a> <br>
+                <a href="{% static 'img/home/templates/template_110x85.zip' %}"
+                  class="text-postfly text-decoration-none px-4">110x85 mm</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-xl-6 py-4 d-lg-none">
-          <img src="{% static 'img/home/templates/templates.png' %}" alt="Paper sizes" class="w-400 mx-auto d-block mb-10">
+          <img src="{% static 'img/home/templates/templates.png' %}" alt="Paper sizes"
+            class="w-400 mx-auto d-block mb-10">
         </div>
       </div>
       <div class="col-12 col-xl-6 mt-5 d-none d-lg-block">

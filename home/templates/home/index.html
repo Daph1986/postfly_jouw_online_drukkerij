@@ -4,15 +4,21 @@
 
 {% block page_header %}
   <div class="p-4 mb-5 hero-home">
-    <h1 class="text-uppercase fs-3 fw-bolder p-0 p-md-5 mt-3 mt-md-0 ms-2 home-sm ms-0 ms-md-3">{% trans 'Our products' %}</h1>
+    <h1 class="text-uppercase fs-3 fw-bolder p-0 p-md-5 mt-3 mt-md-0 ms-2 home-sm ms-0 ms-md-3">
+      {% trans 'Our products' %}
+    </h1>
     <div class="py-2 p-0 ps-md-5">
-      <a href="{% url 'products' %}" class="btn btn-lg postfly-home-btn btn-dark text-uppercase hvr-grow ms-0 ms-md-3">{% trans 'Shop Now' %}</a>
+      <a href="{% url 'products' %}" class="btn btn-lg postfly-home-btn btn-dark text-uppercase hvr-grow ms-0 ms-md-3">
+        {%trans 'Shop Now' %}
+      </a>
     </div>
   </div>
   <div class="row text-center mb-5 banner">
     <div class="col bg-category text-white">
-      <h4 class="logo-font my-1 px-3">{% trans 'Delivery to 1 address in the Netherlands is included in your order!' %}</h4>                
-    </div>            
+      <h4 class="logo-font my-1 px-3">
+        {% trans 'Delivery to 1 address in the Netherlands is included in your order!' %}
+      </h4>
+    </div>
   </div>
 {% endblock %}
 
@@ -23,16 +29,21 @@
         <img src="{% static 'img/home/sample.png' %}" alt="Free sample kit" class="img-thumbnail border-danger border-2">
         <h1 class="text-uppercase mt-3 ms-3 fs-3 fw-bolder text-postfly">{% trans 'Our papers' %}</h1>
         <div class="py-2">
-          <a href="{% url 'sample_kit' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">{% trans 'Free sample kit' %}</a>
+          <a href="{% url 'sample_kit' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">
+            {% trans 'Free sample kit' %}
+          </a>
         </div>
       </div>
-			<div class="row mobile-mb d-block d-sm-none mb-5"></div>
+      <div class="row mobile-mb d-block d-sm-none mb-5"></div>
       <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <img src="{% static 'img/home/press.png' %}" alt="Koenig & Bauer press" class="img-thumbnail border-danger border-2">
-				<h1 class="text-uppercase mt-3 ms-3 fs-3 fw-bolder text-postfly">{% trans 'About us' %}</h1>
-          <div class="py-2 mb-10">
-            <a href="{% url 'printing_house' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">{% trans 'Printing house' %}</a>
-          </div>
+        <img src="{% static 'img/home/press.png' %}" alt="Koenig & Bauer press"
+          class="img-thumbnail border-danger border-2">
+        <h1 class="text-uppercase mt-3 ms-3 fs-3 fw-bolder text-postfly">{% trans 'About us' %}</h1>
+        <div class="py-2 mb-10">
+          <a href="{% url 'printing_house' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow">
+            {% trans 'Printing house' %}
+          </a>
+        </div>
       </div>
     </div>
   </div>
