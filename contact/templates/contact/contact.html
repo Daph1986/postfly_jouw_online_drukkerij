@@ -1,89 +1,92 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+  <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
   <div class="p-5 mb-5 contact-img"></div>
   <div>
-    <h2 class="my-5 text-center">Contact us</h2>
+    <h2 class="my-5 text-center">{% trans 'Contact us' %}</h2>
   </div>
 {% endblock %}
 
 {% block content %}
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 col-xl-6 mt-5">
+      <div class="col-10 col-md-6 col-xl-6 mt-5 mx-auto">
         <form method="POST" id="contact-form">
           {% csrf_token %}
           <fieldset class="rounded mb-2">
-            <legend class="fieldset-label small text-black px-2 w-auto"><strong>Your details</strong></legend>
+            <legend class="fieldset-label small text-black px-2 w-auto"><strong>{% trans 'Your details' %}</strong></legend>
             {{ contact_form.first_name | as_crispy_field }}
             {{ contact_form.last_name | as_crispy_field }}
             {{ contact_form.email | as_crispy_field }}
             {{ contact_form.subject | as_crispy_field }}
           </fieldset>
           <fieldset class="rounded mb-2 mt-4">
-            <legend class="fieldset-label small text-black px-2 w-auto"><strong>Message</strong></legend>
+            <legend class="fieldset-label small text-black px-2 w-auto"><strong>{% trans 'Message' %}</strong></legend>
             {{ contact_form.message | as_crispy_field }}
           </fieldset>
-          <button type="submit" class="btn postfly-general-btn hvr-grow mt-3 mb-3">Send</button>
+          <button type="submit" class="btn postfly-general-btn hvr-grow mt-3 mb-3">{% trans 'Send' %}</button>
         </form>
-        <div class="col-10 py-4 d-lg-none ml-special-contact mb-10">
-          <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-special-logo d-block"></a>
-          <h6><i class="fas fa-map-marker-alt me-2 "></i> Mailing address</h6>
+        <div class="col-12 py-4 d-lg-none ml-special-contact mb-10">
+          <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY"
+              class="w-special-logo d-block"></a>
+          <h6><i class="fas fa-map-marker-alt me-2 "></i> {% trans 'Mailing address' %}</h6>
           <p class="ms-4">
             Postbus 22921 <br>
             1100 DK Amsterdam
           </p>
-          <h6><i class="fas fa-map-marker-alt me-2"></i> Head office</h6>
+          <h6><i class="fas fa-map-marker-alt me-2"></i> {% trans 'Head office' %}</h6>
           <p class="ms-4">
             Muizenvenstraat 5 <br>
             2300 Turnhout <br>
-            Belgium
+            {% trans 'Belgium' %}
           </p>
-          <h6><i class="fas fa-phone-alt me-1"></i> Telephone</h6>
+          <h6><i class="fas fa-phone-alt me-1"></i> {% trans 'Telephone' %}</h6>
           <p class="ms-4"> +31 (0)20 365 22 93</p>
           <h6><i class="fas fa-envelope me-1"></i> Mail</h6>
           <p class="ms-4"> info@postfly.nl</p>
-          <h6><i class="fas fa-clock me-1"></i></i> Opening hours</h6>
+          <h6><i class="fas fa-clock me-1"></i></i> {% trans 'Opening hours' %}</h6>
           <p class="ms-4">
-            Monday to Friday <br>
-            09:00-17:00 hrs
+            {% trans 'Monday to Friday' %} <br>
+            {% trans '09:00-17:00 hrs' %}
           </p>
-          <h6><i class="fas fa-info me-3"></i> Other info</h6>
-          <a href="{% static 'img/home/contact/postfly_voorwaarden.zip' %}" 
-            class="text-postfly text-decoration-none ms-4">Terms and conditions <i class="fas fa-cloud-download-alt"></i>
+          <h6><i class="fas fa-info me-3"></i> {% trans 'Other info' %}</h6>
+          <a href="{% static 'img/home/contact/postfly_voorwaarden.zip' %}"
+            class="text-postfly text-decoration-none ms-4">{% trans 'Terms and conditions' %} <i class="fas fa-cloud-download-alt"></i>
           </a>
         </div>
       </div>
       <div class="col-6 d-none d-lg-block contact-info mb-10">
         <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY" class="w-300 d-block"></a>
-        <h6><i class="fas fa-map-marker-alt me-2"></i> Mailing address</h6>
+        <h6><i class="fas fa-map-marker-alt me-2"></i> {% trans 'Mailing address' %}</h6>
         <p class="ms-4">
           Postbus 22921 <br>
           1100 DK Amsterdam
         </p>
-        <h6><i class="fas fa-map-marker-alt me-2"></i> Head office</h6>
+        <h6><i class="fas fa-map-marker-alt me-2"></i> {% trans 'Head office' %}</h6>
         <p class="ms-4">
           Muizenvenstraat 5 <br>
           2300 Turnhout <br>
-          Belgium
+          {% trans 'Belgium' %}
         </p>
-        <h6><i class="fas fa-phone-alt me-1"></i> Telephone</h6>
+        <h6><i class="fas fa-phone-alt me-1"></i> {% trans 'Telephone' %}</h6>
         <p class="ms-4"> +31 (0)20 365 22 93</p>
         <h6><i class="fas fa-envelope me-1"></i> Mail</h6>
         <p class="ms-4"> info@postfly.nl</p>
-        <h6><i class="fas fa-clock me-1"></i></i> Opening hours</h6>
+        <h6><i class="fas fa-clock me-1"></i></i> {% trans 'Opening hours' %}</h6>
         <p class="ms-4">
-          Monday to Friday <br>
-          09:00-17:00 hrs
+          {% trans 'Monday to Friday' %} <br>
+          {% trans '09:00-17:00 hrs' %}
         </p>
-        <h6><i class="fas fa-info me-3"></i> Other info</h6>
-        <a href="{% static 'img/home/contact/postfly_voorwaarden.zip' %}" 
-          class="text-postfly text-decoration-none px-4 px-md-0 ms-4">Terms and conditions <i class="fas fa-cloud-download-alt"></i>
+        <h6><i class="fas fa-info me-3"></i> {% trans 'Other info' %}</h6>
+        <a href="{% static 'img/home/contact/postfly_voorwaarden.zip' %}"
+          class="text-postfly text-decoration-none px-4 px-md-0 ms-4">{% trans 'Terms and conditions' %} <i
+            class="fas fa-cloud-download-alt"></i>
         </a>
       </div>
     </div>

@@ -1,16 +1,17 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+  <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
 {% block page_header %}
   <div class="container">
     <div class="row">
-        <div class="col text-center">
-          <h2 class="mt-5">{{ user }}'s profile</h2>
-        </div>
+      <div class="col text-center">
+        <h2 class="mt-5">{{ user }}'s {% trans 'profile' %}</h2>
+      </div>
     </div>
   </div>
 {% endblock %}
@@ -18,16 +19,16 @@
 {% block content %}
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-8 col-xl-6 mt-4">
-        <p class="fw-bold">Default profile details</p>
-        <form action="{% url 'profile' %}" method="POST" id="profile-update-form" class="profile-form mt-3">
+      <div class="col-10 col-md-8 col-xl-6 mt-4 mx-auto">
+        <p class="fw-bold ms-2">{% trans 'Default profile details' %}</p>
+        <form action="{% url 'profile' %}" method="POST" id="profile-update-form" class="profile-form mt-3 mb-10">
           {% csrf_token %}
           {{ form|crispy }}
-          <a href="{% url 'dashboard' %}" class="btn hvr-grow postfly-general-btn me-3 my-5">
+          <a href="{% url 'dashboard' %}" class="btn hvr-grow postfly-general-btn mt-3">
             <span class="font-weight-bold">Dashboard</span>
           </a>
-          <button class="btn hvr-grow postfly-general-btn ms-3 my-5">
-            <span class="font-weight-bold">Update changes</span>
+          <button class="btn hvr-grow postfly-general-btn mt-4 mt-md-3 ms-md-3">
+            <span class="font-weight-bold">{% trans 'Update changes' %}</span>
           </button>
         </form>
       </div>
@@ -36,6 +37,6 @@
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+{{ block.super }}
+  <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}

@@ -7,7 +7,8 @@
     <a class="navbar-brand ms-3" href="{% url 'home' %}">
       <img class="pp-logo" src="{% static 'img/paper_plane_logo.png' %}" alt="Paper Plane Logo">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -23,7 +24,8 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% trans 'Products' %}
             </a>
             <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
@@ -70,7 +72,9 @@
                 </ul>
               </li>
               <li>
-                <a href="{% url 'products' %}?category=flyers_135_gr_gloss" class="dropdown-item">Flyers 135 gr Gloss</a>
+                <a href="{% url 'products' %}?category=flyers_135_gr_gloss" class="dropdown-item">
+                  Flyers 135 gr Gloss
+                </a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
                   <li>
                     <a class="dropdown-item" href="{% url 'products' %}?category=flyers_135_gr_gloss&size=1">A4</a>
@@ -84,7 +88,9 @@
                 </ul>
               </li>
               <li>
-                <a href="{% url 'products' %}?category=posters_135_gr_gloss" class="dropdown-item">Posters 135 gr Gloss</a>
+                <a href="{% url 'products' %}?category=posters_135_gr_gloss" class="dropdown-item">
+                  Posters 135 gr Gloss
+                </a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
                   <li>
                     <a class="dropdown-item" href="{% url 'products' %}?category=posters_135_gr_gloss&size=4">A0</a>
@@ -98,7 +104,9 @@
                 </ul>
               </li>
               <li>
-                <a href="{% url 'products' %}?category=posters_115_gr_blueback" class="dropdown-item">Posters 115 gr Blueback</a>
+                <a href="{% url 'products' %}?category=posters_115_gr_blueback" class="dropdown-item">
+                  Posters 115 gr Blueback
+                </a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
                   <li>
                     <a class="dropdown-item" href="{% url 'products' %}?category=posters_115_gr_blueback&size=4">A0</a>
@@ -112,30 +120,44 @@
                 </ul>
               </li>
               <li>
-                <a href="{% url 'products' %}?category=business_cards_400_gr_mat" class="dropdown-item">{% trans 'Business cards 400 gr Mat' %}</a>
+                <a href="{% url 'products' %}?category=business_cards_400_gr_mat" class="dropdown-item">
+                  {% trans 'Business cards 400 gr Mat' %}
+                </a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
                   <li>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_400_gr_mat&size=7">85x55 mm</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_400_gr_mat&size=7">
+                      85x55 mm
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_400_gr_mat&size=8">85x110 mm</a>
+                    <a class="dropdown-item"
+                      href="{% url 'products' %}?category=business_cards_400_gr_mat&size=8">85x110 mm</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_400_gr_mat&size=9">170x55 mm</a>
+                    <a class="dropdown-item"
+                      href="{% url 'products' %}?category=business_cards_400_gr_mat&size=9">170x55 mm</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="{% url 'products' %}?category=business_cards_cold_foil" class="dropdown-item">{% trans 'Business cards Cold Foil' %}</a>
+                <a href="{% url 'products' %}?category=business_cards_cold_foil" class="dropdown-item">
+                  {% trans 'Business cards Cold Foil' %}
+                </a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
                   <li>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_cold_foil&size=7">85x55 mm</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_cold_foil&size=7">
+                      85x55 mm
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_cold_foil&size=8">85x110 mm</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_cold_foil&size=8">
+                      85x110 mm
+                    </a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_cold_foil&size=9">170x55 mm</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=business_cards_cold_foil&size=9">
+                      170x55 mm
+                    </a>
                   </li>
                 </ul>
               </li>
@@ -143,7 +165,8 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% trans 'Guidelines' %}
             </a>
             <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
@@ -166,44 +189,47 @@
               FAQ
             </a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {% trans 'About us' %}
-            </a>
-              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown"down">
+          <li class=" nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {% trans 'About us' %}
+              </a>
+              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown" down">
                 <li><a href="{% url 'team' %}" class="dropdown-item">Team</a></li>
                 <li><a href="{% url 'printing_house' %}" class="dropdown-item">{% trans 'Printing in-house' %}</a></li>
                 <li><a href="{% url 'our_concept' %}" class="dropdown-item">{% trans 'Our concept' %}</a></li>
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+              role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contact
             </a>
-              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">  
-                <li><a href="{% url 'contact' %}" class="dropdown-item">{% trans 'Contact us' %}</a></li>
-                <li><a href="{% url 'sample_kit' %}" class="dropdown-item">{% trans 'Free sample kit' %}</a></li>
-                <li><a href="{% url 'quotation' %}" class="dropdown-item">{% trans 'Quotation request' %}</a></li>
-              </ul>
+            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a href="{% url 'contact' %}" class="dropdown-item">{% trans 'Contact us' %}</a></li>
+              <li><a href="{% url 'sample_kit' %}" class="dropdown-item">{% trans 'Free sample kit' %}</a></li>
+              <li><a href="{% url 'quotation' %}" class="dropdown-item">{% trans 'Quotation request' %}</a></li>
+            </ul>
           </li>
         </ul>
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 me-auto mb-2 mb-lg-0">
           {% if not request.user.is_authenticated %}
-          <li class="nav-item">
-            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
-                  <i class="fas fa-user"></i> {% trans 'Register' %}
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
+                <i class="fas fa-user"></i> {% trans 'Register' %}
+              </a>
+            </li>
           {% endif %}
           {% if request.user.is_authenticated %}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-user-lock"></i> Account
               </a>
               <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
                 <li><a href="{% url 'dashboard' %}" class="dropdown-item">Dashboard</a></li>
                 {% if request.user.is_superuser %}
-                <li><a href="{% url 'add_product' %}" class="dropdown-item">Product management</a></li>
+                  <li><a href="{% url 'add_product' %}" class="dropdown-item">Product management</a></li>
                 {% endif %}
                 <li><a href="{% url 'profile' %}" class="dropdown-item">{% trans 'Profile' %}</a></li>
                 <li><a href="{% url 'account_logout' %}" class="dropdown-item">Log out</a></li>
@@ -217,14 +243,15 @@
             </li>
           {% endif %}
           <li class="nav-item">
-            <a class="{% if grand_total %}fw-bold text-danger{% else %}text-black{% endif %} nav-link ms-lg-2 ms-xl-4" href="{% url 'view_cart' %}">
+            <a class="{% if grand_total %}fw-bold text-danger{% else %}text-black{% endif %} nav-link ms-lg-2 ms-xl-4"
+              href="{% url 'view_cart' %}">
               <div>
                 <i class="fas fa-shopping-cart"></i>
-                  {% if grand_total %}
-                    €{{ grand_total|floatformat:2 }}
-                  {% else %}
-                    €0.00
-                  {% endif %}
+                {% if grand_total %}
+                  €{{ grand_total|floatformat:2 }}
+                {% else %}
+                  €0.00
+                {% endif %}
               </div>
             </a>
           </li>
@@ -232,17 +259,18 @@
         <div class="my-auto py-1 py-lg-0">
           <form method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
-              <input class="form-control border-dark rounded-0 search" type="search" name="q" placeholder="Search" aria-label="Search">
-                <div class="input-group-append">
-                  <button class="form-control btn btn-white border border-dark rounded-0" type="submit">
-                    <span class="icon">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </button>
-                </div>
+              <input class="form-control border-dark rounded-0 search" type="search" name="q" placeholder="Search"
+                aria-label="Search">
+              <div class="input-group-append">
+                <button class="form-control btn btn-white border border-dark rounded-0" type="submit">
+                  <span class="icon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </button>
+              </div>
             </div>
           </form>
         </div>
       </div>
-  </div>
+    </div>
 </nav>

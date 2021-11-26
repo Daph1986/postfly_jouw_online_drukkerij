@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-25 22:37+0100\n"
+"POT-Creation-Date: 2021-11-26 22:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,120 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: contact/templates/contact/contact.html:12 templates/includes/navbar.html:209
+msgid "Contact us"
+msgstr "Contacteer ons"
+
+#: contact/templates/contact/contact.html:23
+#: contact/templates/contact/quotation.html:18
+#: contact/templates/contact/sample.html:18
+msgid "Your details"
+msgstr "Jouw gegevens"
+
+#: contact/templates/contact/contact.html:30
+msgid "Message"
+msgstr "Bericht"
+
+#: contact/templates/contact/contact.html:33
+#: contact/templates/contact/quotation.html:37
+#: contact/templates/contact/sample.html:33
+msgid "Send"
+msgstr "Verzenden"
+
+#: contact/templates/contact/contact.html:38
+#: contact/templates/contact/contact.html:66
+msgid "Mailing address"
+msgstr "Postadres"
+
+#: contact/templates/contact/contact.html:43
+#: contact/templates/contact/contact.html:71
+msgid "Head office"
+msgstr "Hoofdkantoor"
+
+#: contact/templates/contact/contact.html:47
+#: contact/templates/contact/contact.html:75
+msgid "Belgium"
+msgstr "België"
+
+#: contact/templates/contact/contact.html:49
+#: contact/templates/contact/contact.html:77
+msgid "Telephone"
+msgstr "Telefoon"
+
+#: contact/templates/contact/contact.html:53
+#: contact/templates/contact/contact.html:81
+msgid "Opening hours"
+msgstr "Openingstijden"
+
+#: contact/templates/contact/contact.html:55
+#: contact/templates/contact/contact.html:83
+msgid "Monday to Friday"
+msgstr "Maandag t/m vrijdag"
+
+#: contact/templates/contact/contact.html:56
+#: contact/templates/contact/contact.html:84
+msgid "09:00-17:00 hrs"
+msgstr "09:00-17:00 uur"
+
+#: contact/templates/contact/contact.html:58
+#: contact/templates/contact/contact.html:86
+#: contact/templates/contact/quotation.html:24
+msgid "Other info"
+msgstr "Overige gegevens"
+
+#: contact/templates/contact/contact.html:60
+#: contact/templates/contact/contact.html:88
+msgid "Terms and conditions"
+msgstr "Algemene voorwaarden"
+
+#: contact/templates/contact/quotation.html:12
+msgid "Special wishes, request your quotation here!"
+msgstr "Afwijkende wensen, vraag hier je offerte aan!"
+
+#: contact/templates/contact/quotation.html:34
+#: templates/includes/navbar.html:211
+msgid "Quotation request"
+msgstr "Offerte aanvraag"
+
+#: contact/templates/contact/sample.html:12
+msgid "Request your free sample kit here"
+msgstr "Vraag hier je gratis sample map aan"
+
+#: contact/templates/contact/sample.html:24
+msgid "Delivery address"
+msgstr "Bezorgadres"
+
+#: contact/templates/emails/contact_email.html:26
+msgid "Subject:"
+msgstr "Onderwerp:"
+
+#: contact/templates/emails/contact_email.html:27
+msgid "Message:"
+msgstr "Bericht"
+
+#: contact/templates/emails/contact_email.html:32
+#: contact/templates/emails/quotation_email.html:49
+#: contact/templates/emails/sample_kit_email.html:46
+msgid "With kind regards"
+msgstr "Met vriendelijke groet"
+
+#: contact/templates/emails/quotation_email.html:24
+msgid "Please make a quotation for"
+msgstr "Graag ontvang ik een offerte voor"
+
+#: contact/templates/emails/quotation_email.html:28
+msgid "The quotation can be addressed to"
+msgstr "De offerte kan geadresseerd worden aan"
+
+#: contact/templates/emails/quotation_email.html:41
+#: contact/templates/emails/sample_kit_email.html:38
+msgid "When you have questions you can reach me at phone number"
+msgstr "Als je vragen hebt ben ik te bereiken op telefoonnummer"
+
+#: contact/templates/emails/sample_kit_email.html:25
+msgid "Please send my sample kit to the following addres"
+msgstr "Stuur de sample map alsjeblieft naar het volgende adres:"
 
 #: env/lib/python3.9/site-packages/crispy_forms/tests/test_form_helper.py:129
 #: env/lib/python3.9/site-packages/crispy_forms/tests/test_form_helper.py:139
@@ -1024,7 +1138,7 @@ msgstr ""
 #: env/lib/python3.9/site-packages/django/utils/text.py:240
 #: home/templates/home/faq.html:70 templates/allauth/account/login.html:29
 msgid "or"
-msgstr ""
+msgstr "of"
 
 #. Translators: This string is used as a separator between list elements
 #: env/lib/python3.9/site-packages/django/utils/text.py:259
@@ -1330,7 +1444,7 @@ msgctxt "stick"
 msgid "club"
 msgstr ""
 
-#: home/templates/home/black.html:7 templates/includes/navbar.html:153
+#: home/templates/home/black.html:7 templates/includes/navbar.html:176
 msgid "Deep black"
 msgstr "Diep zwart"
 
@@ -1386,7 +1500,7 @@ msgstr "Dan krijg je onderstaand venster te zien."
 msgid "Press the plus sign at the bottom right and enter the values as below."
 msgstr "Druk op het plusje rechts onder en vul de waardes in als hieronder."
 
-#: home/templates/home/bleed.html:7 templates/includes/navbar.html:151
+#: home/templates/home/bleed.html:7 templates/includes/navbar.html:174
 msgid "Bleed"
 msgstr "Afloop"
 
@@ -1480,7 +1594,7 @@ msgstr "door een mogelijke snijafwijking loop je daarmee namelijk het risico"
 msgid "that the frame is wider on one side than on the other."
 msgstr "dat het kader aan de ene zijde breder is dan aan de andere zijde."
 
-#: home/templates/home/color.html:7 templates/includes/navbar.html:156
+#: home/templates/home/color.html:7 templates/includes/navbar.html:179
 msgid "Color"
 msgstr "Kleur"
 
@@ -1646,7 +1760,7 @@ msgstr ""
 "zet je ze zelf op voorhand om naar CMYK zodat je niet voor verrassingen komt "
 "te staan!"
 
-#: home/templates/home/concept.html:7 templates/includes/navbar.html:176
+#: home/templates/home/concept.html:7 templates/includes/navbar.html:200
 msgid "Our concept"
 msgstr "Ons concept"
 
@@ -1678,7 +1792,8 @@ msgstr "of dat via de mail of telefoon is, dat maakt voor ons niet uit."
 #: home/templates/home/concept.html:25
 msgid ""
 "Because we are a small and close-knit team, we have short direct lines and"
-msgstr "Omdat we een klein en hecht team zijn, hebben we korte directe lijnen en"
+msgstr ""
+"Omdat we een klein en hecht team zijn, hebben we korte directe lijnen en"
 
 #: home/templates/home/concept.html:26
 msgid "a flat organizational structure."
@@ -1699,18 +1814,24 @@ msgstr "voor de volgende generaties belangrijk,"
 
 #: home/templates/home/concept.html:39
 msgid "which is why we do what we can to contribute to a healthy environment."
-msgstr "daarom doen we wat we kunnen om ons steentje bij te dragen aan een gezond milieu."
+msgstr ""
+"daarom doen we wat we kunnen om ons steentje bij te dragen aan een gezond "
+"milieu."
 
 #: home/templates/home/concept.html:42
 msgid ""
 "From 2011, we calculate and produce your printed matter exclusively with "
 "electricity"
-msgstr "Vanaf 2011 calculeren en produceren we je drukwerk uitsluitend met elektriciteit"
+msgstr ""
+"Vanaf 2011 calculeren en produceren we je drukwerk uitsluitend met "
+"elektriciteit"
 
 #: home/templates/home/concept.html:43
 msgid ""
 "from our solar panels and green electricity from renewable energy sources."
-msgstr "van onze zonnepanelen en groene elektriciteit uit hernieuwbare energiebronnen."
+msgstr ""
+"van onze zonnepanelen en groene elektriciteit uit hernieuwbare "
+"energiebronnen."
 
 #: home/templates/home/concept.html:46
 msgid "We have Eco-papers, so it’s no problem to have your"
@@ -1734,8 +1855,7 @@ msgstr "maar zorgt er ook voor dat de productie milieuvriendelijker is."
 
 #: home/templates/home/concept.html:51
 msgid "Only 1 set of printing plates needs to be used per printing form."
-msgstr ""
-"Er hoeft slechts 1 set drukplaten gebruikt worden per drukvorm."
+msgstr "Er hoeft slechts 1 set drukplaten gebruikt worden per drukvorm."
 
 #: home/templates/home/concept.html:52
 msgid "That material is therefore divided by all orders"
@@ -1752,7 +1872,9 @@ msgstr "Je verbruikt dus minder grondstoffen en vermindert de afvalberg."
 #: home/templates/home/concept.html:57
 msgid ""
 "We are also FSC certified. FSC (Forest Stewardship Council) is a label or"
-msgstr "Ook zijn wij FSC-gecertificeerd. FSC (Forest Stewardship Council) is een label of"
+msgstr ""
+"Ook zijn wij FSC-gecertificeerd. FSC (Forest Stewardship Council) is een "
+"label of"
 
 #: home/templates/home/concept.html:58
 msgid "quality mark on a paper product that indicates"
@@ -1766,7 +1888,9 @@ msgstr "of het afkomstig is uit een duurzaam beheerd bos."
 msgid ""
 "The FSC label guarantees sustainable origin because not only the forest of "
 "origin is checked,"
-msgstr "Het FSC label garandeert de duurzame oorsprong omdat niet enkel het bos van oorsprong wordt gecontroleerd,"
+msgstr ""
+"Het FSC label garandeert de duurzame oorsprong omdat niet enkel het bos van "
+"oorsprong wordt gecontroleerd,"
 
 #: home/templates/home/concept.html:61
 msgid "but also the entire trade chain up to the end consumer."
@@ -1782,7 +1906,9 @@ msgstr "verpakkingen voorzien van cold foil techniek laten testen."
 
 #: home/templates/home/concept.html:66
 msgid "This showed that all variants we tested could be recycled well."
-msgstr "Daaruit is gebleken dat alle varianten die we getest hebben goed gerecycled konden worden."
+msgstr ""
+"Daaruit is gebleken dat alle varianten die we getest hebben goed gerecycled "
+"konden worden."
 
 #: home/templates/home/concept.html:67
 msgid "The applied adhesive ink, emulsion varnish and foil were perfectly"
@@ -1792,7 +1918,9 @@ msgstr "De aangebrachte lijminkt, dispersielak en folie werden prima"
 msgid ""
 "discharged through the recycling process as is the case with traditional "
 "printing and"
-msgstr "door het recyclingproces afgevoerd zoals bij klassiek drukwerk het geval is en"
+msgstr ""
+"door het recyclingproces afgevoerd zoals bij klassiek drukwerk het geval is "
+"en"
 
 #: home/templates/home/concept.html:69
 msgid "they did not appear to be a disruptive"
@@ -1900,7 +2028,6 @@ msgid "quotation"
 msgstr "offerte"
 
 #: home/templates/home/faq.html:71
-#: templates/allauth/account/password_reset.html:29
 msgid "contact"
 msgstr "contacteer"
 
@@ -2140,6 +2267,7 @@ msgid "Sometimes that is indeed possible, but unfortunately not always."
 msgstr "Soms kan dat inderdaad, maar helaas niet altijd."
 
 #: home/templates/home/faq.html:214
+#: templates/allauth/account/password_reset.html:28
 msgid "Please"
 msgstr "Neem"
 
@@ -2354,7 +2482,7 @@ msgstr "Zo kan je als klant genieten van gedeelde kosten."
 msgid "That is why we work with fixed types of paper and quantities."
 msgstr "Daarom werken wij met vaste papiersoorten en oplages."
 
-#: home/templates/home/file.html:7 templates/includes/navbar.html:152
+#: home/templates/home/file.html:7 templates/includes/navbar.html:175
 msgid "File type"
 msgstr "Bestandstype"
 
@@ -2644,11 +2772,11 @@ msgstr "Levering op 1 adres in Nederland is gratis!"
 msgid "Our papers"
 msgstr "Onze papiersoorten"
 
-#: home/templates/home/index.html:33 templates/includes/navbar.html:185
+#: home/templates/home/index.html:33 templates/includes/navbar.html:210
 msgid "Free sample kit"
 msgstr "Gratis samples"
 
-#: home/templates/home/index.html:41 templates/includes/navbar.html:171
+#: home/templates/home/index.html:41 templates/includes/navbar.html:195
 msgid "About us"
 msgstr "Over ons"
 
@@ -2656,7 +2784,7 @@ msgstr "Over ons"
 msgid "Printing house"
 msgstr "Eigen drukkerij"
 
-#: home/templates/home/ink.html:7 templates/includes/navbar.html:154
+#: home/templates/home/ink.html:7 templates/includes/navbar.html:177
 msgid "Ink coverage"
 msgstr "Inkt bezetting"
 
@@ -2853,7 +2981,7 @@ msgstr ""
 "Laad het bestand in wat je zonet gedownload hebt, daarna vind je de "
 "joboptions terug in de lijst."
 
-#: home/templates/home/outlines.html:7 templates/includes/navbar.html:157
+#: home/templates/home/outlines.html:7 templates/includes/navbar.html:180
 msgid "Outlines"
 msgstr "Lettercontouren"
 
@@ -3071,7 +3199,7 @@ msgstr ""
 msgid "A window with the overprint functions appears."
 msgstr "Er verschijnt een venster met de overprint functies."
 
-#: home/templates/home/printing.html:7 templates/includes/navbar.html:175
+#: home/templates/home/printing.html:7 templates/includes/navbar.html:199
 msgid "Printing in-house"
 msgstr "Eigen drukkerij"
 
@@ -3190,7 +3318,7 @@ msgstr "bij ons aan voor afwijkende of specialistische wensen!"
 msgid "Request a quotation"
 msgstr "Offerte aanvragen"
 
-#: home/templates/home/resolution.html:7 templates/includes/navbar.html:160
+#: home/templates/home/resolution.html:7 templates/includes/navbar.html:183
 msgid "Resolution"
 msgstr "Resolutie"
 
@@ -3230,7 +3358,7 @@ msgstr "Na het aanpassen van de resolutie kijk je ook de afmetingen nog na."
 msgid "These must be actual size (or possibly larger)."
 msgstr "Deze moeten op ware grootte (of eventueel groter) zijn."
 
-#: home/templates/home/specs.html:7 templates/includes/navbar.html:150
+#: home/templates/home/specs.html:7 templates/includes/navbar.html:173
 msgid "Specifications"
 msgstr "Specificaties"
 
@@ -3393,51 +3521,51 @@ msgstr "Voeg een product toe aan de site"
 msgid "Add product"
 msgstr "Voeg product toe"
 
-#: products/templates/products/products.html:26
+#: products/templates/products/products.html:29
 msgid "Sort by..."
 msgstr "Sorteer op..."
 
-#: products/templates/products/products.html:27
+#: products/templates/products/products.html:32
 msgid "Price (low to high)"
 msgstr "Prijs (laag naar hoog)"
 
-#: products/templates/products/products.html:28
+#: products/templates/products/products.html:35
 msgid "Price (high to low)"
 msgstr "Prijs (hoog naar laag)"
 
-#: products/templates/products/products.html:29
+#: products/templates/products/products.html:37
 msgid "Name (A-Z)"
 msgstr "Naam (A-Z)"
 
-#: products/templates/products/products.html:30
+#: products/templates/products/products.html:40
 msgid "Name (Z-A)"
 msgstr "Naam (Z-A)"
 
-#: products/templates/products/products.html:31
+#: products/templates/products/products.html:43
 msgid "Category (A-Z)"
 msgstr "Categorie (A-Z)"
 
-#: products/templates/products/products.html:32
+#: products/templates/products/products.html:46
 msgid "Category (Z-A)"
 msgstr "Categorie (Z-A)"
 
-#: products/templates/products/products.html:52
+#: products/templates/products/products.html:71
 msgid "Delivery time is"
 msgstr "Levertijd is"
 
-#: products/templates/products/products.html:52
+#: products/templates/products/products.html:71
 msgid "business days"
 msgstr "werkdagen"
 
-#: products/templates/products/products.html:54
+#: products/templates/products/products.html:74
 msgid "pieces"
 msgstr "stuks"
 
-#: products/templates/products/products.html:55
+#: products/templates/products/products.html:75
 msgid "ex VAT"
 msgstr "ex btw"
 
-#: products/templates/products/products.html:68
+#: products/templates/products/products.html:89
 msgid "Add to shopping cart"
 msgstr "Leg in winkelmand"
 
@@ -3448,6 +3576,57 @@ msgstr "Pas een product op de pagina aan"
 #: products/templates/products/update_product.html:33
 msgid "Update product"
 msgstr "Pas product aan"
+
+#: profiles/templates/profiles/dashboard.html:23
+msgid "Order history"
+msgstr "Order geschiedenis"
+
+#: profiles/templates/profiles/dashboard.html:24
+msgid "Total orders"
+msgstr "Totaal aantal orders"
+
+#: profiles/templates/profiles/dashboard.html:35
+msgid "Order number"
+msgstr "Ordernummer"
+
+#: profiles/templates/profiles/dashboard.html:36
+msgid "Date"
+msgstr "Datum"
+
+#: profiles/templates/profiles/dashboard.html:38
+msgid "Client name"
+msgstr "Klant naam"
+
+#: profiles/templates/profiles/dashboard.html:82
+#: profiles/templates/profiles/dashboard.html:97
+msgid "previous"
+msgstr "vorige"
+
+#: profiles/templates/profiles/dashboard.html:86
+#: profiles/templates/profiles/dashboard.html:101
+msgid "Page"
+msgstr "Pagina"
+
+#: profiles/templates/profiles/dashboard.html:89
+#: profiles/templates/profiles/dashboard.html:104
+msgid "next"
+msgstr "volgende"
+
+#: profiles/templates/profiles/dashboard.html:115
+msgid "Back to profile"
+msgstr "Terug naar profiel"
+
+#: profiles/templates/profiles/profile.html:13
+msgid "profile"
+msgstr "profiel"
+
+#: profiles/templates/profiles/profile.html:23
+msgid "Default profile details"
+msgstr "Standaard profiel gegevens"
+
+#: profiles/templates/profiles/profile.html:31
+msgid "Update changes"
+msgstr "Sla wijzigingen op"
 
 #: templates/404.html:6
 msgid "Whoops! A 404 error occurred"
@@ -3580,7 +3759,7 @@ msgstr ""
 
 #: templates/allauth/account/login.html:12
 msgid "Already have an account? <br> Log in here!"
-msgstr ""
+msgstr "Heb je al een account bij ons? <br> Log dan hier in!"
 
 #: templates/allauth/account/login.html:19
 #, python-format
@@ -3598,6 +3777,9 @@ msgid ""
 "        <a class=\"text-postfly text-decoration-none fw-bold\" href="
 "\"%(signup_url)s\">Register here!</a>"
 msgstr ""
+"Heb je nog geen account?\n"
+" <a class=\"text-postfly text-decoration-none fw-bold\" href=\"%(signup_url)s"
+"\">Maak dan hier een account aan!</a>"
 
 #: templates/allauth/account/login.html:46
 msgid "Log in!"
@@ -3605,7 +3787,7 @@ msgstr ""
 
 #: templates/allauth/account/login.html:48
 msgid "Forgot your password?"
-msgstr ""
+msgstr "Wachtwoord vergeten?"
 
 #: templates/allauth/account/logout.html:5
 msgid "Sign Out"
@@ -3618,7 +3800,7 @@ msgstr ""
 
 #: templates/allauth/account/logout.html:10
 msgid "Are you sure you want to log out?"
-msgstr ""
+msgstr "Ben je er zeker van dat je wilt uitloggen?"
 
 #: templates/allauth/account/messages/cannot_delete_primary_email.txt:2
 #, python-format
@@ -3690,21 +3872,31 @@ msgstr ""
 
 #: templates/allauth/account/password_reset.html:11
 msgid "Forgot your password? <br> Reset your password"
-msgstr ""
+msgstr "Wachtwoord vergeten? <br> Reset je wachtwoord"
 
 #: templates/allauth/account/password_reset.html:18
 msgid ""
 "Fill out your email address below and we will send you an email to reset "
 "your password."
 msgstr ""
+"Vul je e-mailadres in hieronder en wij sturen je een e-mail om je wachtwoord "
+"te resetten."
 
 #: templates/allauth/account/password_reset.html:23
 msgid "Back to login!"
-msgstr ""
+msgstr "Terug naar log in!"
 
 #: templates/allauth/account/password_reset.html:24
 msgid "Reset password!"
-msgstr ""
+msgstr "Reset wachtwoord!"
+
+#: templates/allauth/account/password_reset.html:29
+msgid "contact"
+msgstr "contact"
+
+#: templates/allauth/account/password_reset.html:30
+msgid "us if you are experiencing problems resetting your password."
+msgstr "met ons op als je problemen ervaart met het resetten van je wachtwoord."
 
 #: templates/allauth/account/password_reset_done.html:9
 msgid "Password reset"
@@ -3750,7 +3942,7 @@ msgstr ""
 
 #: templates/allauth/account/signup.html:10
 msgid "No account yet? <br>Create your account here!"
-msgstr ""
+msgstr "Nog geen account bij ons? <br>Maak hier je account aan!"
 
 #: templates/allauth/account/signup.html:13
 #, python-format
@@ -3758,6 +3950,8 @@ msgid ""
 "Do you already have an account? <a class=\"text-postfly text-decoration-none "
 "fw-bold\" href=\"%(login_url)s\">Log in here!</a>"
 msgstr ""
+"Heb je al een account? <a class=\"text-postfly text-decoration-none fw-bold"
+"\" href=\"%(login_url)s\">Log dan hier in!</a>"
 
 #: templates/allauth/account/signup.html:21
 msgid "Sign up!"
@@ -3890,53 +4084,48 @@ msgid ""
 "%(site_name)s. As a final step, please complete the following form:"
 msgstr ""
 
-#: templates/includes/navbar.html:27
+#: templates/includes/navbar.html:29
 msgid "Products"
 msgstr "Producten"
 
-#: templates/includes/navbar.html:115
+#: templates/includes/navbar.html:124
 msgid "Business cards 400 gr Mat"
 msgstr "Visitekaartjes 400 gr Mat"
 
-#: templates/includes/navbar.html:129
+#: templates/includes/navbar.html:144
 msgid "Business cards Cold Foil"
 msgstr "Visitekaartjes Cold Foil"
 
-#: templates/includes/navbar.html:142
+#: templates/includes/navbar.html:164
 msgid "All products"
 msgstr "Alle producten"
 
-#: templates/includes/navbar.html:147
+#: templates/includes/navbar.html:170
 msgid "Guidelines"
 msgstr "Aanleveren"
 
-#: templates/includes/navbar.html:155
+#: templates/includes/navbar.html:178
 msgid "Job obtions"
 msgstr "Jopobtions"
 
-#: templates/includes/navbar.html:158
+#: templates/includes/navbar.html:181
 msgid "Foil"
 msgstr "Opmaak folie"
 
-#: templates/includes/navbar.html:161
+#: templates/includes/navbar.html:184
 msgid "Templates"
 msgstr ""
 
-#: templates/includes/navbar.html:184
-msgid "Contact us"
-msgstr "Contacteer ons"
-
-#: templates/includes/navbar.html:186
-msgid "Quotation request"
-msgstr "Offerte aanvragen"
-
-#: templates/includes/navbar.html:194
+#: templates/includes/navbar.html:219
 msgid "Register"
 msgstr "Registreer"
 
-#: templates/includes/navbar.html:208
+#: templates/includes/navbar.html:234
 msgid "Profile"
 msgstr "Profiel"
+
+#~ msgid "Other information"
+#~ msgstr "Overige info"
 
 #~ msgid ""
 #~ "as a guideline to start with your design, but make sure that our template "

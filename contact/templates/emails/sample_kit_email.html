@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +22,7 @@
 	<!-- Message body -->
 	<div>
 		<p>
-			Please send my sample kit to the following addres: <br>
+			{% trans 'Please send my sample kit to the following addres' %}: <br>
 			<i>
 				{% if company_name %}
 					<span><strong>{{ company_name }}</strong></span><br>
@@ -33,7 +35,7 @@
 				<span><strong>{{ country }}</strong></span><br> <br>
 			</i>
 			{% if phone_number %}
-				When you have questions you can reach me at phone number:<br>
+				{% trans 'When you have questions you can reach me at phone number' %}:<br>
 				<i>
 					<span><strong>{{ phone_number }}</strong></span>
 				</i>
@@ -41,7 +43,7 @@
 		</p>
 	</div>
 	<!-- Signature -->
-	<p>With kind Regards,<br>
+	<p>{% trans 'With kind regards' %},<br>
 		<span><strong>{{ first_name|title }} {{ last_name|title }}</strong></span>
 	</p>
 </body>

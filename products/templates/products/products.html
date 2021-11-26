@@ -8,7 +8,8 @@
           <div class="col text-center">
             <h2 class="mt-5">{% trans 'Our products' %}</h2>
             {% for c in current_categories %}
-              <a class="mt-4 badge rounded-pill bg-category card-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+              <a class="mt-4 badge rounded-pill bg-category card-badge text-decoration-none" 
+                href="{% url 'products' %}?category={{ c.name }}">
                   <span class="p-2 text-white rounded-0">{{ c.friendly_name }}</span>
               </a>
             {% endfor %}
@@ -22,20 +23,34 @@
     <div class="row mt-5 mb-2">
       <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
         <div class="sort-select-wrapper w-15">
-            <select id="sort-selector" class="custom-sort-selector border-1 {% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
-                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>{% trans 'Sort by...' %}</option>
-                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>{% trans 'Price (low to high)' %}</option>
-                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>{% trans 'Price (high to low)' %}</option>
-                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>{% trans 'Name (A-Z)' %}</option>
-                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>{% trans 'Name (Z-A)' %}</option>
-                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>{% trans 'Category (A-Z)' %}</option>
-                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>{% trans 'Category (Z-A)' %}</option>
+            <select id="sort-selector" 
+              class="custom-sort-selector border-1 {% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+              <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>
+                {% trans 'Sort by...' %}
+              </option>
+              <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>
+                {% trans 'Price (low to high)' %}
+              </option>
+              <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>
+                {% trans 'Price (high to low)' %}</option>
+              <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>
+                {% trans 'Name (A-Z)' %}
+              </option>
+              <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>
+                {% trans 'Name (Z-A)' %}
+              </option>
+              <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                {% trans 'Category (A-Z)' %}
+              </option>
+              <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>
+                {% trans 'Category (Z-A)' %}
+              </option>
             </select>
         </div>
     </div>
     <div class="col-12 col-md-6 order-md-first">
         <p class="mt-3 text-center text-md-start">
-            {{ products|length }} products{% if search_term %} results for <strong>"{{ search_term }}"</strong>{% endif %}
+          {{ products|length }} products{% if search_term %} results for <strong>"{{ search_term }}"</strong>{% endif %}
         </p>
     </div>
     </div>
@@ -44,20 +59,25 @@
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-3">
           <div class="card custom-card text-center border-1 h-100">
             <div class="text-center">
-              <img class="card-img-custom mt-5 mb-3" src="{{ product.size.image.url }}" alt="{{ product.name }} {{ product.size }}">
+              <img class="card-img-custom mt-5 mb-3" 
+                src="{{ product.size.image.url }}" alt="{{ product.name }} {{ product.size }}">
             </div>
             <div class="card-body">
               <h5 class="card-title mt-2 mb-3">{{ product.name }} {{ product.size }}</h5>
-              <span class="badge rounded-pill bg-{{ product.product_tag.color }} card-badge mb-3">{{ product.product_tag }}</span>
-              <p class="card-text stand-out">{% trans 'Delivery time is' %} {{ product.delivery_time }} {% trans 'business days' %}</p>
+              <span class="badge rounded-pill bg-{{ product.product_tag.color }} card-badge mb-3">
+                {{ product.product_tag }}
+              </span>
+              <p class="card-text stand-out">
+                {% trans 'Delivery time is' %} {{ product.delivery_time }} {% trans 'business days' %}
+              </p>
               <p class="card-text">{{ product.method }}</p>
               <p class="card-text">{{ product.quantity }} {% trans 'pieces' %}</p>
               <p class="card-text"><strong>€{{ product.price }}</strong> {% trans 'ex VAT' %}</p>
               <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                 {% csrf_token %}
                 <div class="form-row">
-                  <input class="form-control" type="hidden" class="btn postfly-general-btn mb-3" name="quantity" value="1"
-                  data-lesson_id="{{ product.id }}" id="id_quantity_{{ product.id }}">
+                  <input class="form-control" type="hidden" class="btn postfly-general-btn mb-3" name="quantity" 
+                    value="1" data-lesson_id="{{ product.id }}" id="id_quantity_{{ product.id }}">
                   <input type="hidden" name="redirect_url" value="{{ request.path }}">
                   {% if request.user.is_superuser %}
                     <div class="mb-3">
@@ -65,7 +85,9 @@
                       <a href="{% url 'delete_product' product.id %}" class="text-danger"><i class="fas fa-trash"></i></a>
                     </div>
                   {% endif %}
-                  <button type="submit" class="btn postfly-general-btn hvr-grow mb-3">{% trans 'Add to shopping cart' %}</button>
+                  <button type="submit" class="btn postfly-general-btn hvr-grow mb-3">
+                    {% trans 'Add to shopping cart' %}
+                  </button>
                 </div>
               </form>
             </div>
