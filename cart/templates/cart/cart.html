@@ -1,24 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block page_header %}
   <div class="container">
     <div class="row ms-3 ms-md-0">
-        <div class="col text-md-center">
-          <h2 class="mt-5">Shopping cart</h2>
-        </div>
+      <div class="col text-md-center">
+        <h2 class="mt-5">{% trans 'Shopping cart' %}</h2>
+      </div>
     </div>
   </div>
 {% endblock %}
 
 {% block content %}
-<div class="container">
+  <div class="container">
     <div class="row ms-3">
-        <div class="col">
-            <h5 class="mt-5 mb-5">Order overview ({{ product_count }})</h5>
-        </div>
+      <div class="col">
+        <h5 class="mt-5 mb-5">{% trans 'Order overview' %} ({{ product_count }})</h5>
+      </div>
     </div>
-
     <div class="row ms-3">
       <div class="col">
         {% if cart_items %}
@@ -30,11 +30,13 @@
                     <div class="col-12 col-sm-6 mb-2">
                       <p>
                         <strong>Product</strong> {{ item.product.name }} {{ item.product.size }}<br>
-                        <strong>Printing method</strong> {{ item.product.method }}<br>
-                        <strong>Delivery time</strong> {{ item.product.delivery_time }} business days<br>
-                        <strong>Qty</strong> {{ item.product.quantity }} pieces<br>
-                        <strong>Price</strong> €{{ item.product.price }} <br>
-                        <a class="delete-product btn postfly-small-btn mt-2" id="delete_{{ item.product_id }}"><small><i class="far fa-trash-alt"></i></small></a>
+                        <strong>{% trans 'Printing method' %}</strong> {{ item.product.method }}<br>
+                        <strong>{% trans 'Delivery time' %}</strong> {{ item.product.delivery_time }} {% trans 'business days' %}<br>
+                        <strong>{% trans 'Qty' %}</strong> {{ item.product.quantity }} {% trans 'pieces' %}<br>
+                        <strong>{% trans 'Price' %}</strong> €{{ item.product.price }} <br>
+                        <a class="delete-product btn postfly-small-btn mt-2" id="delete_{{ item.product_id }}">
+                          <small><i class="far fa-trash-alt"></i></small>
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -43,13 +45,12 @@
               <thead class="mobile-hide">
                 <tr>
                   <th scope="col">Product</th>
-                  <th scope="col" class="text-end">Printing method</th>
-                  <th scope="col" class="text-end">Delivery time</th>
-                  <th scope="col" class="text-end">Qty</th>
-                  <th scope="col" class="text-end">Price</th>
+                  <th scope="col" class="text-end">{% trans 'Printing method' %}</th>
+                  <th scope="col" class="text-end">{% trans 'Delivery time' %}</th>
+                  <th scope="col" class="text-end">{% trans 'Qty' %}</th>
+                  <th scope="col" class="text-end">{% trans 'Price' %}</th>
                 </tr>
               </thead>
-
               {% for item in cart_items %}
                 <tr class="mobile-hide">
                   <td class="py-3">
@@ -59,57 +60,59 @@
                     <p class="my-0 text-end">{{ item.product.method }}</p>
                   </td>
                   <td class="py-3">
-                    <p class="my-0 text-end">{{ item.product.delivery_time }} business days</p>
+                    <p class="my-0 text-end">{{ item.product.delivery_time }} {% trans 'business days' %}</p>
                   </td>
                   <td class="py-3 w-15">
-                    <p class="my-0 text-end">{{ item.product.quantity }} pieces</p>
+                    <p class="my-0 text-end">{{ item.product.quantity }} {% trans 'pieces' %}</p>
                   </td>
                   <td class="py-3">
                     <p class="my-0 text-end">€{{ item.product.price }}</p>
                   </td>
                   <td>
-                    <a class="delete-product btn postfly-small-btn mb-3 ms-5" id="delete_{{ item.product_id }}"><small><i class="far fa-trash-alt"></i></small></a>
+                    <a class="delete-product btn postfly-small-btn mb-3 ms-5" id="delete_{{ item.product_id }}">
+                      <small><i class="far fa-trash-alt"></i></small>
+                    </a>
                   </td>
                 </tr>
               {% endfor %}
               <tr>
                 <td colspan="5" class="pt-md-5 text-md-end">
-                  <h5 class="me-3 mb-3 mt-2">Price overview</h5>
-                  <h6 class="me-3">Cart total: €{{total|floatformat:2 }}</h6>
-                  <h6 class="me-3">VAT: €{{ tax|floatformat:2 }}</h6>
+                  <h5 class="me-3 mb-3 mt-2">{% trans 'Price overview' %}</h5>
+                  <h6 class="me-3">{% trans 'Cart total' %}: €{{total|floatformat:2 }}</h6>
+                  <h6 class="me-3">{% trans 'VAT' %}: €{{ tax|floatformat:2 }}</h6>
                   <hr class="me-3 float-md-end">
-                  <h4 class="mt-md-5 me-3"><strong>Grand total: €{{grand_total|floatformat:2 }}</strong></h4>
+                  <h4 class="mt-md-5 me-3"><strong>{% trans 'Grand total' %}: €{{grand_total|floatformat:2 }}</strong></h4>
                 </td>
               </tr>
               <tr>
                 <td colspan="5" class="pt-5 text-start text-md-center">
-                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3 mx-md-5">Keep shopping</a>
-                  <a href="{% url 'checkout' %}" class="btn postfly-general-btn mb-3">Secure checkout</a>
+                  <a href="{% url 'products' %}" class="btn postfly-general-btn mb-3 mx-md-5">{% trans 'Keep shopping' %}</a>
+                  <a href="{% url 'checkout' %}" class="btn postfly-general-btn mb-3">{% trans 'Secure checkout' %}</a>
                   <div class="mb-10"></div>
                 </td>
               </tr>
             </table>
           </div>
         {% else %}
-          <p class="lead mb-5 mb-10">Your cart is empty.</p>
-          <a href="{% url 'products' %}" class="btn postfly-general-btn my-3 my-md-5 active">Continue shopping</a>
+          <p class="lead mb-5 mb-10">{% trans 'Your cart is empty' %}.</p>
+          <a href="{% url 'products' %}" class="btn postfly-general-btn my-3 my-md-5 active">{% trans 'Continue shopping' %}</a>
         {% endif %}
       </div>
     </div>
-</div>
+  </div>
 {% endblock %}
 
 {% block postloadjs %}
-  {{ block.super }}
+{{ block.super }}
   <script>
-    $('.delete-product').click(function(e) {
+    $('.delete-product').click(function (e) {
       let csrfToken = "{{ csrf_token }}";
       let productId = $(this).attr('id').split('delete_')[1];
       let url = `/cart/delete/${productId}/`;
-      let data = {'csrfmiddlewaretoken': csrfToken};
+      let data = { 'csrfmiddlewaretoken': csrfToken };
 
       $.post(url, data)
-        .done(function() {
+        .done(function () {
           location.reload();
         });
     });

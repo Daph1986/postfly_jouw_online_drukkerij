@@ -1,1 +1,1 @@
-Confirmation for POSTFLY Order AMB21-{{ order.order_number }}
+{% load i18n %} {% trans 'Confirmation for POSTFLY Order' %} AMB21-{{ order.order_number }}

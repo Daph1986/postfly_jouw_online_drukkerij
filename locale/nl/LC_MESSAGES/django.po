@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-26 22:47+0100\n"
+"POT-Creation-Date: 2021-11-27 23:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,286 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cart/templates/cart/cart.html:9
+msgid "Shopping cart"
+msgstr "Winkelwagen"
+
+#: cart/templates/cart/cart.html:19
+#: checkout/templates/checkout/checkout.html:24
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:10
+msgid "Order overview"
+msgstr "Order overzicht"
+
+#: cart/templates/cart/cart.html:33 cart/templates/cart/cart.html:48
+#: checkout/templates/checkout/checkout_success.html:90
+msgid "Printing method"
+msgstr "Bedrukking"
+
+#: cart/templates/cart/cart.html:34 cart/templates/cart/cart.html:49
+#: checkout/templates/checkout/checkout.html:38
+#: checkout/templates/checkout/checkout_success.html:106
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:14
+msgid "Delivery time"
+msgstr "Levertijd"
+
+#: cart/templates/cart/cart.html:34 cart/templates/cart/cart.html:63
+#: checkout/templates/checkout/checkout.html:38
+#: checkout/templates/checkout/checkout_success.html:109
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:14
+#: products/templates/products/products.html:71
+msgid "business days"
+msgstr "werkdagen"
+
+#: cart/templates/cart/cart.html:35 cart/templates/cart/cart.html:50
+msgid "Qty"
+msgstr "Aantal"
+
+#: cart/templates/cart/cart.html:35 cart/templates/cart/cart.html:66
+#: checkout/templates/checkout/checkout.html:36
+#: checkout/templates/checkout/checkout_success.html:101
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:13
+#: products/templates/products/products.html:74
+msgid "pieces"
+msgstr "stuks"
+
+#: cart/templates/cart/cart.html:36 cart/templates/cart/cart.html:51
+#: checkout/templates/checkout/checkout.html:30
+#: checkout/templates/checkout/checkout_success.html:201
+msgid "Price"
+msgstr "Prijs"
+
+#: cart/templates/cart/cart.html:80
+msgid "Price overview"
+msgstr "Prijs overzicht"
+
+#: cart/templates/cart/cart.html:81
+msgid "Cart total"
+msgstr "Winkelwagen totaal"
+
+#: cart/templates/cart/cart.html:82
+#: checkout/templates/checkout/checkout.html:50
+#: checkout/templates/checkout/checkout_success.html:213
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:18
+msgid "VAT"
+msgstr "btw"
+
+#: cart/templates/cart/cart.html:84
+#: checkout/templates/checkout/checkout.html:52
+#: checkout/templates/checkout/checkout_success.html:221
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:19
+msgid "Grand total"
+msgstr "Totaal"
+
+#: cart/templates/cart/cart.html:89
+msgid "Keep shopping"
+msgstr "Verder winkelen"
+
+#: cart/templates/cart/cart.html:90
+msgid "Secure checkout"
+msgstr "Veilig afrekenen"
+
+#: cart/templates/cart/cart.html:97
+msgid "Your cart is empty"
+msgstr "Je winkelwagen is leeg"
+
+#: cart/templates/cart/cart.html:98
+msgid "Continue shopping"
+msgstr "Verder winkelen"
+
+#: checkout/templates/checkout/checkout.html:49
+#: checkout/templates/checkout/checkout_success.html:205
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:17
+msgid "Order total"
+msgstr "Order totaal"
+
+#: checkout/templates/checkout/checkout.html:65
+msgid "Please fill out the form below to complete your order"
+msgstr "Vul alsjeblieft dit formulier in om je order af te ronden"
+
+#: checkout/templates/checkout/checkout.html:69
+msgid "Personal details"
+msgstr "Persoonlijke gegevens"
+
+#: checkout/templates/checkout/checkout.html:75
+#: checkout/templates/checkout/checkout_success.html:125
+msgid "Delivery details"
+msgstr "Bezorggegevens"
+
+#: checkout/templates/checkout/checkout.html:85
+msgid "Save this information to my profile"
+msgstr "Bewaar deze informatie in mijn profiel"
+
+#: checkout/templates/checkout/checkout.html:88
+msgid "If you want to have this information saved to your profile"
+msgstr "Als je deze informatie bewaard wilt hebben in jouw profiel"
+
+#: checkout/templates/checkout/checkout.html:90
+#: env/lib/python3.9/site-packages/django/utils/text.py:240
+#: home/templates/home/faq.html:70 templates/allauth/account/login.html:29
+msgid "or"
+msgstr "of"
+
+#: checkout/templates/checkout/checkout.html:92
+#: templates/includes/navbar.html:219
+msgid "Register"
+msgstr "Registreer"
+
+#: checkout/templates/checkout/checkout.html:100
+msgid "Upload your artwork, if you have multiple"
+msgstr "Upload jouw artwork, als je meerdere"
+
+#: checkout/templates/checkout/checkout.html:101
+msgid "files please use a zip-file"
+msgstr "bestanden hebt, gebruik dan alsjeblieft een zip-file"
+
+#: checkout/templates/checkout/checkout.html:107
+#: home/templates/home/faq.html:106
+msgid "Payment"
+msgstr "Betaling"
+
+#: checkout/templates/checkout/checkout.html:118
+msgid "Adjust order"
+msgstr "Pas order aan"
+
+#: checkout/templates/checkout/checkout.html:121
+msgid "Complete order"
+msgstr "Rond order af"
+
+#: checkout/templates/checkout/checkout.html:127
+msgid "Your card will be charged"
+msgstr "Jouw kaart wordt belast"
+
+#: checkout/templates/checkout/checkout_success.html:22
+msgid "Thank you for your order!"
+msgstr "Bedankt voor jouw order!"
+
+#: checkout/templates/checkout/checkout_success.html:36
+msgid "ordered on"
+msgstr "besteld op"
+
+#: checkout/templates/checkout/checkout_success.html:40
+msgid "Order confirmation"
+msgstr "Order bevestiging"
+
+#: checkout/templates/checkout/checkout_success.html:46
+msgid "Order info"
+msgstr "Order informatie"
+
+#: checkout/templates/checkout/checkout_success.html:50
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:7
+#: profiles/templates/profiles/dashboard.html:35
+msgid "Order number"
+msgstr "Ordernummer"
+
+#: checkout/templates/checkout/checkout_success.html:58
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:8
+msgid "Order date"
+msgstr "Order datum"
+
+#: checkout/templates/checkout/checkout_success.html:74
+msgid "paper type"
+msgstr "papiersoort"
+
+#: checkout/templates/checkout/checkout_success.html:82
+msgid "Size"
+msgstr "Formaat"
+
+#: checkout/templates/checkout/checkout_success.html:98
+msgid "Quantity"
+msgstr "Aantal"
+
+#: checkout/templates/checkout/checkout_success.html:114
+msgid "price"
+msgstr "prijs"
+
+#: checkout/templates/checkout/checkout_success.html:129
+msgid "Full name"
+msgstr "Volledige naam"
+
+#: checkout/templates/checkout/checkout_success.html:138
+msgid "Company name"
+msgstr "Bedrijfsnaam"
+
+#: checkout/templates/checkout/checkout_success.html:147
+msgid "Street address + house number"
+msgstr "Straatnaam + huisnummer"
+
+#: checkout/templates/checkout/checkout_success.html:156
+msgid "Additional address information"
+msgstr "Extra adres informatie"
+
+#: checkout/templates/checkout/checkout_success.html:166
+msgid "Postal code"
+msgstr "Postcode"
+
+#: checkout/templates/checkout/checkout_success.html:175
+msgid "Town or city"
+msgstr "Plaats"
+
+#: checkout/templates/checkout/checkout_success.html:183
+msgid "Country"
+msgstr "Land"
+
+#: checkout/templates/checkout/checkout_success.html:191
+msgid "Phone number"
+msgstr "Telefoonnummer"
+
+#: checkout/templates/checkout/checkout_success.html:235
+msgid "Back to dashboard"
+msgstr "Dashboard"
+
+#: checkout/templates/checkout/checkout_success.html:239
+#: templates/includes/navbar.html:29
+msgid "Products"
+msgstr "Producten"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:3
+msgid "Hello"
+msgstr "Beste"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:5
+msgid ""
+"Hereby you receive a confirmation of the order you have submitted. Your "
+"order information is below"
+msgstr ""
+"Bijgaand ontvang je een bevestging van je bestelde order. Hieronder vind je "
+"de informatie over jouw order"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:21
+msgid "Your order will be shipped to"
+msgstr "Jouw order wordt verzonden naar"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:23
+msgid "If there is any need to, we will contact you at phone number"
+msgstr "Mocht het nodig zijn dan nemen we contact met je op via telefoonnummer"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:25
+msgid "Please do not hesitate to contact us via email at"
+msgstr ""
+"Mocht je vragen hebbben, aarzel niet om contact met ons op te nemen via de "
+"email naar"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:25
+msgid "or by phone on +31(0)20 365 22 93 if you have any questions"
+msgstr "of telefonisch op +31(0)20 365 22 93"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:27
+msgid "We thank you for this order and will handle it with the utmost care"
+msgstr ""
+"Wij danken je voor deze opdracht en zullen deze met de grootste zorg "
+"behandelen"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_body.txt:29
+#: contact/templates/emails/contact_email.html:32
+#: contact/templates/emails/quotation_email.html:49
+#: contact/templates/emails/sample_kit_email.html:46
+msgid "With kind regards"
+msgstr "Met vriendelijke groet"
+
+#: checkout/templates/checkout/confirmation_emails/confirmation_email_subject.txt:1
+msgid "Confirmation for POSTFLY Order"
+msgstr "Bevestiging voor POSTFLY Order"
 
 #: contact/templates/contact/contact.html:12 templates/includes/navbar.html:209
 msgid "Contact us"
@@ -108,12 +388,6 @@ msgstr "Onderwerp:"
 #: contact/templates/emails/contact_email.html:27
 msgid "Message:"
 msgstr "Bericht"
-
-#: contact/templates/emails/contact_email.html:32
-#: contact/templates/emails/quotation_email.html:49
-#: contact/templates/emails/sample_kit_email.html:46
-msgid "With kind regards"
-msgstr "Met vriendelijke groet"
 
 #: contact/templates/emails/quotation_email.html:24
 msgid "Please make a quotation for"
@@ -1135,11 +1409,6 @@ msgctxt "String to return when truncating text"
 msgid "%(truncated_text)s…"
 msgstr ""
 
-#: env/lib/python3.9/site-packages/django/utils/text.py:240
-#: home/templates/home/faq.html:70 templates/allauth/account/login.html:29
-msgid "or"
-msgstr "of"
-
 #. Translators: This string is used as a separator between list elements
 #: env/lib/python3.9/site-packages/django/utils/text.py:259
 #: env/lib/python3.9/site-packages/django/utils/timesince.py:94
@@ -2088,10 +2357,6 @@ msgstr "Ja dat kan, neem gerust"
 #: home/templates/home/faq.html:97
 msgid "us for more information."
 msgstr "met ons op voor meer informatie."
-
-#: home/templates/home/faq.html:106
-msgid "Payment"
-msgstr "Betaling"
 
 #: home/templates/home/faq.html:113
 msgid "What payment options do you have?"
@@ -3553,14 +3818,6 @@ msgstr "Categorie (Z-A)"
 msgid "Delivery time is"
 msgstr "Levertijd is"
 
-#: products/templates/products/products.html:71
-msgid "business days"
-msgstr "werkdagen"
-
-#: products/templates/products/products.html:74
-msgid "pieces"
-msgstr "stuks"
-
 #: products/templates/products/products.html:75
 msgid "ex VAT"
 msgstr "ex btw"
@@ -3584,10 +3841,6 @@ msgstr "Order geschiedenis"
 #: profiles/templates/profiles/dashboard.html:24
 msgid "Total orders"
 msgstr "Totaal aantal orders"
-
-#: profiles/templates/profiles/dashboard.html:35
-msgid "Order number"
-msgstr "Ordernummer"
 
 #: profiles/templates/profiles/dashboard.html:36
 msgid "Date"
@@ -3628,17 +3881,31 @@ msgstr "Standaard profiel gegevens"
 msgid "Update changes"
 msgstr "Sla wijzigingen op"
 
-#: templates/404.html:6
+#: templates/404.html:7
 msgid "Whoops! A 404 error occurred"
 msgstr "Oeps! Er dient zich een 404 error voor"
 
-#: templates/404.html:7
+#: templates/404.html:8
 msgid "The page you are looking for could not be found!"
 msgstr "De pagina waar je naar zoekt kan niet gevonden worden!"
 
-#: templates/404.html:22
+#: templates/404.html:23
 msgid "Please go back to the homepage of"
 msgstr "Ga terug naar de startpagina van"
+
+#: templates/500.html:7
+#, fuzzy
+#| msgid "Whoops! A 404 error occurred"
+msgid "Uh oh! A 500 internal server error occurred."
+msgstr "Uh oh! Er doet zich een 500 error voor"
+
+#: templates/500.html:8
+msgid "Something went wrong!"
+msgstr "Er is iets verkeerd gegaan!"
+
+#: templates/500.html:23
+msgid "Sorry about that, you can return to the homepage of"
+msgstr "Excuses hiervoor, je kan terugaan naar de startpagina van"
 
 #: templates/allauth/account/account_inactive.html:5
 msgid "Account Inactive"
@@ -3743,6 +4010,10 @@ msgid ""
 "It can be safely ignored if you did not request a password reset. Click the "
 "link below to reset your password."
 msgstr ""
+"Je ontvangt deze e-mail omdat jij of iemand anders een wachtwoord heeft "
+"aangevraagd voor jouw gebruikersaccount. Het kan veilig worden genegeerd als "
+"je geen wachtwoordreset hebt aangevraagd. Klik op de onderstaande link om je "
+"wachtwoord opnieuw in te stellen."
 
 #: templates/allauth/account/email/password_reset_key_message.txt:9
 #, python-format
@@ -3751,6 +4022,32 @@ msgstr ""
 
 #: templates/allauth/account/email/password_reset_key_subject.txt:3
 msgid "Password Reset E-mail"
+msgstr ""
+
+#: templates/allauth/account/email_confirm.html:6
+msgid "Confirm E-mail Address"
+msgstr "Bevestig je e-mailadres"
+
+#: templates/allauth/account/email_confirm.html:10
+msgid "Confirm e-mail address"
+msgstr "Bevestig je e-mailadres"
+
+#: templates/allauth/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: templates/allauth/account/email_confirm.html:20
+msgid "Confirm"
+msgstr ""
+
+#: templates/allauth/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
 msgstr ""
 
 #: templates/allauth/account/login.html:6
@@ -3890,13 +4187,10 @@ msgstr "Terug naar log in!"
 msgid "Reset password!"
 msgstr "Reset wachtwoord!"
 
-#: templates/allauth/account/password_reset.html:29
-msgid "contact"
-msgstr "contact"
-
 #: templates/allauth/account/password_reset.html:30
 msgid "us if you are experiencing problems resetting your password."
-msgstr "met ons op als je problemen ervaart met het resetten van je wachtwoord."
+msgstr ""
+"met ons op als je problemen ervaart met het resetten van je wachtwoord."
 
 #: templates/allauth/account/password_reset_done.html:9
 msgid "Password reset"
@@ -3908,6 +4202,8 @@ msgid ""
 "within a few\n"
 "            minutes."
 msgstr ""
+"We hebben je een e-mail gestuurd. Neem contact met ons op als je deze niet "
+"binnen enkele minuten hebt ontvangen."
 
 #: templates/allauth/account/password_reset_from_key.html:7
 msgid "Bad token"
@@ -3981,12 +4277,12 @@ msgstr ""
 #: templates/allauth/account/verification_sent.html:5
 #: templates/allauth/account/verified_email_required.html:5
 msgid "Verify Your E-mail Address"
-msgstr ""
+msgstr "Verifieer je e-mailadres"
 
 #: templates/allauth/account/verification_sent.html:8
 #: templates/allauth/account/verified_email_required.html:8
 msgid "Verify your e-mail address"
-msgstr ""
+msgstr "Verifieer je e-mailadres"
 
 #: templates/allauth/account/verification_sent.html:11
 msgid ""
@@ -3995,6 +4291,9 @@ msgid ""
 "            signup process. Please contact us if you do not receive it "
 "within a few minutes."
 msgstr ""
+"We hebben je een e-mail gestuurd ter verificatie. Volg de verstrekte link om "
+"het aanmeldingsproces te voltooien. Neem contact met ons op als je deze niet "
+"binnen enkele minuten hebt ontvangen."
 
 #: templates/allauth/account/verified_email_required.html:12
 msgid ""
@@ -4084,10 +4383,6 @@ msgid ""
 "%(site_name)s. As a final step, please complete the following form:"
 msgstr ""
 
-#: templates/includes/navbar.html:29
-msgid "Products"
-msgstr "Producten"
-
 #: templates/includes/navbar.html:124
 msgid "Business cards 400 gr Mat"
 msgstr "Visitekaartjes 400 gr Mat"
@@ -4116,16 +4411,9 @@ msgstr "Opmaak folie"
 msgid "Templates"
 msgstr ""
 
-#: templates/includes/navbar.html:219
-msgid "Register"
-msgstr "Registreer"
-
 #: templates/includes/navbar.html:234
 msgid "Profile"
 msgstr "Profiel"
-
-#~ msgid "Other information"
-#~ msgstr "Overige info"
 
 #~ msgid ""
 #~ "as a guideline to start with your design, but make sure that our template "

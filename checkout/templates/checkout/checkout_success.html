@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 
 {% block extra_css %}
   <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -14,11 +15,11 @@
         </div>
       </div>
     </div>
-    {% else %}
+  {% else %}
     <div class="container">
       <div class="row">
         <div class="col text-center">
-          <h2 class="mt-5">Thank you for your order!</h2>
+          <h2 class="mt-5">{% trans 'Thank you for your order!' %}</h2>
         </div>
       </div>
     </div>
@@ -32,21 +33,21 @@
         <div class="order-confirmation-wrapper p-3 border">
           {% if from_profile %}
             <div class="order-confirmation-heading-wrapper">
-              <h3 class="text-center h3-mobile">Order AMB21-{{ order.order_number }} ordered on {{ order.date }}</h3>
+              <h3 class="text-center h3-mobile">Order AMB21-{{ order.order_number }} {% trans 'ordered on' %} {{ order.date }}</h3>
             </div>
           {% else %}
             <div class="order-confirmation-heading-wrapper">
-              <h3 class="text-center">Order confirmation</h3>
+              <h3 class="text-center">{% trans 'Order confirmation' %}</h3>
             </div>
           {% endif %}
           {% if not from_profile %}
-          <!-- Order info -->
+            <!-- Order info -->
             <div class="row">
-              <h6 class="fw-bold mt-3">Order info</h6>
+              <h6 class="fw-bold mt-3">{% trans 'Order info' %}</h6>
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Order number:</p>
+                <p class="mb-0">{% trans 'Order number' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0">AMB21-{{ order.order_number }}</p>
@@ -54,7 +55,7 @@
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Order date:</p>
+                <p class="mb-0">{% trans 'Order date' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0">{{ order.date }}</p>
@@ -67,10 +68,10 @@
           <div class="row">
             <h6 class="fw-bold mt-5">Order details</h6>
           </div>
-            {% for item in order.lineitems.all %}
+          {% for item in order.lineitems.all %}
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0 text-postfly fw-bold">Product & paper type:</p>
+                <p class="mb-0 text-postfly fw-bold">Product & {% trans 'paper type' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0 text-postfly fw-bold">{{ item.product.name }}</p>
@@ -78,7 +79,7 @@
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Size:</p>
+                <p class="mb-0">{% trans 'Size' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0">{{ item.product.size }}</p>
@@ -86,7 +87,7 @@
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Printing method:</p>
+                <p class="mb-0">{% trans 'Printing method' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0">{{ item.product.method }}</p>
@@ -94,23 +95,23 @@
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Quantity:</p>
+                <p class="mb-0">{% trans 'Quantity' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
-                <p class="mb-0">{{ item.product.quantity }} pieces</p>
+                <p class="mb-0">{{ item.product.quantity }} {% trans 'pieces' %}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Delivery time:</p>
+                <p class="mb-0">{% trans 'Delivery time' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
-                <p class="mb-0">{{ item.product.delivery_time }} business days</p>
+                <p class="mb-0">{{ item.product.delivery_time }} {% trans 'business days' %}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Product price:</p>
+                <p class="mb-0">Product {% trans 'price' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-3">€{{ item.product.price }}</p>
@@ -121,11 +122,11 @@
 
           <!-- Delivery info -->
           <div class="row">
-            <h6 class="fw-bold mt-4">Delivery details</h6>
+            <h6 class="fw-bold mt-4">{% trans 'Delivery details' %}</h6>
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0">Full name:</p>
+              <p class="mb-0">{% trans 'Full name' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-0">{{ order.first_name }} {{ order.last_name }}</p>
@@ -134,7 +135,7 @@
           {% if order.company_name %}
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Company name:</p>
+                <p class="mb-0">{% trans 'Company name' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0">{{ order.company_name }}</p>
@@ -143,7 +144,7 @@
           {% endif %}
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0">Street address + house number:</p>
+              <p class="mb-0">{% trans 'Street address + house number' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-0">{{ order.street_address1 }}</p>
@@ -152,7 +153,7 @@
           {% if order.street_address2 %}
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Additional address information:</p>
+                <p class="mb-0">{% trans 'Additional address information' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0">{{ order.street_address2 }}</p>
@@ -162,7 +163,7 @@
           {% if order.postcode %}
             <div class="row">
               <div class="col-12 col-md-4">
-                <p class="mb-0">Postal code:</p>
+                <p class="mb-0">{% trans 'Postal code' %}:</p>
               </div>
               <div class="col-12 col-md-8 text-md-end">
                 <p class="mb-0">{{ order.postcode }}</p>
@@ -171,7 +172,7 @@
           {% endif %}
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0">Town or city:</p>
+              <p class="mb-0">{% trans 'Town or city' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-0">{{ order.town_or_city }}</p>
@@ -179,7 +180,7 @@
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0">Country:</p>
+              <p class="mb-0">{% trans 'Country' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-0">{{ order.country }}</p>
@@ -187,7 +188,7 @@
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0">Phone number:</p>
+              <p class="mb-0">{% trans 'Phone number' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-0">{{ order.phone_number }}</p>
@@ -197,11 +198,11 @@
 
           <!-- Price details -->
           <div class="row">
-            <h6 class="fw-bold mt-5">Price details</h6>
+            <h6 class="fw-bold mt-5">{% trans 'Price' %} details</h6>
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0">Order total:</p>
+              <p class="mb-0">{% trans 'Order total' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-0">€{{ order.order_total }}</p>
@@ -209,7 +210,7 @@
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0">VAT:</p>
+              <p class="mb-0">{% trans 'VAT' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-0">€{{ order.tax }}</p>
@@ -217,7 +218,7 @@
           </div>
           <div class="row">
             <div class="col-12 col-md-4">
-              <p class="mb-0 mb-md-3 fw-bold">Grand total:</p>
+              <p class="mb-0 mb-md-3 fw-bold">{% trans 'Grand total' %}:</p>
             </div>
             <div class="col-12 col-md-8 text-md-end">
               <p class="mb-3 fw-bold">€{{ order.grand_total }}</p>
@@ -231,11 +232,11 @@
       <div class="col-12 col-md-10 mt-5 mb-10">
         {% if from_profile %}
           <a href="{% url 'dashboard' %}" class="btn postfly-general-btn hvr-grow me-3 mb-3">
-            <span class="font-weight-bold">Back to dashboard</span>
+            <span class="font-weight-bold">{% trans 'Back to dashboard' %}</span>
           </a>
         {% else %}
           <a href="{% url 'products' %}" class="btn postfly-general-btn hvr-grow me-3 mb-3">
-            <span class="font-weight-bold">Products</span>
+            <span class="font-weight-bold">{% trans 'Products' %}</span>
           </a>
         {% endif %}
       </div>
