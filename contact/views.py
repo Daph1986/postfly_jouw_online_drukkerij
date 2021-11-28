@@ -9,6 +9,7 @@ from profiles.models import UserProfile
 
 from .forms import ContactForm, SampleKitForm, QuotationForm
 
+
 def contact(request):
     """View to return our contact page with the contact form"""
     if request.method == 'GET':
@@ -17,7 +18,7 @@ def contact(request):
                 profile = UserProfile.objects.get(user=request.user)
                 contact_form = ContactForm(initial={
                     'email': profile.user.email,
-                    }
+                }
                 )
             except UserProfile.DoesNotExist:
                 contact_form = ContactForm()
@@ -33,7 +34,12 @@ def contact(request):
             message = contact_form.cleaned_data['message']
             html_msg = render_to_string(
                 'emails/contact_email.html',
-                {'first_name': first_name, 'last_name': last_name, 'subject': subject, 'message': message})
+                {
+                    'first_name': first_name,
+                    'last_name': last_name,
+                    'subject': subject,
+                    'message': message
+                })
             try:
                 send_mail(subject, message, settings.EMAIL_HOST_USER, [
                     email, settings.EMAIL_HOST_USER],
@@ -47,7 +53,7 @@ def contact(request):
                                             message has been send to your \
                                             email. We will be in touch \
                                             sortly.'))
-    
+
     template = 'contact/contact.html'
     context = {
         'contact_form': contact_form,
@@ -71,7 +77,7 @@ def sample_kit(request):
                     'town_or_city': profile.default_town_or_city,
                     'country': profile.default_country,
                     'phone_number': profile.default_phone_number,
-                    }
+                }
                 )
             except UserProfile.DoesNotExist:
                 sample_kit_form = SampleKitForm()
@@ -92,15 +98,17 @@ def sample_kit(request):
             phone_number = sample_kit_form.cleaned_data['phone_number']
             html_msg = render_to_string(
                 'emails/sample_kit_email.html',
-                {'first_name': first_name, \
-                 'last_name': last_name, \
-                 'company_name': company_name, \
-                 'street_address1': street_address1, \
-                 'street_address2': street_address2, \
-                 'postcode': postcode, \
-                 'town_or_city': town_or_city, \
-                 'country': country, \
-                 'phone_number': phone_number})
+                {
+                    'first_name': first_name,
+                    'last_name': last_name,
+                    'company_name': company_name,
+                    'street_address1': street_address1,
+                    'street_address2': street_address2,
+                    'postcode': postcode,
+                    'town_or_city': town_or_city,
+                    'country': country,
+                    'phone_number': phone_number
+                })
             try:
                 send_mail(first_name, last_name, settings.EMAIL_HOST_USER, [
                     email, settings.EMAIL_HOST_USER],
@@ -114,13 +122,14 @@ def sample_kit(request):
                                             has been send to your email. \
                                             Your free sample kit will be \
                                             shipped as soon as possible.'))
-    
+
     template = 'contact/sample.html'
     context = {
         'sample_kit_form': sample_kit_form,
     }
 
     return render(request, template, context)
+
 
 def quotation(request):
     """View to return our quotation page with the form"""
@@ -137,7 +146,7 @@ def quotation(request):
                     'town_or_city': profile.default_town_or_city,
                     'country': profile.default_country,
                     'phone_number': profile.default_phone_number,
-                    }
+                }
                 )
             except UserProfile.DoesNotExist:
                 quotation_form = QuotationForm()
@@ -159,13 +168,17 @@ def quotation(request):
             message = quotation_form.cleaned_data['message']
             html_msg = render_to_string(
                 'emails/quotation_email.html',
-                {'first_name': first_name, 'last_name': last_name, \
-                 'message': message, \
-                 'company_name': company_name, \
-                 'street_address1': street_address1, \
-                 'street_address2': street_address2,'postcode': postcode, \
-                 'town_or_city': town_or_city, 'country': country, \
-                 'phone_number': phone_number})
+                {
+                    'first_name': first_name,
+                    'last_name': last_name,
+                    'message': message,
+                    'company_name': company_name,
+                    'street_address1': street_address1,
+                    'street_address2': street_address2,
+                    'postcode': postcode,
+                    'town_or_city': town_or_city,
+                    'country': country,
+                    'phone_number': phone_number})
             try:
                 send_mail(first_name, last_name, settings.EMAIL_HOST_USER, [
                     email, settings.EMAIL_HOST_USER],
@@ -179,7 +192,7 @@ def quotation(request):
                                             has been send to your email. \
                                             We will send you a quotation \
                                             as soon as possible.'))
-    
+
     template = 'contact/quotation.html'
     context = {
         'quotation_form': quotation_form,

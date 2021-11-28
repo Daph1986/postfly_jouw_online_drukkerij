@@ -172,8 +172,8 @@ def checkout_success(request, order_number):
 
     send_confirmation_email(order)
     messages.success(request, f'Your order has been processed successfully. \
-            Your order number is AMB21-{order_number}. An order confirmation has \
-            been sent to: {order.email}.')
+            Your order number is AMB21-{order_number}. An order confirmation \
+                has been sent to: {order.email}.')
 
     if 'cart' in request.session:
         del request.session['cart']
