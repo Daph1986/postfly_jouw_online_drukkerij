@@ -239,7 +239,7 @@ Most content has been written by me, the technical stories regarding the deliver
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
 5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for their logo,  the images of some foil samples and the foil fan, the head office and the presses, thanks for my colleague Bart Lauwaert for providing the original photos to me and for the how to cold foil pdf.
 6. [WPJournalist](https://wpjournalist.nl/avatar-maken/) to create the avatars of the team.
-7. [Adobe Stock](https://stock.adobe.com/nl) for the images on the speicifications, file type, color, resolution (dpi image), templates, FAQ, concept, contact, quotation, register, login and forgot password page. These are licensed images downloaded with a paid Adobe Stock account.
+7. [Adobe Stock](https://stock.adobe.com/nl) for the images on the speicifications, file type, color, resolution (dpi image), templates, FAQ, concept, contact, quotation, register, login, forgot password page and the illustrator file for the mockup image. These are licensed images downloaded with a paid Adobe Stock account.
 8. [Cleanpng](https://www.cleanpng.com/png-ink-cartridge-printer-toner-printing-color-drops-2337753/download-png.html) for the cmyk image of the 404 and 500 error page, text added with Adobe Illustrator.
 9. The other images on the site and the screenshots of indesign etc. are my own photos and screenshots.
 
@@ -249,7 +249,7 @@ Most content has been written by me, the technical stories regarding the deliver
 2. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
 3. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) to get a new secret key for Django
 4. [Django livereload server](https://github.com/tjwalch/django-livereload-server) to learn how to not have to refresh the page every time.
-5. [Travis] (https://www.travis-ci.com/) voor testing the settings.py and the forms for the contact, sample kit and quotation request pages.
+5. [Travis](https://www.travis-ci.com/) voor testing the settings.py and the forms for the contact, sample kit and quotation request pages.
 
 
 ### Acknowledgements
@@ -258,5 +258,5 @@ Most content has been written by me, the technical stories regarding the deliver
 - Special thanks to CI former students Aukje van der Wal and Django Heimgartner whose projects Dark Luna and Silkscreenservice learnt me a lot.
 - A huge thanks to the incredible CI tutor support for helping me a out a lot of times during this project.
 - Special thanks to CI fellow student Gwendolyn Jo for lifting my spirits during multiple mental breakdowns.
-<!-- - Special thanks to my colleagues, friends and family for their support, tips and for testing my project. -->
+- Special thanks to my colleagues, friends and family for their support, tips and for testing my project.
 <div align="right"><a href="#top">🔝</a></div>
