@@ -202,8 +202,8 @@ The following features can be added:
 
 ### Testing file
 
-<!-- The tests have been done on multiple devices and browsers. In the end everything works as intended. Because this topic contained more content than expected, a separate page was created.
-For more details about testing and bugs please view this [file](testing/README.md). -->
+The tests have been done on multiple devices and browsers. In the end everything works as intended. Because this topic contained more content than expected, a separate page was created.
+For more details about testing and bugs please view this [file](readme/testing/README.md).
 <div align="right"><a href="#top">🔝</a></div>
 
 :computer: Deployment
