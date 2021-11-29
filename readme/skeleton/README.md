@@ -318,6 +318,7 @@ During development the site's layout was restructured a little bit, because this
 2. The product details page was skipped to make the ordering proces more customer friendly. The explanation about the paper types was moved to the FAQ page and instead of having to make first a paper choice in the menu and then a size choice on an extra page, the choice was made to do this in the menu right away.
 3. The shopping cart was restuctured a bit to make it more logical and easy to read for the customer.
 4. The dashboard was altered a bit, the huge red block was not found visually appealing and because of the time the status of the order was moved to be an update for the future. Same goes for the admin version of the dashboard.
-<!-- 5. The 2 language option has been moved to a future update due to lack of time. -->
+5. The switch language option has been moved to a future update due to lack of time, due to handing in the project within the deadline and personal circumstances.
+6. The red color #E72F4C  was changed to #E02A51 for better contrast.
 
 <div align="right"><a href="#top">🔝</a></div>
