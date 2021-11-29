@@ -20,8 +20,8 @@ The site's goal is to have a more efficient system for employees and a easy to u
 
 By clicking this [link](https://postfly-jouw-online-drukkerij.herokuapp.com/) a live demo version will be visible.
 
-<!-- <img src="static/readme_images/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
-<img src="static/readme_images/mockup_2.png" alt="Mockup 2" width="65%" height="65%"> -->
+<img src="readme/general/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
+<img src="readme/general/mockup_2.png" alt="Mockup 2" width="65%" height="65%">
 <div align="right"><a href="#top">🔝</a></div>
 
 :open_file_folder: Table of Contents
@@ -148,18 +148,17 @@ The site contains the following features:
 - An order sytem, to order the products and upload the artwork for the products.
 - A dashboard, with the order history.
 - A profile page to adjust the user's details. 
-<!-- - An option to choose the language, Dutch or English. Default will be Dutch. -->
 
 ### Features for the future 
 
 The following features can be added: 
 
+- An option to choose the language, Dutch or English. Default will be Dutch. The start has already been made by making most of the translations, but due to able to submit this project in time, this feature has been moved to a future update.
 - Integrate the previously created project POSTFLY Business card creator into this site, so that customers can create their design on the site instead of uploading their separately made artwork.
 - A chat function for live chat with an employee.
 - An artwork upload system where a customer can check their artwork themself.
 - An option to have multiple billing and delivery addresses for one user.
 - An option to see the status of the order on the dashboard.
-<!-- - An option to choose the language, Dutch or English. Default will be Dutch. -->
 <div align="right"><a href="#top">🔝</a></div>
 
 :gear: Technologies
@@ -226,7 +225,9 @@ Most content has been written by me, the technical stories regarding the deliver
 2. [Hover.css](https://ianlunn.github.io/Hover/) to learn how to let the buttons on the home page grow on hover.
 3. [W3 Schools](https://www.w3schools.com/howto/howto_css_parallax.asp) to learn how to create the parallax effect.
 4. [W3 Schools](https://www.w3schools.com/howto/howto_css_loader.asp) to learn how to create the loader on the payment process page.
-5. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
+5. [Tutorial](https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html) to learn how to upload files with Django.
+6. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
+7. [CI Django Heimgartner](https://github.com/D1ang/Digipress) and [Lokalise](https://lokalise.com/blog/django-i18n-beginners-guide/) to understand how to set up translation files.
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Media
@@ -248,9 +249,8 @@ Most content has been written by me, the technical stories regarding the deliver
 2. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
 3. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) to get a new secret key for Django
 4. [Django livereload server](https://github.com/tjwalch/django-livereload-server) to learn how to not have to refresh the page every time.
+5. [Travis] (https://www.travis-ci.com/) voor testing the settings.py and the forms for the contact, sample kit and quotation request pages.
 
-<!-- 3. [cdnjs](https://cdnjs.com/) to get the fontawesome cdn from.
-6. [WebAIM](https://webaim.org/resources/contrastchecker/) used for checking contrasts on the site. -->
 
 ### Acknowledgements
 - My mentor from Code Institute, thank you Narender for your time and guidance.
