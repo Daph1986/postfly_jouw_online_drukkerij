@@ -18,7 +18,7 @@ body, html {
 }
 
 .bg-category {
-  background-color: #E72F4C;
+  background-color: #E02A51;
 }
 
 .custom-sort-selector {
@@ -27,7 +27,7 @@ body, html {
 }
 
 .text-postfly {
-  color: #E72F4C;
+  color: #E02A51;
 }
 
 .w-200 {
@@ -138,14 +138,14 @@ body, html {
 }
 
 .postfly-general-btn {
-  background-color: #E72F4C;
+  background-color: #E02A51;
   color: #FFF;
   width: 200px;
   border-radius: 25px;
 }
 
 .postfly-small-btn {
-  background-color: #E72F4C;
+  background-color: #E02A51;
   color: #FFF;
   width: 75px;
   border-radius: 25px;
@@ -177,12 +177,12 @@ body, html {
   bottom: 25px;
   right: 50px;
   border-radius: 100%;
-  background-color: #E72F4C;
+  background-color: #E02A51;
   cursor: pointer;
 }
 
 .gtt-btn:hover {
-  background-color: #af2439;
+  background-color: #AF2439;
 }
 
 /* ---------------------------- Home ----------------------------- */
@@ -414,7 +414,7 @@ hr:not([size]) {
 }
 
 .form-control:focus {
-  border-color: #E72F4C;
+  border-color: #E02A51;
   box-shadow: 0 0 0 0.25rem #E72F4C36;
 }
 

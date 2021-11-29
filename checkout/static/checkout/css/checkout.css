@@ -32,7 +32,7 @@
 }
 
 .form-control:focus {
-  border-color: #E72F4C;
+  border-color: #E02A51;
   box-shadow: 0 0 0 0.25rem #E72F4C36;
 }
 
@@ -65,7 +65,7 @@ hr.divider {
   border-radius: 25px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  background-color: #E72F4C;
+  background-color: #E02A51;
   color: #FFF;
 }
 
