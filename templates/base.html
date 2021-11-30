@@ -15,7 +15,23 @@
     {% endblock %}
 
     {% block extra_meta %}
-      <!-- Favicon -->
+			<!-- Facebook, LinkedIn, Google -->
+			<meta property="og:type" content="article" />
+      <meta property="og:title" content="POSTFLY Jouw online drukkerij" />
+      <meta property="og:description" content="POSTFLY, the online place to be for printing your flyers, posters, business cards and much more!" />
+      <meta property="og:image" name="image" content="{{ MEDIA_URL }}logo.png" />
+			<meta property="og:image:alt" content="POSTFLY logo">
+      <meta property="og:url" content="https://postfly-jouw-online-drukkerij.herokuapp.com/" />
+      <meta property="og:site_name" content="POSTFLY Jouw online drukkerij" />
+			<!-- Twitter -->
+			<meta name="twitter:card" content="summary_large_image">
+			<meta name="twitter:site" content="@Daphn1986">
+			<meta name="twitter:creator" content="@Daphn1986">
+			<meta property="twitter:title" content="POSTFLY Jouw online drukkerij" />
+			<meta property="twitter:description" content="POSTFLY, the online place to be for printing your flyers, posters, business cards and much more!" />
+			<meta name="twitter:image" content="https://postfly-jouw-online-drukkerij.s3.amazonaws.com/media/logo.png">
+			<meta name="twitter:image:alt" content="POSTFLY logo">
+			<!-- Favicon -->
 	    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png" sizes="32x32">
     {% endblock %}
 
