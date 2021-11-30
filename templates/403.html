@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block page_header %}
+  <div>
+    <h2 class="my-5 text-center">{% trans 'Forbidden! A 403 error occurred' %}.</h2>
+    <h5 class="my-2 mx-2 text-center">{% trans 'Unfortunately you do not have access to this page!'%}</h5>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mt-5">
+        <img src="{% static 'img/errors/403.png' %}" alt="403" class="mx-auto d-block w-400">
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-12 mb-10">
+        <div class="py-2">
+          <p>
+            {% trans 'Please go back to the homepage of'%}
+            <a href="{% url 'home' %}" class="btn btn-lg postfly-general-btn text-uppercase hvr-grow mt-2 mt-md-0 ms-2">
+              POSTFLY
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

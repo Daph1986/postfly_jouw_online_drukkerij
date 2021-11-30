@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-27 23:45+0100\n"
+"POT-Creation-Date: 2021-11-30 22:01+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,7 +138,7 @@ msgid "or"
 msgstr "of"
 
 #: checkout/templates/checkout/checkout.html:92
-#: templates/includes/navbar.html:219
+#: templates/includes/navbar.html:224
 msgid "Register"
 msgstr "Registreer"
 
@@ -3881,17 +3881,25 @@ msgstr "Standaard profiel gegevens"
 msgid "Update changes"
 msgstr "Sla wijzigingen op"
 
+#: templates/403.html:7
+msgid "Forbidden! A 403 error occurred"
+msgstr "Verboden! Er doet zich een 403 error voor"
+
+#: templates/403.html:8
+msgid "Unfortunately you do not have access to this page!"
+msgstr "Helaas heb je geen toegang tot deze pagina!"
+
+#: templates/403.html:23 templates/404.html:23
+msgid "Please go back to the homepage of"
+msgstr "Ga terug naar de startpagina van"
+
 #: templates/404.html:7
 msgid "Whoops! A 404 error occurred"
-msgstr "Oeps! Er dient zich een 404 error voor"
+msgstr "Oeps! Er doet zich een 404 error voor"
 
 #: templates/404.html:8
 msgid "The page you are looking for could not be found!"
 msgstr "De pagina waar je naar zoekt kan niet gevonden worden!"
-
-#: templates/404.html:23
-msgid "Please go back to the homepage of"
-msgstr "Ga terug naar de startpagina van"
 
 #: templates/500.html:7
 #, fuzzy
@@ -4411,7 +4419,7 @@ msgstr "Opmaak folie"
 msgid "Templates"
 msgstr ""
 
-#: templates/includes/navbar.html:234
+#: templates/includes/navbar.html:239
 msgid "Profile"
 msgstr "Profiel"
 
