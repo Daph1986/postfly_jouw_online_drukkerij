@@ -235,7 +235,7 @@ Most content has been written by me, the technical stories regarding the deliver
 #### Images
 1. [POSTFLY](http://www.postfly.nl/) the POSTFLY logo provided by my colleague Filip Matthys, for the joboptions and base of the templates, and for the images on the deep black and resolution (sunflower image) page.
 2. [Flaticon](https://www.flaticon.com/free-icon/paper-plane_164627?term=paper%20plane&page=3&position=52&page=3&position=52&related_id=164627&origin=search) to get and adjust the paper plane of the logo.
-3. [favicon.io](https://favicon.io/favicon-converter/) was used to get the favicon of the logo.
+3. [favicon.io](https://favicon.io/favicon-converter/) was used to get the favicon of the logo and the Dutch flag.
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
 5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for their logo,  the images of some foil samples and the foil fan, the head office and the presses, thanks for my colleague Bart Lauwaert for providing the original photos to me and for the how to cold foil pdf.
 6. [WPJournalist](https://wpjournalist.nl/avatar-maken/) to create the avatars of the team.
