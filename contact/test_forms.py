@@ -86,7 +86,6 @@ class TestQuotationForm(TestCase):
             'last_name': '',
             'email': '',
             'street_address1': '',
-            'postcode': '',
             'town_or_city': '',
             'country': '',
             'message': ''
@@ -96,7 +95,6 @@ class TestQuotationForm(TestCase):
         self.assertIn('last_name', form.errors.keys())
         self.assertIn('email', form.errors.keys())
         self.assertIn('street_address1', form.errors.keys())
-        self.assertIn('postcode', form.errors.keys())
         self.assertIn('town_or_city', form.errors.keys())
         self.assertIn('country', form.errors.keys())
         self.assertIn('message', form.errors.keys())
@@ -107,8 +105,6 @@ class TestQuotationForm(TestCase):
         self.assertEqual(form.errors['email']
                          [0], 'This field is required.')
         self.assertEqual(form.errors['street_address1']
-                         [0], 'This field is required.')
-        self.assertEqual(form.errors['postcode']
                          [0], 'This field is required.')
         self.assertEqual(form.errors['town_or_city']
                          [0], 'This field is required.')

@@ -84,7 +84,7 @@ class QuotationForm(forms.Form):
     company_name = forms.CharField(required=False)
     street_address1 = forms.CharField(required=True)
     street_address2 = forms.CharField(required=False)
-    postcode = forms.CharField(required=True)
+    postcode = forms.CharField(required=False)
     town_or_city = forms.CharField(required=True)
     country = CountryField(blank_label='Select country *').formfield()
     phone_number = forms.CharField(required=False)
