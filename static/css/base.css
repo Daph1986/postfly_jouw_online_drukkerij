@@ -517,6 +517,15 @@ footer a {
   .sample-parallax {
     height: 40%;
   }
+  .account-parallax,
+  .sample-parallax {
+    height: 40vh;
+    background-attachment: scroll;
+  }
+  .quotation-parallax {
+    height: 45vh;
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 767.98px) {
