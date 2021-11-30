@@ -213,6 +213,11 @@
           </li>
         </ul>
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-5 me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <button type="button" class="btn-sm border-0">
+            <img src="{% static 'img/dutch_flag.png' %}" alt="Dutch flag" class="flag" data-bs-toggle="modal" data-bs-target="#translationModal">
+          </button>
+          </li>
           {% if not request.user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'account_signup' %}">
@@ -274,3 +279,20 @@
       </div>
     </div>
 </nav>
+
+<!-- Modal for language switch -->
+<div class="modal fade" id="translationModal" tabindex="-1" aria-labelledby="translationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="translationModalLabel">Set language to Dutch</h5>
+      </div>
+      <div class="modal-body">
+        So sorry, this feature is still a work in progress! 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
