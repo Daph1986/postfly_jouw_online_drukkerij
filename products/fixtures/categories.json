@@ -1,1 +1,66 @@
-[{"model": "products.category", "pk": 1, "fields": {"name": "flyers_300_gr_mat", "friendly_name": "Flyers 300 gr Mat"}}, {"model": "products.category", "pk": 2, "fields": {"name": "flyers_300_gr_eco", "friendly_name": "Flyers 300 gr ECO"}}, {"model": "products.category", "pk": 3, "fields": {"name": "flyers_170_gr_eco", "friendly_name": "Flyers 170 gr ECO"}}, {"model": "products.category", "pk": 4, "fields": {"name": "flyers_135_gr_gloss", "friendly_name": "Flyers 135 gr Gloss"}}, {"model": "products.category", "pk": 5, "fields": {"name": "posters_135_gr_gloss", "friendly_name": "Posters 135 gr Gloss"}}, {"model": "products.category", "pk": 6, "fields": {"name": "posters_115_gr_blueback", "friendly_name": "Posters 115 gr Blueback"}}, {"model": "products.category", "pk": 7, "fields": {"name": "business_cards_400_gr_mat", "friendly_name": "Business cards 400 gr Mat"}}, {"model": "products.category", "pk": 8, "fields": {"name": "business_cards_cold_foil", "friendly_name": "Business cards Cold Foil"}}]
+[
+  {
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+      "name": "flyers_300_gr_mat",
+      "friendly_name": "Flyers 300 gr Mat"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+      "name": "flyers_300_gr_eco",
+      "friendly_name": "Flyers 300 gr ECO"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+      "name": "flyers_170_gr_eco",
+      "friendly_name": "Flyers 170 gr ECO"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+      "name": "flyers_135_gr_gloss",
+      "friendly_name": "Flyers 135 gr Gloss"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 5,
+    "fields": {
+      "name": "posters_135_gr_gloss",
+      "friendly_name": "Posters 135 gr Gloss"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 6,
+    "fields": {
+      "name": "posters_115_gr_blueback",
+      "friendly_name": "Posters 115 gr Blueback"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 7,
+    "fields": {
+      "name": "business_cards_400_gr_mat",
+      "friendly_name": "Business cards 400 gr Mat"
+    }
+  },
+  {
+    "model": "products.category",
+    "pk": 8,
+    "fields": {
+      "name": "business_cards_cold_foil",
+      "friendly_name": "Business cards Cold Foil"
+    }
+  }
+]

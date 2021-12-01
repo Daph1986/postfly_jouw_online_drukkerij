@@ -1,1 +1,83 @@
-[{"model": "products.size", "pk": 1, "fields": {"name": "A4", "size": "a4", "image": "images/a4.png"}}, {"model": "products.size", "pk": 2, "fields": {"name": "A5", "size": "a5", "image": "images/a5.png"}}, {"model": "products.size", "pk": 3, "fields": {"name": "A6", "size": "a6", "image": "images/a6.png"}}, {"model": "products.size", "pk": 4, "fields": {"name": "A0", "size": "a0", "image": "images/a0.png"}}, {"model": "products.size", "pk": 5, "fields": {"name": "A1", "size": "a1", "image": "images/a1.png"}}, {"model": "products.size", "pk": 6, "fields": {"name": "A2", "size": "a2", "image": "images/a2.png"}}, {"model": "products.size", "pk": 7, "fields": {"name": "85x55 mm", "size": "standard", "image": "images/85x55.png"}}, {"model": "products.size", "pk": 8, "fields": {"name": "85x110 mm", "size": "double_v", "image": "images/85x110.png"}}, {"model": "products.size", "pk": 9, "fields": {"name": "170x55 mm", "size": "double_h", "image": "images/170x55.png"}}]
+[
+  {
+    "model": "products.size",
+    "pk": 1,
+    "fields": {
+      "name": "A4",
+      "size": "a4",
+      "image": "images/a4.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 2,
+    "fields": {
+      "name": "A5",
+      "size": "a5",
+      "image": "images/a5.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 3,
+    "fields": {
+      "name": "A6",
+      "size": "a6",
+      "image": "images/a6.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 4,
+    "fields": {
+      "name": "A0",
+      "size": "a0",
+      "image": "images/a0.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 5,
+    "fields": {
+      "name": "A1",
+      "size": "a1",
+      "image": "images/a1.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 6,
+    "fields": {
+      "name": "A2",
+      "size": "a2",
+      "image": "images/a2.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 7,
+    "fields": {
+      "name": "85x55 mm",
+      "size": "standard",
+      "image": "images/85x55.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 8,
+    "fields": {
+      "name": "85x110 mm",
+      "size": "double_v",
+      "image": "images/85x110.png"
+    }
+  },
+  {
+    "model": "products.size",
+    "pk": 9,
+    "fields": {
+      "name": "170x55 mm",
+      "size": "double_h",
+      "image": "images/170x55.png"
+    }
+  }
+]

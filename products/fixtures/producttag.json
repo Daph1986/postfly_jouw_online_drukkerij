@@ -1,1 +1,34 @@
-[{"model": "products.producttag", "pk": 1, "fields": {"name": "Promo", "color": "danger"}}, {"model": "products.producttag", "pk": 2, "fields": {"name": "Frequently chosen", "color": "primary"}}, {"model": "products.producttag", "pk": 3, "fields": {"name": "ECO friendly", "color": "success"}}, {"model": "products.producttag", "pk": 4, "fields": {"name": "Unique", "color": "warning"}}]
+[
+  {
+    "model": "products.producttag",
+    "pk": 1,
+    "fields": {
+      "name": "Promo",
+      "color": "danger"
+    }
+  },
+  {
+    "model": "products.producttag",
+    "pk": 2,
+    "fields": {
+      "name": "Frequently chosen",
+      "color": "primary"
+    }
+  },
+  {
+    "model": "products.producttag",
+    "pk": 3,
+    "fields": {
+      "name": "ECO friendly",
+      "color": "success"
+    }
+  },
+  {
+    "model": "products.producttag",
+    "pk": 4,
+    "fields": {
+      "name": "Unique",
+      "color": "warning"
+    }
+  }
+]
