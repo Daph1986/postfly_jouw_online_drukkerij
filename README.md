@@ -226,8 +226,9 @@ Most content has been written by me, the technical stories regarding the deliver
 3. [W3 Schools](https://www.w3schools.com/howto/howto_css_parallax.asp) to learn how to create the parallax effect.
 4. [W3 Schools](https://www.w3schools.com/howto/howto_css_loader.asp) to learn how to create the loader on the payment process page.
 5. [Tutorial](https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html) to learn how to upload files with Django.
-6. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
-7. [CI Django Heimgartner](https://github.com/D1ang/Digipress) and [Lokalise](https://lokalise.com/blog/django-i18n-beginners-guide/) to understand how to set up translation files.
+6. [Autoprefixer CSS online](https://autoprefixer.github.io/) for improving the CSS code.
+7. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
+8. [CI Django Heimgartner](https://github.com/D1ang/Digipress) and [Lokalise](https://lokalise.com/blog/django-i18n-beginners-guide/) to understand how to set up translation files.
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Media
