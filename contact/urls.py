@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.contact, name='contact'),
-    path('monstermap/', views.sample_kit, name='sample_kit'),
-    path('offerte/', views.quotation, name='quotation'),
+    path('sample_kit/', views.sample_kit, name='sample_kit'),
+    path('quotation/', views.quotation, name='quotation'),
 ]
