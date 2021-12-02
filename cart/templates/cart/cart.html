@@ -19,6 +19,7 @@
         <h5 class="mt-5 mb-5">{% trans 'Order overview' %} ({{ product_count }})</h5>
       </div>
     </div>
+    <!-- Display products in cart -->
     <div class="row ms-3">
       <div class="col">
         {% if cart_items %}
@@ -99,11 +100,13 @@
         {% endif %}
       </div>
     </div>
+    <!-- Display products in cart end -->
   </div>
 {% endblock %}
 
 {% block postloadjs %}
 {{ block.super }}
+  <!-- Delete products in cart -->
   <script>
     $('.delete-product').click(function (e) {
       let csrfToken = "{{ csrf_token }}";
@@ -117,4 +120,5 @@
         });
     });
   </script>
+  <!-- Delete products in cart end -->
 {% endblock %}

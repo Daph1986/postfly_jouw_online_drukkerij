@@ -1,4 +1,10 @@
-from django.shortcuts import redirect, render, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    redirect,
+    render,
+    reverse,
+    HttpResponse,
+    get_object_or_404
+)
 from django.contrib import messages
 from products.models import Product
 
@@ -41,7 +47,8 @@ def delete_from_cart(request, product_id):
         cart = request.session.get('cart', {})
         cart.pop(product_id)
         messages.success(
-            request, f'{product.name} {product.size} {product.quantity} pieces was successfully removed from your cart')
+            request, f'{product.name} {product.size} {product.quantity} pieces \
+            was successfully removed from your cart')
 
         request.session['cart'] = cart
         return HttpResponse(status=200)
