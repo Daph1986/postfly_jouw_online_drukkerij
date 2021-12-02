@@ -1,5 +1,4 @@
 // ----------------------- Scroll to top button -----------------------
-
 let topbutton = document.getElementById("goToTopBtn");
 
 window.onscroll = function() {scrollPage();};
