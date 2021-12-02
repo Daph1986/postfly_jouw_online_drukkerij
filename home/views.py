@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
 
 def index(request):
     """View to return index page"""
@@ -84,6 +83,7 @@ def faq(request):
     """View to return FAQ page"""
 
     return render(request, 'home/faq.html')
+
 
 def team(request):
     """View to return team page"""
