@@ -30,6 +30,7 @@
             <p class="mb-1 mt-0 small"><strong>{% trans 'Price' %}</strong></p>
           </div>
         </div>
+        <!-- Displays ordered products and prices -->
         {% for item in cart_items %}
           <div class="row">
             <div class="col-7">
@@ -60,7 +61,8 @@
           </div>
         </div>
       </div>
-
+      <!-- Displays ordered products and prices end -->
+      <!-- Checkout form -->
       <div class="col-12 col-lg-6">
         <p class="ms-2">{% trans 'Please fill out the form below to complete your order' %}.</p>
         <form action="{% url 'checkout' %}" method="POST" id="payment-form" enctype="multipart/form-data">
@@ -129,6 +131,7 @@
           </div>
         </form>
       </div>
+      <!-- Checkout form end -->
     </div>
   </div>
   <div id="loading-overlay">

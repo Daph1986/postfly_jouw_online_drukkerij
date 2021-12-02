@@ -2,24 +2,47 @@
 
 .StripeElement, 
 .stripe-style-input {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 7px 12px;
   border: 1px solid #000;
   border-radius: 20px;
   background-color: white;
-  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-box-shadow: 0 1px 3px 0 #e6ebf1;
+          box-shadow: 0 1px 3px 0 #e6ebf1;
   -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  -o-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
 }
 
 .StripeElement--focus, 
 .stripe-style-input:focus, 
 .stripe-style-input:active {
-  box-shadow: 0 1px 3px 0 #dcdee0;
+  -webkit-box-shadow: 0 1px 3px 0 #dcdee0;
+          box-shadow: 0 1px 3px 0 #dcdee0;
 }
 
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
+}
+
+.stripe-style-input::-webkit-input-placeholder {
+  color: #70707086;
+}
+
+.stripe-style-input::-moz-placeholder {
+  color: #70707086;
+}
+
+.stripe-style-input:-ms-input-placeholder {
+  color: #70707086;
+}
+
+.stripe-style-input::-ms-input-placeholder {
+  color: #70707086;
 }
 
 .stripe-style-input::placeholder {
@@ -33,7 +56,8 @@
 
 .form-control:focus {
   border-color: #E02A51;
-  box-shadow: 0 0 0 0.25rem #E72F4C36;
+  -webkit-box-shadow: 0 0 0 0.25rem #E72F4C36;
+          box-shadow: 0 0 0 0.25rem #E72F4C36;
 }
 
 input:-webkit-autofill, 
@@ -63,7 +87,10 @@ hr.divider {
 
 .order-confirmation-heading-wrapper {
   border-radius: 25px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   background-color: #E02A51;
   color: #FFF;
@@ -71,7 +98,10 @@ hr.divider {
 
 .order-confirmation-wrapper {
   border-radius: 25px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   border-color: #707070;
 }
@@ -104,12 +134,25 @@ hr.divider {
   animation: spin 2s linear infinite;
 }
 
-@keyframes spin {
+@-webkit-keyframes spin {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

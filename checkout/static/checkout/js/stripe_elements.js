@@ -5,6 +5,7 @@
     https://stripe.com/docs/stripe-js
 */
 
+// -------------------------- Stripe styling --------------------------
 let stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);
 let clientSecret = $('#id_client_secret').text().slice(1, -1);
 let stripe = Stripe(stripePublicKey);
@@ -27,7 +28,7 @@ let style = {
 let card = elements.create('card', { style: style });
 card.mount('#card-element');
 
-// Handles realtime validation errors on the card element
+// ----- To handle realtime validation errors on the card element -----
 card.addEventListener('change', function (event) {
   let errorDiv = document.getElementById('card-errors');
   if (event.error) {
@@ -43,7 +44,7 @@ card.addEventListener('change', function (event) {
   }
 });
 
-// Handle form submit
+// --------------------- For handling form submit ---------------------
 let form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function (ev) {
@@ -110,7 +111,7 @@ form.addEventListener('submit', function (ev) {
       }
     });
   }).fail(function () {
-    // just reload the page, the error will be in django messages
+    // just reloads the page, the error will be in django messages
     location.reload();
   });
 });

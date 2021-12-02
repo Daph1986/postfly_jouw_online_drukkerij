@@ -36,7 +36,7 @@ class Order(models.Model):
     original_cart = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(max_length=254, null=False, blank=False,
                                   default='')
-    artwork = models.FileField(upload_to='artwork/%Y/%m/%d', blank=False, 
+    artwork = models.FileField(upload_to='artwork/%Y/%m/%d', blank=False,
                                null=False, default='')
 
     def _generate_order_number(self):
@@ -79,7 +79,10 @@ class OrderLineItem(models.Model):
                                          editable=False)
 
     def save(self, *args, **kwargs):
-        """ Overrides the original save method for the lineitem total and update order total. """
+        """
+        Overrides the original save method for the lineitem total
+        and update order total.
+        """
 
         self.lineitem_total = self.product.price * self.quantity
         super().save(*args, **kwargs)
