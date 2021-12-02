@@ -4,34 +4,37 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body style="font-size: 1rem; color:#000;font-family: poppins;
-	background-color: #f2f2f2;
-	border: 1px solid #707070;
+  background-color: #f2f2f2;
+  border: 1px solid #707070;
   border-radius: 25px;
-	padding: 1rem; height: auto;">
-	<!-- Header line -->
-	<p>Hi
-		<span style="color: #E02A51;">
-			<strong>POSTFLY</strong>
-		</span>,
-	</p>
-	<!-- Message body -->
-	<div>
-		<p>
-			<i>
-				<span><strong>{% trans 'Subject:' %}</strong></span> {{ subject }}<br><br>
-				<span><strong>{% trans 'Message:' %}</strong></span> {{ message }}
-			</i>
-		</p>
-	</div>
-	<!-- Signature -->
-	<p>{% trans 'With kind regards' %},<br>
-		<span><strong>{{ first_name|title }} {{ last_name|title }}</strong></span>
-	</p>
+  padding: 1rem; height: auto;">
+  <!-- Header line -->
+  <p>Hi
+    <span style="color: #E02A51;">
+      <strong>POSTFLY</strong>
+    </span>,
+  </p>
+  <!-- Header line end -->
+  <!-- Message body -->
+  <div>
+    <p>
+      <i>
+        <span><strong>{% trans 'Subject:' %}</strong></span> {{ subject }}<br><br>
+        <span><strong>{% trans 'Message:' %}</strong></span> {{ message }}
+      </i>
+    </p>
+  </div>
+  <!-- Message body end -->
+  <!-- Signature -->
+  <p>{% trans 'With kind regards' %},<br>
+    <span><strong>{{ first_name|title }} {{ last_name|title }}</strong></span>
+  </p>
+  <!-- Signature end -->
 </body>
 
 </html>

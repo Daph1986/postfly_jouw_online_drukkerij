@@ -17,6 +17,7 @@
   <div class="container">
     <div class="row">
       <div class="col-10 col-md-6 col-xl-6 mt-5 mx-auto">
+        <!-- Contact form -->
         <form method="POST" id="contact-form">
           {% csrf_token %}
           <fieldset class="rounded mb-2">
@@ -32,6 +33,8 @@
           </fieldset>
           <button type="submit" class="btn postfly-general-btn hvr-grow mt-3 mb-3">{% trans 'Send' %}</button>
         </form>
+        <!-- Contact form end -->
+        <!-- Contact details -->
         <div class="col-12 py-4 d-lg-none ml-special-contact mb-10">
           <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="Logo POSTFLY"
               class="w-special-logo d-block"></a>
@@ -89,6 +92,7 @@
             class="fas fa-cloud-download-alt"></i>
         </a>
       </div>
+      <!-- Contact details end -->
     </div>
   </div>
 {% endblock %}

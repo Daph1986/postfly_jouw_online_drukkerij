@@ -9,10 +9,9 @@ class ContactForm(forms.Form):
     email = forms.CharField(required=True)
     subject = forms.CharField(required=True)
     message = forms.CharField(widget=forms.Textarea, required=True)
-    
 
     def __init__(self, *args, **kwargs):
-        """ 
+        """
         Contact form which is displayed at contact page with placeholders
         """
         super().__init__(*args, **kwargs)
@@ -47,8 +46,8 @@ class SampleKitForm(forms.Form):
     phone_number = forms.CharField(required=False)
 
     def __init__(self, *args, **kwargs):
-        """ 
-        Sample kit form which is displayed at 
+        """
+        Sample kit form which is displayed at
         sample kit request page with placeholders
         """
         super().__init__(*args, **kwargs)
@@ -91,8 +90,8 @@ class QuotationForm(forms.Form):
     message = forms.CharField(widget=forms.Textarea, required=True)
 
     def __init__(self, *args, **kwargs):
-        """ 
-        Sample kit form which is displayed at 
+        """
+        Sample kit form which is displayed at
         sample kit request page with placeholders
         """
         super().__init__(*args, **kwargs)
