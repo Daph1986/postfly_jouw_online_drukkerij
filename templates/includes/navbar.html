@@ -24,11 +24,11 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown1"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% trans 'Products' %}
             </a>
-            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
+            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown1">
               <li>
                 <a href="{% url 'products' %}?category=flyers_300_gr_mat" class="dropdown-item">Flyers 300 gr Mat</a>
                 <ul class="dropdown-menu bg-grey border-0 dropdown-submenu">
@@ -165,11 +165,11 @@
             </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown2"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {% trans 'Guidelines' %}
             </a>
-            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
+            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown2">
               <li><a href="{% url 'specs' %}" class="dropdown-item">{% trans 'Specifications' %}</a></li>
               <li><a href="{% url 'bleed' %}" class="dropdown-item">{% trans 'Bleed' %}</a></li>
               <li><a href="{% url 'file_type' %}" class="dropdown-item">{% trans 'File type' %}</a></li>
@@ -185,27 +185,27 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'faq' %}"">
+            <a class="nav-link text-black ms-lg-2 ms-xl-4" href="{% url 'faq' %}">
               FAQ
             </a>
           </li>
           <li class=" nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown3"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {% trans 'About us' %}
               </a>
-              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown" down">
+              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown3">
                 <li><a href="{% url 'team' %}" class="dropdown-item">Team</a></li>
                 <li><a href="{% url 'printing_house' %}" class="dropdown-item">{% trans 'Printing in-house' %}</a></li>
                 <li><a href="{% url 'our_concept' %}" class="dropdown-item">{% trans 'Our concept' %}</a></li>
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+            <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown4"
               role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contact
             </a>
-            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
+            <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown4">
               <li><a href="{% url 'contact' %}" class="dropdown-item">{% trans 'Contact us' %}</a></li>
               <li><a href="{% url 'sample_kit' %}" class="dropdown-item">{% trans 'Free sample kit' %}</a></li>
               <li><a href="{% url 'quotation' %}" class="dropdown-item">{% trans 'Quotation request' %}</a></li>
@@ -227,11 +227,11 @@
           {% endif %}
           {% if request.user.is_authenticated %}
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown"
+              <a class="nav-link dropdown-toggle text-black ms-lg-2 ms-xl-4" href="#" id="offcanvasNavbarDropdown5"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-user-lock"></i> Account
               </a>
-              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown">
+              <ul class="dropdown-menu bg-grey border-0" aria-labelledby="offcanvasNavbarDropdown5">
                 <li><a href="{% url 'dashboard' %}" class="dropdown-item">Dashboard</a></li>
                 {% if request.user.is_superuser %}
                   <li><a href="{% url 'add_product' %}" class="dropdown-item">Product management</a></li>
