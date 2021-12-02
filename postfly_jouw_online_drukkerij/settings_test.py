@@ -1,11 +1,11 @@
-from .settings import * # NOQA
+from .settings import *  # NOQA
 import os
 
 # test should use a local db
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'), # NOQA
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  # NOQA
         'TEST': {
             'NAME': 'mytestdatabase',
         },
