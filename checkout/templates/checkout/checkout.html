@@ -85,7 +85,7 @@
             <div class="p-0">
               {% if user.is_authenticated %}
                 <label for="id-save-info" class="ms-2">{% trans 'Save this information to my profile' %}</label>
-                <input type="checkbox" class="ms-2 me-2" id="id-save-info" name="save-info" checked> <br>
+                <input type="checkbox" class="ms-2 me-2" id="id-save-info" name="save_info" checked> <br>
               {% else %}
                 <label for="id-save-info" class="ms-2">{% trans 'If you want to have this information saved to your profile' %} <br>
                   <a href="{% url 'account_login' %}" class="btn hvr-grow postfly-general-btn mt-2 mt-md-2 me-3">Log in</a>
