@@ -47,7 +47,7 @@
                 <tr>
                   <td>AMB21-{{ order.order_number }}</td>
                   <td>{{ order.date }}</td>
-                  <td>{{ order.user_profile }}</td>
+                  <td>{{ order.first_name }} {{ order.last_name }}</td>
                   <td>
                     <a href="{% url 'order_detail' order.order_number %}">
                       <i class="far fa-eye text-black mx-3"></i>
