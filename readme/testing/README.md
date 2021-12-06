@@ -30,67 +30,103 @@
 
 ### User stories
 
-<!-- The design goal is to make a clear, accessible, structured site so that visitors can easily read the displayed recipes, make an account and add, edit and delete their own recipes. <br>
+The design goal is to make a clear, accessible, structured site so that visitors can easily order their printed matter. Below is an overview of the user stories. <br>
+<img src="../general/user_stories.png" alt="User stories" width="100%" height="100%"><br>
+
 To test the goals screen records of a OnePlus Nord were made.<br>
-NOTE: the grey overlay in some captions on the footer are displayed because the end of the screen was captured, when just looking on the device this is not visible. So, this is just the screen records issue of the phone not a site issue!!!<br><br>
-On small devices the menu can be accessed through the hamburger menu, on large devices the sidenav is always visible. There is a difference between the menu for a user who is not logged in and a user who is logged in.<br>
-<img src="../testing/testing_images/screen_record_navigation_menu.png" alt="Navigation menu logged out user" width="30%" height="30%"> <img src="../testing/testing_images/screen_record_menu_logged_in_user.png" alt="Navigation menu logged in user" width="30%" height="30%">
+NOTE: the grey overlay in some captions on the footer are displayed because the end of the screen was captured, when just looking on the device this is not visible. So, this is just the screen records issue of the phone not a site issue!!!<br>
+On small devices the menu can be accessed through the hamburger menu, on large devices the navbar is visible at the top. There is a difference between the menu for a user who is not logged in and a user who is logged in.<br>
 
-#### The visitor goals are:
-- To be able to see different recipes and search for them using keywords.<br>
-When you navigate to `recipes` you will see a search option and a list with recipe cards.<br> 
-<img src="../testing/testing_images/extended_screen_record_recipes_page_1.png" alt="Recipes page 1" width="25%" height="25%"> <img src="../testing/testing_images/extended_screen_record_recipes_page_2.png" alt="Recipes page 2" width="25%" height="25%"> <br>
+SCREENSHOTS!!!!
 
-In the example underneath, the `search` keyword used is pork and the results for the search will be displayed, in this case two recipes.<br>
-<img src="../testing/testing_images/screen_record_search.png" alt="Search" width="25%" height="25%">
-<img src="../testing/testing_images/extended_screen_record_search_result.png" alt="Search result" width="25%" height="25%"> 
+#### Testing the visitor goals
+As a shopper / site user I want to be able to:<br>
+##### #1 see a clear overview of the possibilities /  which products can I order<br>
+In the menu navigate to `Products`, search for the desirered product in the search bar or on the homepage press the `SHOP NOW` button.<br>
+<img src="../testing/products_1.jpg" alt="How to find products 1" width="25%" height="25%"> <img src="../testing/products_3.jpg" alt="How to find products 3" width="25%" height="25%"> <img src="../testing/products_2.jpg" alt="How to find products 2" width="25%" height="25%"><br>
 
-<div align="right"><a href="#top">🔝</a></div>
-
-- To create an account and log in on that account.<br>
-To register navigate to `Register` in the menu.<br>
-
-<img src="../testing/testing_images/screen_record_register_page_1.png" alt="Register 1" width="25%" height="25%">
-<img src="../testing/testing_images/screen_record_register_page_2.png" alt="Register 2" width="25%" height="25%"><br>
-
-Fill in a username and password and hit `Register`. If this is not yet an existing user, it will successfully register the account.<br>
-
-<img src="../testing/testing_images/screen_record_successfully_registered_1.png" alt="Registered successfully 1" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_successfully_registered_2.png" alt="Registered successfully 2" width="25%" height="25%"><br>
-If the username is already used it will give an error message. When the characters used are not in range of what is required it will also give error messages, however since I used a phone with language set to Dutch as a primary language this will be displayed in Dutch.<br>
-<img src="../testing/testing_images/screen_record_error_username.png" alt="Username unavailable" width="25%" height="25%">
-<img src="../testing/testing_images/screen_record_error_username_and_password_1.png" alt="Register error 1" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_error_username_and_password_2.png" alt="Register error 2" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_error_username_and_password_3.png" alt="Register error 3" width="25%" height="25%"><br>
-
-The same will apply when you navigate to `Log in` and try to log in with an  existing account. It will log you in or give an error message if the username and / or password is not correct:<br>
-
-<img src="../testing/testing_images/screen_record_log_in_1.png" alt="Log in 1" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_log_in_2.png" alt="Log in 2" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_log_in_with_wrong_username_and_or_password.png" alt="Log in wrong" width="25%" height="25%"><br>
-
-Alternatively you can navigate to `Register` and `Log in` through the `Home ` page:<br>
-
-<img src="../testing/testing_images/screen_record_alternative_registration_option_1.png" alt="Alternative registration option 1" width="25%" height="25%"><br>
-
-Or navigate to `Register` through the `About` page:<br>
-
-<img src="../testing/testing_images/screen_record_alternative_registration_option_2.png" alt="Alternative registration option 2" width="25%" height="25%">
+##### #2 see in advance what the costs of the products will be and when it can be delivered<br>
+On the products page each product is displayed in a card, the price ex VAT is diplayed and the delivery time you choose yourself, either 3 or 5 business days.<br>
+<img src="../testing/products_4.jpg" alt="Products explained 1" width="25%" height="25%"> <img src="../testing/products_5.jpg" alt="Products explained 2" width="25%" height="25%"><br>
 
 <div align="right"><a href="#top">🔝</a></div>
 
-- To create, read, update and delete my own recipes.<br>
-To create a recipe, make sure you are logged in, if not, navigate to `Log in` and log in to your account. If you don't have an account, navigate to `Register` and register an account. Once logged in navigate to `Add recipe`, there you can fill out the form.<br>
-<img src="../testing/testing_images/extended_screen_record_add_recipe_1.png" alt="Add recipie 1" width="25%" height="25%"><br>
-Fill out the form and hit  `Add recipe`.<br>
-<img src="../testing/testing_images/screen_record_add_recipe_2.png" alt="Add recipie 2" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_add_recipe_3.png" alt="Add recipie 3" width="25%" height="25%"><br>
-To read the recipe navigate to `Recipes` in the menu, pick a recipe and hit `Go to recipe`, there you'll see the full recipe.<br>
-<img src="../testing/testing_images/extended_screen_record_full_recipe_1.png" alt="Full recipie 1" width="25%" height="25%"> <img src="../testing/testing_images/extended_screen_record_full_recipe_2.png" alt="Full recipie 2" width="25%" height="25%"><br>
-To edit / update the recipe hit  `Edit recipe`<br>
-<img src="../testing/testing_images/screen_record_recipe_options_logged_in_user.png" alt="Recipe options" width="25%" height="25%"><br>
-and change what you want to edit in the recipe, then hit  `Save edited recipe`<br>
-<img src="../testing/testing_images/extended_screen_record_edit_recipe.png" alt="Edit recipe" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_updated_successfully.png" alt="Recipe updated successfully" width="25%" height="25%"><br>
-To delete a recipe hit `Delete recipe`, you will see a message with the question if you are sure you want to delete it.<br>
-<img src="../testing/testing_images/screen_record_delete_recipe.png" alt="Delete recipe" width="25%" height="25%"><br>
-If you are sure hit `YES, DELETE!` and the recipe will be deleted.<br>
-<img src="../testing/testing_images/screen_record_delete_recipe_success.png" alt="Recipe deleted successfully" width="25%" height="25%"><br> -->
+##### #3 ask questions if something is not clear<br>
+Navigate to `Contact / Contact us` in the menu and fill out the contact form.
+
+<img src="../testing/contact_1.jpg" alt="Contact explained 1" width="25%" height="25%"> <img src="../testing/contact_2.jpg" alt="Contact explained 2" width="25%" height="25%"><br>
+<img src="../testing/contact_3.jpg" alt="Contact explained 3" width="25%" height="25%"> <img src="../testing/contact_4.jpg" alt="Contact explained 4" width="25%" height="25%"><br>
+
+##### #4 ask for an quotation if a product is not on the site, but maybe in the collection<br>
+Navigate to `Contact / Quotation request` in the menu and fill out the form.<br>
+
+<img src="../testing/contact_5.jpg" alt="Contact explained 5" width="25%" height="25%"> <img src="../testing/contact_6.jpg" alt="Contact explained 6" width="25%" height="25%"><br>
+<img src="../testing/contact_7.jpg" alt="Contact explained 7" width="25%" height="25%"> <img src="../testing/contact_8.jpg" alt="Contact explained 8" width="25%" height="25%"><br>
 
 <div align="right"><a href="#top">🔝</a></div>
+
+##### #5 see the different kinds of paper<br>
+Navigate to `Contact / Free sample kit` in the menu and fill out the form.<br>
+
+<img src="../testing/contact_9.jpg" alt="Contact explained 9" width="25%" height="25%"> <img src="../testing/contact_10.jpg" alt="Contact explained 10" width="25%" height="25%"><br>
+<img src="../testing/contact_11.jpg" alt="Contact explained 11" width="25%" height="25%"> <img src="../testing/contact_12.jpg" alt="Contact explained 12" width="25%" height="25%"><br>
+
+##### #6 register an account<br>
+Navigate to `Register` in the menu and fill out the form and follow the steps.
+
+<img src="../testing/register_1.jpg" alt="Registration explained 1" width="25%" height="25%"> <img src="../testing/register_2.jpg" alt="Registration explained 2" width="25%" height="25%"> <img src="../testing/register_3.jpg" alt="Registration explained 3" width="25%" height="25%"><br>
+<img src="../testing/register_4.jpg" alt="Registration explained 4" width="25%" height="25%"> <img src="../testing/register_5.jpg" alt="Registration explained 5" width="25%" height="25%"> <img src="../testing/register_6.jpg" alt="Registration explained 6" width="25%" height="25%"><br>
+
+<div align="right"><a href="#top">🔝</a></div>
+
+##### #7 log in on my account<br>
+Navigate to `Log in` in the menu<br>
+
+<img src="../testing/login_1.jpg" alt="Log in explained 1" width="25%" height="25%"> <img src="../testing/login_2.jpg" alt="Log in explained 2" width="25%" height="25%"> <img src="../testing/login_3.jpg" alt="Log in explained 3" width="25%" height="25%"><br>
+
+##### #8 recover the password of my account<br>
+Navigate to `Log in` in the menu and press `Forgot your password?` fill out the form and follow the steps.<br>
+
+<img src="../testing/reset_1.jpg" alt="Reset password explained 1" width="25%" height="25%"> <img src="../testing/reset_2.jpg" alt="Reset password explained 2" width="25%" height="25%"> <img src="../testing/reset_3.jpg" alt="Reset password explained 3" width="25%" height="25%"><br>
+<img src="../testing/reset_4.jpg" alt="Reset password explained 4" width="25%" height="25%"> <img src="../testing/reset_5.jpg" alt="Reset password explained 5" width="25%" height="25%"><br>
+
+<div align="right"><a href="#top">🔝</a></div>
+
+##### #9 see a secured overview of my order history<br>
+Navigate to `Account / Dashboard` in the menu.<br>
+
+<img src="../testing/dashboard_1.jpg" alt="Order history 1" width="25%" height="25%"> <img src="../testing/dashboard_2.jpg" alt="Order history 2" width="25%" height="25%"> <img src="../testing/dashboard_3.jpg" alt="Order history 3" width="25%" height="25%"><br>
+
+##### #10 change my details if needed<br>
+Navigate to `Account / Profile` in the menu.<br>
+
+<img src="../testing/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/profile_1.jpg" alt="Profile 1" width="25%" height="25%"><br>
+
+<div align="right"><a href="#top">🔝</a></div>
+
+##### #11 sort products by name, category and price<br>
+On the homepage press the `SHOP NOW` button, in the menu navigate to `Products` or search for the desirered product in the search bar, and click the sort bar.<br>
+
+SCREENSHOTS 25%!!!! <br>
+
+##### #12 search a product by name or size (within the sku the size and quantity are mentioned, by using sku searching on size is possible)<br>
+In the menu navigate search for the desirered product in the search bar, you can search for size, papertype or category.
+
+SCREENSHOTS 25%!!!! <br>
+
+<div align="right"><a href="#top">🔝</a></div>
+
+##### #13 go through the ordering process in a simple way<br>
+##### #14 to upload my own artwork<br>
+##### #15 have easy acces to my cart, and to be able to delete products that are in the cart, as long as the order isn't put through yet<br>
+Place the products that you want to order in your cart. Als long as you didn't pay you are still able to adjust the cart. Go to `Secure checkout` when you are ready, fill out the checkout form where you can also upload your artwork.
+
+SCREENSHOTS 25%!!!! <br>
+
+<div align="right"><a href="#top">🔝</a></div>
+
+##### #16 receive a clear order confirmation with a description of what I ordered<br>
+After completing the checkout form and pressing `Complete order` you will get a confirmation by email.
 
 #### The site owners goals are:
 
