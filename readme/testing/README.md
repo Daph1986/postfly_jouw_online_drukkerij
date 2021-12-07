@@ -31,7 +31,7 @@
 ### User stories
 
 The design goal is to make a clear, accessible, structured site so that visitors can easily order their printed matter. Below is an overview of the user stories. <br>
-<img src="../general/user_stories.png" alt="User stories" width="100%" height="100%"><br>
+<img src="../general/img/user_stories.png" alt="User stories" width="100%" height="100%"><br>
 
 To test the goals screen records of a OnePlus Nord were made.<br>
 NOTE: the grey overlay in some captions on the footer are displayed because the end of the screen was captured, when just looking on the device this is not visible. So, this is just the screen records issue of the phone not a site issue!!!<br>
@@ -41,92 +41,109 @@ SCREENSHOTS!!!!
 
 #### Testing the visitor goals
 As a shopper / site user I want to be able to:<br>
-##### #1 see a clear overview of the possibilities /  which products can I order<br>
+**<details><summary>#1 see a clear overview of the possibilities /  which products can I order</summary>**
 In the menu navigate to `Products`, search for the desirered product in the search bar or on the homepage press the `SHOP NOW` button.<br>
-<img src="../testing/products_1.jpg" alt="How to find products 1" width="25%" height="25%"> <img src="../testing/products_3.jpg" alt="How to find products 3" width="25%" height="25%"> <img src="../testing/products_2.jpg" alt="How to find products 2" width="25%" height="25%"><br>
-
-##### #2 see in advance what the costs of the products will be and when it can be delivered<br>
-On the products page each product is displayed in a card, the price ex VAT is diplayed and the delivery time you choose yourself, either 3 or 5 business days.<br>
-<img src="../testing/products_4.jpg" alt="Products explained 1" width="25%" height="25%"> <img src="../testing/products_5.jpg" alt="Products explained 2" width="25%" height="25%"><br>
-
+<img src="../testing/img/products_1.jpg" alt="How to find products 1" width="25%" height="25%"> <img src="../testing/img/products_3.jpg" alt="How to find products 3" width="25%" height="25%"> <img src="../testing/img/products_2.jpg" alt="How to find products 2" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #3 ask questions if something is not clear<br>
-Navigate to `Contact / Contact us` in the menu and fill out the contact form.
+**<details><summary>#2 see in advance what the costs of the products will be and when it can be delivered</summary>**
+On the products page each product is displayed in a card, the price ex VAT is diplayed and the delivery time you choose yourself, either 3 or 5 business days.
+<img src="../testing/img/products_4.jpg" alt="Products explained 1" width="25%" height="25%"> <img src="../testing/img/products_5.jpg" alt="Products explained 2" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
 
-<img src="../testing/contact_1.jpg" alt="Contact explained 1" width="25%" height="25%"> <img src="../testing/contact_2.jpg" alt="Contact explained 2" width="25%" height="25%"><br>
-<img src="../testing/contact_3.jpg" alt="Contact explained 3" width="25%" height="25%"> <img src="../testing/contact_4.jpg" alt="Contact explained 4" width="25%" height="25%"><br>
+**<details><summary>#3 ask questions if something is not clear</summary>**
+Navigate to `Contact / Contact us` in the menu and fill out the contact form.<br>
 
-##### #4 ask for an quotation if a product is not on the site, but maybe in the collection<br>
+<img src="../testing/img/contact_1.jpg" alt="Contact explained 1" width="25%" height="25%"> <img src="../testing/img/contact_2.jpg" alt="Contact explained 2" width="25%" height="25%"><br>
+<img src="../testing/img/contact_3.jpg" alt="Contact explained 3" width="25%" height="25%"> <img src="../testing/img/contact_4.jpg" alt="Contact explained 4" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#4 ask for an quotation if a product is not on the site, but maybe in the collection</summary>**
 Navigate to `Contact / Quotation request` in the menu and fill out the form.<br>
 
-<img src="../testing/contact_5.jpg" alt="Contact explained 5" width="25%" height="25%"> <img src="../testing/contact_6.jpg" alt="Contact explained 6" width="25%" height="25%"><br>
-<img src="../testing/contact_7.jpg" alt="Contact explained 7" width="25%" height="25%"> <img src="../testing/contact_8.jpg" alt="Contact explained 8" width="25%" height="25%"><br>
-
+<img src="../testing/img/contact_5.jpg" alt="Contact explained 5" width="25%" height="25%"> <img src="../testing/img/contact_6.jpg" alt="Contact explained 6" width="25%" height="25%"><br>
+<img src="../testing/img/contact_7.jpg" alt="Contact explained 7" width="25%" height="25%"> <img src="../testing/img/contact_8.jpg" alt="Contact explained 8" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #5 see the different kinds of paper<br>
+**<details><summary>#5 see the different kinds of paper</summary>**
 Navigate to `Contact / Free sample kit` in the menu and fill out the form.<br>
 
-<img src="../testing/contact_9.jpg" alt="Contact explained 9" width="25%" height="25%"> <img src="../testing/contact_10.jpg" alt="Contact explained 10" width="25%" height="25%"><br>
-<img src="../testing/contact_11.jpg" alt="Contact explained 11" width="25%" height="25%"> <img src="../testing/contact_12.jpg" alt="Contact explained 12" width="25%" height="25%"><br>
+<img src="../testing/img/contact_9.jpg" alt="Contact explained 9" width="25%" height="25%"> <img src="../testing/img/contact_10.jpg" alt="Contact explained 10" width="25%" height="25%"><br>
+<img src="../testing/img/contact_11.jpg" alt="Contact explained 11" width="25%" height="25%"> <img src="../testing/img/contact_12.jpg" alt="Contact explained 12" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #6 register an account<br>
+**<details><summary>#6 register an account</summary>**
 Navigate to `Register` in the menu and fill out the form and follow the steps.
 
-<img src="../testing/register_1.jpg" alt="Registration explained 1" width="25%" height="25%"> <img src="../testing/register_2.jpg" alt="Registration explained 2" width="25%" height="25%"> <img src="../testing/register_3.jpg" alt="Registration explained 3" width="25%" height="25%"><br>
-<img src="../testing/register_4.jpg" alt="Registration explained 4" width="25%" height="25%"> <img src="../testing/register_5.jpg" alt="Registration explained 5" width="25%" height="25%"> <img src="../testing/register_6.jpg" alt="Registration explained 6" width="25%" height="25%"><br>
-
+<img src="../testing/img/register_1.jpg" alt="Registration explained 1" width="25%" height="25%"> <img src="../testing/img/register_2.jpg" alt="Registration explained 2" width="25%" height="25%"> <img src="../testing/img/register_3.jpg" alt="Registration explained 3" width="25%" height="25%"><br>
+<img src="../testing/img/register_4.jpg" alt="Registration explained 4" width="25%" height="25%"> <img src="../testing/img/register_5.jpg" alt="Registration explained 5" width="25%" height="25%"> <img src="../testing/img/register_6.jpg" alt="Registration explained 6" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #7 log in on my account<br>
+**<details><summary>#7 log in on my account</summary>**
 Navigate to `Log in` in the menu<br>
 
-<img src="../testing/login_1.jpg" alt="Log in explained 1" width="25%" height="25%"> <img src="../testing/login_2.jpg" alt="Log in explained 2" width="25%" height="25%"> <img src="../testing/login_3.jpg" alt="Log in explained 3" width="25%" height="25%"><br>
+<img src="../testing/img/login_1.jpg" alt="Log in explained 1" width="25%" height="25%"> <img src="../testing/img/login_2.jpg" alt="Log in explained 2" width="25%" height="25%"> <img src="../testing/img/login_3.jpg" alt="Log in explained 3" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #8 recover the password of my account<br>
+**<details><summary>#8 recover the password of my account</summary>**
 Navigate to `Log in` in the menu and press `Forgot your password?` fill out the form and follow the steps.<br>
 
-<img src="../testing/reset_1.jpg" alt="Reset password explained 1" width="25%" height="25%"> <img src="../testing/reset_2.jpg" alt="Reset password explained 2" width="25%" height="25%"> <img src="../testing/reset_3.jpg" alt="Reset password explained 3" width="25%" height="25%"><br>
-<img src="../testing/reset_4.jpg" alt="Reset password explained 4" width="25%" height="25%"> <img src="../testing/reset_5.jpg" alt="Reset password explained 5" width="25%" height="25%"><br>
-
+<img src="../testing/img/reset_1.jpg" alt="Reset password explained 1" width="25%" height="25%"> <img src="../testing/img/reset_2.jpg" alt="Reset password explained 2" width="25%" height="25%"> <img src="../testing/img/reset_3.jpg" alt="Reset password explained 3" width="25%" height="25%"><br>
+<img src="../testing/img/reset_4.jpg" alt="Reset password explained 4" width="25%" height="25%"> <img src="../testing/img/reset_5.jpg" alt="Reset password explained 5" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #9 see a secured overview of my order history<br>
+**<details><summary>#9 see a secured overview of my order history</summary>**
 Navigate to `Account / Dashboard` in the menu.<br>
 
-<img src="../testing/dashboard_1.jpg" alt="Order history 1" width="25%" height="25%"> <img src="../testing/dashboard_2.jpg" alt="Order history 2" width="25%" height="25%"> <img src="../testing/dashboard_3.jpg" alt="Order history 3" width="25%" height="25%"><br>
+<img src="../testing/img/dashboard_1.jpg" alt="Order history 1" width="25%" height="25%"> <img src="../testing/img/dashboard_2.jpg" alt="Order history 2" width="25%" height="25%"> <img src="../testing/img/dashboard_3.jpg" alt="Order history 3" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #10 change my details if needed<br>
+**<details><summary>#10 change my details if needed</summary>**
 Navigate to `Account / Profile` in the menu.<br>
 
-<img src="../testing/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/profile_1.jpg" alt="Profile 1" width="25%" height="25%"><br>
-
+<img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #11 sort products by name, category and price<br>
+**<details><summary>#11 sort products by name, category and price</summary>**
 On the homepage press the `SHOP NOW` button, in the menu navigate to `Products` or search for the desirered product in the search bar, and click the sort bar.<br>
 
-SCREENSHOTS 25%!!!! <br>
-
-##### #12 search a product by name or size (within the sku the size and quantity are mentioned, by using sku searching on size is possible)<br>
-In the menu navigate search for the desirered product in the search bar, you can search for size, papertype or category.
-
-SCREENSHOTS 25%!!!! <br>
-
+<img src="../testing/img/sort_1.jpg" alt="Sorting 1" width="25%" height="25%"> <img src="../testing/img/sort_2.jpg" alt="Sorting 2" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #13 go through the ordering process in a simple way<br>
-##### #14 to upload my own artwork<br>
-##### #15 have easy acces to my cart, and to be able to delete products that are in the cart, as long as the order isn't put through yet<br>
+**<details><summary>#12 search a product by name or size (within the sku the size and quantity are mentioned, by using sku searching on size is possible)</summary>**
+In the menu navigate search for the desirered product in the search bar, you can search for size, papertype or category.<br>
+
+<img src="../testing/img/search_1.jpg" alt="Searching 1" width="25%" height="25%"> <img src="../testing/img/search_2.jpg" alt="Searching 2" width="25%" height="25%"><br>
+<img src="../testing/img/search_3.jpg" alt="Searching 3" width="25%" height="25%"> <img src="../testing/img/search_4.jpg" alt="Searching 4" width="25%" height="25%"><br>
+<img src="../testing/img/search_5.jpg" alt="Searching 5" width="25%" height="25%"> <img src="../testing/img/search_6.jpg" alt="Searching 6" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#13 go through the ordering process in a simple way + #14 to upload my own artwork + #15 have easy acces to my cart, and to be able to delete products that are in the cart, as long as the order isn't put through yet</summary>**
 Place the products that you want to order in your cart. Als long as you didn't pay you are still able to adjust the cart. Go to `Secure checkout` when you are ready, fill out the checkout form where you can also upload your artwork.
 
-SCREENSHOTS 25%!!!! <br>
-
+<img src="../testing/img/ordering_1.jpg" alt="How to order 1" width="25%" height="25%"> <img src="../testing/img/ordering_2.jpg" alt="How to order 2" width="25%" height="25%"> <img src="../testing/img/ordering_3.jpg" alt="How to order 3" width="25%" height="25%"><br>
+<img src="../testing/img/ordering_4.jpg" alt="How to order 4" width="25%" height="25%"> <img src="../testing/img/ordering_5.jpg" alt="How to order 5" width="25%" height="25%"><br>
+<img src="../testing/img/ordering_6.jpg" alt="How to order 6" width="25%" height="25%"> <img src="../testing/img/ordering_7.jpg" alt="How to order 7" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-##### #16 receive a clear order confirmation with a description of what I ordered<br>
-After completing the checkout form and pressing `Complete order` you will get a confirmation by email.
+**<details><summary>#16 receive a clear order confirmation with a description of what I ordered</summary>**
+After completing the checkout form and pressing `Complete order` you will get a confirmation by email.<br>
+<img src="../testing/img/ordering_8.jpg" alt="How to order 8" width="25%" height="25%"> <img src="../testing/img/ordering_9.jpg" alt="How to order 9" width="25%" height="25%"> <img src="../testing/img/ordering_10.jpg" alt="How to order 10" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
 
 #### The site owners goals are:
 

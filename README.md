@@ -6,7 +6,7 @@ Jouw online drukkerij!
 
 [![Build Status](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij.svg?branch=main)](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij)
 
-<img src="readme/general/logo.png" alt="Logo" width="75%" height="75%">
+<img src="readme/general/img/logo.png" alt="Logo" width="75%" height="75%">
 
 POSTFLY is a site where you can order all your necessary printed matter online.
 [POSTFLY](http://www.postfly.nl/) already has an existing site, but it needs an update.
@@ -20,8 +20,8 @@ The site's goal is to have a more efficient system for employees and a easy to u
 
 By clicking this [link](https://postfly-jouw-online-drukkerij.herokuapp.com/) a live demo version will be visible.
 
-<img src="readme/general/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
-<img src="readme/general/mockup_2.png" alt="Mockup 2" width="65%" height="65%">
+<img src="readme/general/img/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
+<img src="readme/general/img/mockup_2.png" alt="Mockup 2" width="65%" height="65%">
 <div align="right"><a href="#top">🔝</a></div>
 
 :open_file_folder: Table of Contents
@@ -72,7 +72,7 @@ This is meant to be a B2B site which targets visitors who are in need of printed
 
 ### User stories
 
-<img src="readme/general/user_stories.png" alt="User stories" width="100%" height="100%"><br>
+<img src="readme/general/img/user_stories.png" alt="User stories" width="100%" height="100%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Strategy
