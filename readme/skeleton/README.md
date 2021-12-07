@@ -100,7 +100,7 @@ The desktop wireframes are listed below per section.<br>
 </details><br>
 
 Desktop wireframe overview <br>
-<img src="../skeleton//preview_desktop.png" alt="Desktop" width="50%" height="50%"><br>
+<img src="../skeleton/img/preview_desktop.png" alt="Desktop" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 <br>
 
@@ -196,7 +196,7 @@ The tablet wireframes are listed below per section.<br>
 </details><br>
 
 Tablet wireframe overview <br>
-<img src="../skeleton//preview_tablet.png" alt="Tablet" width="50%" height="50%"><br>
+<img src="../skeleton/img/preview_tablet.png" alt="Tablet" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 <br>
 
@@ -292,7 +292,7 @@ The mobile wireframes are listed below per section.<br>
 </details><br>
 
 Mobile wireframes <br>
-<img src="../skeleton/preview_mobile.png" alt="Mobile" width="50%" height="50%"><br>
+<img src="../skeleton/img/preview_mobile.png" alt="Mobile" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 <br>
 
@@ -302,13 +302,13 @@ When you have a user profile you can save your data there and the next time you 
 You can also choose to override the default delivery address by changing it in the checkout process and for example, to deliver it to an office address.
 In a future update, it should be an option to store multiple delivery and billing addresses for one user.
 The order is connected to the order item, so that the price for a product is changed by the admin, the prices of the already placed orders will not change.<br>
-<img src="../skeleton//postfly_django_diagram_model.png" alt="Data Model" width="65%" height="65%"><br>
+<img src="../skeleton/img/postfly_django_diagram_model.png" alt="Data Model" width="65%" height="65%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 
 **Surface**
 
 The following main colors have been used:<br>
-<img src="../skeleton//red.png" alt="Red" width="25%" height="25%"><img src="../skeleton//dark_grey.png" alt="Dark Grey"  width="25%" height="25%"><img src="../skeleton//off_white.png" alt="Off White"  width="25%" height="25%"><br>
+<img src="../skeleton/img/red.png" alt="Red" width="25%" height="25%"><img src="../skeleton/img/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"><img src="../skeleton/img/off_white.png" alt="Off White"  width="25%" height="25%"><br>
 These colors have been chosen because they are part of the corporate identity. These colors suit the company, so it was decided to continue to use this, but to abandon the other colors of the current site.
 <div align="right"><a href="#top">🔝</a></div>
 
