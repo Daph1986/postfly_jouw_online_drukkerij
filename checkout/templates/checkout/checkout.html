@@ -85,7 +85,7 @@
             <div class="p-0">
               {% if user.is_authenticated %}
                 <label for="id-save-info" class="ms-2">{% trans 'Save this information to my profile' %}</label>
-                <input type="checkbox" class="ms-2 me-2" id="id-save-info" name="save_info" checked> <br>
+                <input type="checkbox" class="ms-2 me-2" id="id-save-info" name="save-info" checked> <br>
               {% else %}
                 <label for="id-save-info" class="ms-2">{% trans 'If you want to have this information saved to your profile' %} <br>
                   <a href="{% url 'account_login' %}" class="btn hvr-grow postfly-general-btn mt-2 mt-md-2 me-3">Log in</a>
@@ -116,10 +116,10 @@
           </fieldset>
 
           <div class="submit-button text-right mt-3 mb-10">
-            <a href="{% url 'view_cart' %}" class="btn hvr-grow postfly-general-btn me-3 mb-3">
+            <a href="{% url 'view_cart' %}" class="btn hvr-grow postfly-general-btn ms-2 me-3 mb-3">
               {% trans 'Adjust order' %}
             </a>
-            <button id="submit-button" class="btn hvr-grow postfly-general-btn ms-md-3 mb-3">
+            <button id="submit-button" class="btn hvr-grow postfly-general-btn ms-2 ms-md-3 mb-3">
               {% trans 'Complete order' %}
             </button>
             <p class="small text-danger my-0">
