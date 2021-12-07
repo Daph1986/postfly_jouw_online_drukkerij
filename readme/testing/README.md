@@ -174,7 +174,7 @@ The project has been tested on the available DevTools for phone and tablet sizes
 ### HTML
 
 The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#validate_by_uri) validator. For a few pages the links are below, but all pages have been checked and no errors or warnings were found.<br>
-<img src="../testing/img/html_check.png" alt="Html check" width="50%" height="50%"> <br>
+<img src="../testing/img/html_check.png" alt="Html check" width="55%" height="55%"> <br>
 
 [Home page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2F) 
 [Products page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fproducts%2F)<br>
@@ -198,10 +198,15 @@ The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#va
 
 ### CSS
 
-<!-- The CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
-<img src="../testing/testing_images/css_check_1.png" alt="CSS check" width="55%" height="55%"> <img src="../testing/testing_images/css_check_2.png" alt="CSS check" width="55%" height="55%"> <br>
+The CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
+base.css<br>
+<img src="../testing/img/css_base_1.png" alt="CSS check base 1" width="55%" height="55%"> <img src="../testing/img/css_base_2.png" alt="CSS check base 2" width="55%" height="55%"> <img src="../testing/img/css_base_3.png" alt="CSS check base 3" width="55%" height="55%"><br>
+checkout.css<br>
+<img src="../testing/img/css_checkout_1.png" alt="CSS check checkout 1" width="55%" height="55%"> <img src="../testing/img/css_checkout_2.png" alt="CSS check checkout 2" width="55%" height="55%"><br>
+profile.css<br>
+<img src="../testing/img/css_profile_1.png" alt="CSS check profile 1" width="55%" height="50%"> <img src="../testing/img/css_profile_2.png" alt="CSS check profile 2" width="55%" height="55%"><br>
 
-Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way. -->
+Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -210,11 +215,21 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 
 ### JavaScript
 
-<!-- The JavaScript code was tested with a [JavaScript](https://jshint.com/) linter. <br>
-<img src="../testing/testing_images/js_check_1.png" alt="JS check 1" width="45%" height="45%">
-<img src="../testing/testing_images/js_check_2.png" alt="JS check 2" width="45%" height="45%"><br>
+The JavaScript code was tested with a [JavaScript](https://jshint.com/) linter. <br>
+main.js<br>
+<img src="../testing/img/main.png" alt="Main.js check" width="55%" height="55%"><br>
+products.js<br>
+<img src="../testing/img/products.png" alt="Products.js check" width="55%" height="55%"><br>
+toasts.js<br>
+<img src="../testing/img/toasts.png" alt="Toasts.js check" width="55%" height="55%"><br>
+stripe_elements.js<br>
+<img src="../testing/img/stripe_elements.png" alt="Stripe_elements.js check" width="55%" height="55%"><br>
+countryfield.js<br>
+<img src="../testing/img/countryfield.png" alt="Countryfield.js check" width="55%" height="55%"><br>
+cart.html script<br>
+<img src="../testing/img/cart.png" alt="Cart.html script check" width="55%" height="55%"><br>
 
-Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way. -->
+Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -223,22 +238,383 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 
 ### Python
 
-<!-- The Python code was tested with a [PEP8](http://pep8online.com/) linter. <br>
-<img src="../testing/testing_images/python_check.png" alt="Python check" width="55%" height="55%"><br>
-No errors or warnings were found. -->
+The Python code was tested with a [PEP8](http://pep8online.com/) linter. <br>
+Below are two examples, the first of the checkout app models and the second of the checkout app views.<br>
+<img src="../testing/img/checkout_models.png" alt="PEP8 checkout models" width="55%" height="55%"><br>
+<img src="../testing/img/checkout_views.png" alt="PEP8 checkout views" width="55%" height="55%"><br>
+All other python files have also been checked, no errors or warnings were found.
 
 <div align="right"><a href="#top">🔝</a></div>
 
 :traffic_light: Lighthouse
 ======
 
-### Lighthouse
+All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: <br>
+### Home page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/home_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
 
-<!-- All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: <br>
-<img src="../testing/testing_images/home_desktop.png" alt="Lighthouse desktop home" width="25%" height="25%"> <img src="../testing/testing_images/about_desktop.png" alt="Lighthouse desktop about" width="25%" height="25%"> <img src="../testing/testing_images/recipes_desktop.png" alt="Lighthouse desktop recipes" width="25%" height="25%"> <img src="../testing/testing_images/register_desktop.png" alt="Lighthouse desktop register" width="25%" height="25%"> <img src="../testing/testing_images/log_in_desktop.png" alt="Lighthouse desktop log in" width="25%" height="25%"> <img src="../testing/testing_images/personal_recipe_page_desktop.png" alt="Lighthouse desktop personal recipe page" width="25%" height="25%"> <img src="../testing/testing_images/add_recipe_desktop.png" alt="Lighthouse desktop add recipe" width="25%" height="25%"> <img src="../testing/testing_images/edit_recipe_desktop.png" alt="Lighthouse desktop edit recipe" width="25%" height="25%"><br>
-and these are the results for the mobile versions:<br>
-<img src="../testing/testing_images/home_mobile.png" alt="Lighthouse mobile home" width="25%" height="25%"> <img src="../testing/testing_images/about_mobile.png" alt="Lighthouse mobile about" width="25%" height="25%"> <img src="../testing/testing_images/recipes_mobile.png" alt="Lighthouse mobile recipes" width="25%" height="25%"> <img src="../testing/testing_images/register_mobile.png" alt="Lighthouse mobile register" width="25%" height="25%"> <img src="../testing/testing_images/login_mobile.png" alt="Lighthouse mobile log in" width="25%" height="25%"> <img src="../testing/testing_images/personal_recipe_page_mobile.png" alt="Lighthouse mobile personal recipe page" width="25%" height="25%"> <img src="../testing/testing_images/add_recipe_mobile.png" alt="Lighthouse mobile add recipe" width="25%" height="25%"> <img src="../testing/testing_images/edit_recipe_mobile.png" alt="Lighthouse mobile edit recipe" width="25%" height="25%"><br>
-The results of the Lighthouse tests are satisfactory, so no adjustments are needed at this time. But in the future a way to increase the performance on some pages would be something to do in an update. -->
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/home_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### All products page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/products_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/products_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Flyers 300 gr mat page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Flyers 300 gr mat A6 page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_a6_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_a6_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+The results for the other single pages, other sizes and paper types, is similar, they have been tested but are not shown here because the list would then become too long.
+<br>
+
+### Specification page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/specifications_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/specifications_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Templates page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/templates_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/templates_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+The results for the other single pages, other sizes and paper types, is similar, they have been tested but are not shown here because the list would then become too long.
+<br>
+
+### FAQ page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/faq_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/faq_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Our team page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/team_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/team_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Printing in-house page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/printing_house_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/printing_house_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Our concept page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/concept_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/concept_desktop" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Contact us page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/contact_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/contact_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Free sample kit page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/sample_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/sample_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Quotation request page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/quotation_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/quotation_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Register page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/register_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/register_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Log in page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/login_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/login_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Reset password page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/reset_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/reset_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Shopping cart page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/cart_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/cart_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Checkout page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Checkout success page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_success_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_success_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Dashboard page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/dashboard_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/dashboard_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Order detail page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/order_detail_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/order_detail_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Add product page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/add_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/add_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Profile page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/profile_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/profile_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+### Log out page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/logout_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/logout_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<br>
+
+The results of the Lighthouse tests are satisfactory, so no adjustments are needed at this time. But in the future a way to increase the performance and accessibility on some pages would be something to do in an update.
 
 <div align="right"><a href="#top">🔝</a></div>
 
