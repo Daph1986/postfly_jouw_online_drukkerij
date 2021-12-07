@@ -26,10 +26,10 @@
           {% csrf_token %}
           {{ form | crispy }}
           <div class="text-right mt-5 mb-10">
-            <a href="{% url 'products' %}" class="btn hvr-grow postfly-general-btn me-3 mb-3">
+            <a href="{% url 'products' %}" class="btn hvr-grow postfly-general-btn me-0 me-md-3 my-3 my-md-5">
               Cancel
             </a>
-            <button type="submit" class="btn hvr-grow postfly-general-btn ms-3 mb-3">
+            <button type="submit" class="btn hvr-grow postfly-general-btn mx-md-3 my-2 my-md-5">
               {% trans 'Add product' %}
             </button>
           </div>
