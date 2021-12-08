@@ -5,6 +5,10 @@ Jouw online drukkerij!
 **[Code Institute](https://codeinstitute.net/)  Milestone Project 4: Full Stack Frameworks with Django**
 
 [![Build Status](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij.svg?branch=main)](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub contributors](https://img.shields.io/github/contributors/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub last commit](https://img.shields.io/github/last-commit/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub language count](https://img.shields.io/github/languages/count/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub forks](https://img.shields.io/github/forks/Daph1986/postfly_jouw_online_drukkerij?style=social)
 
 <img src="readme/general/img/logo.png" alt="Logo" width="75%" height="75%">
 
