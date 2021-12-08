@@ -39,7 +39,7 @@ On small devices the menu can be accessed through the hamburger menu, on large d
 
 <img src="../testing/img/loged_out.jpg" alt="Loged out user" width="25%" height="25%"> <img src="../testing/img/loged_in.jpg" alt="Loged in user" width="25%" height="25%"><br>
 
-#### Testing the visitor goals
+### Testing the visitor goals
 As a shopper / site user I want to be able to:<br>
 **<details><summary>#1 see a clear overview of the possibilities /  which products can I order</summary>**
 In the menu navigate to `Products`, search for the desirered product in the search bar or on the homepage press the `SHOP NOW` button.<br>
@@ -140,9 +140,9 @@ After completing the checkout form and pressing `Complete order` you will get a 
 <img src="../testing/img/ordering_8.jpg" alt="How to order 8" width="25%" height="25%"> <img src="../testing/img/ordering_9.jpg" alt="How to order 9" width="25%" height="25%"> <img src="../testing/img/ordering_10.jpg" alt="How to order 10" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
 </details>
-<br>
 
-#### The site owners goals are:
+
+### Testing the site owner goals:
 As a site owner I want to be able to:<br>
 **<details><summary>#17 see a clear overview of the order placed by the customer</summary>**
 Make sure you use the admin details to log in, navigate to `Account /Dashboard` in the menu, you will see all the placed orders and can also see the details.<br>
@@ -171,7 +171,6 @@ The project has been tested on the available DevTools for phone and tablet sizes
 
 ![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=FFFFFF)
 ======
-### HTML
 
 The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#validate_by_uri) validator. For a few pages the links are below, but all pages have been checked and no errors or warnings were found.<br>
 <img src="../testing/img/html_check.png" alt="Html check" width="55%" height="55%"> <br>
@@ -196,8 +195,6 @@ The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#va
 ![CSS3](https://img.shields.io/badge/CSS3%20-%231572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=FFFFFF)
 ======
 
-### CSS
-
 The CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
 base.css<br>
 <img src="../testing/img/css_base_1.png" alt="CSS check base 1" width="55%" height="55%"> <img src="../testing/img/css_base_2.png" alt="CSS check base 2" width="55%" height="55%"> <img src="../testing/img/css_base_3.png" alt="CSS check base 3" width="55%" height="55%"><br>
@@ -212,8 +209,6 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 
 ![JavaScript](https://img.shields.io/badge/JavaScript%20-%23323330.svg?&style=for-the-badge&logo=JavaScript&logoColor=F7DF1E)
 ======
-
-### JavaScript
 
 The JavaScript code was tested with a [JavaScript](https://jshint.com/) linter. <br>
 main.js<br>
@@ -236,8 +231,6 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 ![PYTHON](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ======
 
-### Python
-
 The Python code was tested with a [PEP8](http://pep8online.com/) linter. <br>
 Below are two examples, the first of the checkout app models and the second of the checkout app views.<br>
 <img src="../testing/img/checkout_models.png" alt="PEP8 checkout models" width="55%" height="55%"><br>
@@ -256,14 +249,12 @@ All pages have passed through Lighthouse in Chrome DevTools, the results for des
   <summary>Click to see results</summary>
   <img src="../testing/img/home_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/home_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### All products page
 #### Desktop
@@ -271,14 +262,12 @@ All pages have passed through Lighthouse in Chrome DevTools, the results for des
   <summary>Click to see results</summary>
   <img src="../testing/img/products_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/products_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Flyers 300 gr mat page
 #### Desktop
@@ -286,14 +275,12 @@ All pages have passed through Lighthouse in Chrome DevTools, the results for des
   <summary>Click to see results</summary>
   <img src="../testing/img/flyers_300_mat_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/flyers_300_mat_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Flyers 300 gr mat A6 page
 #### Desktop
@@ -301,16 +288,13 @@ All pages have passed through Lighthouse in Chrome DevTools, the results for des
   <summary>Click to see results</summary>
   <img src="../testing/img/flyers_300_mat_a6_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/flyers_300_mat_a6_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 The results for the other single pages, other sizes and paper types, is similar, they have been tested but are not shown here because the list would then become too long.
-<br>
 
 ### Specification page
 #### Desktop
@@ -318,14 +302,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/specifications_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/specifications_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Templates page
 #### Desktop
@@ -333,16 +315,13 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/templates_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/templates_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 The results for the other single pages, other sizes and paper types, is similar, they have been tested but are not shown here because the list would then become too long.
-<br>
 
 ### FAQ page
 #### Desktop
@@ -350,14 +329,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/faq_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/faq_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Our team page
 #### Desktop
@@ -365,14 +342,13 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/team_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/team_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
+
 
 ### Printing in-house page
 #### Desktop
@@ -380,14 +356,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/printing_house_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/printing_house_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Our concept page
 #### Desktop
@@ -395,14 +369,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/concept_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/concept_desktop" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Contact us page
 #### Desktop
@@ -410,14 +382,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/contact_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/contact_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Free sample kit page
 #### Desktop
@@ -425,14 +395,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/sample_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/sample_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Quotation request page
 #### Desktop
@@ -440,14 +408,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/quotation_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/quotation_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Register page
 #### Desktop
@@ -455,14 +421,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/register_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/register_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Log in page
 #### Desktop
@@ -470,14 +434,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/login_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/login_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Reset password page
 #### Desktop
@@ -485,14 +447,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/reset_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/reset_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Shopping cart page
 #### Desktop
@@ -500,14 +460,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/cart_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/cart_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Checkout page
 #### Desktop
@@ -515,14 +473,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/checkout_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/checkout_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Checkout success page
 #### Desktop
@@ -530,14 +486,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/checkout_success_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/checkout_success_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Dashboard page
 #### Desktop
@@ -545,14 +499,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/dashboard_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/dashboard_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Order detail page
 #### Desktop
@@ -560,14 +512,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/order_detail_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/order_detail_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Add product page
 #### Desktop
@@ -575,14 +525,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/add_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/add_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Profile page
 #### Desktop
@@ -590,14 +538,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/profile_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/profile_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 ### Log out page
 #### Desktop
@@ -605,14 +551,12 @@ The results for the other single pages, other sizes and paper types, is similar,
   <summary>Click to see results</summary>
   <img src="../testing/img/logout_desktop.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 #### Mobile
 <details>
   <summary>Click to see results</summary>
   <img src="../testing/img/logout_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-<br>
 
 The results of the Lighthouse tests are satisfactory, so no adjustments are needed at this time. But in the future a way to increase the performance and accessibility on some pages would be something to do in an update.
 
@@ -623,46 +567,98 @@ The results of the Lighthouse tests are satisfactory, so no adjustments are need
 
 ### GTmetrix
 
-<!-- The site was tested with [GTmetrix](https://gtmetrix.com/). The reports can be found here:<br>
-[Homepage](https://gtmetrix.com/reports/mamamaki.herokuapp.com/DtF79YmN/) <br>
-[About page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/ehQW2KTp/) <br>
-[Recipes page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/Aok6T3gH/) <br>
-[Single recipe page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/FMvG3INv/) <br>
-[Register page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/nxjFnBeX/) <br>
-[Log in page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/NfTTBCfW/) <br>
-[Personal recipe page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/f0CLM9rG/) <br>
-[Add recipe](https://gtmetrix.com/reports/mamamaki.herokuapp.com/OZgPHOwf/) <br>
-[Edit recipe](https://gtmetrix.com/reports/mamamaki.herokuapp.com/hL6hdl9W/) <br> -->
-
+The site was tested with [GTmetrix](https://gtmetrix.com/). The reports of a few pages can be found here:<br>
+[Home page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/HVIpHpjQ/) <br>
+[Business cards 400 gr mat 85x55mm page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/Yng7F52i/) <br>
+[Business cards Cold Foil page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/QSnqI8jh/) <br>
+[File type page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/GCiVdTmp/) <br>
+[Job options page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/xQaop4BH/) <br>
+[Overprint page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/dwBBoi5S/) <br>
+GTmetrix also uses Lighthouse, so the reports are similar to the Lighthouse tests.
 <div align="right"><a href="#top">🔝</a></div>
 
 :eyeglasses: Color blindness
 ======
 
-### Color blindness
+Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find the links of the homepage tests, but of course all pages were tested. <br>
+[Protanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=protan) <br>
+[Deutanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=deutan) <br>
+[Tritanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=tritan) <br>
+[Greyscale / Achromatopsia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=grey)
 
-<!-- Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find the links of the homepage tests, but of course all pages were tested. <br>
-[Protanopia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=protan) <br>
-[Deutanopia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=deutan) <br>
-[Tritanopia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=tritan) <br>
-[Greyscale / Achromatopsia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=grey) -->
+<div align="right"><a href="#top">🔝</a></div>
+
+:heavy_check_mark: Accessibility
+======
+
+Several pages of the site have been tested on accessibility for people with disabilities through the
+[Web Accessibility site](https://www.webaccessibility.com/), below are some of the results:
+### Home page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/home.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Products page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/products_acces.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Foil page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/foil.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Quotation request page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/quotation.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Register page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/register.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Log in page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/login.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Shopping cart page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/cart_access.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+<div align="right"><a href="#top">🔝</a></div>
+
+:mag: Travis testing
+======
+
+The plan was to extensively test with [Travis CI](https://www.travis-ci.com/), but due to time constraints, it has been decided to only check the build and the required fields of the contact, free sample kit and quotation request forms.
+
+### Build history
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/travis_1.png" alt="Travis build history" width="50%" height="50%"><br>
+  <img src="../testing/img/travis_2.png" alt="Travis build history" width="50%" height="50%"><br>
+  <img src="../testing/img/travis_3.png" alt="Travis build history" width="50%" height="50%"><br>
+  <img src="../testing/img/travis_4.png" alt="Travis build history" width="50%" height="50%">
+</details>
 
 <div align="right"><a href="#top">🔝</a></div>
 
 :test_tube: Other tests
 ======
 
-### Other tests
-
-<!-- A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola edge 20 lite and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox. During the testing two bugs were found and fixed, the Safari button bug and the Multiple cards in one card bug, please see the Bugs section and matching issue link for these bugs and their fix.
+A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola edge 20 lite and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox. During the testing only some misalignments were found. These have been fixed.
 <br>
-The contact form of the home page has also been tested on Google Chrome, Safari, Microsoft Edge and Mozilla Firefox, this works as it should.<br>
-<img src="../testing/testing_images/emailjs_test.png" alt="EmaiJS test" width="55%" height="55%"> -->
-
-#### Advices given after testing which were followed
-
-<!-- 1. Some spelling and grammar changes have been made after reviews from my husband, brother-in-law and sister-in-law.
-2. My husband, Django, did not think the user-friendliness was good enough, because only the logo could be used to return to the homepage. That is why on the page for requesting the sample kit and for designing the business card, 2 buttons have been added at the top to switch between the other pages. Cancel buttons have also been added to the bottom of the forms. This increases user-friendliness. -->
+The contact forms have been tested on Google Chrome and Safari, they work as they should.<br>
 
 <div align="right"><a href="#top">🔝</a></div>
 
