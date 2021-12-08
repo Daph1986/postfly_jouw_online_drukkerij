@@ -13,6 +13,8 @@
 * [**_Lighthouse_**](#lighthouse)
 * [**_GTmetrix_**](#gtmetrix)
 * [**_Color blindness_**](#color-blindness)
+* [**_Accessibility_**](#accessibility)
+* [**_Travis testing_**](#travis-testing)
 * [**_Other tests_**](#other-tests)
 </details>
 
@@ -172,6 +174,8 @@ The project has been tested on the available DevTools for phone and tablet sizes
 ![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=FFFFFF)
 ======
 
+### HTML
+
 The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#validate_by_uri) validator. For a few pages the links are below, but all pages have been checked and no errors or warnings were found.<br>
 <img src="../testing/img/html_check.png" alt="Html check" width="55%" height="55%"> <br>
 
@@ -195,6 +199,8 @@ The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#va
 ![CSS3](https://img.shields.io/badge/CSS3%20-%231572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=FFFFFF)
 ======
 
+### CSS
+
 The CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
 base.css<br>
 <img src="../testing/img/css_base_1.png" alt="CSS check base 1" width="55%" height="55%"> <img src="../testing/img/css_base_2.png" alt="CSS check base 2" width="55%" height="55%"> <img src="../testing/img/css_base_3.png" alt="CSS check base 3" width="55%" height="55%"><br>
@@ -209,6 +215,8 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 
 ![JavaScript](https://img.shields.io/badge/JavaScript%20-%23323330.svg?&style=for-the-badge&logo=JavaScript&logoColor=F7DF1E)
 ======
+
+### JavaScript
 
 The JavaScript code was tested with a [JavaScript](https://jshint.com/) linter. <br>
 main.js<br>
@@ -231,6 +239,8 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 ![PYTHON](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ======
 
+### Python
+
 The Python code was tested with a [PEP8](http://pep8online.com/) linter. <br>
 Below are two examples, the first of the checkout app models and the second of the checkout app views.<br>
 <img src="../testing/img/checkout_models.png" alt="PEP8 checkout models" width="55%" height="55%"><br>
@@ -241,6 +251,8 @@ All other python files have also been checked, no errors or warnings were found.
 
 :traffic_light: Lighthouse
 ======
+
+### Lighthouse
 
 All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: <br>
 ### Home page
@@ -580,6 +592,8 @@ GTmetrix also uses Lighthouse, so the reports are similar to the Lighthouse test
 :eyeglasses: Color blindness
 ======
 
+### Color blindness
+
 Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find the links of the homepage tests, but of course all pages were tested. <br>
 [Protanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=protan) <br>
 [Deutanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=deutan) <br>
@@ -590,6 +604,8 @@ Color blindness was tested on this [site](https://www.toptal.com/designers/color
 
 :heavy_check_mark: Accessibility
 ======
+
+### Accessibility
 
 Several pages of the site have been tested on accessibility for people with disabilities through the
 [Web Accessibility site](https://www.webaccessibility.com/), below are some of the results:
@@ -640,6 +656,8 @@ Several pages of the site have been tested on accessibility for people with disa
 :mag: Travis testing
 ======
 
+### Travis testing
+
 The plan was to extensively test with [Travis CI](https://www.travis-ci.com/), but due to time constraints, it has been decided to only check the build and the required fields of the contact, free sample kit and quotation request forms.
 
 ### Build history
@@ -655,6 +673,8 @@ The plan was to extensively test with [Travis CI](https://www.travis-ci.com/), b
 
 :test_tube: Other tests
 ======
+
+### Other tests
 
 A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola edge 20 lite and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox. During the testing only some misalignments were found. These have been fixed.
 <br>
