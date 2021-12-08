@@ -36,7 +36,7 @@ The code of this site is hosted by Heroku and AWS S3, the code is deployed to Gi
 - [PIP3](https://help.dreamhost.com/hc/en-us/articles/115000699011-Using-pip3-to-install-Python3-modules) to install python packages
 - [Git](https://git-scm.com/) for version control for the code source
 - [AWS-S3](https://docs.aws.amazon.com/s3/?id=docs_gateway) web based cloud storage service
-- [S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.htmly) a cloud storage resource
+- [S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html) a cloud storage resource
 - [Stripe](https://stripe.com/nl) to securely collect credit card payments
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -64,7 +64,7 @@ pip3 install virtualenv
 ```
 virtualenv env
 ```
->The needed command may differ to the IDE you are using, such as ```python -m .venv venv ...``` or ```py manage.py ...
+>The needed command may differ to the IDE you are using, such as `python -m .venv venv ...` or `py manage.py` ...
 
 Activate the .env with the command:
 ```
@@ -93,7 +93,7 @@ Replace `your_value` with the values from your own created accounts for stripe a
 - [SECRET_KEY](https://miniwebtool.com/django-secret-key-generator/)
 13. Set up your database by running the following command in your terminal:
 ```
-python3 manage.py make migrations
+python3 manage.py makemigrations
 ```
 Followed by:
 ```
@@ -111,7 +111,7 @@ python3 manage.py loaddata size
 python3 manage.py loaddata producttag
 python3 manage.py loaddata products
 ```
-16. Now you can start your server with the following command:
+16. At this point you can start your server with the following command:
 ```
 python3 manage.py runserver
 ```
@@ -129,7 +129,7 @@ postfly_jouw_online_drukkerij is already taken so think of another name), click 
 <img src="../deployment/img/heroku_deployment_2.png" alt="Deployment to Heroku 2" width="75%" height="75%"/> <br>
 3. On your app dashboard click `Deploy` and select `GitHub`, connect it to your GitHub respository. Don't click `Enable Automatic Deploys` yet.<br>
 <img src="../deployment/img/heroku_connection_github.png" alt="Heroku connection to GitHub" width="75%" height="75%"/> <br>
-4. Click on the `Resources` tab and type Heroku Postgres in the `Add-ons` field, select the `Hobby Dev` option.
+4. Click on the `Resources` tab and type `Heroku Postgres` in the `Add-ons` field, select the `Hobby Dev` option.
 <img src="../deployment/img/heroku_deployment_3.png" alt="Deployment to Heroku 3" width="75%" height="75%"/> <br>
 5. Click on `Settings` and then `Reveal Config Vars`. <br>
 <img src="../deployment/img/heroku_deployment_4.png" alt="Deployment to Heroku 4" width="75%" height="75%"/> <br>
@@ -142,7 +142,7 @@ SECRET_KEY | `your_SECRET_KEY`
 STRIPE_PUBLIC_KEY | `your_STRIPE_PUBLIC_KEY`
 STRIPE_SECRET_KEY | `your_STRIPE_SECRET_KEY`
 
-The DATABASE_URL link which can be found in Heroku's Config Vars.
+The DATABASE_URL link which can be found in Heroku's Config Vars.<br>
 7. Since the database on Heroku is created you need to adjust your `env.py` file, add:
 ```
 os.environ.setdefault('DATABASE_URL', '<your postgres url grabbed from Heroku comes here>')
@@ -150,14 +150,14 @@ os.environ.setdefault('DATABASE_URL', '<your postgres url grabbed from Heroku co
 >Make sure not to share this link with anybody.
 8. Now we need to migrate the new database connection with:
 ```
-python3 manage.py make migrations
+python3 manage.py makemigrations
 ```
 Followed by:
 ```
 python3 manage.py migrate
 ```
 >Do not forget to reactivate your virtual environment if the system or IDE is rebooted.
-9. Now create a superuser to get access to the Django admin, use the following command:
+9. Create a superuser to get access to the Django admin, use the following command:
 ```
 python3 manage.py createsuperuser
 ```
@@ -255,8 +255,8 @@ Save the changes. <br>
     ]
 }
 ```
-Make sure you add the /* with the resource key to allow acces to all resources in this bucket. Click save.
-7. Go to the `Access control list (ACL)` tab and set tge list bojects permission for everyone under the `Public Access` section.
+Make sure you add the /* with the resource key to allow acces to all resources in this bucket. Click save.<br>
+7. Go to the `Access control list (ACL)` tab and set the list projects permission for everyone under the `Public Access` section.
 <div align="right"><a href="#top">🔝</a></div>
 
 #### IAM
@@ -275,7 +275,7 @@ Click next untill you reach `ReviewPolicy`
 <img src="../deployment/img/attach_policy.png" alt="Attach policy" width="75%" height="75%"/> <br>
 9. Click on `Users` in the menu on the left. Then click `Add users` name it after your app, in my case postfly-jouw-online-drukkerij-staticfiles-user, give programmatic access and select next. Add the user to the group you just created. Click through on next and then on create user.
 10. Download the csv file you see there and save it!
-You need the secrect keys in there and once you've done this there is now way to retrieve it!!
+You need the secrect keys in there and once you've done this there is now way to retrieve it!!<br>
 <img src="../deployment/img/csv.png" alt="Download csv" width="75%" height="75%"/> <br>
 <div align="right"><a href="#top">🔝</a></div>
 
