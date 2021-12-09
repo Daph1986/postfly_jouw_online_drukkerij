@@ -261,5 +261,6 @@ Most content has been written by me, the technical stories regarding the deliver
 - Special thanks to CI former students Aukje van der Wal and Django Heimgartner whose projects Dark Luna and Silkscreenservice + Digipress learnt me a lot.
 - A huge thanks to the incredible CI tutor support for helping me a out a lot of times during this project.
 - Special thanks to CI fellow student Gwendolyn Jo for lifting my spirits during multiple mental breakdowns.
-- Special thanks to my colleagues, friends and family for their support, tips and for testing my project.
+- Special thanks to fellow Slackers Laila and John R for checking my project.
+- Special thanks to my colleagues, friends and family for their support, tips and for testing.
 <div align="right"><a href="#top">🔝</a></div>

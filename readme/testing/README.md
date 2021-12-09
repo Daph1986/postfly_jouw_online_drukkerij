@@ -711,12 +711,20 @@ The plan was to extensively test with [Travis CI](https://www.travis-ci.com/), b
 
 ### Other tests
 
-A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola edge 20 lite and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox. During the testing only some misalignments were found. These have been fixed. And a lack of defensive programming was found, for deleting a product, there was no extra warning, so a modal was inserted to check if the admin is sure that the product needs to be deleted.
+A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola edge 20 lite and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox.<br> 
+During the testing the following was found:
+- some misalignments, these have been fixed.
+- a lack of defensive programming, for deleting a product, there was no extra warning, so a modal was inserted to check if the admin is sure that the product needs to be deleted.
+- if the page was visited before a certain date (before implementation of the Dutch flag) then the Dutch flag can be displayed very large as shown below. This can easily be solved by removing the session cookies once. When a user visits the site for the first time now (ie after the Dutch flag was implemented in the site), this problem should not occur.
+<img src="../testing/img/image_from_ios.png" alt="Flag cookie problem" width="50%" height="50%"><br>
+- in some browsers / on some devices the payment text is not displayed in the Poppins font even though everything is set to Poppins. This is a known bug and may be related to a browser, device, or JavaScript version issue.<br>
+<img src="../testing/img/payment_text_1.png" alt="Payment text other font" width="50%" height="50%"><br>
+<img src="../testing/img/payment_text_2.png" alt="Payment text correct font" width="50%" height="50%"><br>
 <br>
 The contact forms have been tested on Google Chrome and Safari, they work as they should.<br>
-<img src="../testing/img/contact_form_test.png" alt="Travis build history" width="50%" height="50%"><br>
-<img src="../testing/img/sample_form_test.png" alt="Travis build history" width="50%" height="50%">
-<img src="../testing/img/quotation_form_test.png" alt="Travis build history" width="50%" height="50%">
+<img src="../testing/img/contact_form_test.png" alt="Contact form test" width="50%" height="50%"><br>
+<img src="../testing/img/sample_form_test.png" alt="Sample form test" width="50%" height="50%">
+<img src="../testing/img/quotation_form_test.png" alt="Quotation form test" width="50%" height="50%">
 
 <div align="right"><a href="#top">🔝</a></div>
 
