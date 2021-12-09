@@ -64,7 +64,7 @@ Navigate to `Contact / Contact us` in the menu and fill out the contact form.<br
 <div align="right"><a href="#top">🔝</a></div>
 </details>
 
-**<details><summary>#4 ask for an quotation if a product is not on the site, but maybe in the collection</summary>**
+**<details><summary>#4 ask for a quotation if a product is not on the site, but maybe in the collection</summary>**
 
 Navigate to `Contact / Quotation request` in the menu and fill out the form.<br>
 
@@ -119,7 +119,7 @@ Navigate to `Account / Dashboard` in the menu.<br>
 
 Navigate to `Account / Profile` in the menu.<br>
 
-<img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%">
+<img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/img/profile_2.jpg" alt="Profile 2" width="25%" height="25%"> <img src="../testing/img/profile_3.jpg" alt="Profile 3" width="25%" height="25%">
 </details>
 
 **<details><summary>#11 sort products by name, category and price</summary>**
@@ -143,16 +143,6 @@ In the menu navigate search for the desirered product in the search bar, you can
 **<details><summary>#13 go through the ordering process in a simple way + #14 to upload my own artwork + #15 have easy acces to my cart, and to be able to delete products that are in the cart, as long as the order isn't put through yet</summary>**
 
 Place the products that you want to order in your cart. Navigate to the `shopping cart` in the menu. As long as you didn't pay you are still able to adjust the cart. Go to `Secure checkout` when you are ready, fill out the checkout form where you can also upload your artwork.
-
-<img src="../testing/img/ordering_1.jpg" alt="How to order 1" width="25%" height="25%"> <img src="../testing/img/ordering_2.jpg" alt="How to order 2" width="25%" height="25%"> <img src="../testing/img/ordering_3.jpg" alt="How to order 3" width="25%" height="25%"><br>
-<img src="../testing/img/ordering_4.jpg" alt="How to order 4" width="25%" height="25%"> <img src="../testing/img/ordering_5.jpg" alt="How to order 5" width="25%" height="25%"><br>
-<img src="../testing/img/ordering_6.jpg" alt="How to order 6" width="25%" height="25%"> <img src="../testing/img/ordering_7.jpg" alt="How to order 7" width="25%" height="25%">
-<div align="right"><a href="#top">🔝</a></div>
-</details>
-
-**<details><summary>#13 go through the ordering process in a simple way + #14 to upload my own artwork + #15 have easy acces to my cart, and to be able to delete products that are in the cart, as long as the order isn't put through yet</summary>**
-
-Place the products that you want to order in your cart. Als long as you didn't pay you are still able to adjust the cart. Go to `Secure checkout` when you are ready, fill out the checkout form where you can also upload your artwork.
 
 <img src="../testing/img/ordering_1.jpg" alt="How to order 1" width="25%" height="25%"> <img src="../testing/img/ordering_2.jpg" alt="How to order 2" width="25%" height="25%"> <img src="../testing/img/ordering_3.jpg" alt="How to order 3" width="25%" height="25%"><br>
 <img src="../testing/img/ordering_4.jpg" alt="How to order 4" width="25%" height="25%"> <img src="../testing/img/ordering_5.jpg" alt="How to order 5" width="25%" height="25%"><br>
@@ -229,12 +219,14 @@ The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#va
 ### CSS
 
 The CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
-base.css<br>
+#### base.css<br>
 <img src="../testing/img/css_base_1.png" alt="CSS check base 1" width="55%" height="55%"> <img src="../testing/img/css_base_2.png" alt="CSS check base 2" width="55%" height="55%"> <img src="../testing/img/css_base_3.png" alt="CSS check base 3" width="55%" height="55%"><br>
 <div align="right"><a href="#top">🔝</a></div>
-checkout.css<br>
+
+#### checkout.css<br>
 <img src="../testing/img/css_checkout_1.png" alt="CSS check checkout 1" width="55%" height="55%"> <img src="../testing/img/css_checkout_2.png" alt="CSS check checkout 2" width="55%" height="55%"><br>
-profile.css<br>
+
+#### profile.css<br>
 <div align="right"><a href="#top">🔝</a></div>
 <img src="../testing/img/css_profile_1.png" alt="CSS check profile 1" width="55%" height="50%"> <img src="../testing/img/css_profile_2.png" alt="CSS check profile 2" width="55%" height="55%"><br>
 
@@ -247,18 +239,23 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 ### JavaScript
 
 The JavaScript code was tested with a [JavaScript](https://jshint.com/) linter. <br>
-main.js<br>
+#### main.js<br>
 <img src="../testing/img/main.png" alt="Main.js check" width="55%" height="55%"><br>
-products.js<br>
+
+#### products.js<br>
 <img src="../testing/img/products.png" alt="Products.js check" width="55%" height="55%"><br>
-toasts.js<br>
+
+#### toasts.js<br>
 <img src="../testing/img/toasts.png" alt="Toasts.js check" width="55%" height="55%"><br>
 <div align="right"><a href="#top">🔝</a></div>
-stripe_elements.js<br>
+
+#### stripe_elements.js<br>
 <img src="../testing/img/stripe_elements.png" alt="Stripe_elements.js check" width="55%" height="55%"><br>
-countryfield.js<br>
+
+#### countryfield.js<br>
 <img src="../testing/img/countryfield.png" alt="Countryfield.js check" width="55%" height="55%"><br>
-cart.html script<br>
+
+#### cart.html script<br>
 <img src="../testing/img/cart.png" alt="Cart.html script check" width="55%" height="55%"><br>
 
 Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
@@ -335,7 +332,7 @@ All pages have passed through Lighthouse in Chrome DevTools, the results can be 
   <summary>Click to see results</summary>
   <img src="../testing/img/flyers_300_mat_a6_mobile.png" alt="Lighthouse results" width="50%" height="50%">
 </details>
-The results for the other single pages, other sizes and paper types, is similar, they have been tested but are not shown here because the list would then become too long.
+The results for the other single pages, other sizes and paper types are comparable, they have been tested but are not shown here because the list will then become too long, even longer than it already is.
 
 ### Specification page
 #### Desktop
@@ -715,11 +712,11 @@ A lot of different people were asked to check the project to ensure it works on 
 During the testing the following was found:
 - some misalignments, these have been fixed.
 - a lack of defensive programming, for deleting a product, there was no extra warning, so a modal was inserted to check if the admin is sure that the product needs to be deleted.
-- if the page was visited before a certain date (before implementation of the Dutch flag) then the Dutch flag can be displayed very large as shown below. This can easily be solved by removing the session cookies once. When a user visits the site for the first time now (ie after the Dutch flag was implemented in the site), this problem should not occur.
-<img src="../testing/img/image_from_ios.png" alt="Flag cookie problem" width="50%" height="50%"><br>
+- if the page was visited before a certain date (before implementation of the Dutch flag) then the Dutch flag can be displayed very large as shown below. This can easily be solved by removing the session cookies once. When a user visits the site for the first time now (ie after the Dutch flag was implemented in the site), this problem should not occur.<br>
+<img src="../testing/img/image_from_ios.png" alt="Flag cookie problem" width="25%" height="25%"><br>
 - in some browsers / on some devices the payment text is not displayed in the Poppins font even though everything is set to Poppins. This is a known bug and may be related to a browser, device, or JavaScript version issue.<br>
-<img src="../testing/img/payment_text_1.png" alt="Payment text other font" width="50%" height="50%"><br>
-<img src="../testing/img/payment_text_2.png" alt="Payment text correct font" width="50%" height="50%"><br>
+<img src="../testing/img/payment_text_1.png" alt="Payment text other font" width="30%" height="30%"><br>
+<img src="../testing/img/payment_text_2.png" alt="Payment text correct font" width="25%" height="25%"><br>
 <br>
 The contact forms have been tested on Google Chrome and Safari, they work as they should.<br>
 <img src="../testing/img/contact_form_test.png" alt="Contact form test" width="50%" height="50%"><br>
