@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "postfly_jouw_online_drukkerij/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "postfly_jouw_online_drukkerij/wsgi.py"
+    }
+  ]
+}

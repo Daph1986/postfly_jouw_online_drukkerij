@@ -15,3 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE',
                       'postfly_jouw_online_drukkerij.settings')
 
 application = get_wsgi_application()
+
+app = application
