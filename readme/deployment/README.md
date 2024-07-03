@@ -24,8 +24,8 @@ repository.
 5. Click on the link on the right side or on the link under `Demo`.
 By clicking that link the live demo version will be visible. <br>
 
-<img src="../deployment/deployment_link_1.png" alt="Deployment link 1" width="75%" height="50%"/>
-<!-- <img src="../static/readme_images/deployment_link_2.png" alt="Deployment link 2" width="75%" height="50%"/> -->
+<img src="../deployment/img/deployment_link_1.png" alt="Deployment link 1" width="75%" height="50%"/>
+<img src="../deployment/img/deployment_link_2.png" alt="Deployment link 2" width="75%" height="50%"/>
 <div align="right"><a href="#top">🔝</a></div>
 
 The code of this site is hosted by Heroku and AWS S3, the code is deployed to GitHub from the main branch. The deployed site will update automatically upon new commits to the main branch. The code can be run locally or deployed to a live environment. Directions are based on deployment locally and to Heroku.
@@ -36,7 +36,7 @@ The code of this site is hosted by Heroku and AWS S3, the code is deployed to Gi
 - [PIP3](https://help.dreamhost.com/hc/en-us/articles/115000699011-Using-pip3-to-install-Python3-modules) to install python packages
 - [Git](https://git-scm.com/) for version control for the code source
 - [AWS-S3](https://docs.aws.amazon.com/s3/?id=docs_gateway) web based cloud storage service
-- [S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.htmly) a cloud storage resource
+- [S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-bucket.html) a cloud storage resource
 - [Stripe](https://stripe.com/nl) to securely collect credit card payments
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -48,7 +48,7 @@ You can clone it by following the next steps: <br>
 3. Select repositories.
 4. Select the `postfly_jouw_online_drukkerij` repository.
 5. Click on the `Code` button. <br>
-<img src="../deployment/run_local_1.png" alt="Run local 1" width="75%" height="50%"/> <br>
+<img src="../deployment/img/run_local_1.png" alt="Run local 1" width="75%" height="50%"/> <br>
 6. Copy the URL.
 7. Open VScode or your preferred IDE,(in this example we are using VScode), open the file or folder in which you want to use the project and open a CLI terminal.
 8. Put the following command in the CLI terminal:
@@ -64,7 +64,7 @@ pip3 install virtualenv
 ```
 virtualenv env
 ```
->The needed command may differ to the IDE you are using, such as ```python -m .venv venv ...``` or ```py manage.py ...
+>The needed command may differ to the IDE you are using, such as `python -m .venv venv ...` or `py manage.py` ...
 
 Activate the .env with the command:
 ```
@@ -93,7 +93,7 @@ Replace `your_value` with the values from your own created accounts for stripe a
 - [SECRET_KEY](https://miniwebtool.com/django-secret-key-generator/)
 13. Set up your database by running the following command in your terminal:
 ```
-python3 manage.py make migrations
+python3 manage.py makemigrations
 ```
 Followed by:
 ```
@@ -111,28 +111,28 @@ python3 manage.py loaddata size
 python3 manage.py loaddata producttag
 python3 manage.py loaddata products
 ```
-16. Now you can start your server with the following command:
+16. At this point you can start your server with the following command:
 ```
 python3 manage.py runserver
 ```
 If everything went correctly you should see something like this in the terminal:<br>
-<img src="../deployment/running_server.png" alt="Run local 1" width="75%" height="75%"/> <br>
+<img src="../deployment/img/running_server.png" alt="Run local 1" width="75%" height="75%"/> <br>
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Heroku
 To create a live version of the website VSCode was used together with Heroku. This section assumes you have succeeded at running the application in your local environment first, as described above. 
 To deploy the website with Heroku the following steps were made:
 1. Log in or create an account on [Heroku](https://www.heroku.com) and create a new app by clicking the button.<br>
-<img src="../deployment/heroku_deployment_1.png" alt="Deployment to Heroku 1" width="75%" height="75%"/> <br>
+<img src="../deployment/img/heroku_deployment_1.png" alt="Deployment to Heroku 1" width="75%" height="75%"/> <br>
 2. Give the app a unique name in all lowercase letters and set `Choose a region` to the one nearest to you (in this case Europ and 
 postfly_jouw_online_drukkerij is already taken so think of another name), click on create app.<br>
-<img src="../deployment/heroku_deployment_2.png" alt="Deployment to Heroku 2" width="75%" height="75%"/> <br>
+<img src="../deployment/img/heroku_deployment_2.png" alt="Deployment to Heroku 2" width="75%" height="75%"/> <br>
 3. On your app dashboard click `Deploy` and select `GitHub`, connect it to your GitHub respository. Don't click `Enable Automatic Deploys` yet.<br>
-<img src="../deployment/heroku_connection_github.png" alt="Heroku connection to GitHub" width="75%" height="75%"/> <br>
-4. Click on the `Resources` tab and type Heroku Postgres in the `Add-ons` field, select the `Hobby Dev` option.
-<img src="../deployment/heroku_deployment_3.png" alt="Deployment to Heroku 3" width="75%" height="75%"/> <br>
+<img src="../deployment/img/heroku_connection_github.png" alt="Heroku connection to GitHub" width="75%" height="75%"/> <br>
+4. Click on the `Resources` tab and type `Heroku Postgres` in the `Add-ons` field, select the `Hobby Dev` option.
+<img src="../deployment/img/heroku_deployment_3.png" alt="Deployment to Heroku 3" width="75%" height="75%"/> <br>
 5. Click on `Settings` and then `Reveal Config Vars`. <br>
-<img src="../deployment/heroku_deployment_4.png" alt="Deployment to Heroku 4" width="75%" height="75%"/> <br>
+<img src="../deployment/img/heroku_deployment_4.png" alt="Deployment to Heroku 4" width="75%" height="75%"/> <br>
 6. Fill in the values from your `env.py` file in your Heroku confic vars: <br>
 
 | Key | Value |
@@ -142,7 +142,7 @@ SECRET_KEY | `your_SECRET_KEY`
 STRIPE_PUBLIC_KEY | `your_STRIPE_PUBLIC_KEY`
 STRIPE_SECRET_KEY | `your_STRIPE_SECRET_KEY`
 
-The DATABASE_URL link which can be found in Heroku's Config Vars.
+The DATABASE_URL link which can be found in Heroku's Config Vars.<br>
 7. Since the database on Heroku is created you need to adjust your `env.py` file, add:
 ```
 os.environ.setdefault('DATABASE_URL', '<your postgres url grabbed from Heroku comes here>')
@@ -150,14 +150,14 @@ os.environ.setdefault('DATABASE_URL', '<your postgres url grabbed from Heroku co
 >Make sure not to share this link with anybody.
 8. Now we need to migrate the new database connection with:
 ```
-python3 manage.py make migrations
+python3 manage.py makemigrations
 ```
 Followed by:
 ```
 python3 manage.py migrate
 ```
 >Do not forget to reactivate your virtual environment if the system or IDE is rebooted.
-9. Now create a superuser to get access to the Django admin, use the following command:
+9. Create a superuser to get access to the Django admin, use the following command:
 ```
 python3 manage.py createsuperuser
 ```
@@ -189,11 +189,11 @@ heroku git: remote -a your heroku git url
 git push heroku main
 ```
 You will then see something like this in your terminal:
-<img src="../deployment/pushing_to_heroku.png" alt="Pushing to Heroku" width="75%" height="75%"/> <br>
+<img src="../deployment/img/pushing_to_heroku.png" alt="Pushing to Heroku" width="75%" height="75%"/> <br>
 
 14. If you want you can let the deployment to Heroku be automatically everytime you push to GitHub, on your app dashboard click `Deploy` and click `Enable Automatic Deploys`.
 If you go to the `Activity` tab on your app dashboard you can see that there is a build in progress, the details will look a bit like this:
-<img src="../deployment/build_finished.png" alt="Heroku build finished" width="75%" height="75%"/> <br>
+<img src="../deployment/img/build_finished.png" alt="Heroku build finished" width="75%" height="75%"/> <br>
 Your app is running on Heroku now.
 
 15. Log in to the admin panel by placing /admin behind your app name, for example for this one: https://postfly-jouw-online-drukkerij.herokuapp.com/admin
@@ -211,11 +211,11 @@ To follow the next steps make sure you have an Amazon AWS account and that you a
 
 #### S3 Bucket
 
-1. In the AWS Management Console search for S3, open it and click `Create bucket`
-<img src="../deployment/s3_create_bucket.png" alt="Create S3 bucket" width="75%" height="75%"/> <br>
+1. In the AWS Management Console search for S3, open it and click `Create bucket`<br>
+<img src="../deployment/img/s3_create_bucket.png" alt="Create S3 bucket" width="75%" height="75%"/> <br>
 2. Name your bucket to match your Heroku app name and select the region closest to you. Uncheck `Block all public access` and acknowledge that the bucket will be public.
 Click `Create bucket`.
-<img src="../deployment/bucket_created.png" alt="S3 bucket is created" width="75%" height="75%"/> <br>
+<img src="../deployment/img/bucket_created.png" alt="S3 bucket is created" width="75%" height="75%"/> <br>
 3. Click your newly made bucket and cick the `Properties` tab and turn on `Static website hosting`, just fill in a default value for the index and error document and click save.
 4. Now click on the `Permissions` tab, with the Cross-origin resource sharing (CORS) fill in:
 ```
@@ -236,8 +236,8 @@ Click `Create bucket`.
 ```
 Save the changes. <br>
 
-5. Go to `Bucket Policy` and click `Policy generator`, fill it out like this, but with your own arn.
-<img src="../deployment/policy_generator.png" alt="Policy generator" width="75%" height="75%"/> <br>
+5. Go to `Bucket Policy` and click `Policy generator`, fill it out like this, but with your own arn.<br>
+<img src="../deployment/img/policy_generator.png" alt="Policy generator" width="75%" height="75%"/> <br>
 
 6. Copy the policy that you get and paste it in the `Bucket policy`, in tis case:
 ```
@@ -255,8 +255,8 @@ Save the changes. <br>
     ]
 }
 ```
-Make sure you add the /* with the resource key to allow acces to all resources in this bucket. Click save.
-7. Go to the `Access control list (ACL)` tab and set tge list bojects permission for everyone under the `Public Access` section.
+Make sure you add the /* with the resource key to allow acces to all resources in this bucket. Click save.<br>
+7. Go to the `Access control list (ACL)` tab and set the list projects permission for everyone under the `Public Access` section.
 <div align="right"><a href="#top">🔝</a></div>
 
 #### IAM
@@ -265,18 +265,18 @@ Make sure you add the /* with the resource key to allow acces to all resources i
 2. On the IAM dashboard click `User groups` and then `Create group`, name your group so it makes sense to you what it is. Click `Create group`.
 3. On the menu left click `Policies` and then `Create Policy`.
 4. Click on the `Json` tab and click `Import managed policy`, search for `S3` select the `AmazonS3FullAccess` one. Click import.
-<img src="../deployment/import_policy.png" alt="Import policy" width="75%" height="75%"/> <br>
+<img src="../deployment/img/import_policy.png" alt="Import policy" width="75%" height="75%"/> <br>
 5. You just want to give permission to your bucket, so make sure you fill it out like this, but with your own arn! 
-<img src="../deployment/create_policy.png" alt="Create policy" width="75%" height="75%"/> <br>
+<img src="../deployment/img/create_policy.png" alt="Create policy" width="75%" height="75%"/> <br>
 Click next untill you reach `ReviewPolicy`
 6. Give it an name and a description and click `Create policy`.
 7. You'll arrive back on the policy page, go to `User groups` in the menu on the left and click on manage-your-group-name.
 8. Click `Attach policies` search for and select the policy you just created.
-<img src="../deployment/attach_policy.png" alt="Attach policy" width="75%" height="75%"/> <br>
+<img src="../deployment/img/attach_policy.png" alt="Attach policy" width="75%" height="75%"/> <br>
 9. Click on `Users` in the menu on the left. Then click `Add users` name it after your app, in my case postfly-jouw-online-drukkerij-staticfiles-user, give programmatic access and select next. Add the user to the group you just created. Click through on next and then on create user.
 10. Download the csv file you see there and save it!
-You need the secrect keys in there and once you've done this there is now way to retrieve it!!
-<img src="../deployment/csv.png" alt="Download csv" width="75%" height="75%"/> <br>
+You need the secrect keys in there and once you've done this there is now way to retrieve it!!<br>
+<img src="../deployment/img/csv.png" alt="Download csv" width="75%" height="75%"/> <br>
 <div align="right"><a href="#top">🔝</a></div>
 
 #### Connecting AWS to Django
@@ -299,7 +299,7 @@ Next time you deploy to Heroku, AWS will retrieve your static files and store th
 4. Click `Add files` and select the images that go with your products or in this case with the size.
 5. Click next and under `Manage public permissions`, and choose `Grant public-read access`.
 6. Then click`Upload`, you will see your files being uploaded.<br>
-<img src="../deployment/media_files.png" alt="Media files uploaded" width="75%" height="75%"/> <br>
+<img src="../deployment/img/media_files.png" alt="Media files uploaded" width="75%" height="75%"/> <br>
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Sending real emails with Gmail

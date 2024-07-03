@@ -5,8 +5,12 @@ Jouw online drukkerij!
 **[Code Institute](https://codeinstitute.net/)  Milestone Project 4: Full Stack Frameworks with Django**
 
 [![Build Status](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij.svg?branch=main)](https://app.travis-ci.com/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub contributors](https://img.shields.io/github/contributors/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub last commit](https://img.shields.io/github/last-commit/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub language count](https://img.shields.io/github/languages/count/Daph1986/postfly_jouw_online_drukkerij)
+![GitHub forks](https://img.shields.io/github/forks/Daph1986/postfly_jouw_online_drukkerij?style=social)
 
-<img src="readme/general/logo.png" alt="Logo" width="75%" height="75%">
+<img src="readme/general/img/logo.png" alt="Logo" width="75%" height="75%">
 
 POSTFLY is a site where you can order all your necessary printed matter online.
 [POSTFLY](http://www.postfly.nl/) already has an existing site, but it needs an update.
@@ -18,10 +22,10 @@ The site's goal is to have a more efficient system for employees and a easy to u
 :clapper: Demo
 ======
 
-By clicking this [link](https://postfly-jouw-online-drukkerij.herokuapp.com/) a live demo version will be visible.
+Due to changes on Heroku, there is no longer a demo link available.
 
-<img src="readme/general/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
-<img src="readme/general/mockup_2.png" alt="Mockup 2" width="65%" height="65%">
+<img src="readme/general/img/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
+<img src="readme/general/img/mockup_2.png" alt="Mockup 2" width="65%" height="65%">
 <div align="right"><a href="#top">🔝</a></div>
 
 :open_file_folder: Table of Contents
@@ -72,7 +76,7 @@ This is meant to be a B2B site which targets visitors who are in need of printed
 
 ### User stories
 
-<img src="readme/general/user_stories.png" alt="User stories" width="100%" height="100%"><br>
+<img src="readme/general/img/user_stories.png" alt="User stories" width="100%" height="100%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Strategy
@@ -82,16 +86,16 @@ The design goal is to make a clear, accessible, structured site so that visitors
 ### Scope
 
 For customers, the site should be an improvement over the existing site. Frequently heard complaints with the existing site include that it is not clear where the artwork should be uploaded and that the payment system is not working.
-If this can be done, it will also ease the workload of the employees, by solving many complaints and questions related to the site.
-The site shows a homepage with links to different parts of the site. It contains a products page where the different products are displayed. There is a files section which gives guidance on how to prepare your digital files and a frequently asked question page for the answers to most asked questions. Furthermore there is a section "About us" which gives a bit of background information about the company and there is a contact section where a contact form can be used, a sample kit request form and a quotation form can be filled out.
-The site also contains a register page, a log in page and a shopping cart which will color red and update the price when there is a product in the cart.
-The register link will dissapear when logged in and the login link will change to account, where the dashboard, profile and logout link will be displayed. When you are a logged in admin there will also be a product management link.
+If this can be improved, it will also ease the workload of the employees, by solving many complaints and questions related to the site.<br>
+The site shows a homepage with links to different parts of the site. It contains a products page where the different products are displayed. There is a files section which gives guidance on how to prepare your digital files and a frequently asked question page for the answers to most asked questions.<br> Furthermore there is a section "About us" which gives a bit of background information about the company and there is a contact section where a contact form can be used, a sample kit request form and a quotation form can be filled out.<br>
+The site also contains a register page, a log in page and a shopping cart which will color red and update the price when there is a product in the cart.<br>
+The register link will dissapear when logged in and the login link will change to account, where the dashboard, profile and logout link will be displayed. When you are a logged as admin there will also be a product management link.
 
 | Nav menu | Logged in User | Logged out User |
  --- | --- | ---
 Home| &#9989; | &#9989; |
 Products |&#9989; | &#9989; |
-Files|&#9989; | &#9989; |
+Specifications|&#9989; | &#9989; |
 FAQ| &#9989; | &#9989; |
 About us| &#9989; | &#9989; |
 Contact | &#9989; | &#9989; |
@@ -111,7 +115,7 @@ Add products | &#10060; | &#9989; |
 Update products | &#10060; | &#9989; |
 Delete products | &#10060; | &#9989; |
 See own orders| &#9989; | &#9989; |
-customers | &#10060; | &#9989; |
+See other customers orders | &#10060; | &#9989; |
 Edit profile| &#9989; | &#9989; |
 
 
@@ -143,7 +147,7 @@ The site contains the following features:
 - A form where customers can request a quotation or deviating products / products that are not on the site but we may have.
 - A sample kit form where customers can request a sample kit with our paper types.
 - A register page.
-- A login page.
+- A log in page.
 - A page for when the customer forgot their password.
 - An order sytem, to order the products and upload the artwork for the products.
 - A dashboard, with the order history.
@@ -153,7 +157,7 @@ The site contains the following features:
 
 The following features can be added: 
 
-- An option to choose the language, Dutch or English. Default will be Dutch. The start has already been made by making most of the translations, but due to able to submit this project in time, this feature has been moved to a future update.
+- An option to change the language to Dutch. The start has already been made by making most of the translations, but due to be able to submit this project in time, this feature has been moved to a future update.
 - Integrate the previously created project POSTFLY Business card creator into this site, so that customers can create their design on the site instead of uploading their separately made artwork.
 - A chat function for live chat with an employee.
 - An artwork upload system where a customer can check their artwork themself.
@@ -202,7 +206,7 @@ The following features can be added:
 
 ### Testing file
 
-The tests have been done on multiple devices and browsers. In the end everything works as intended. Because this topic contained more content than expected, a separate page was created.
+The tests have been done on multiple devices and browsers. In the end everything works as intended. Because this topic contains a lot of information, a separate page was created.
 For more details about testing and bugs please view this [file](readme/testing/README.md).
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -228,20 +232,20 @@ Most content has been written by me, the technical stories regarding the deliver
 5. [Tutorial](https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html) to learn how to upload files with Django.
 6. [Autoprefixer CSS online](https://autoprefixer.github.io/) for improving the CSS code.
 7. [CI Alumni Aukje van der Wal](https://gitlab.com/Aukje/Dark-Luna/-/blob/master/contact/forms.py) for learning how to set up the contact form and matching email with it.
-8. [CI Django Heimgartner](https://github.com/D1ang/Digipress) and [Lokalise](https://lokalise.com/blog/django-i18n-beginners-guide/) to understand how to set up translation files.
+8. [CI Alumni Django Heimgartner](https://github.com/D1ang/Digipress) and [Lokalise](https://lokalise.com/blog/django-i18n-beginners-guide/) to understand how to set up translation files.
 <div align="right"><a href="#top">🔝</a></div>
 
 ### Media
 
 #### Images
-1. [POSTFLY](http://www.postfly.nl/) the POSTFLY logo provided by my colleague Filip Matthys, for the joboptions and base of the templates, and for the images on the deep black and resolution (sunflower image) page.
+1. [POSTFLY](http://www.postfly.nl/) the POSTFLY logo provided by my colleague Filip Matthys, for the job options and base of the templates, and for the images on the deep black and resolution (sunflower image) page.
 2. [Flaticon](https://www.flaticon.com/free-icon/paper-plane_164627?term=paper%20plane&page=3&position=52&page=3&position=52&related_id=164627&origin=search) to get and adjust the paper plane of the logo.
 3. [favicon.io](https://favicon.io/favicon-converter/) was used to get the favicon of the logo and the Dutch flag.
 4. [Color-hex](https://www.color-hex.com/) was used to get the images of the colors that were used.
-5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for their logo,  the images of some foil samples and the foil fan, the head office and the presses, thanks for my colleague Bart Lauwaert for providing the original photos to me and for the how to cold foil pdf.
+5. [Grafische Groep Matthys](https://www.groepmatthys.com/) for their logo,  the images of some foil samples and the foil fan, the head office and the presses, thanks for my colleague Bart Lauwaert for providing some original photos to me and for the how to cold foil pdf.
 6. [WPJournalist](https://wpjournalist.nl/avatar-maken/) to create the avatars of the team.
-7. [Adobe Stock](https://stock.adobe.com/nl) for the images on the speicifications, file type, color, resolution (dpi image), templates, FAQ, concept, contact, quotation, register, login, forgot password page and the illustrator file for the mockup image. These are licensed images downloaded with a paid Adobe Stock account.
-8. [Cleanpng](https://www.cleanpng.com/png-ink-cartridge-printer-toner-printing-color-drops-2337753/download-png.html) for the cmyk image of the 403, 404 and 500 error page, text added with Adobe Illustrator.
+7. [Adobe Stock](https://stock.adobe.com/nl) for the images on the specifications, file type, color, resolution (dpi image), templates, FAQ, concept, contact, quotation, register, login, forgot password page and the illustrator file for the mockup image. These are licensed images downloaded with a paid Adobe Stock account.
+8. [Cleanpng](https://www.cleanpng.com/png-ink-cartridge-printer-toner-printing-color-drops-2337753/) for the cmyk image of the 403, 404 and 500 error page, text added with Adobe Illustrator.
 9. The other images on the site and the screenshots of indesign etc. are my own photos and screenshots.
 
 
@@ -250,14 +254,13 @@ Most content has been written by me, the technical stories regarding the deliver
 2. [Tinypng](https://tinypng.com/) to resize the wireframe png's.
 3. [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) to get a new secret key for Django
 4. [Django livereload server](https://github.com/tjwalch/django-livereload-server) to learn how to not have to refresh the page every time.
-5. [Travis](https://www.travis-ci.com/) voor testing the settings.py and the forms for the contact, sample kit and quotation request pages.
-
 
 ### Acknowledgements
 - My mentor from Code Institute, thank you Narender for your time and guidance.
 - My husband, thank you Django for taking more care of our son so I can work on my education, and thank you for your patience and guidance in the time I had a lot of mental breakdowns.
-- Special thanks to CI former students Aukje van der Wal and Django Heimgartner whose projects Dark Luna and Silkscreenservice learnt me a lot.
+- Special thanks to CI former students Aukje van der Wal and Django Heimgartner whose projects Dark Luna and Silkscreenservice + Digipress learnt me a lot.
 - A huge thanks to the incredible CI tutor support for helping me a out a lot of times during this project.
 - Special thanks to CI fellow student Gwendolyn Jo for lifting my spirits during multiple mental breakdowns.
-- Special thanks to my colleagues, friends and family for their support, tips and for testing my project.
+- Special thanks to fellow Slackers Laila and John R for checking my project.
+- Special thanks to my colleagues, friends and family for their support, tips and for testing.
 <div align="right"><a href="#top">🔝</a></div>

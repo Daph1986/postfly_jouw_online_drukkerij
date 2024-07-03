@@ -13,6 +13,8 @@
 * [**_Lighthouse_**](#lighthouse)
 * [**_GTmetrix_**](#gtmetrix)
 * [**_Color blindness_**](#color-blindness)
+* [**_Accessibility_**](#accessibility)
+* [**_Travis testing_**](#travis-testing)
 * [**_Other tests_**](#other-tests)
 </details>
 
@@ -30,101 +32,185 @@
 
 ### User stories
 
-<!-- The design goal is to make a clear, accessible, structured site so that visitors can easily read the displayed recipes, make an account and add, edit and delete their own recipes. <br>
+The design goal is to make a clear, accessible, structured site so that visitors can easily order their printed matter. Below is an overview of the user stories. <br>
+<img src="../general/img/user_stories.png" alt="User stories" width="100%" height="100%"><br>
+
 To test the goals screen records of a OnePlus Nord were made.<br>
-NOTE: the grey overlay in some captions on the footer are displayed because the end of the screen was captured, when just looking on the device this is not visible. So, this is just the screen records issue of the phone not a site issue!!!<br><br>
-On small devices the menu can be accessed through the hamburger menu, on large devices the sidenav is always visible. There is a difference between the menu for a user who is not logged in and a user who is logged in.<br>
-<img src="../testing/testing_images/screen_record_navigation_menu.png" alt="Navigation menu logged out user" width="30%" height="30%"> <img src="../testing/testing_images/screen_record_menu_logged_in_user.png" alt="Navigation menu logged in user" width="30%" height="30%">
+NOTE: the grey overlay in some captions on the footer are displayed because the end of the screen was captured, when just looking on the device this is not visible. So, this is just the screen records issue of the phone not a site issue!!!<br>
+On small devices the menu can be accessed through the hamburger menu, on large devices the navbar is visible at the top. There is a difference between the menu for a user who is not logged in and a user who is logged in.<br>
 
-#### The visitor goals are:
-- To be able to see different recipes and search for them using keywords.<br>
-When you navigate to `recipes` you will see a search option and a list with recipe cards.<br> 
-<img src="../testing/testing_images/extended_screen_record_recipes_page_1.png" alt="Recipes page 1" width="25%" height="25%"> <img src="../testing/testing_images/extended_screen_record_recipes_page_2.png" alt="Recipes page 2" width="25%" height="25%"> <br>
+<img src="../testing/img/loged_out.jpg" alt="Loged out user" width="25%" height="25%"> <img src="../testing/img/loged_in.jpg" alt="Loged in user" width="25%" height="25%"><br>
 
-In the example underneath, the `search` keyword used is pork and the results for the search will be displayed, in this case two recipes.<br>
-<img src="../testing/testing_images/screen_record_search.png" alt="Search" width="25%" height="25%">
-<img src="../testing/testing_images/extended_screen_record_search_result.png" alt="Search result" width="25%" height="25%"> 
+### Testing the visitor goals
+As a shopper / site user I want to be able to:<br>
+**<details><summary>#1 see a clear overview of the possibilities /  which products can I order</summary>**
 
+In the menu navigate to `Products`, search for the desirered product in the search bar or on the homepage press the `SHOP NOW` button.<br>
+<img src="../testing/img/products_1.jpg" alt="How to find products 1" width="25%" height="25%"> <img src="../testing/img/products_3.jpg" alt="How to find products 3" width="25%" height="25%"> <img src="../testing/img/products_2.jpg" alt="How to find products 2" width="25%" height="25%">
+</details>
+
+**<details><summary>#2 see in advance what the costs of the products will be and when it can be delivered</summary>**
+
+On the products page each product is displayed in a card, the price ex VAT is diplayed and the delivery time you choose yourself, either 3 or 5 business days.<br>
+<img src="../testing/img/products_4.jpg" alt="Products explained 1" width="25%" height="25%"> <img src="../testing/img/products_5.jpg" alt="Products explained 2" width="25%" height="25%">
+</details>
+
+**<details><summary>#3 ask questions if something is not clear</summary>**
+
+Navigate to `Contact / Contact us` in the menu and fill out the contact form.<br>
+
+<img src="../testing/img/contact_1.jpg" alt="Contact explained 1" width="25%" height="25%"> <img src="../testing/img/contact_2.jpg" alt="Contact explained 2" width="25%" height="25%"><br>
+<img src="../testing/img/contact_3.jpg" alt="Contact explained 3" width="25%" height="25%"> <img src="../testing/img/contact_4.jpg" alt="Contact explained 4" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-- To create an account and log in on that account.<br>
-To register navigate to `Register` in the menu.<br>
+**<details><summary>#4 ask for a quotation if a product is not on the site, but maybe in the collection</summary>**
 
-<img src="../testing/testing_images/screen_record_register_page_1.png" alt="Register 1" width="25%" height="25%">
-<img src="../testing/testing_images/screen_record_register_page_2.png" alt="Register 2" width="25%" height="25%"><br>
+Navigate to `Contact / Quotation request` in the menu and fill out the form.<br>
 
-Fill in a username and password and hit `Register`. If this is not yet an existing user, it will successfully register the account.<br>
-
-<img src="../testing/testing_images/screen_record_successfully_registered_1.png" alt="Registered successfully 1" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_successfully_registered_2.png" alt="Registered successfully 2" width="25%" height="25%"><br>
-If the username is already used it will give an error message. When the characters used are not in range of what is required it will also give error messages, however since I used a phone with language set to Dutch as a primary language this will be displayed in Dutch.<br>
-<img src="../testing/testing_images/screen_record_error_username.png" alt="Username unavailable" width="25%" height="25%">
-<img src="../testing/testing_images/screen_record_error_username_and_password_1.png" alt="Register error 1" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_error_username_and_password_2.png" alt="Register error 2" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_error_username_and_password_3.png" alt="Register error 3" width="25%" height="25%"><br>
-
-The same will apply when you navigate to `Log in` and try to log in with an  existing account. It will log you in or give an error message if the username and / or password is not correct:<br>
-
-<img src="../testing/testing_images/screen_record_log_in_1.png" alt="Log in 1" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_log_in_2.png" alt="Log in 2" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_log_in_with_wrong_username_and_or_password.png" alt="Log in wrong" width="25%" height="25%"><br>
-
-Alternatively you can navigate to `Register` and `Log in` through the `Home ` page:<br>
-
-<img src="../testing/testing_images/screen_record_alternative_registration_option_1.png" alt="Alternative registration option 1" width="25%" height="25%"><br>
-
-Or navigate to `Register` through the `About` page:<br>
-
-<img src="../testing/testing_images/screen_record_alternative_registration_option_2.png" alt="Alternative registration option 2" width="25%" height="25%">
-
+<img src="../testing/img/contact_5.jpg" alt="Contact explained 5" width="25%" height="25%"> <img src="../testing/img/contact_6.jpg" alt="Contact explained 6" width="25%" height="25%"><br>
+<img src="../testing/img/contact_7.jpg" alt="Contact explained 7" width="25%" height="25%"> <img src="../testing/img/contact_8.jpg" alt="Contact explained 8" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-- To create, read, update and delete my own recipes.<br>
-To create a recipe, make sure you are logged in, if not, navigate to `Log in` and log in to your account. If you don't have an account, navigate to `Register` and register an account. Once logged in navigate to `Add recipe`, there you can fill out the form.<br>
-<img src="../testing/testing_images/extended_screen_record_add_recipe_1.png" alt="Add recipie 1" width="25%" height="25%"><br>
-Fill out the form and hit  `Add recipe`.<br>
-<img src="../testing/testing_images/screen_record_add_recipe_2.png" alt="Add recipie 2" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_add_recipe_3.png" alt="Add recipie 3" width="25%" height="25%"><br>
-To read the recipe navigate to `Recipes` in the menu, pick a recipe and hit `Go to recipe`, there you'll see the full recipe.<br>
-<img src="../testing/testing_images/extended_screen_record_full_recipe_1.png" alt="Full recipie 1" width="25%" height="25%"> <img src="../testing/testing_images/extended_screen_record_full_recipe_2.png" alt="Full recipie 2" width="25%" height="25%"><br>
-To edit / update the recipe hit  `Edit recipe`<br>
-<img src="../testing/testing_images/screen_record_recipe_options_logged_in_user.png" alt="Recipe options" width="25%" height="25%"><br>
-and change what you want to edit in the recipe, then hit  `Save edited recipe`<br>
-<img src="../testing/testing_images/extended_screen_record_edit_recipe.png" alt="Edit recipe" width="25%" height="25%"> <img src="../testing/testing_images/screen_record_updated_successfully.png" alt="Recipe updated successfully" width="25%" height="25%"><br>
-To delete a recipe hit `Delete recipe`, you will see a message with the question if you are sure you want to delete it.<br>
-<img src="../testing/testing_images/screen_record_delete_recipe.png" alt="Delete recipe" width="25%" height="25%"><br>
-If you are sure hit `YES, DELETE!` and the recipe will be deleted.<br>
-<img src="../testing/testing_images/screen_record_delete_recipe_success.png" alt="Recipe deleted successfully" width="25%" height="25%"><br> -->
+**<details><summary>#5 see the different kinds of paper</summary>**
 
+Navigate to `Contact / Free sample kit` in the menu and fill out the form.<br>
+
+<img src="../testing/img/contact_9.jpg" alt="Contact explained 9" width="25%" height="25%"> <img src="../testing/img/contact_10.jpg" alt="Contact explained 10" width="25%" height="25%"><br>
+<img src="../testing/img/contact_11.jpg" alt="Contact explained 11" width="25%" height="25%"> <img src="../testing/img/contact_12.jpg" alt="Contact explained 12" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-#### The site owners goals are:
+**<details><summary>#6 register an account</summary>**
 
-<!-- - To share the love for Japanese home cooking and promote it.<br>
-The love for Japanese home cooking is explained on the about page, to read it navigate to `About`.
-<img src="../testing/testing_images/extended_screen_record_about_page.png" alt="About page" width="25%" height="25%">
+Navigate to `Register` in the menu and fill out the form and follow the steps.
 
+<img src="../testing/img/register_1.jpg" alt="Registration explained 1" width="25%" height="25%"> <img src="../testing/img/register_2.jpg" alt="Registration explained 2" width="25%" height="25%"> <img src="../testing/img/register_3.jpg" alt="Registration explained 3" width="25%" height="25%"><br>
+<img src="../testing/img/register_4.jpg" alt="Registration explained 4" width="25%" height="25%"> <img src="../testing/img/register_5.jpg" alt="Registration explained 5" width="25%" height="25%"> <img src="../testing/img/register_6.jpg" alt="Registration explained 6" width="25%" height="25%">
 <div align="right"><a href="#top">🔝</a></div>
+</details>
 
-- Share nice Japanese home cooking recipes.<br>
-This is shown through the recipes page where all the shared recipes can be found. Navigate to `Recipes` to read them.<br>
-<img src="../testing/testing_images/extended_screen_record_recipes_page_1.png" alt="Recipes page 1" width="25%" height="25%"> <img src="../testing/testing_images/extended_screen_record_recipes_page_2.png" alt="Recipes page 2" width="25%" height="25%"> <br><br>
+**<details><summary>#7 log in on my account</summary>**
 
-It can be concluded that all goals have been achieved. <br>
+Navigate to `Log in` in the menu<br>
 
-The project has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. It was also tested on multiple devices among others a OnePlus Nord, an iMac (Retina 5K, 27-inch, 2017), a MacBook-Air (Retina M1, 13.3-inch, 2020) and a Samsung Galaxy Tab4 (10.1-inch 2014), everything works as it should. -->
+<img src="../testing/img/login_1.jpg" alt="Log in explained 1" width="25%" height="25%"> <img src="../testing/img/login_2.jpg" alt="Log in explained 2" width="25%" height="25%"> <img src="../testing/img/login_3.jpg" alt="Log in explained 3" width="25%" height="25%">
+</details>
 
+**<details><summary>#8 recover the password of my account</summary>**
+
+Navigate to `Log in` in the menu and press `Forgot your password?` fill out the form and follow the steps.<br>
+
+<img src="../testing/img/reset_1.jpg" alt="Reset password explained 1" width="25%" height="25%"> <img src="../testing/img/reset_2.jpg" alt="Reset password explained 2" width="25%" height="25%"> <img src="../testing/img/reset_3.jpg" alt="Reset password explained 3" width="25%" height="25%"><br>
+<img src="../testing/img/reset_4.jpg" alt="Reset password explained 4" width="25%" height="25%"> <img src="../testing/img/reset_5.jpg" alt="Reset password explained 5" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#9 see a secured overview of my order history</summary>**
+
+Navigate to `Account / Dashboard` in the menu.<br>
+
+<img src="../testing/img/dashboard_1.jpg" alt="Order history 1" width="25%" height="25%"> <img src="../testing/img/dashboard_2.jpg" alt="Order history 2" width="25%" height="25%"> <img src="../testing/img/dashboard_3.jpg" alt="Order history 3" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#10 change my details if needed</summary>**
+
+Navigate to `Account / Profile` in the menu.<br>
+
+<img src="../testing/img/profile_1.jpg" alt="Profile 1" width="25%" height="25%"> <img src="../testing/img/profile_2.jpg" alt="Profile 2" width="25%" height="25%"> <img src="../testing/img/profile_3.jpg" alt="Profile 3" width="25%" height="25%">
+</details>
+
+**<details><summary>#11 sort products by name, category and price</summary>**
+
+On the homepage press the `SHOP NOW` button, in the menu navigate to `Products` or search for the desirered product in the search bar, and click the sort bar.<br>
+
+<img src="../testing/img/sort_1.jpg" alt="Sorting 1" width="25%" height="25%"> <img src="../testing/img/sort_2.jpg" alt="Sorting 2" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#12 search a product by name or size (within the sku the size and quantity are mentioned, by using sku searching on size is possible)</summary>**
+
+In the menu navigate search for the desirered product in the search bar, you can search for size, papertype or category.<br>
+
+<img src="../testing/img/search_1.jpg" alt="Searching 1" width="25%" height="25%"> <img src="../testing/img/search_2.jpg" alt="Searching 2" width="25%" height="25%"><br>
+<img src="../testing/img/search_3.jpg" alt="Searching 3" width="25%" height="25%"> <img src="../testing/img/search_4.jpg" alt="Searching 4" width="25%" height="25%"><br>
+<img src="../testing/img/search_5.jpg" alt="Searching 5" width="25%" height="25%"> <img src="../testing/img/search_6.jpg" alt="Searching 6" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#13 go through the ordering process in a simple way + #14 to upload my own artwork + #15 have easy acces to my cart, and to be able to delete products that are in the cart, as long as the order isn't put through yet</summary>**
+
+Place the products that you want to order in your cart. Navigate to the `shopping cart` in the menu. As long as you didn't pay you are still able to adjust the cart. Go to `Secure checkout` when you are ready, fill out the checkout form where you can also upload your artwork.
+
+<img src="../testing/img/ordering_1.jpg" alt="How to order 1" width="25%" height="25%"> <img src="../testing/img/ordering_2.jpg" alt="How to order 2" width="25%" height="25%"> <img src="../testing/img/ordering_3.jpg" alt="How to order 3" width="25%" height="25%"><br>
+<img src="../testing/img/ordering_4.jpg" alt="How to order 4" width="25%" height="25%"> <img src="../testing/img/ordering_5.jpg" alt="How to order 5" width="25%" height="25%"><br>
+<img src="../testing/img/ordering_6.jpg" alt="How to order 6" width="25%" height="25%"> <img src="../testing/img/ordering_7.jpg" alt="How to order 7" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#16 receive a clear order confirmation with a description of what I ordered</summary>**
+
+After completing the checkout form and pressing `Complete order` you will get a confirmation by email.<br>
+<img src="../testing/img/ordering_8.jpg" alt="How to order 8" width="25%" height="25%"> <img src="../testing/img/ordering_9.jpg" alt="How to order 9" width="25%" height="25%"> <img src="../testing/img/ordering_10.jpg" alt="How to order 10" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+
+### Testing the site owner goals:
+As a site owner I want to be able to:<br>
+**<details><summary>#17 see a clear overview of the order placed by the customer</summary>**
+
+Make sure you use the admin details to log in, navigate to `Account / Dashboard` in the menu, you will see all the placed orders and can also see the details.<br>
+<img src="../testing/img/admin_dashboard.jpg" alt="Admin dashboard" width="25%" height="25%"> <img src="../testing/img/admin_order_detail.jpg" alt="Order detail" width="25%" height="25%">
+</details>
+
+**<details><summary>#18 add, updated or delete products on the site</summary>**
+
+Make sure you use the admin details to log in, navigate to `Account / Product management` there you can add a product. If you navigate to `Products` in the menu, you can update and delete a product. <br>
+<img src="../testing/img/crud_1.jpg" alt="Navigate to Product management" width="25%" height="25%"> <img src="../testing/img/crud_2.jpg" alt="Product management" width="25%" height="25%"> <img src="../testing/img/crud_3.jpg" alt="Add product" width="25%" height="25%"><br>
+<img src="../testing/img/crud_4.jpg" alt="Product added" width="25%" height="25%"> <img src="../testing/img/crud_5.jpg" alt="Product found in search" width="25%" height="25%"> <img src="../testing/img/crud_6.jpg" alt="Update or delete product" width="25%" height="25%"><br>
+<img src="../testing/img/crud_7.jpg" alt="Product updated" width="25%" height="25%"> <img src="../testing/img/crud_8.jpg" alt="Updated product found in search" width="25%" height="25%"> <img src="../testing/img/warning.jpg" alt="Warning" width="25%" height="25%"><br>
+<img src="../testing/img/crud_9.jpg" alt="Product deleted" width="25%" height="25%"> <img src="../testing/img/crud_10.jpg" alt="Product not found in search" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+
+**<details><summary>#19 be able to download the artwork that was uploaded</summary>**
+
+Log in to the [Django admin panel](https://postfly-jouw-online-drukkerij.herokuapp.com/admin/login/?next=/admin/) with the admin details, navigate to orders and find the artwork at the bottom.<br>
+<img src="../testing/img/order_django_admin.jpg" alt="Order in Django admin panel" width="25%" height="25%"> <img src="../testing/img/uploaded_artwork.jpg" alt="Uploaded artwork" width="25%" height="25%">
+<div align="right"><a href="#top">🔝</a></div>
+</details>
+<br>
+It can be concluded that all goals have been achieved.<br><br>
+
+The project has been tested on the available DevTools for phone and tablet sizes as well as on multiple responsive sizes and it was made sure that it looks good and works well on all. It was also tested on multiple devices among others a OnePlus Nord, an iMac (Retina 5K, 27-inch, 2017), a MacBook-Air (Retina M1, 13.3-inch, 2020) and a Samsung Galaxy Tab4 (10.1-inch 2014), everything works as it should.
 <div align="right"><a href="#top">🔝</a></div>
 
 ![HTML5](https://img.shields.io/badge/HTML5%20-%23E34F26.svg?&style=for-the-badge&logo=HTML5&logoColor=FFFFFF)
 ======
+
 ### HTML
 
-<!-- The HTML code of all pages was tested with a [HTML](https://validator.w3.org/nu/?doc=http%3A%2F%2Fmamamaki.herokuapp.com%2F) validator.<br>
-<img src="../testing/testing_images/html_check_homepage.png" alt="HTML check homepage" width="55%" height="55%"> <br>
-<img src="../testing/testing_images/html_check_about_page.png" alt="HTML check about page" width="55%" height="55%"> <br>
-<img src="../testing/testing_images/html_check_recipes_page.png" alt="HTML check recipes page" width="55%" height="55%"> <br>
-<img src="../testing/testing_images/html_check_personal_recipe_page.png" alt="HTML check personal recipe page" width="55%" height="55%"> <br>
-<img src="../testing/testing_images/html_check_add_recipe_page.png" alt="HTML check add recipe page" width="55%" height="55%"> <br>
-<img src="../testing/testing_images/html_check_update_recipe_page.png" alt="HTML check edit recipe page" width="55%" height="55%"> <br>
-<img src="../testing/testing_images/html_check_log_in_page.png" alt="HTML check log in page" width="55%" height="55%"> <br>
-<img src="../testing/testing_images/html_check_register_page.png" alt="HTML check register page" width="55%" height="55%"> <br>
-No errors or warnings were found. -->
+The HTML code of the pages was tested with a [HTML](https://validator.w3.org/#validate_by_uri) validator. For a few pages the links are below, but all pages have been checked and no errors or warnings were found.<br>
+<img src="../testing/img/html_check.png" alt="Html check" width="55%" height="55%"> <br>
 
+[Home page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2F)<br>
+[Products page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fproducts%2F)<br>
+[Specifications page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fspecifications%2F)<br>
+[FAQ page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Ffaq%2F)<br>
+[Team page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fteam%2F)<br>
+[Contact page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fcontact%2F)<br>
+[Register page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Faccounts%2Fsignup%2F)<br>
+[Log in page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Faccounts%2Flogin%2F)<br>
+[Shopping cart](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fcart%2F)<br>
+[Dashboard](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fprofile%2F)<br>
+[Add product page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fproducts%2Fadd%2F)<br>
+[Profile page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fprofile%2Fuser_profile)<br>
+[Checkout page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fcheckout%2F)<br>
+[Checkout success page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fcheckout%2Fcheckout_success%2F93F585)<br>
+[Order detail page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpostfly-jouw-online-drukkerij.herokuapp.com%2Fprofile%2Forder_detail%2F93F585)<br>
 <div align="right"><a href="#top">🔝</a></div>
 
 ![CSS3](https://img.shields.io/badge/CSS3%20-%231572B6.svg?&style=for-the-badge&logo=CSS3&logoColor=FFFFFF)
@@ -132,11 +218,19 @@ No errors or warnings were found. -->
 
 ### CSS
 
-<!-- The CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
-<img src="../testing/testing_images/css_check_1.png" alt="CSS check" width="55%" height="55%"> <img src="../testing/testing_images/css_check_2.png" alt="CSS check" width="55%" height="55%"> <br>
+The CSS code was tested with a [CSS](https://jigsaw.w3.org/css-validator/validator.html.en#validate_by_input) validator. <br>
+#### base.css<br>
+<img src="../testing/img/css_base_1.png" alt="CSS check base 1" width="55%" height="55%"> <img src="../testing/img/css_base_2.png" alt="CSS check base 2" width="55%" height="55%"> <img src="../testing/img/css_base_3.png" alt="CSS check base 3" width="55%" height="55%"><br>
+<div align="right"><a href="#top">🔝</a></div>
 
-Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way. -->
+#### checkout.css<br>
+<img src="../testing/img/css_checkout_1.png" alt="CSS check checkout 1" width="55%" height="55%"> <img src="../testing/img/css_checkout_2.png" alt="CSS check checkout 2" width="55%" height="55%"><br>
 
+#### profile.css<br>
+<div align="right"><a href="#top">🔝</a></div>
+<img src="../testing/img/css_profile_1.png" alt="CSS check profile 1" width="55%" height="50%"> <img src="../testing/img/css_profile_2.png" alt="CSS check profile 2" width="55%" height="55%"><br>
+
+Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 <div align="right"><a href="#top">🔝</a></div>
 
 ![JavaScript](https://img.shields.io/badge/JavaScript%20-%23323330.svg?&style=for-the-badge&logo=JavaScript&logoColor=F7DF1E)
@@ -144,12 +238,27 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 
 ### JavaScript
 
-<!-- The JavaScript code was tested with a [JavaScript](https://jshint.com/) linter. <br>
-<img src="../testing/testing_images/js_check_1.png" alt="JS check 1" width="45%" height="45%">
-<img src="../testing/testing_images/js_check_2.png" alt="JS check 2" width="45%" height="45%"><br>
+The JavaScript code was tested with a [JavaScript](https://jshint.com/) linter. <br>
+#### main.js<br>
+<img src="../testing/img/main.png" alt="Main.js check" width="55%" height="55%"><br>
 
-Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way. -->
+#### products.js<br>
+<img src="../testing/img/products.png" alt="Products.js check" width="55%" height="55%"><br>
 
+#### toasts.js<br>
+<img src="../testing/img/toasts.png" alt="Toasts.js check" width="55%" height="55%"><br>
+<div align="right"><a href="#top">🔝</a></div>
+
+#### stripe_elements.js<br>
+<img src="../testing/img/stripe_elements.png" alt="Stripe_elements.js check" width="55%" height="55%"><br>
+
+#### countryfield.js<br>
+<img src="../testing/img/countryfield.png" alt="Countryfield.js check" width="55%" height="55%"><br>
+
+#### cart.html script<br>
+<img src="../testing/img/cart.png" alt="Cart.html script check" width="55%" height="55%"><br>
+
+Only warnings were found, but nothing that needs to be fixed or effects the code in a wrong way.
 <div align="right"><a href="#top">🔝</a></div>
 
 ![PYTHON](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -157,9 +266,11 @@ Only warnings were found, but nothing that needs to be fixed or effects the code
 
 ### Python
 
-<!-- The Python code was tested with a [PEP8](http://pep8online.com/) linter. <br>
-<img src="../testing/testing_images/python_check.png" alt="Python check" width="55%" height="55%"><br>
-No errors or warnings were found. -->
+The Python code was tested with a [PEP8](http://pep8online.com/) linter. <br>
+Below are two examples, the first one is of the checkout app models and the second one is of the checkout app views.<br>
+<img src="../testing/img/checkout_models.png" alt="PEP8 checkout models" width="55%" height="55%"><br>
+<img src="../testing/img/checkout_views.png" alt="PEP8 checkout views" width="55%" height="55%"><br>
+All other python files have also been checked, no errors or warnings were found.
 
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -168,11 +279,330 @@ No errors or warnings were found. -->
 
 ### Lighthouse
 
-<!-- All pages have passed through Lighthouse in Chrome DevTools, the results for desktop can found here: <br>
-<img src="../testing/testing_images/home_desktop.png" alt="Lighthouse desktop home" width="25%" height="25%"> <img src="../testing/testing_images/about_desktop.png" alt="Lighthouse desktop about" width="25%" height="25%"> <img src="../testing/testing_images/recipes_desktop.png" alt="Lighthouse desktop recipes" width="25%" height="25%"> <img src="../testing/testing_images/register_desktop.png" alt="Lighthouse desktop register" width="25%" height="25%"> <img src="../testing/testing_images/log_in_desktop.png" alt="Lighthouse desktop log in" width="25%" height="25%"> <img src="../testing/testing_images/personal_recipe_page_desktop.png" alt="Lighthouse desktop personal recipe page" width="25%" height="25%"> <img src="../testing/testing_images/add_recipe_desktop.png" alt="Lighthouse desktop add recipe" width="25%" height="25%"> <img src="../testing/testing_images/edit_recipe_desktop.png" alt="Lighthouse desktop edit recipe" width="25%" height="25%"><br>
-and these are the results for the mobile versions:<br>
-<img src="../testing/testing_images/home_mobile.png" alt="Lighthouse mobile home" width="25%" height="25%"> <img src="../testing/testing_images/about_mobile.png" alt="Lighthouse mobile about" width="25%" height="25%"> <img src="../testing/testing_images/recipes_mobile.png" alt="Lighthouse mobile recipes" width="25%" height="25%"> <img src="../testing/testing_images/register_mobile.png" alt="Lighthouse mobile register" width="25%" height="25%"> <img src="../testing/testing_images/login_mobile.png" alt="Lighthouse mobile log in" width="25%" height="25%"> <img src="../testing/testing_images/personal_recipe_page_mobile.png" alt="Lighthouse mobile personal recipe page" width="25%" height="25%"> <img src="../testing/testing_images/add_recipe_mobile.png" alt="Lighthouse mobile add recipe" width="25%" height="25%"> <img src="../testing/testing_images/edit_recipe_mobile.png" alt="Lighthouse mobile edit recipe" width="25%" height="25%"><br>
-The results of the Lighthouse tests are satisfactory, so no adjustments are needed at this time. But in the future a way to increase the performance on some pages would be something to do in an update. -->
+All pages have passed through Lighthouse in Chrome DevTools, the results can be found here: <br>
+### Home page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/home_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/home_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### All products page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/products_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/products_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Flyers 300 gr mat page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<div align="right"><a href="#top">🔝</a></div>
+
+### Flyers 300 gr mat A6 page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_a6_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/flyers_300_mat_a6_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+The results for the other single pages, other sizes and paper types are comparable, they have been tested but are not shown here because the list will then become too long, even longer than it already is.
+
+### Specification page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/specifications_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/specifications_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Templates page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/templates_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/templates_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+The results for the other single pages, other sizes and paper types, is similar, they have been tested but are not shown here because the list would then become too long.
+<div align="right"><a href="#top">🔝</a></div>
+
+### FAQ page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/faq_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/faq_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Our team page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/team_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/team_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+
+### Printing in-house page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/printing_house_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/printing_house_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<div align="right"><a href="#top">🔝</a></div>
+
+### Our concept page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/concept_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/concept_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Contact us page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/contact_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/contact_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Free sample kit page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/sample_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/sample_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<div align="right"><a href="#top">🔝</a></div>
+
+### Quotation request page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/quotation_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/quotation_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Register page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/register_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/register_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Log in page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/login_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/login_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<div align="right"><a href="#top">🔝</a></div>
+
+### Reset password page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/reset_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/reset_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Shopping cart page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/cart_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/cart_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Checkout page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<div align="right"><a href="#top">🔝</a></div>
+
+### Checkout success page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_success_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/checkout_success_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Dashboard page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/dashboard_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/dashboard_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Order detail page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/order_detail_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/order_detail_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+<div align="right"><a href="#top">🔝</a></div>
+
+### Add product page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/add_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/add_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Profile page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/profile_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/profile_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+### Log out page
+#### Desktop
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/logout_desktop.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+#### Mobile
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/logout_mobile.png" alt="Lighthouse results" width="50%" height="50%">
+</details>
+
+The results of the Lighthouse tests are satisfactory, so no adjustments are needed at this time. But in the future a way to increase the performance and accessibility on some pages would be something to do in an update.
 
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -181,17 +611,14 @@ The results of the Lighthouse tests are satisfactory, so no adjustments are need
 
 ### GTmetrix
 
-<!-- The site was tested with [GTmetrix](https://gtmetrix.com/). The reports can be found here:<br>
-[Homepage](https://gtmetrix.com/reports/mamamaki.herokuapp.com/DtF79YmN/) <br>
-[About page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/ehQW2KTp/) <br>
-[Recipes page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/Aok6T3gH/) <br>
-[Single recipe page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/FMvG3INv/) <br>
-[Register page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/nxjFnBeX/) <br>
-[Log in page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/NfTTBCfW/) <br>
-[Personal recipe page](https://gtmetrix.com/reports/mamamaki.herokuapp.com/f0CLM9rG/) <br>
-[Add recipe](https://gtmetrix.com/reports/mamamaki.herokuapp.com/OZgPHOwf/) <br>
-[Edit recipe](https://gtmetrix.com/reports/mamamaki.herokuapp.com/hL6hdl9W/) <br> -->
-
+The site was tested with [GTmetrix](https://gtmetrix.com/). The reports of a few pages can be found here:<br>
+[Home page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/HVIpHpjQ/) <br>
+[Business cards 400 gr mat 85x55mm page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/Yng7F52i/) <br>
+[Business cards Cold Foil page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/QSnqI8jh/) <br>
+[File type page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/GCiVdTmp/) <br>
+[Job options page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/xQaop4BH/) <br>
+[Overprint page](https://gtmetrix.com/reports/postfly-jouw-online-drukkerij.herokuapp.com/dwBBoi5S/) <br>
+GTmetrix also uses Lighthouse, so the reports are similar to the Lighthouse tests.
 <div align="right"><a href="#top">🔝</a></div>
 
 :eyeglasses: Color blindness
@@ -199,11 +626,80 @@ The results of the Lighthouse tests are satisfactory, so no adjustments are need
 
 ### Color blindness
 
-<!-- Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find the links of the homepage tests, but of course all pages were tested. <br>
-[Protanopia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=protan) <br>
-[Deutanopia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=deutan) <br>
-[Tritanopia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=tritan) <br>
-[Greyscale / Achromatopsia](https://www.toptal.com/designers/colorfilter?orig_uri=http://mamamaki.herokuapp.com/&process_type=grey) -->
+Color blindness was tested on this [site](https://www.toptal.com/designers/colorfilter/) to ensure you would still be able to read the website when you have different types of color blindness. Here you will find the links of the home page tests, but of course all pages were tested. <br>
+[Protanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=protan) <br>
+[Deutanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=deutan) <br>
+[Tritanopia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=tritan) <br>
+[Greyscale / Achromatopsia](https://www.toptal.com/designers/colorfilter?orig_uri=https://postfly-jouw-online-drukkerij.herokuapp.com/&process_type=grey)
+
+<div align="right"><a href="#top">🔝</a></div>
+
+:heavy_check_mark: Accessibility
+======
+
+### Accessibility
+
+Several pages of the site have been tested on accessibility for people with disabilities through the
+[Web Accessibility site](https://www.webaccessibility.com/), below are some of the results:
+### Home page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/home.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Products page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/products_acces.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Foil page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/foil.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Quotation request page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/quotation.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Register page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/register.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Log in page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/login.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+### Shopping cart page
+<details>
+  <summary>Click to see results</summary>
+  <img src="../testing/img/cart_access.png" alt="Web Accessibility results" width="50%" height="50%">
+</details>
+
+<div align="right"><a href="#top">🔝</a></div>
+
+:mag: Travis testing
+======
+
+### Travis testing
+
+The plan was to extensively test with [Travis CI](https://www.travis-ci.com/), but due to time constraints, it has been decided to only check the build and the required fields of the contact, free sample kit and quotation request forms.
+
+### Build history
+<details>
+  <summary>Click to see build history</summary>
+  <img src="../testing/img/travis_1.png" alt="Travis build history" width="50%" height="50%"><br>
+  <img src="../testing/img/travis_2.png" alt="Travis build history" width="50%" height="50%"><br>
+  <img src="../testing/img/travis_3.png" alt="Travis build history" width="50%" height="50%"><br>
+  <img src="../testing/img/travis_4.png" alt="Travis build history" width="50%" height="50%">
+</details>
 
 <div align="right"><a href="#top">🔝</a></div>
 
@@ -212,15 +708,20 @@ The results of the Lighthouse tests are satisfactory, so no adjustments are need
 
 ### Other tests
 
-<!-- A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola G5 and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox. During the testing two bugs were found and fixed, the Safari button bug and the Multiple cards in one card bug, please see the Bugs section and matching issue link for these bugs and their fix.
+A lot of different people were asked to check the project to ensure it works on different systems and devices. The website was tested on Samsung Galaxy TabA (10.1-inch 2019), OnePlus 5, Xiaomi Redmi Note 7, Xiaomi Redmi Note 8 Pro, Motorola G9, Motorola edge 20 lite and iPhone 12 Pro Max among others. It has been tested on the following browsers: Google Chrome, Safari, Microsoft Edge and Mozilla Firefox.<br> 
+During the testing the following was found:
+- some misalignments, these have been fixed.
+- a lack of defensive programming, for deleting a product, there was no extra warning, so a modal was inserted to check if the admin is sure that the product needs to be deleted.
+- if the page was visited before a certain date (before implementation of the Dutch flag) then the Dutch flag can be displayed very large as shown below. This can easily be solved by removing the session cookies once. When a user visits the site for the first time now (ie after the Dutch flag was implemented in the site), this problem should not occur.<br>
+<img src="../testing/img/image_from_ios.png" alt="Flag cookie problem" width="25%" height="25%"><br>
+- in some browsers / on some devices the payment text is not displayed in the Poppins font even though everything is set to Poppins. This is a known bug and may be related to a browser, device, or JavaScript version issue.<br>
+<img src="../testing/img/payment_text_1.png" alt="Payment text other font" width="30%" height="30%"><br>
+<img src="../testing/img/payment_text_2.png" alt="Payment text correct font" width="25%" height="25%"><br>
 <br>
-The contact form of the home page has also been tested on Google Chrome, Safari, Microsoft Edge and Mozilla Firefox, this works as it should.<br>
-<img src="../testing/testing_images/emailjs_test.png" alt="EmaiJS test" width="55%" height="55%"> -->
-
-#### Advices given after testing which were followed
-
-<!-- 1. Some spelling and grammar changes have been made after reviews from my husband, brother-in-law and sister-in-law.
-2. My husband, Django, did not think the user-friendliness was good enough, because only the logo could be used to return to the homepage. That is why on the page for requesting the sample kit and for designing the business card, 2 buttons have been added at the top to switch between the other pages. Cancel buttons have also been added to the bottom of the forms. This increases user-friendliness. -->
+The contact forms have been tested on Google Chrome and Safari, they work as they should.<br>
+<img src="../testing/img/contact_form_test.png" alt="Contact form test" width="50%" height="50%"><br>
+<img src="../testing/img/sample_form_test.png" alt="Sample form test" width="50%" height="50%">
+<img src="../testing/img/quotation_form_test.png" alt="Quotation form test" width="50%" height="50%">
 
 <div align="right"><a href="#top">🔝</a></div>
 

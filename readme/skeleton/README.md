@@ -100,7 +100,7 @@ The desktop wireframes are listed below per section.<br>
 </details><br>
 
 Desktop wireframe overview <br>
-<img src="../skeleton//preview_desktop.png" alt="Desktop" width="50%" height="50%"><br>
+<img src="../skeleton/img/preview_desktop.png" alt="Desktop" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 <br>
 
@@ -196,7 +196,7 @@ The tablet wireframes are listed below per section.<br>
 </details><br>
 
 Tablet wireframe overview <br>
-<img src="../skeleton//preview_tablet.png" alt="Tablet" width="50%" height="50%"><br>
+<img src="../skeleton/img/preview_tablet.png" alt="Tablet" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 <br>
 
@@ -292,7 +292,7 @@ The mobile wireframes are listed below per section.<br>
 </details><br>
 
 Mobile wireframes <br>
-<img src="../skeleton/preview_mobile.png" alt="Mobile" width="50%" height="50%"><br>
+<img src="../skeleton/img/preview_mobile.png" alt="Mobile" width="50%" height="50%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 <br>
 
@@ -300,24 +300,23 @@ Django diagram model<br>
 The ERD diagram explains the intent for the django backend.
 When you have a user profile you can save your data there and the next time you order it will be preloaded, the customer is connected to the user. 
 You can also choose to override the default delivery address by changing it in the checkout process and for example, to deliver it to an office address.
-In a future update, it should be an option to store multiple delivery and billing addresses for one user.
-The order is connected to the order item, so that the price for a product is changed by the admin, the prices of the already placed orders will not change.<br>
-<img src="../skeleton//postfly_django_diagram_model.png" alt="Data Model" width="65%" height="65%"><br>
+In a future update, it should be an option to store multiple delivery and billing addresses for one user.<br>
+<img src="../skeleton/img/postfly_django_diagram_model.png" alt="Data Model" width="65%" height="65%"><br>
 <div align="right"><a href="#top">🔝</a></div>
 
 **Surface**
 
 The following main colors have been used:<br>
-<img src="../skeleton//red.png" alt="Red" width="25%" height="25%"><img src="../skeleton//dark_grey.png" alt="Dark Grey"  width="25%" height="25%"><img src="../skeleton//off_white.png" alt="Off White"  width="25%" height="25%"><br>
+<img src="../skeleton/img/red.png" alt="Red" width="25%" height="25%"><img src="../skeleton/img/dark_grey.png" alt="Dark Grey"  width="25%" height="25%"><img src="../skeleton/img/off_white.png" alt="Off White"  width="25%" height="25%"><br>
 These colors have been chosen because they are part of the corporate identity. These colors suit the company, so it was decided to continue to use this, but to abandon the other colors of the current site.
 <div align="right"><a href="#top">🔝</a></div>
 
-During development the site's layout was restructured a little bit, because this seemed visually or otherwise better. They are listed below, the more extensive ones, with a link to the issue item where they are further explained.
+During development the site's layout was restructured a little bit, because this seemed visually or otherwise better. They are listed below.
 
 1. Home page, the original idea was to have a carousel, bit the site didn't become more appealing because of it, so the choice was made to make use of 3 photos, a banner and 3 buttons.
 2. The product details page was skipped to make the ordering proces more customer friendly. The explanation about the paper types was moved to the FAQ page and instead of having to make first a paper choice in the menu and then a size choice on an extra page, the choice was made to do this in the menu right away.
 3. The shopping cart was restuctured a bit to make it more logical and easy to read for the customer.
-4. The dashboard was altered a bit, the huge red block was not found visually appealing and because of the time the status of the order was moved to be an update for the future. Same goes for the admin version of the dashboard.
+4. The dashboard was altered a bit, the huge red block was not found visually appealing and because of the time, the status of the order was moved to be an update for the future. Same goes for the admin version of the dashboard, there is a special admin dashboard which displays a orders, but it is less extensive than in the wireframe.
 5. The switch language option has been moved to a future update due to lack of time, due to handing in the project within the deadline and personal circumstances.
 6. The red color #E72F4C  was changed to #E02A51 for better contrast.
 
