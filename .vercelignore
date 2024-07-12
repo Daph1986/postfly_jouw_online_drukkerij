@@ -1,0 +1,18 @@
+# .vercelignore
+
+# Ignore virtual environment
+
+.venv
+
+# Ignore Python cache files
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore other unwanted files and directories
+
+node_modules/
+.env
+*.log
+.DS_Store

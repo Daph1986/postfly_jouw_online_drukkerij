@@ -19,9 +19,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = os.getenv('DEVELOPMENT')
+DEBUG = False
 
 ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1']
+
+CSRF_TRUSTED_ORIGINS = ['https://postfly-jouw-online-drukkerij.vercel.app']
 
 
 # Application definition
@@ -218,4 +220,5 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
+AWS_QUERYSTRING_AUTH = False
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
