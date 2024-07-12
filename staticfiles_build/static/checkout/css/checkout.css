@@ -1,0 +1,176 @@
+/* ---------------------- Stripe form styling ---------------------- */
+
+.StripeElement, 
+.stripe-style-input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 7px 12px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 3px 0 #e6ebf1;
+          box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  -webkit-transition: -webkit-box-shadow 150ms ease;
+  transition: -webkit-box-shadow 150ms ease;
+  -o-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease, -webkit-box-shadow 150ms ease;
+}
+
+.StripeElement--focus, 
+.stripe-style-input:focus, 
+.stripe-style-input:active {
+  -webkit-box-shadow: 0 1px 3px 0 #dcdee0;
+          box-shadow: 0 1px 3px 0 #dcdee0;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::-webkit-input-placeholder {
+  color: #70707086;
+}
+
+.stripe-style-input::-moz-placeholder {
+  color: #70707086;
+}
+
+.stripe-style-input:-ms-input-placeholder {
+  color: #70707086;
+}
+
+.stripe-style-input::-ms-input-placeholder {
+  color: #70707086;
+}
+
+.stripe-style-input::placeholder {
+  color: #70707086;
+}
+
+.fieldset-label {
+  position: relative;
+  right: -.4rem;
+}
+
+.form-control:focus {
+  border-color: #E02A51;
+  -webkit-box-shadow: 0 0 0 0.25rem #E72F4C36;
+          box-shadow: 0 0 0 0.25rem #E72F4C36;
+}
+
+input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+select:-webkit-autofill {
+  box-shadow: 0 1px 3px 0 #dcdee0;
+  -webkit-box-shadow: 0 0 0 1000px #E72F4B36 inset !important;
+  -webkit-text-fill-color: black !important;
+}
+
+select, select option {
+  color: #000;
+}
+
+select:invalid, select option[value=""] {
+  color: #70707086;
+}
+
+/* ------------------------ Checkout form -------------------------- */
+
+hr.divider {
+  width: 250px;
+  margin-left: 265px;
+}
+
+/* ------------------ Order confirmation styling ------------------- */
+
+.order-confirmation-heading-wrapper {
+  border-radius: 25px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #E02A51;
+  color: #FFF;
+}
+
+.order-confirmation-wrapper {
+  border-radius: 25px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border-color: #707070;
+}
+
+/* ------------------------ Payment overlay ------------------------ */
+
+#loading-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(231, 47, 75, 0.719);
+  z-index: 9999;
+}
+
+.loading-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #F3F3F3;
+  border-radius: 50%;
+  border-top: 16px solid #5c5b5b;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* ----------------------- Media queries ------------------------- */
+
+@media (max-width: 1199.98px) {
+  hr.divider {
+    width: 265px;
+    margin-left: 300px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .h3-mobile {
+    font-size: 1rem;
+  }
+  hr.divider {
+    width: 170px;
+    margin-left: 130px;
+  }
+}
