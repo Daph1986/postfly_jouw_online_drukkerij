@@ -4,7 +4,6 @@
 
 - .venv/
 - env/
-- git
 
 ## Ignore Python cache files
 
@@ -18,3 +17,9 @@
 - .env
 - *.log
 - .DS_Store
+- .git
+
+## Ignore README file
+
+- README.md
+- readme
