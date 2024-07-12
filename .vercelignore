@@ -23,3 +23,7 @@
 
 - README.md
 - readme
+
+## Ignore large static directories or files
+
+- static/       # Grote statische bestanden die niet nodig zijn voor Vercel
