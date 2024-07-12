@@ -15,6 +15,7 @@ CSRF_TRUSTED_ORIGINS = ['https://postfly-jouw-online-drukkerij.vercel.app/']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
