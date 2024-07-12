@@ -2,28 +2,30 @@
 
 ## Ignore virtual environment
 
-- .venv/
-- env/
+.vscode
+env
+env.py
+venv
+.venv/
 
 ## Ignore Python cache files
 
-- __pycache__/
-- *.py[cod]
-- *$py.class
+__pycache__
+*.py[cod]
+*$py.class
 
 ## Ignore other unwanted files and directories
 
-- node_modules/
-- .env
-- *.log
-- .DS_Store
-- .git
+node_modules/
+*.log
+.DS_Store
+.git
 
 ## Ignore README file
 
-- README.md
-- readme
+README.md
+readme
 
 ## Ignore large static directories or files
 
-- static/       # Grote statische bestanden die niet nodig zijn voor Vercel
+static/
