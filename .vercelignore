@@ -4,6 +4,7 @@
 
 - .venv/
 - env/
+- git
 
 ## Ignore Python cache files
 
