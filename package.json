@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "postinstall": "python manage.py collectstatic --noinput"
-  }
-}

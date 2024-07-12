@@ -210,3 +210,8 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 AWS_QUERYSTRING_AUTH = False
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
+
+AWS_STORAGE_BUCKET_NAME = 'postfly-jouw-online-drukkerij'
