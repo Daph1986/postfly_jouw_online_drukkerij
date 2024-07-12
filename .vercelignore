@@ -25,7 +25,3 @@ node_modules/
 
 README.md
 readme
-
-## Ignore large static directories or files
-
-static/
