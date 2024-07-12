@@ -9,6 +9,3 @@ env
 env.py
 venv
 .venv/
-
-# Ignore other unwanted files and directories
-staticfiles_build/
