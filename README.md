@@ -22,7 +22,7 @@ The site's goal is to have a more efficient system for employees and a easy to u
 :clapper: Demo
 ======
 
-Due to changes on Heroku, there is no longer a demo link available.
+By clicking this [link](https://postfly-jouw-online-drukkerij.vercel.app/) a live demo version will be visible.
 
 <img src="readme/general/img/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
 <img src="readme/general/img/mockup_2.png" alt="Mockup 2" width="65%" height="65%">
