@@ -24,6 +24,8 @@ The site's goal is to have a more efficient system for employees and a easy to u
 
 By clicking this [link](https://postfly-jouw-online-drukkerij.vercel.app/) a live demo version will be visible.
 
+>This project was moved from Heroku to Vercel 3 years after its creation. As a result, not all functions work anymore, but since it is a study project, I don't feel the need to fix that again.
+
 <img src="readme/general/img/mockup_1.png" alt="Mockup 1" width="65%" height="65%">
 <img src="readme/general/img/mockup_2.png" alt="Mockup 2" width="65%" height="65%">
 <div align="right"><a href="#top">🔝</a></div>
