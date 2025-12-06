@@ -34,6 +34,6 @@ TimeConvert==3.0.13
 tornado==6.4
 typing_extensions==4.12.*
 tzlocal==5.2
-urllib3==1.26.19
+urllib3==2.6.*
 virtualenv==20.26.3
 xlwt==1.3.*
